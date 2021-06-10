@@ -1,0 +1,216 @@
+# Diseño del instrumento {#dis_ins}
+
+A continuación se presenta el desarrollo del cuestionario del ELSOC. El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) aplicado cara a cara a todos los participantes. Dicha aplicación se hace utilizando el sistema CAPI (Encuestas personales asistidas por computadores). El cuestionario fue diseñado paramedir una serie de aspectos conceptualmente relevantes para caracterizar el conflicto y cohesión social en Chile, enfatizando su evolución a lo largo del tiempo. Los principales temas de interés analítico abordados por la encuesta corresponden a losmódulos en los cuales se estructura:
+
+1. **Ciudadanía y Democracia.**
+2. **Redes sociales e Interacciones inter-grupales.**
+3. **Legitimidad y desigualdad social.**
+4. **Conflicto social.**
+5. **Dimensión barrial y territorial.**
+6. **Salud y bienestar.**
+7. **Caracterización Socio demográfica.**
+
+## Proceso de Diseño
+
+Buena parte de las preguntas, escalas y/o items incluidos en cada módulo de ELSOC provienen de otros estudios de opinión pública, investigaciones -en psicología, sociología, economía, ciencia política- y encuestas sociales conducidos en Chile y otros países. En forma complementaria, algunas escalas fueron desarrolladas por los miembros del equipo COES y/o han sido adaptadas de estudios anteriores de éstos. De manera genérica, el cuestionario fue diseñado aprovechando las principales recomendaciones técnicas y el estado del arte en las distintas áreas de estudio incluidas.
+
+Con el objetivo de satisfacer los criterios y estándares de calidad para cuestionarios y compatibilizar la multiplicidad de agendas de investigación desarrolladas por COES, se optó por elaborar un procedimiento de trabajo para la construcción de éste. Este proceso se desarrolló en distintas fases:
+
+1. Se solicitó a los investigadores asociados a COES proponer proyectos de investigación que contemplen un planteamiento teórico e hipótesis que fundamenten las escalas propuestas para ser incluidas en el cuestionario. Las propuestas podían ser presentadas de manera individual o colectiva y no existían restricciones en el número de ítems a proponer. Sólo se exigía una fundamentación teórica explícita y una operacionalización de los constructos a medir en los distintos items propuestos.
+
+2. El procedimiento anterior implicó la recepción y organización de un elevado número de agendas de investigación, los que se materializan en más 750 itemes (preguntas únicas o parte de una escala). El equipo panel sistematizó las propuestas recibidas, clasificando los items en áreas temáticas. A la vez, se diseñaron mecanismos para reducir el número de items y coordinaron reuniones entre los investigadores COES para decidir sobre éstos. Los criterios de selección fueron principalmente teóricos, priorizando las preguntas fundamentales para el análisis longitudinal de los proyectos de investigación como su concordancia con la agenda sustantiva de COES ^[También se incluyeron criterios prácticos, relativos a la eliminación de itemes idénticos o muy semejantes; evidencia previa sobre la calidad de los items (encuestas anteriores, especialmente la encuesta de corte transversal desarrollada por COES el año 2014) y el diseño general del estudio (diseño muestral, unidad de análisis, tipo de informante, etc.).].
+
+3. Luego de una selección de las escalas más relevantes para cada tema propuesto, se realizó un estudio piloto del cuestionario desarrollado. Esto implicó pilotear 430 itemes -el Centro MicroDatos de la Universidad de Chile se encargó de su ejecución. En base a los resultados de dicho piloto, el equipo panel realizó ajustes a algunos items y elaboró una propuesta de reducción de ítems que fue evaluada con los investigadores del Centro.
+
+4. La última etapa de ajuste del cuestionario se centró en identificar los aspectos conceptualmente más relevantes para COES y ponderar los requerimientos metodológicos para su evaluación empírica. De este modo, se clasificaron los items según el número de mediciones requeridas, distinguiendo entre items permanentes (que serán medidos en todas las olas, ya que constituyen el núcleo analítico del estudio) e intercalados (que serán medidos una única vez o una ola por medio).
+
+La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplicará cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados3. Luego, en el Cuadro 1 se resumen los conceptos que se incluyeron en cada sección del cuestionario de la primera ola del estudio longitudinal COES. Paramás detalles sobre el Cuestionario se debe revisar la sección de  \@ref(label) Libro de Códigos y el  \@ref(label) Listado de Variables de ELSOC.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+temas_conceptos <- tibble(Sección = 
+                            c("Territorio"),
+                          Temas = 
+                            c("Cohesión barrial, elección de hogar/barrio, estigmatización residencial,   
+                          intención de movilidad residencial, percepción de transformación del
+                          barrio, datisfacción con el barrio, satisfacción con la vivienda, seguridad
+                          del Barrio, sociabilidad barrial, transporte y violencia barrial.")) %>% 
+  add_row(Sección = 
+            c("Redes y Actitudes Sociales"),
+          Temas = 
+            c("Actitudes intergrupales (Ansiedad intergrupal, calidad de Contacto, cantidad de contacto,
+            contacto negativo, normas intergrupales, frecuencia
+            de contacto, percepción de similitud). También se incluye una batería de
+            redes sociales secundarias/lejanas que incluye: ocupaciones, nombres, grupos sociales,
+            relación con las ocupaciones, etc.")) %>% 
+  add_row(Sección = 
+            c("Ciudadanía y Democracia"),
+          Temas = 
+            c("Confianza interpersonal, intergrupal, política e institucional; actitudes hacia el cambio
+          constitucional, actitudes políticas (dominancia, autoritarismo,
+          identidad nacional, sociabilidad, percepción de movimientos
+          sociales), interés político, participación convencional y no convencional,
+          satisfacción y actitudes hacia la democracia, posición política.")) %>%
+  add_row(Sección = 
+            c("Legitimidad y Desigualdad"),
+          Temas = c("Percepción de distribución de ingresos, estatus subjetivo, percepción de
+          distribución de impuestos, justicia distributiva y meritocracia, antagonismo
+          de clases sociales.")) %>%
+  add_row(Sección = 
+            c("Conflicto social"),
+          Temas = 
+            c("Agresividad física, aversión conflicto, fuerza de conflictos, justificación de
+            uso de violencia (de género, interpersonal o institucional) y percepción
+            violencia.")) %>%
+  add_row(Sección = 
+            c("Salud y Bienestar"),
+          Temas = 
+            c("Satisfacción vital, estado de ánimo (Escala de depresión), estresores, problemas
+          de salud recientes, consumo de sustancias (alcohol, tabaco), red
+          de apoyo, interacción con el sistema de salud y peso/estatura.")) %>% 
+  add_row(Sección = 
+            c("Socio Demográfica"),
+          Temas = 
+            c("Descripción ocupacional, nivel educacional, estado civil, ingreso individual
+            y del hogar, bienes del hogar, descripción de la composición del hogar,
+            satisfacción con el ingreso, descripción de condiciones de deuda, caracterización
+            de la vivienda y adscripción y practicancia religiosa.")) 
+
+
+temas_conceptos %>%
+  kable(booktabs = TRUE,caption="\\label{tab:apaisada}Temas y Conceptos medidos en ELSCO Ola 1") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2), width = "8cm") %>%
+  landscape()
+```
+
+
+## Ficha Técnica
+
+En este apartado se presenta la Ficha Técnica (Ver Cuadro 2), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
+
+ficha_técnica <- tibble(Características = 
+                            c("Objetivo"),
+                          ELSOC_2016 = 
+                            c("Analizar longitudinalmente la evolución del conflicto y cohesión
+                              en la sociedad chilena.")) %>% 
+  add_row(Características = 
+            c("Diseño"),
+          ELSOC_2016 = 
+            c("Estudio cuantitativo por medio de un cuestionario estructurado.")) %>% 
+  add_row(Características = 
+            c("Instrumento"),
+          ELSOC_2016 = 
+            c("Cuestionario compuesto por preguntas cerradas de carácter simple
+            y múltiple junto a algunas preguntas abiertas. Combina preguntas
+            permanentes (todas las olas) e intercaladas.")) %>%
+  add_row(Características = 
+            c("Cobertura Temática"),
+          ELSOC_2016 = c("Contiene siete módulos temáticos: Territorio, Redes y actitudes
+          sociales, Ciudadanía y democracia, Desigualdad y legitimidad,
+          Conflicto social, Salud y bienestar y Caracterización sociodemográfica.")) %>%
+  add_row(Características = 
+            c("Unidad de Análisis"),
+          ELSOC_2016 = 
+            c("Individuos.")) %>%
+  add_row(Características = 
+            c("Población Objetivo"),
+          ELSOC_2016 = 
+            c("Hombres y mujeres de 18 a 75 años, residentes habituales de viviendas
+              particulares ocupadas, localizadas en 40 ciudades (92 comunas) del país.")) %>% 
+  add_row(Características = 
+            c("Marco Muestral"),
+          ELSOC_2016 = 
+            c("Marco demuestreo de manzanas del pre-censo 2011, trabajo elaborado
+            por el Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez.")) %>% 
+  add_row(Características = 
+            c("Diseño Muestral"),
+          ELSOC_2016 = 
+            c("Probabilístico, estratificado, por conglomerados y multietápico.")) %>% 
+  add_row(Características = 
+            c("Unidades de Muestreo"),
+          ELSOC_2016 = 
+            c("Primero se eligen ciudades (UPM), luego manzanas (USM), y subbloques
+              y viviendas (UTM). La unidad final de selección es la persona.")) %>%
+  add_row(Características = 
+            c("Período de Aplicación"),
+          ELSOC_2016 = 
+            c("Agosto a Diciembre de 2016 (20 semanas corridas).")) %>% 
+  add_row(Características = 
+            c("Periodicidad"),
+          ELSOC_2016 = 
+            c("Anual.Muestra de refresco al 3er año.")) %>% 
+  add_row(Características = 
+            c("Modo de Aplicación"),
+          ELSOC_2016 = 
+            c("Encuesta presencial en vivienda del entrevistado. Entrevista personal
+            aplicada por un encuestador por medio de una tablet (Sistema CAPI:
+            Computer Assisted Personal Interview.)")) %>% 
+  add_row(Características = 
+            c("Informante"),
+          ELSOC_2016 = 
+            c("Hombre o mujer residente en la vivienda, con edad entre 18 y 75 años."))  %>% 
+   add_row(Características = 
+            c("Aspectos Éticos"),
+          ELSOC_2016 = 
+            c("Entrevista voluntaria. Se solicitan datos de contacto de entrevistados,
+            pero no son accesibles (confidenciales). Información georreferenciada
+            también se reserva de manera confidencial. Base de acceso público.")) %>% 
+  add_row(Características = 
+            c("Duración Promedio"),
+          ELSOC_2016 = 
+            c("55 minutos.")) %>% 
+  add_row(Características = 
+            c("Control de Calidad"),
+          ELSOC_2016 = 
+            c("Supervisión interna de 20% de la muestra lograda.")) %>%
+  add_row(Características = 
+            c("Representatividad"),
+          ELSOC_2016 = 
+            c("Aproximadamente el 77% de la población total del país y 93% de la
+              población urbana.")) %>% 
+  add_row(Características = 
+            c("Tasa de Respuesta"),
+          ELSOC_2016 = 
+            c("62.0% (RR1)")) %>% 
+  add_row(Características = 
+            c("Tasa de Cooperación"),
+          ELSOC_2016 = 
+            c("85.8% (COOP1)")) %>% 
+  add_row(Características = 
+            c("Tasa de Rechazo"),
+          ELSOC_2016 = 
+            c("9.0% (REF1)")) %>%
+    add_row(Características = 
+            c("Tasa de Contacto"),
+          ELSOC_2016 = 
+            c("72.2% (CON1)"))  %>% 
+   add_row(Características = 
+            c("Tamaño Muestral"),
+          ELSOC_2016 = 
+            c("3025 encuestas hechas, 2927 individuos en base de datos definitiva.")) %>% 
+  add_row(Características = 
+            c("Organismo Responsable"),
+          ELSOC_2016 = 
+            c("Centro de Estudios del Conflicto y Cohesión Social (COES).")) %>% 
+  add_row(Características = 
+            c("Organismo Ejecutor"),
+          ELSOC_2016 = 
+            c("Consultora Stephanie Eckman y Centro de Inteligencia Territorial (CIT)
+            de la Universidad Adolfo Ibáñez (diseño muestral). CentroMicroDatos
+            (CMD) de la Universidad de Chile (levantamiento, procesamiento de
+            la información y construcción de factores de expansión).")) 
+
+ficha_técnica %>%
+  kable(booktabs = TRUE,caption="\\label{tab:apaisada}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  landscape()
+```
+
