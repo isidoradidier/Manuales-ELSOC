@@ -1,0 +1,38 @@
+# Protocolo de Uso de Base de Datos
+
+Desde la liberación de la base de datos de ELSOC COES Ola 1, éstos se encuentran bajo un período de embargo, por lo que el acceso de la comunidad académica general se encuentra restringido. Los datos se irán liberando de manera modular durante el año 2017, en la medida que se realizan las presentaciones de éstos. Concluido lo anterior, se liberará la base de datos completa. Los datos de ELSOC **sólo pueden ser utilizados con fines de docencia y/o investigación**. En caso de que se deseen utilizar para otros fines, es necesario solicitar autorización expresa al Equipo de Encuestas de COES. A su vez, cualquier publicación que incluya para su realización el uso de la base de datos (en cualquiera de sus versiones) de los datos del Panel COES debe citar la fuente de la siguiente forma:
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-2oxo{border-color:#000000;font-family:"Times New Roman", Times, serif !important;;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-2oxo">Centro de Estudios de Conflicto y Cohesión Social (2018). <span style="font-style:italic">Estudio Longitudinal Social de Chile</span>,<br>Primera Ola (ELSOC_W01_v3.00) . [Archivo de datos]. Santiago, Chile: Centro de Estudios de<br>Conflicto y Cohesión Social (COES). www.coes.cl<br></th>
+  </tr>
+</thead>
+</table>
+
+Por último, en caso de que se desee citar el presente Manual de Usuario
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ao2g{border-color:#333333;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-ao2g">Centro de Estudios de Conflicto y Cohesión Social (2018). <span style="font-style:italic">Manual de Usuario de Estudio Longitudinal</span><br><span style="font-style:italic">Social de Chile, Primera Ola (2016)</span>. Corte Transversal. Versión 3.0. Santiago, Chile: Centrode Estudios de Conflicto y Cohesión Social (COES).<br></th>
+  </tr>
+</thead>
+</table>
+

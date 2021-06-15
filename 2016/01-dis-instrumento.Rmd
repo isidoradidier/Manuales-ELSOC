@@ -30,6 +30,8 @@ La versión final del instrumento de recolección de información consiste en un
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
+#HAY QUE CAMBIAR EL NOMBRE DE LA TABLA
+
 temas_conceptos <- tibble(Sección = 
                             c("Territorio"),
                           Temas = 
