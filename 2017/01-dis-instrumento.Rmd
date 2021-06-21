@@ -25,14 +25,14 @@ Con el objetivo de satisfacer los criterios y estándares de calidad para cuesti
 4. La última etapa de ajuste del cuestionario se centró en identificar los aspectos conceptualmente más relevantes para COES y ponderar los requerimientos metodológicos para su evaluación empírica. De este modo, se clasificaron los items según el número de mediciones requeridas, distinguiendo entre items permanentes (que serán medidos en todas las olas, ya que constituyen el núcleo analítico del estudio) e  intercalados (que serán medidos una única vez o una ola por medio). 
 
 
-La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplica cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados ^[Algunos items aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen en años pares o impares).]. Luego, en el Cuadro \ref{table:items} se resumen los conceptos que se incluyeron en las distintas secciones del cuestionario de ELSOC 2017. Para más detalles sobre el Cuestionario se debe revisar la sección de Libro de Códigos.
+La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplica cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados ^[Algunos items aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen en años pares o impares).]. Luego, en el Cuadro \@ref(tab:items) se resumen los conceptos que se incluyeron en las distintas secciones del cuestionario de ELSOC 2017. Para más detalles sobre el Cuestionario se debe revisar la sección de Libro de Códigos.
 
 ## Diferencias entre Cuestionarios de Ola 1 y 2 {#dif-cuest}
-Para examinar de manera pormenorizada las diferencias entre los instrumentos aplicados en 2016 y 2017 se sugiere a los interesados revisar tanto los cuestionarios como los libros de códigos asociadoos a cada estudio. A su vez, el **Listado de Variables** incluido es una guía útil para contrastar los cuestionarios, siendo relevante enfocarse en los **items intercalados, áquellos incluidos año por medio o una única vez en ELSOC.** De todos modos, el Cuadro \ref{{tab:difcuest}} señala algunas diferencias entre ambos cuestionarios.
+Para examinar de manera pormenorizada las diferencias entre los instrumentos aplicados en 2016 y 2017 se sugiere a los interesados revisar tanto los cuestionarios como los libros de códigos asociadoos a cada estudio. A su vez, el **Listado de Variables** incluido es una guía útil para contrastar los cuestionarios, siendo relevante enfocarse en los **items intercalados, áquellos incluidos año por medio o una única vez en ELSOC.** De todos modos, el Cuadro \@ref(tab:difcuest) señala algunas diferencias entre ambos cuestionarios.
 
 Un tema relacionado es la duración promedio de la entrevista. Durante 2016 la duración promedio por encuestado fue de 55 minutos. CMD solicitó al equipo ELSOC tratar dicho lapso temporal a 45 minutos promedio, motivo por el cual se recomendaba acortar la extensión del estudio. El Equipo ELSOC, en conjunto con investigadores COES definió distintos ajustes que permitieron reducir la extensión del cuestionario. Mientras el cuestionario de la ola 2016 contenía 336 items, en el año 2017 el instrumento contemplaba 317 items.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r difcuest, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -55,9 +55,10 @@ dif_cuest %>%
   kable(booktabs = TRUE, align = "l", caption="\\label{tab:difcuest}Diferencias Temáticas entre Cuestionarios") %>%
   column_spec(c(1), width = "5cm") %>%
   column_spec(c(2), width = "5cm") %>%
+  kable_classic("striped", full_width = F)%>%
   landscape()
 ```
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r items, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -93,14 +94,15 @@ items %>%
   kable(booktabs = TRUE,  caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
   column_spec(c(1), width = "2cm") %>%
   column_spec(c(2), width = "8cm") %>%
+  kable_classic("striped", full_width = F)%>%
   landscape()
 ```
 
 ## Ficha Técnica
 
-En este apartado se presenta la Ficha Técnica (Ver Cuadro \ref{{tab:ficha}}), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
+En este apartado se presenta la Ficha Técnica (Ver Cuadro \@ref(tab:ficha), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r ficha, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
 
@@ -220,5 +222,6 @@ ficha %>%
   kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 2 (2017)") %>%
   column_spec(c(1), width = "2cm") %>%
   column_spec(c(2), width = "8cm") %>%
+  kable_classic("striped", full_width = F)%>%
   landscape()
 ```
