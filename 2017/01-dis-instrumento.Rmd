@@ -53,8 +53,6 @@ dif_cuest <- tibble("Temas Agregados" =
 
 dif_cuest %>%
   kable(booktabs = TRUE, align = "l", caption="\\label{tab:difcuest}Diferencias Temáticas entre Cuestionarios") %>%
-  column_spec(c(1), width = "5cm") %>%
-  column_spec(c(2), width = "5cm") %>%
   kable_classic("striped", full_width = F)%>%
   landscape()
 ```
@@ -92,8 +90,6 @@ items <- tibble(Sección =
 
 items %>%
   kable(booktabs = TRUE,  caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "8cm") %>%
   kable_classic("striped", full_width = F)%>%
   landscape()
 ```
@@ -220,8 +216,6 @@ ficha <- tibble(Características =
 
 ficha %>%
   kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 2 (2017)") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "8cm") %>%
   kable_classic("striped", full_width = F)%>%
   landscape()
 ```

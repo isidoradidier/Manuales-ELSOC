@@ -7,7 +7,10 @@ author:
 - name: Benjamín Muñoz
 - name: Alejandro Plaza
 date: "`r Sys.Date()`"
-subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
+output: 
+  pdf_document:
+    toc: TRUE
+    toc_depth: 3
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -17,6 +20,7 @@ biblio-style: apalike
 link-citations: yes
 description: This is a minimal example of using the bookdown package to write a book.
   The output format for this example is bookdown::gitbook.
+subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
 ---
 
 # Presentación {#present}
