@@ -1,0 +1,50 @@
+# Implementación de la Encuesta {#implement-encuesta}
+
+COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las dos primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.
+
+La descripción de la implementación de ELSOC 2016 incluye apartados relativos al empadronamiento e inicio del trabajo de campo. Se recomienda revisar dicho documento con el objetivo de formarse una visión detallada de esta fase del estudio. A continuación se describen aspectos relevantes de la ejecución de ELSOC 2017.
+
+## Estrategia de Seguimiento
+
+COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC 2016 con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico). Originalmente CMD sólo contaba con correos electrónicos de un 19,3% de los entrevistados, para luego recopilar mayor información de éstos. Se envió un saludo navideño a los participantes de ELSOC por correo electrónico. Posteriormente, en Marzo de 2017 se envió otro saludo. A su vez, se envió información proveniente del equipo de ELSOC para explicar cuáles la utilidad de ELSOC.
+
+CMD realizó una ronda de recontacto con los participantes de ELSOC previo al trabajo de campo de 2017. El objetivo de dicho trabajo fue actualizar su información de contacto. Esto se realizó por medio de una encuesta web y por vía telefónica. Para esto se contó con un Call Center encargado de contactar a los participantes. Por otra parte, CMD almacenó, con altos estándares de confidencialidad, la información relativa a la dirección de los entrevistados de ELSOC y otra información pertinente derivada del empadronamiento. Dicha información permite contar contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2017^[Más detalles se encuentran disponibles en el Informe Anual de Servicios para el Levantamiento del Estudio Longitudinal sobre Conflicto y Cohesión Social (COES) elaborado porMicroDatos.].
+
+## Pilotaje del Cuestionario Y Capacitación
+
+Con el cuestionario correspondiente a la segunda ola de ELSOC previamente elaborado, COES y CMD colaboraron en la programación de éste para que fuera aplicada demanera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propusó ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.
+
+El pilotaje se realizó durante Junio y Julio del 2017, seguido por una ronda de focus group a los encuestadores con el objetivo de obtener recomendaciones relevantes para el levantamiento final de la encuesta. Esto fue utilizado para introducir cambios menores al cuestionario programado en tablets y para definir ajustes al programa de capacitación de los encuestadores.
+
+El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La capacitación de coordinadores de campo y encuestadores fue ejecutada por CMD con apoyo técnico de COES para aspectos específicos. CMD realizó dicha tarea de manera centralizada, de modo de que los coordinadores fueron capacitados en dependencias de la Facultad de Economía y Negocios (FEN) de la Universidad de Chile en la Región Metropolitana. Sin embargo, los coordinadores que trabajaron previamente en ELSOC 2016 no tenían que asistir obligatoriamente a dicha sesión de capacitación. En cambio, se elaboró como alternativa una capacitación por sistema web en el cual se repasan los aspectos centrales del estudio y se presentan particularidades del nuevo cuestionario.
+
+Se dispuso de 17 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores en el levantamiento se realizó en cada sede y hubo encuestadores apoderados, quienes posteriormente se encargaron de capacitar a los encuestadores en las regiones en que no hubo sedes (aquellas con menos de 400 encuestas a realizar).
+
+## Planificación y Ejecución del Campo
+
+Al igual que en 2016, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:
+
+1. *Protocolo de Visita:* primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita.
+2. *Protocolo ante Casos Difíciles:* escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla estrategias de recuperación.
+3. *Protocolo de Aplicación del Cuestionario:* descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.
+4. *Protocolo de Campo:* respaldo de información, control de avances, registro de contactos. 
+
+Los documentos fueron adaptados de modo tal de ajustarse a los requerimientos del seguimiento de una muestra previamente entrevistada. El levantamiento de información fue realizado en un período de aproximadamente 12 semanas -contadas desde la entrega de material a los encuestadores tras la capacitación-, entre los meses de Julio y Octubre de 2017. Para la ejecución del terreno se contó con 120 encuestadores distribuidos en las 17 sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet).
+
+CMD cuenta con información relevante para garantizar un adecuado recontacto (nombre del entrevistado, información de contacto y aspectos básicos para su identificación) y utiliza dicha información para concertar entrevistas y planificar el campo. Cada encuestador recibió del coordinador de sede o encuestador apoderado los datos sobre las citas concertadas con participantes ELSOC y utiliza un protocolo de entrevista específico para reentrevistas. Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD.
+Al finalizar la entrevista se entrega un incentivo monetario (tarjeta de regalo de 6.000 pesos), un folleto informativo sobre COES y ELSOC y se amplía la base de datos de información de contacto de participantes ELSOC.
+
+## Supervisión del Trabajo de Campo
+
+El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando cuatro etapas:
+
+1. Supervisión del 100% de las encuestas recopiladas, realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista.
+2. Retroalimentación de encuestadores de manera periódica por parte del jefe de zona como revisión de los datos recolectados por el equipo central de MicroDatos. Esto dio lugar a reportes periódicos de avance del levantamiento de datos. 
+
+    - **Verificación del sujeto entrevistado:** CMD revisa sis el instrumento fue aplicado a la persona elegida previamente en ELSOC 2016. 
+    - **Revisión de subconjunto de preguntas** (Variables clave), incluyendo preguntas de cadena (por ejemplo “Otro. Especifique cuál”) y condiciones del flujo del cuestionario.
+3. Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario permite manejar de mejor modo la no respuesta, validar internamente el flujo del cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de aplicación.La validación interna y el chequeo de rango y consistencia de la información minimiza notablemente el error de medición y es una de las ventajas del diseño de ELSOC.
+4. Revisión de casos especiales y validación ex post. Finalmente CMD revisó el funcionamiento del flujo de respuestas y descartó 13 casos con información falsificada, llegándose a un total de 2520 casos.
+
+En paralelo a la revisión y/o eliminación de casos, CMD desarrolló un proceso de validación de los valores de entrevistados a distintas preguntas del cuestionario. Posteriormente el equipo de ELSOC analizó los datos provenientes de la base para evaluar su consistencia interna. Los principales aspectos de dicha revisión se encuentran documentados en el Libro de Códigos. Sin embargo, se detectaron algunos casos de entrevistados con información inconsistente/anómala en comparación a la Ola 2016. Producto de lo anterior se incluye una variable sospechoso que señala con un 1a los 26 casos con información problemática. El usuario decide si utilizar dichos casos. Los usuarios pueden contactarse con el equipo ELSOC con el fin de acceder a otros documentos relativos a la validación de datos del estudios.
+

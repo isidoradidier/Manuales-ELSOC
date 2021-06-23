@@ -1,0 +1,205 @@
+# Diseño Muestral del Estudio {#dis-muestral}
+
+En el siguiente apartado se presenta la descripción del diseño muestral de ELSOC, correspondiente a la primera ola del estudio. Durante la segunda ola del estudio (2017) el objetivo fundamental es reentrevistar a los encuestados de la primera versión del estudio, por lo que no hay mayores cambios a la estrategia muestral. Al final de la sección se describen algunos ajustes menores y se discute el nivel de atrición de ELSOC.
+
+El diseño de ELSOC tuvo como objetivo conciliar los múltiples intereses de investigación de los investigadores asociados al Centro. Entre las consideraciones más relevantes destacaron las siguientes:
+
+1. Un diseño muestral que permitiera combinar las variables medidas en el cuestionario con las variables espaciales, registradas a nivel de manzana y comuna, contenidas en las bases de datos desarrolladas por el Centro de Inteligencia Territorial (CIT) de la Universidad Aldolfo Ibáñez. Dado que los datos del CIT no están disponibles para todas las manzanas del país, particularmente aquellas ubicadas en localidades rurales, se decidió incorporar en la muestra únicamente zonas urbanas. Esta consideración también coincidió con las preferencias de muchos investigadores del Centro, quiénes manifestaron estar principalmente interesados en una muestra de carácter urbano.
+
+2. Algunos investigadores solicitaron un diseño que permitiera estimar modelos multi-nivel (o jerárquicos) agrupados por ciudad y comuna, y por tanto, se estableció que la muestra contuviera un número suficiente de ciudades y comunas, así como un número suficiente de casos dentro de cada ciudad y comuna, que permitiera tal análisis (Snijders & Bosker, Capítulo 10). 
+
+3. Otros investigadores estaban interesados en comparar a los habitantes de las tres ciudades más grandes del país, lo que se tradujo en un diseño no proporcional que incrementara el número de encuestados en las zonas del Gran Valparaíso (ciudades de Viña del Mar y Valparaíso) y Gran Concepción (Concepción, Talcahuano y otras). 
+
+4. Finalmente, algunos investigadores solicitaron un diseño que permitiera comparar a los encuestados que vivieran en ciudades grandes y pequeñas, lo que favoreció incrementar el tamaño de la muestra de hogares en ciudades pequeñas (Kish, 1965, Sección 3.5), particularmente aquellas con entre 30 mil y 100mil habitantes.
+
+Los investigadores de COES trabajaron con la encargada del diseño muestral, Stephanie Eckman, para desarrollar un diseño que pudiera, razonablemente, cumplir con estas necesidades e intereses sustantivos. El diseño muestral final de la ronda 1 de ELSOC COES proporciona una cobertura adecuada de las ciudades más grandes del país (Gran Santiago, Gran Valparaíso y Gran Concepción), así como ciudades más pequeñas, y también asegura la representación de personas en el norte y sur del país. En términos globales, el diseño muestral alcanza una representatividad aproximada del 77% de la población total del país, y del 93% de la población urbana. Las siguientes subsecciones detallan los distintos pasos del diseño de la muestra.
+
+## Preparación del Marco Muestral
+
+El proceso demuestreo se realizó en base a los datos del pre-censo del año 2011, los cuales fueron formateados por el CIT. Aunque los recuentos de población del censo de 2012 no son precisos, el trabajo del pre-censo recolectando información sobre los hogares en todos las manzanas (bloques) es de calidad. El conjunto de datos contenía un total de 155,757 bloques, pero se eliminaron cuatro tipos diferentes antes de que comenzara con la selección. 
+
+1. Siguiendo los intereses analíticos de los investigadores del Centro, sólo se utilizaron bloques urbanos. Para determinar qué bloques eran urbanos, se empleó la codificación del tipo de localidad (urbana o rural) contenida en la base de datos del pre-censo de 2011. Consecuentemente, 22.188 (14,2%) bloques fueron excluidos en este paso.
+
+2. Nuevamente, en función de los intereses analíticos de los investigadores del Centro, sólo los bloques que habían sido previamente geo-referenciados por el CIT se conservaron para elmuestreo. Esto implica que un total de 1.971 (1,5% de los bloques urbanos) que no estaban geo-referenciados fueron removidos en este paso.
+
+3. Sólo los bloques que contenían cinco o más hogares (de acuerdo con el pre-censo de 2011)
+fueron retenidos. 503 bloques (menos del 1% de los bloques restantes tras los pasos 1 y 2)
+no alcanzaron este umbral y fueron eliminados.
+
+4. Sólo los bloques en las ciudades con más de 10.000 personas eran elegibles para la selección. 10.238 bloques (7.8% de los bloques restantes) fueron excluidos delmarco muestral. 
+
+De esta forma, el marco muestral final contiene 120.857 bloques. La muestra de COES representará solamente estos bloques y no aquellos que fueron excluidos. Las estimaciones derivadas de los datos de lamuestra se aplicarán únicamente a esta población objetivo y no deben aplicarse a toda la población chilena. El proceso de selección de entrevistados se desarrolló en cinco etapas, aunque durante el trabajo de campo se añadió una sexta etapa.
+
+## Etapa 1: Selección de Ciudades
+
+El universo de bloques (los 120.857 bloques mencionados) fue agregado al nivel de la ciudad, resultando en 122 ciudades. Las tres ciudades más grandes (Gran Santiago, Viña delMar - Valparaiso y Concepción - Talcahuano) fueron seleccionadas con certeza. Las ciudades restantes son estratificadas por la población. La Tabla 4 muestra las definiciones de los estratos y los tamaños de población (N) y muestra (n) en cada uno.
+
+```{r echo=FALSE}
+estrato_c4 <- c("Gran Santiago","Gran Valparaiso", "Gran Concepción", "Ciudades Grandes", "Ciudades Medianas","Ciudades Pequeñas")
+nhabitantes_c4 <- c("","","","> 100 mil","> 30 mil","> 10 mil")
+nciudadespob_c4 <- c("1","1","1","18","28","73")
+nciudadesmues_c4 <- c("1","1","1","8","10","19")
+nestnortepob_c4 <- c("-","-","-","8","15","24")
+nestnortemues_c4 <- c("-","-","-","4","6","6")
+nestsurpob_c4 <- c("-","-","-","10","13","49")
+nestsurmues_c4 <- c("-","-","-","4","4","13")
+
+ciudades_c4 <- data.frame(estrato_c4,nhabitantes_c4,nciudadespob_c4,nciudadesmues_c4,nestnortepob_c4,nestnortemues_c4,nestsurpob_c4,nestsurmues_c4)
+
+knitr::kable(ciudades_c4,
+  format = "html",
+  booktabs = TRUE,
+  col.names = c("Estrato", "Definición N habitantes", "N ciudades", "n ciudades","Sub-estrato 
+                Norte N","Sub-estrato Norte n","Sub-estrato Sur N","Sub-estrato Sur n"),
+  align = c("lccccccc"),
+  caption = "Cuadro 4: Población por ciudad y tamaños de muestra, por estrato")
+```
+
+Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase la Tabla 4 para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.
+
+La selección de ciudades dentro de cada uno de estos estratos finales se realizó en forma proporcional al tamaño de la población de cada ciudad. Este método da mayores probabilidades de selección a las grandes ciudades. 
+
+La probabilidad de selección de una ciudad i dentro del estrato h fue:
+
+$$\pi_i=\frac{nc_h*pop_i}{\sum_h pop}$$
+
+donde $nc_h$ es el número de ciudades seleccionadas en el estrato $h$ y $pop_i$ es la población de ciudad $i$.
+
+## Etapa 2: Selección de Bloques (Manzanas) 
+
+Las 40 ciudades seleccionadas contenían 87.839 bloques. En la segunda etapa se seleccionaron bloques en cada ciudad con población proporcional al tamaño, donde el tamaño fue determinado a partir del recuento de unidades de vivienda del pre-censo. La selección fue sistemática: la lista de bloques en las ciudades seleccionadas se ordenó según sub-distrito censal y número de bloque para asegurar que los bloques seleccionados se extendieran por toda la ciudad^[Los números de bloques y distritos censales fueron entregados porMatías Garretón, investigador de CIT. Los sub-distritos censales son unidades geográficas más pequeñas que la comuna, pero más grandes que los bloques.].
+
+La Tabla 5 muestra el número de bloques seleccionados en cada ciudad. La muestra de bloques se asignó de manera desproporcionada para que las áreas fuera de Santiago estuvieran sobre-representadas en relación con su tamaño en la población objetivo. Varios investigadores COES solicitaron esta asignación para asegurar que la muestra fuera diversa con respecto al tamaño de la ciudad.
+
+La probabilidad de selección de un bloque j en la ciudad i , condicionada a la selección de la ciudad, fue:
+
+$$\pi_{j|i}=\frac{nb_i*hu_j}{\sum_i hu}$$
+
+donde $nb_i$ es el número de bloques seleccionadas en la ciudad $i$ y $hu_j$ es la población de la ciudad $i$.
+
+```{r echo=FALSE}
+estrato_c5 <- c("Gran Santiago","Gran Valparaiso", "Gran Concepción", "Ciudades Grandes", "Ciudades Medianas","Ciudades Pequeñas","TOTAL")
+nhabitantes_c5 <- c("","","","> 100 mil","> 30 mil","> 10 mil","")
+nciudades_c5 <- c("1","1","1","8","10","19","40")
+nbloques_c5 <- c("200","100","100","26","25","11","1067")
+
+ciudades_c5 <- data.frame(estrato_c5,nhabitantes_c5,nciudades_c5,nbloques_c5)
+
+knitr::kable(ciudades_c5,
+  format = "html",
+  booktabs = TRUE,
+  col.names = c("Estrato", "Definición (N° habitantes)", "n ciudades", "n bloques por ciudad"),
+  align = c("lccc"),
+  caption = "Cuadro 5: Distribución de los ciudades y bloques por estrato")
+```
+
+En cuatro ciudades, algunos bloques eran tan grandes que fueron selecciones certeras. Es decir, los recuentos de unidades de vivienda eran mayores que el intervalo de selección y se seleccionarían en cualquier muestra, e incluso podrían seleccionarse dos veces. Para evitar selecciones duplicadas, estos bloques se eligieron primero con certeza y luego se seleccionaron bloques adicionales entre los restantes para aquellas ciudades, de modo de alcanzar el tamaño de muestra total deseado para la ciudad (ver Tabla 5). $pi_{j|i}$ para estas ciudades es 1.
+
+Los 1.067 bloques seleccionados en las 40 ciudades elegidas fueron enpadronados en terreno, con la finalidad de realizar la selección de los hogares con la información más actualizada posible. El CIT proporcionó mapas de cada bloque seleccionado. El personal de campo de CMD visitó cada bloque y creó una lista de todas las unidades de vivienda. Los listados fueron revisados cuidadosamente para detectar cualquier error o duplicado.
+
+## Etapa 3: Selección de sub-bloques
+
+Durante el proceso de empadronamiento, el Centro deMicrodatos encontró que algunos bloques tenían más de 100 viviendas, lo que dificulta excesivamente el proceso de empadronamiento. Consecuentemente, se dividieron estos bloques en sub-bloques de tamaño aproximadamente igual (40 a 50 viviendas) y seleccionaron uno para ser empadronado. Debido a que los sub-bloques fueron creados para ser casi igual tamaño, estos fueron seleccionados en base a igual probabilidad. En total, 301 bloques fueron submuestreados. Los bloques restantes no se vieron afectados por esta etapa.
+
+## Etapa 4: Selección de viviendas
+
+El número de viviendas seleccionadas en cada bloque varió según el estrato, como se muestra en la Tabla 6. Este diseño resultó en 4.001 unidades de vivienda, con lo cual se pretendieron obtener aproximadamente 3.000 entrevistas completas, bajo el supuesto de una tasa de respuesta del 75% para todos los estratos.
+
+```{r echo=FALSE}
+estrato_c6 <- c("Gran Santiago","Gran Valparaiso", "Gran Concepción", "Ciudades Grandes", "Ciudades Medianas","Ciudades Pequeñas","TOTAL")
+nhabitantes_c6 <- c("","","","> 100 mil","> 30 mil","> 10 mil","")
+nhh_c6 <- c("5","5","5","3","3","3","4001")
+
+ciudades_c6 <- data.frame(estrato_c6,nhabitantes_c6,nhh_c6)
+
+knitr::kable(ciudades_c6,
+  format = "html",
+  booktabs = TRUE,
+  col.names = c("Estrato", "Definición (N° habitantes)", "n HHs"),
+  align = c("lccc"),
+  caption = "Cuadro 6: Distribución de los bloques por estrato")
+```
+
+Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en la Tabla 4.
+
+La probabilidad de selección de un hogar $k$ en el bloque $j$ en la ciudad $i$ y el estrato $h$ fue:
+ 
+$$\pi_{k|j,i}=\frac{nh_j}{NH_j}$$
+
+donde $nh_j$ es el número de viviendas seleccionadas en el bloque $j$, y $NH_j$ corresponde al número de viviendas alistadas en el bloque $j$.
+
+
+## Etapa 5: Selección de personas
+
+Los encuestadores visitaron cada hogar seleccionado e intentaron llevar a cabo la entrevista. El primer paso en el proceso de la entrevista fue identificar al entrevistado objetivo. Cuando había más de un adulto en el hogar, uno fue seleccionado usando una muestra aleatoria simple, usando una tabla de Kish.
+
+La probabilidad de selección de una persona en el hogar $k$ fue:
+
+
+$$\pi_{l|k,j,i}=\frac{1}{NP_j}$$
+
+donde $NP_j$ es el número de adultos (mayores a 18 años y menores de 75 años) que habitan la vivienda $j$.
+
+## Etapa 6: Aumento del tamaño muestral
+
+Durante el trabajo de campo se observó que el supuesto de una tasa de respuesta del 75% para todos los estratos era incorrecta. En primer lugar, hubo variabilidad significativa por región, y en segundo lugar, la tasa de respuesta fue inferior al 75%. Debido a esta información, se decidió aumentar el número de hogares por bloque para lograr efectivamente las 3.000 entrevistas. 
+
+Este aumento en el número de hogares por bloque tiene un efecto limitado sobre la probabilidad de selección de cada vivienda. Sólo afecta a la probabilidad calculada en la Etapa 4, ya que el número de hogares disponibles es menor, pero no hay cambios en las probabilidades calculadas en la Etapa 1 y la Etapa 2. Esto ocurre porque los bloques seleccionados (en la Etapa 2) fueron usados, y no se introdujeron nuevos bloques.
+
+Durante este proceso un total de 1.082 nuevos hogares, ubicados dentro de los bloques seleccionados, se añadieron a la muestra del estudio. La asignación de estos nuevos hogares no fue uniforme en todos los bloques del país. En cambio, se concentraron en cuatro regiones (Coquimbo, O´Higgins, RegiónMetropolitana, y Biobío) donde los encuestadores tenían muchos problemas para contactar a los encuestados. La tabla 7 detalla las comunas en que se aumentó el número de hogares, junto con el número total de hogares incorporados y por bloque.
+
+```{r echo=FALSE}
+region_c7 <- c(rep("Coquimbo",3),rep("O'Higgins",3),rep("Biobio",6),rep("Metropolitana",34)) 
+comuna_c7 <- c("Coquimbo","La Serena","Salamanca","Doñihue","Rancagua","Santa Cruz","Chiguayante","Concepción","Coronel","Penco","Quillón","San Pedro de la Paz","Cerrillos","Colina","Curacaví","El Bosque","Estación Central","Huechuraba","Independencia","Isla de Maipo","La Cisterna","La Florida","La Granja","La Pintana","La Reina","Las Condes","Lo Barnechea","Lo Espejo","Lo Prado","Macul","Maipú","Ñuñoa","Padre Hurtado","Pedro Aguirre Cerda","Peñaflor","Peñalolén","Providencia","Pudahuel","Puente Alto","Quilicura","San Bernardo","San Joaquín","San Miguel","San Ramón","Santiago","Vitacura")
+
+tviviendas_c7 <- c("24","28","22","10","42","11","24","75","11","4","6","28","9","12","14","8","12","6","6","39","9","24","6","12","9","33","9","6","6","8","32","16","6","6","30","14","7","14","32","12","16","6","9","6","120","9")
+viviendasbloque_c7 <- c("2","2","2","1","2","1","3","3","1","1","1","2","3","3","2","2","3","2","2","3","3","2","2","2","3","3","3","2","2","2","2","2","3","2","2","2","3","2","2","2","2","2","3","2","3","3")
+
+hogares_c7 <- data.frame(region_c7,comuna_c7,tviviendas_c7,viviendasbloque_c7)
+
+knitr::kable(hogares_c7,
+             format = "html",
+             booktabs = TRUE,
+             col.names = c("Región", "Comuna", "Total viviendas agregadas", "Viviendas
+                                               agregadas por bloque"),
+             align = c("lccc"),
+             caption = "Cuadro 7: Número de hogares agregados a la muestra según región
+                                 y comuna")
+```
+
+
+## Cambios en el Muestreo en Ola 2017
+
+Producto de las dificultades observadas en el trabajo de campo de ELSOC 2016 descritas en el apartado previo, se realizaron ajustes en el diseño muestral que contempla heterogeneidad regional en la tasa de no respuesta. No fueron necesarios cambios adicionales para el proceso de trabajo de campo de 2017. Las decisiones metodológicas fueron confirmadas y las viviendas agregads y los entrevistados seleccionados durante 2016 como resultado de la etapa 6 fueron reentrevistados del mismo modo que los otros encuestados.
+
+## Diseño de Ponderadores de la Muestra
+
+La muestra de ELSOC 2017 no es representativa de la población objetivo del modo que lo era la muestra de 2016, producto de que su objetivo es recontactar a los entrevistados de 2016 y a la presencia de atrición en la muestra (individuos que no logran ser reentrevistados, dejando la muestra). Considerando que a partir de las entrevistas efectivamente realizadas se desea extrapolar a la población objetivo respectiva, es necesario ponderar adecuadamente a cada encuestado según su representación en la población objetivo. De este modo, lo óptimo sería incorporar la atrición en el diseño de los ponderadores muestrales. Los ponderadores provistos con la base de datos de ELSOC ola 2 no ajustan por dichos factores. Se proveen ponderadores similares a los entregados en la primera versión del estudio, cuya finalidad es ajustar por las diferencias en atributos demográficos de la muestra de ELSOC en relación a la población objetivo. En una etapa posterior se liberarán nuevos ponderadores, ajustados a las particularidades de un diseño longitudinal.
+
+A continuación se describe el proceso de elaboración de dichos ponderadores^[Dichos ponderadores pueden entenderse como “‘ponderadores de corte transversal”, ya que se ignoran los problemas derivados de su naturaleza longitudinal.] para lograr una correspondencia entre la muestra y la población objetivo. Dicha ponderación se basa en el inverso de la probabilidad de selección o inclusión en la muestra de cada entrevistado. En este caso la probabilidad de selección del individuo $i$ de la vivienda $j$ que pertenece a la manzana $l$ del estrato $k$, $P_ijlk$ viene dado por:
+
+
+$$P_{iklk} = \pi_{i|jlk}\pi_{j|lk}\pi_{lk}$$
+
+Dónde:
+
+* $\pi_{i|jlk}$ es la probabilidad de que el individuo $i$ sea seleccionado en la muestra dado que la vivienda dónde vive y la manzana dónde se localiza fueron seleccionados.
+* $\pi_{j|lk}$ es la probabilidad de que la vivienda $j$ sea seleccionada en la muestra dado que la manzana $l$ (que contiene a la vivienda $j$) fue seleccionada.
+* $\pi_lk$ es la probabilidad de que la manzana $l$ del estrato $k$ sea seleccionada en la muestra.
+
+Se define el ponderador de diseño o teórico $w_{ijlk}$ al inverso de la probabilidad de selección:
+
+$$P_{ijlk}=\frac{1}{w_{ijlk}}$$
+
+El valor de las antes mencionadas probabilidades es:
+
+
+$$\pi_{lk} = n_k\frac{M_{kl}}{M_k}$$ 
+
+$$\pi_{j|lk} = \frac{m_{lk}}{M'_k}$$
+
+$$\pi_{i|jlk} = \frac{1}{N_{jlk}}$$
+
+Dónde se tiene que $n_k$ es el número de manzanas a seleccionar del estrato $k$, $_lk$ es el número de viviendas de la manzana $l$ del estrato $k$, $M_k$ es el número total de viviendas del estrato $k$, $m_{lk}$ es el número de viviendas a encuestar dentro de la manzana $l$, $M'_k$ es el número actualizado de viviendas de la manzana $l$ post-empadronamiento, $N_{jlk}$ es el número de personas de la población objetivo que vive en la vivienda $j$ de la manzana $l$ del estrato $k$.
+
+En base a lo anterior se diseñaron ponderadores que ajustan en base a las probabilidades base, con ajuste de no respuesta, con ajuste al número de casos ^[Corresponde a considerar la población total objetivo entre 18 y 75 años en base a las proyecciones de población regional.] y con ajuste al número de casos y la variable sexo ^[Los cuatro ponderadores diseñados son acumulativos. A modo de ejemplo, el segundo ponderador ajusta en base las probabilidades de selección e incorpora **también** el ajuste por no respuesta.].
