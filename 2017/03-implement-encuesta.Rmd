@@ -1,0 +1,266 @@
+#Implementación de la Encuesta {#implem_encuest}
+
+COES realizó una licitación pública para la ejecución del ELSOC.  El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las dos primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.
+
+La descripción de la implementación de ELSOC 2016 incluye apartados relativos al empadronamiento e inicio del trabajo de campo. Se recomienda revisar dicho documento con el objetivo de formarse una visión detallada de esta fase del estudio. A continuación se describen aspectos relevantes de la ejecución de ELSOC 2017.
+
+##Estrategia de Seguimiento
+
+COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC 2016 con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico). Originalmente CMD sólo contaba con correos electrónicos  de un 19,3% de los entrevistados, para luego recopilar mayor información de éstos. Se envió un saludo navideño a los participantes de ELSOC por correo electrónico. Posteriormente, en Marzo de 2017 se envió otro saludo. A su vez, se envió información proveniente del equipo de ELSOC para explicar cuál es la utilidad de ELSOC.
+
+CMD realizó una ronda de recontacto con los participantes de ELSOC previo al trabajo de campo de 2017. El objetivo de dicho trabajo fue actualizar su información de contacto. Esto se realizó por medio de una encuesta web y por vía telefónica. Para esto se contó con un Call Center encargado de contactar a los participantes. Por otra parte, CMD almacenó, con altos estándares de confidencialidad, la información relativa a la dirección de los entrevistados de ELSOC y otra información pertinente derivada del empadronamiento. Dicha información permite contar contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2017^[Más detalles se encuentran disponibles en el Informe Anual de Servicios para el Levantamiento del Estudio Longitudinal sobre Conflicto y Cohesión Social (COES) elaborado por MicroDatos.].
+
+##Pilotaje del Cuestionario Y Capacitación
+
+Con el cuestionario correspondiente a la segunda ola de ELSOC previamente elaborado, COES y CMD colaboraron en la programación de éste para que fuera aplicada de manera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propusó ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.
+
+El pilotaje se realizó durante Junio y Julio del 2017, seguido por una ronda de focus group a los encuestadores con el objetivo de obtener recomendaciones relevantes para el levantamiento final de la encuesta. Esto fue utilizado para introducir cambios menores al cuestionario programado en tablets y para definir  ajustes al programa de capacitación de los encuestadores.
+
+El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La capacitación de coordinadores de campo y encuestadores fue ejecutada por CMD con apoyo técnico de COES para aspectos específicos.  CMD realizó dicha tarea de manera centralizada, de modo de que los coordinadores fueron capacitados en dependencias de la Facultad de Economía y Negocios (FEN) de la Universidad de Chile en la Región Metropolitana. Sin embargo, los coordinadores que trabajaron previamente en ELSOC 2016 no tenían que asistir obligatoriamente a dicha sesión de capacitación. En cambio, se elaboró como alternativa una capacitación por sistema web en el cual se repasan los aspectos centrales del estudio y se presentan particularidades del nuevo cuestionario.
+
+Se dispuso de 17 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores en el levantamiento se realizó en cada sede y hubo encuestadores apoderados, quienes posteriormente se encargaron de capacitar a los encuestadores en las regiones en que no hubo sedes (áquellas con menos de 400 encuestas a realizar). 
+
+#Planificación y Ejecución del Campo
+
+Al igual que en 2016, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:
+
+
+1. **Protocolo de Visita:** primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita. 
+
+2. **Protocolo ante Casos Difíciles:** escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla **estrategias de recuperación**.
+
+3. **Protocolo de Aplicación del Cuestionario:** descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.
+
+4. **Protocolo de Campo:** respaldo de información, control de avances, registro de contactos.
+
+Los documentos fueron adaptados de modo tal de ajustarse a los requerimientos del seguimiento de una muestra previamente entrevistada. El levantamiento de información fue realizado en un período de aproximadamente 12 semanas -contadas desde la entrega de material a los encuestadores tras la capacitación-, entre los meses de Julio y Octubre de 2017. Para la ejecución del terreno se contó con 120 encuestadores distribuidos en las 17 sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet).
+
+CMD cuenta con información relevante para garantizar un adecuado recontacto (nombre del entrevistado, información de contacto y aspectos básicos para su identificación) y utiliza dicha información para concertar entrevistas y planificar el campo. Cada encuestador recibió del coordinador de sede o encuestador apoderado los datos sobre las citas concertadas con participantes ELSOC y utiliza un protocolo de entrevista específico para reentrevistas.  Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD. Al finalizar la entrevista se entrega un incentivo monetario (tarjeta de regalo de 6.000 pesos), un folleto informativo sobre COES y ELSOC y se amplía la base de datos de información de contacto de participantes ELSOC.
+
+
+## Supervisión del Trabajo de Campo
+
+El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando cuatro etapas:
+
+1. Supervisión del 100% de las encuestas recopiladas,  realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista. 
+
+2. Retroalimentación de encuestadores de manera periódica por parte del jefe de zona como revisión de los datos recolectados por el equipo central de MicroDatos. Esto dio lugar a reportes periódicos de avance del levantamiento de datos. 
+	 	- **Verificación del sujeto entrevistado**: CMD revisa sis el instrumento fue aplicado a la persona elegida previamente en ELSOC 2016. 
+		- **Revisión de subconjunto de preguntas** (Variables clave), incluyendo preguntas de cadena (por ejemplo "Otro. Especifique cuál") y condiciones del flujo del cuestionario.
+
+3. Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario permite manejar de mejor modo la no respuesta, validar internamente el flujo del cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de aplicación.La validación interna y el chequeo de rango y consistencia de la información minimiza notablemente el error de medición y es una de las ventajas del diseño de ELSOC. 
+
+4. Revisión de casos especiales y validación ex post. Finalmente CMD revisó el funcionamiento del flujo de respuestas y descartó 13 casos con información falsificada, llegándose a un total de 2520 casos. 
+
+En paralelo a la revisión y/o eliminación de casos, CMD desarrolló un proceso de validación de los valores de entrevistados a distintas preguntas  del cuestionario. Posteriormente el equipo de ELSOC analizó los datos provenientes de la base para evaluar su consistencia interna. Los principales aspectos de dicha revisión se encuentran documentados en el Libro de Códigos. Sin embargo, se detectaron algunos casos de entrevistados con información inconsistente/anómala en comparación a la Ola 2016. Producto de lo anterior se incluye una variable **sospechoso** que señala con un 1a  los 26 casos con información problemática. El usuario decide si utilizar dichos casos. Los usuarios pueden contactarse con el equipo ELSOC con el fin de acceder a otros documentos relativos a la validación de datos del estudios.
+
+
+
+## Incidencias de Terreno y Códigos de Disposición Final de Casos
+
+Uno de los principales objetivos del equipo ELSOC es que el campo del estudio no se viera contaminado por el desarrollo de las campañas presidenciales y por otros estudios de opinión levantados por dichos motivos. Por lo tanto, se planificó un período de campo lo suficientemente extenso para minimizar dicho riesgo. De todos modos, el campo superó las nueve semanas planificadas, extendiéndose a doce. Las principales dificultades de recontacto se concentraron en la Región Metropolitana y de Valparaíso. La estructura de pagos a encuestadores sólo fue modificada en la región de Valparaíso, subiendo a 15.000 pesos por encuesta durante la última semana de terreno. En las regiones de Araucanía y Los Ríos se implementó el uso de autos dentro del levantamiento de datos producto de las distancias entre los hogares de los participantes ELSOC y las sedes operativas.
+
+Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los casos de la muestra completa un código de disposición final. En base a dicha información, la segunda ola de ELSOC tiene las siguientes tasas de resultados: 
+
+- Tasa de Respuesta (RR2) de 82,4%.
+- Tasa de Rechazo (REF2) de 6,1%.
+- Tasa de Cooperación (COOP2) de 93,0%.
+- Tasa de Contacto (CON2) de 88,5%.
+
+Si desea conocer más detalles sobre la determinación de los códigos de disposición final de casos y el cálculo de las tasas de resultados, dirigirse a [http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf](http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf)
+
+Dadas las diferencias observadas a nivel de región en ELSOC 2016, se desagregan los resultados previos (Ver Cuadro \@ref(tab:cdf)).
+
+```{r}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+cdf <- tibble(Sede= c("Iquique"),
+                  Respuesta = c("100.0%"),
+                  Cóoperación = c("100.0%"),
+                  Rechazo = c("0.0%"),
+                  Contacto = c("100.0%")) %>% 
+  add_row(Sede= c("Antofagasta"),
+                  Respuesta = c("87.8%"),
+                  Cóoperación = c("95.6%"),
+                  Rechazo = c("2.0%"),
+                  Contacto = c("91.8%")) %>% 
+  add_row(Sede= c("Copiapó"),
+                  Respuesta = c("80.0%"),
+                  Cóoperación = c("98.8%"),
+                  Rechazo = c("1.0%"),
+                  Contacto = c("81.0%")) %>% 
+    add_row(Sede= c("La Serena"),
+                  Respuesta = c("90.2%%"),
+                  Cóoperación = c("97.9%"),
+                  Rechazo = c("2.0%"),
+                  Contacto = c("92.2%")) %>% 
+     add_row(Sede= c("Ovalle"),
+                  Respuesta = c("76.6%"),
+                  Cóoperación = c("83.1%"),
+                  Rechazo = c("15.6%"),
+                  Contacto = c("92.2%")) %>% 
+    add_row(Sede= c("Valparaiso"),
+                  Respuesta = c("81.4%"),
+                  Cóoperación = c("89.6%"),
+                  Rechazo = c("9.4%"),
+                  Contacto = c("90.8%"))%>% 
+    add_row(Sede= c("San Felipe"),
+                  Respuesta = c("59.6%"),
+                  Cóoperación = c("88.6%"),
+                  Rechazo = c("7.7%"),
+                  Contacto = c("67.3%"))%>%
+      add_row(Sede= c("Metropolitana Norte"),
+                  Respuesta = c("77.2%"),
+                  Cóoperación = c("92.7%"),
+                  Rechazo = c("5.8%"),
+                  Contacto = c("83.3%"))%>% 
+      add_row(Sede= c("Metropolitana Sur"),
+                  Respuesta = c("82.7%"),
+                  Cóoperación = c("92.6%"),
+                  Rechazo = c("6.4%"),
+                  Contacto = c("89.3%"))%>% 
+      add_row(Sede= c("Rancagua"),
+                  Respuesta = c("86.5%"),
+                  Cóoperación = c("95.0%"),
+                  Rechazo = c("4.5%"),
+                  Contacto = c("90.9%"))%>% 
+      add_row(Sede= c("Santa Cruz"),
+                  Respuesta = c("90.0%"),
+                  Cóoperación = c("94.7%"),
+                  Rechazo = c("5.0%"),
+                  Contacto = c("95.0%"))%>% 
+      add_row(Sede= c("Maule"),
+                  Respuesta = c("91.6%"),
+                  Cóoperación = c("96.5%"),
+                  Rechazo = c("3.4%"),
+                  Contacto = c("95.0%"))%>% 
+      add_row(Sede= c("Concepción"),
+                  Respuesta = c("83.7%"),
+                  Cóoperación = c("93.7%"),
+                  Rechazo = c("5.6%"),
+                  Contacto = c("89.3%"))%>% 
+      add_row(Sede= c("Laja"),
+                  Respuesta = c("88.6%"),
+                  Cóoperación = c("97.5%"),
+                  Rechazo = c("2.3%"),
+                  Contacto = c("90.9%"))%>% 
+      add_row(Sede= c("Temuco"),
+                  Respuesta = c("82.4%"),
+                  Cóoperación = c("95.8%"),
+                  Rechazo = c("3.6%"),
+                  Contacto = c("86.0%"))%>% 
+      add_row(Sede= c("La Unión"),
+                  Respuesta = c("91.3%"),
+                  Cóoperación = c("97.7%"),
+                  Rechazo = c("2.2%"),
+                  Contacto = c("93.5%"))%>% 
+      add_row(Sede= c("Puerto Montt"),
+                  Respuesta = c("84.3%"),
+                  Cóoperación = c("91.5%"),
+                  Rechazo = c("7.8%"),
+                  Contacto = c("92.2%"))%>% 
+      add_row(Sede= c("Aysén"),
+                  Respuesta = c("70.6%"),
+                  Cóoperación = c("85.7%"),
+                  Rechazo = c("11.8%"),
+                  Contacto = c("82.4%")) 
+
+cdf %>%
+  kable(booktabs = TRUE,  caption="\\label{tab:cdf}Códigos de Disposición Final de Casos según Zona") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2,3,4,5), width = "1cm") %>%
+  kable_classic("striped", full_width = F)%>%
+  landscape()
+```
+
+
+## Aspectos Longitudinales y Tercera Ola del Estudio
+
+Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura \@ref(fig:atricion)). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD.
+
+![\\label{fig:atricion}: Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png)
+
+El Cuadro \@ref(tab:atricion2) describe la recuperación de casos en ELSOC 2017, desagregando en subrgupos claves. Tal como puede observarse, la muestra de 2017 equivale a un 84.49% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Luego, se observan diferencias sustantivas en términos de sexo y región de locación del entrevistado. 
+
+```{r atricion}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+atricion <- tibble(Variable = c("Total"),
+                  "Casos 2016" = c("2984"),
+                  "Casos 207" = c("2521"),
+                  Recuperación = c("84.49%")) %>% 
+  add_row(Variable = c("Hombre"),
+                  "Casos 2016" = c("1191"),
+                  "Casos 207" = c("965"),
+                  Recuperación = c("81.02%")) %>% 
+  add_row(Variable = c("Mujer"),
+                  "Casos 2016" = c("1793"),
+                  "Casos 207" = c("1556"),
+                  Recuperación = c("86.78%")) %>% 
+    add_row(Variable = c("Tarapaca"),
+                  "Casos 2016" = c("46"),
+                  "Casos 207" = c("46"),
+                  Recuperación = c("100.00%")) %>% 
+     add_row(Variable = c("Antofagasta"),
+                  "Casos 2016" = c("61"),
+                  "Casos 207" = c("55"),
+                  Recuperación = c("90.16%")) %>% 
+    add_row(Variable = c("Atacama"),
+                  "Casos 2016" = c("117"),
+                  "Casos 207" = c("95"),
+                  Recuperación = c("81.20%")) %>% 
+    add_row(Variable = c("Coquimbo"),
+                  "Casos 2016" = c("147"),
+                  "Casos 207" = c("124"),
+                  Recuperación = c("84.35%")) %>%
+    add_row(Variable = c("Valparaiso"),
+                  "Casos 2016" = c("545"),
+                  "Casos 207" = c("428"),
+                  Recuperación = c("78.53%")) %>% 
+  add_row(Variable = c("R. Metropolitana"),
+                  "Casos 2016" = c("915"),
+                  "Casos 207" = c("763"),
+                  Recuperación = c("83.39%")) %>% 
+  add_row(Variable = c("OHiggins"),
+                  "Casos 2016" = c("103"),
+                  "Casos 207" = c("92"),
+                  Recuperación = c("89.32%")) %>% 
+  add_row(Variable = c("Maule"),
+                  "Casos 2016" = c("205"),
+                  "Casos 207" = c("190"),
+                  Recuperación = c("92.68%")) %>% 
+  add_row(Variable = c("Biobío"),
+                  "Casos 2016" = c("486"),
+                  "Casos 207" = c("420"),
+                  Recuperación = c("86.42%")) %>% 
+  add_row(Variable = c("Araucanía"),
+                  "Casos 2016" = c("229"),
+                  "Casos 207" = c("195"),
+                  Recuperación = c("85.15%")) %>% 
+  add_row(Variable = c("Los Ríos"),
+                  "Casos 2016" = c("49"),
+                  "Casos 207" = c("45"),
+                  Recuperación = c("91.84%")) %>% 
+  add_row(Variable = c("Los Lagos"),
+                  "Casos 2016" = c("58"),
+                  "Casos 207" = c("50"),
+                  Recuperación = c("86.21%")) %>% 
+  add_row(Variable = c("Aysén"),
+                  "Casos 2016" = c("23"),
+                  "Casos 207" = c("18"),
+                  Recuperación = c("78.26%"))
+  
+
+atricion %>%
+  kable(booktabs = TRUE,  caption="\\label{tab:atricion2}Análisis de Atrición según Atributos Claves") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2,3,4), width = "1cm") %>%
+  kable_classic("striped", full_width = F)%>%
+  landscape()
+```
+
+Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.
+
+![\\label{fig:atricion2}: Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png)

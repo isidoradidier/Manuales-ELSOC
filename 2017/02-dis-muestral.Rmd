@@ -259,3 +259,41 @@ aumento_muestra %>%
   landscape()
 ```
 
+
+
+## Cambios en el Muestreo en Ola 2017 {#camb_muest}
+
+Producto de las dificultades observadas en el trabajo de campo de ELSOC 2016 descritas en el apartado previo, se realizaron ajustes en el diseño muestral que contempla heterogeneidad regional en la tasa de no respuesta. No fueron necesarios cambios adicionales para el proceso de trabajo de campo de 2017.  Las decisiones metodológicas fueron confirmadas y las viviendas agregads y los entrevistados seleccionados durante 2016 como resultado de la etapa 6 fueron reentrevistados del mismo modo que los otros encuestados.
+
+## Diseño de Ponderadores de la Muestra
+
+**La muestra de ELSOC 2017 no es representativa de la población objetivo** del modo que lo era la muestra de 2016, producto de que su objetivo es recontactar a los entrevistados de 2016 y a la presencia de atrición en la muestra (individuos que no logran ser reentrevistados, dejando la muestra). Considerando que a partir de las entrevistas efectivamente realizadas se desea extrapolar a la población objetivo respectiva, es necesario ponderar adecuadamente a cada encuestado según su representación en la población objetivo. De este modo, lo óptimo sería incorporar la atrición en el diseño de los ponderadores muestrales.  Los ponderadores provistos con la base de datos de ELSOC ola 2 no ajustan por dichos factores. Se proveen ponderadores similares a los entregados en la primera versión del estudio, cuya finalidad es ajustar por las diferencias en atributos demográficos de la muestra de ELSOC en relación a la población objetivo. **En una etapa posterior se liberarán nuevos ponderadores, ajustados a las particularidades de un diseño longitudinal.**
+
+A continuación se describe el proceso de elaboración de dichos ponderadores^[Dichos ponderadores pueden entenderse como "ponderadores  de corte transversal", ya que se ignoran los problemas derivados de su naturaleza longitudinal.] para lograr una correspondencia entre la muestra y la población objetivo. Dicha ponderación corresponde al inverso de su probabilidad de selección o inclusión en la muestra. En este caso la probabilidad de selección del individuo $i$ de la vivienda $j$ que pertenece a la manzana $l$ del estrato $k$, $P_{ijlk}$ viene dado por:
+
+$$P_{iklk} = \pi_i|_{jlk}\pi_j|_{lk}\pi_{lk}$$
+
+Dónde:
+
+* $\pi_i|_{jkl}$ es la probabilidad de que el individuo $i$ sea seleccionado en lamuestra dado que la vivienda dónde vive y la manzana dónde se localiza fueron seleccionados.
+* $\pi_j|_{lk}$ es la probabilidad de que la vivienda $j$ sea seleccionada en la muestra dado que la manzana $l$ (que contiene a la vivienda $j$) fue seleccionada.
+* $\pi_lk$ es la probabilidad de que lamanzana $l$ del estrato $k$ sea seleccionada en la muestra.
+
+Se define el ponderador de diseño o teórico $w_{ijlk}$ al inverso de la probabilidad de selección:
+
+$$P_{ijlk}=\frac{1}{w_{ijlk}}$$
+
+El valor de las antes mencionadas probabilidades es:
+
+
+$$\pi_{lk} = n_k\frac{M_{kl}}{M_k}$$
+
+$$\pi_{j|lk} = \frac{m_{lk}}{M'_k}$$
+
+$$\pi_{i|jlk} = \frac{1}{N_{jlk}}$$
+
+Dónde se tiene que $n_k$ es el número de manzanas a seleccionar del estrato $k$, $_lk$ es el número de viviendas de la manzana $l$ del estrato $k$, $M_k$ es el número total de viviendas del estrato $k$, $m_{lk}$ es el número de viviendas a encuestar dentro de la manzana $l$, $M'_k$ es el número actualizado de viviendas de la manzana $l$ post-empadronamiento, $N_{jlk}$ es el número de personas de la
+población objetivo que vive en la vivienda $j$ de la manzana $l$ del estrato $k$.
+
+En base a lo anterior se diseñaron ponderadores que ajustan en base a las probabilidades base, con ajuste de no respuesta, con ajuste al número de casos ^[Corresponde a considerar la población total objetivo entre 18 y 75 años en base a las proyecciones de población
+regional.] y con ajuste al número de casos y la variable sexo ^[Los cuatro ponderadores diseñados son acumulativos. A modo de ejemplo, el segundo ponderador ajusta en base las probabilidades de selección e incorpora **también** el ajuste por no respuesta.].
