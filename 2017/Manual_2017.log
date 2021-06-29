@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.19)  22 JUN 2021 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.19)  29 JUN 2021 08:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,7 +304,22 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count279
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count280
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count281
+\FV@StepNumber=\count282
+\FV@OutFile=\write3
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip54
+\fb@frw=\dimen153
+\fb@frh=\dimen154
+\FrameRule=\dimen155
+\FrameSep=\dimen156
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
@@ -315,77 +330,77 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen153
-\Gin@req@width=\dimen154
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen155
-\lightrulewidth=\dimen156
-\cmidrulewidth=\dimen157
-\belowrulesep=\dimen158
-\belowbottomsep=\dimen159
-\aboverulesep=\dimen160
-\abovetopsep=\dimen161
-\cmidrulesep=\dimen162
-\cmidrulekern=\dimen163
-\defaultaddspace=\dimen164
-\@cmidla=\count280
-\@cmidlb=\count281
-\@aboverulesep=\dimen165
-\@belowrulesep=\dimen166
-\@thisruleclass=\count282
-\@lastruleclass=\count283
-\@thisrulewidth=\dimen167
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count283
+\@cmidlb=\count284
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count285
+\@lastruleclass=\count286
+\@thisrulewidth=\dimen171
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count284
-\LTcapwidth=\dimen168
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count285
-\LT@rows=\count286
-\c@LT@tables=\count287
-\c@LT@chunks=\count288
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count287
+\LTcapwidth=\dimen172
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
 \LT@p@ftn=\toks24
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen169
-\ar@mcellbox=\box53
-\extrarowheight=\dimen170
+\col@sep=\dimen173
+\ar@mcellbox=\box54
+\extrarowheight=\dimen174
 \NC@list=\toks25
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box54
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box55
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count289
-\multirow@dima=\skip61
-\bigstrutjot=\dimen171
+\multirow@colwidth=\skip61
+\multirow@cntb=\count292
+\multirow@dima=\skip62
+\bigstrutjot=\dimen175
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen172
-\WF@size=\dimen173
-\c@WF@wrappedlines=\count290
-\WF@box=\box55
+\wrapoverhang=\dimen176
+\WF@size=\dimen177
+\c@WF@wrappedlines=\count293
+\WF@box=\box56
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count291
+\c@float@type=\count294
 \float@exts=\toks27
-\float@box=\box56
+\float@box=\box57
 \@float@everytoks=\toks28
-\@floatcapt=\box57
+\@floatcapt=\box58
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks29
-\minrowclearance=\skip62
+\minrowclearance=\skip63
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
@@ -396,37 +411,37 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box58
-\sift@deathcycles=\count292
-\@vwid@loff=\dimen174
-\@vwid@roff=\dimen175
+\@vwid@box=\box59
+\sift@deathcycles=\count295
+\@vwid@loff=\dimen178
+\@vwid@roff=\dimen179
 )
-\c@taburow=\count293
-\tabu@nbcols=\count294
-\tabu@cnt=\count295
-\tabu@Xcol=\count296
-\tabu@alloc=\count297
-\tabu@nested=\count298
-\tabu@target=\dimen176
-\tabu@spreadtarget=\dimen177
-\tabu@naturalX=\dimen178
-\tabucolX=\dimen179
-\tabu@Xsum=\dimen180
-\extrarowdepth=\dimen181
-\abovetabulinesep=\dimen182
-\belowtabulinesep=\dimen183
-\tabustrutrule=\dimen184
+\c@taburow=\count296
+\tabu@nbcols=\count297
+\tabu@cnt=\count298
+\tabu@Xcol=\count299
+\tabu@alloc=\count300
+\tabu@nested=\count301
+\tabu@target=\dimen180
+\tabu@spreadtarget=\dimen181
+\tabu@naturalX=\dimen182
+\tabucolX=\dimen183
+\tabu@Xsum=\dimen184
+\extrarowdepth=\dimen185
+\abovetabulinesep=\dimen186
+\belowtabulinesep=\dimen187
+\tabustrutrule=\dimen188
 \tabu@thebody=\toks30
 \tabu@footnotes=\toks31
-\tabu@box=\box59
-\tabu@arstrutbox=\box60
-\tabu@hleads=\box61
-\tabu@vleads=\box62
-\tabu@cellskip=\skip63
+\tabu@box=\box60
+\tabu@arstrutbox=\box61
+\tabu@hleads=\box62
+\tabu@vleads=\box63
+\tabu@cellskip=\skip64
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box63
+\@tempboxb=\box64
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttablex/threeparttablex.s
 ty
@@ -436,27 +451,27 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/local/texlive/2021/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip64
+\TPTL@width=\skip65
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box64
-\UL@hyphenbox=\box65
-\UL@skip=\skip65
+\UL@box=\box65
+\UL@hyphenbox=\box66
+\UL@skip=\skip66
 \UL@hook=\toks32
-\UL@height=\dimen185
-\UL@pe=\count299
-\UL@pixel=\dimen186
-\ULC@box=\box66
+\UL@height=\dimen189
+\UL@pe=\count302
+\UL@pixel=\dimen190
+\ULC@box=\box67
 Package: ulem 2019/11/18
-\ULdepth=\dimen187
+\ULdepth=\dimen191
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen188
-\c@nlinenum=\count300
+\rotheadsize=\dimen192
+\c@nlinenum=\count303
 \TeXr@lab=\toks33
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box68
 ) (./Manual_2017.aux
 
 LaTeX Warning: Label `tab:difcuest' multiply defined.
@@ -482,32 +497,32 @@ LaTeX Warning: Label `tab:aumento' multiply defined.
 )
 \openout1 = `Manual_2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Info: Redefining \microtypecontext on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Info: Redefining \microtypecontext on input line 129.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 89.
+LaTeX Info: Redefining \showhyphens on input line 129.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -516,16 +531,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 ) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen189
-\scratchbox=\box68
-\nofMPsegments=\count303
-\nofMParguments=\count304
+\scratchcounter=\count305
+\scratchdimen=\dimen193
+\scratchbox=\box69
+\nofMPsegments=\count306
+\nofMParguments=\count307
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen190
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen194
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -535,7 +550,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 89.
+Package hyperref Info: Link coloring OFF on input line 129.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -545,46 +560,46 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-2.
+LaTeX Info: Redefining \ref on input line 129.
+LaTeX Info: Redefining \pageref on input line 129.
+LaTeX Info: Redefining \nameref on input line 129.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+32.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+32.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-92.
+132.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-92.
+132.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 92.
+(Font)              <12> on input line 132.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 132.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 92.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
-
+(Font)              <6> on input line 132.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
+.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
+.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -603,8 +618,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 3.
 )
-\tf@toc=\write3
-\openout3 = `Manual_2017.toc'.
+\tf@toc=\write4
+\openout4 = `Manual_2017.toc'.
 
 [3] [4
 
@@ -613,7 +628,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [2] [3
 
 ] [4] [5]
-Overfull \hbox (2045.61124pt too wide) in paragraph at lines 293--310
+Overfull \hbox (2045.61124pt too wide) in paragraph at lines 333--350
  [][] 
  []
 
@@ -621,41 +636,45 @@ Overfull \hbox (2045.61124pt too wide) in paragraph at lines 293--310
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.311 \end{landscape}
+l.351 \end{landscape}
                      ]
-Overfull \hbox (1173.19528pt too wide) in paragraph at lines 317--331
- [][] 
- []
+
+LaTeX Warning: Float too large for page by 1044.03023pt on input line 371.
 
 [7pdfTeX warning (ext4): destination with the same identifier (name{table.0.2})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.332 \end{landscape}
+l.372 \end{landscape}
                      ] [8
 
 
 
 
 ]
-Overfull \hbox (760.69408pt too wide) in paragraph at lines 348--398
- [][] 
+Overfull \hbox (6.41364pt too wide) in paragraph at lines 390--390
+[]|\T1/lmr/m/n/10 (-20) Características|  
  []
 
 
-LaTeX Warning: Float too large for page by 16.4465pt on input line 398.
+Overfull \hbox (20.61809pt too wide) in paragraph at lines 423--423
+[]|\T1/lmr/m/n/10 (-20) Representatividad|  
+ []
+
+
+LaTeX Warning: Float too large for page by 1491.64148pt on input line 438.
 
 [9pdfTeX warning (ext4): destination with the same identifier (name{table.0.3})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.399 \end{landscape}
+l.439 \end{landscape}
                      ] [10
 
 
 
 ] [11] [12] [13]
-Overfull \hbox (14.42226pt too wide) in paragraph at lines 525--525
+Overfull \hbox (14.42226pt too wide) in paragraph at lines 565--565
 []|\T1/lmr/m/n/10 (-20) Definición 
  []
 
@@ -663,12 +682,12 @@ Overfull \hbox (14.42226pt too wide) in paragraph at lines 525--525
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.537 \end{landscape}
+l.577 \end{landscape}
                      ] [15
 
 
 ]
-Overfull \hbox (14.42226pt too wide) in paragraph at lines 596--596
+Overfull \hbox (14.42226pt too wide) in paragraph at lines 636--636
 []|\T1/lmr/m/n/10 (-20) Definición 
  []
 
@@ -676,12 +695,12 @@ Overfull \hbox (14.42226pt too wide) in paragraph at lines 596--596
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.609 \end{landscape}
+l.649 \end{landscape}
                      ] [17
 
 
 ]
-Overfull \hbox (14.42226pt too wide) in paragraph at lines 657--657
+Overfull \hbox (14.42226pt too wide) in paragraph at lines 697--697
 []|\T1/lmr/m/n/10 (-20) Definición 
  []
 
@@ -689,32 +708,32 @@ Overfull \hbox (14.42226pt too wide) in paragraph at lines 657--657
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.670 \end{landscape}
+l.710 \end{landscape}
                      ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
-26.
+66.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [19
 
 
 ] [20]
-Overfull \hbox (13.52406pt too wide) in paragraph at lines 735--736
+Overfull \hbox (13.52406pt too wide) in paragraph at lines 775--776
  []|\T1/lmr/m/n/10 (-20) Viviendas
  []
 
 
-Overfull \hbox (1.87769pt too wide) in paragraph at lines 744--744
+Overfull \hbox (1.87769pt too wide) in paragraph at lines 784--784
 []|\T1/lmr/m/n/10 (-20) Chiguanyante|  
  []
 
 
-Overfull \hbox (4.1055pt too wide) in paragraph at lines 751--751
+Overfull \hbox (4.1055pt too wide) in paragraph at lines 791--791
 []|\T1/lmr/m/n/10 (-20) Metropolitana|  
  []
 
 
-Overfull \hbox (4.62202pt too wide) in paragraph at lines 758--758
+Overfull \hbox (4.62202pt too wide) in paragraph at lines 798--798
 []|\T1/lmr/m/n/10 (-20) Independencia|  
  []
 
@@ -722,12 +741,108 @@ Overfull \hbox (4.62202pt too wide) in paragraph at lines 758--758
 
 ] [22] [23] [24
 
+] [25] [26] [27] [28]
+Overfull \hbox (0.10097pt too wide) in paragraph at lines 1156--1160
+\T1/lmr/m/n/10 (+7) p o r . o r g / A A P O R[] M a i n / m e d i a / p u b l i
+ c a t i o n s / S t a n d a r d -[] D e ^^\ n i t i o n s 2 0 1 6 9 t h e d i 
+t i
+ []
 
-] [25] [26
 
-] [27] [28
+Overfull \hbox (33.53035pt too wide) has occurred while \output is active
+\T1/lmr/m/sl/10 INCIDENCIAS DE TERRENO Y CÓDIGOS DE DISPOSICIÓN FINAL DE CASOS 
+\T1/lmr/m/n/10 29
+ []
 
-] [29] [30
+[29]
+</Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png, id=285
+, 511.9125pt x 423.5825pt>
+File: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png Gr
+aphic file (type png)
+<use /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png>
+Package pdftex.def Info: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/
+attrition_01.png  used on input line 1178.
+(pdftex.def)             Requested size: 345.00269pt x 285.47281pt.
+</Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png, id=28
+7, 581.17125pt x 313.17pt>
+File: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png G
+raphic file (type png)
+<use /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png>
+Package pdftex.def Info: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/
+Sample_Design.png  used on input line 1201.
+(pdftex.def)             Requested size: 345.0075pt x 185.91077pt.
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1207 ...ase de Datos}\label{registro-versiones}}
+                                                   </Users/Elisa/Documents/GitH
+ub/Manuales-ELSOC/Imagenes/attrition_01.png>] [31pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.0.2}) has been already used, duplica
+te ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1207 ...ase de Datos}\label{registro-versiones}}
+                                                   </Users/Elisa/Documents/GitH
+ub/Manuales-ELSOC/Imagenes/Sample_Design.png>] [32
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+237.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [33] [34]
+Overfull \hbox (3.19005pt too wide) in paragraph at lines 1270--1270
+[]|\T1/lmr/m/n/10 (-20) Versión|  
+ []
+
+
+Overfull \hbox (33.20027pt too wide) in paragraph at lines 1274--1274
+[]|\T1/lmr/m/n/10 (-20) ELSOC_W02_v1.00|  
+ []
+
+[35pdfTeX warning (ext4): destination with the same identifier (name{table.0.8}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1278 \end{landscape}
+                      ] [36
+
+
+
+] [37] [38
+
+] [39] [40
+
+]
+</Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png, id=347,
+ 383.18156pt x 259.7203pt>
+File: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png Gra
+phic file (type png)
+<use /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png>
+Package pdftex.def Info: /Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/
+Figura_item.png  used on input line 1361.
+(pdftex.def)             Requested size: 345.01808pt x 233.8531pt.
+[41]
+Overfull \hbox (69.7488pt too wide) in paragraph at lines 1379--1379
+[]\T1/lmtt/m/n/10 1 Etiqueta categoría de respuesta 1  Frec. Absoluta de 1  % c
+orrespondiente a 1[] 
+ []
+
+
+Overfull \hbox (69.7488pt too wide) in paragraph at lines 1379--1379
+[]\T1/lmtt/m/n/10 2  Etiqueta categoría de respuesta 2 Frec. Absoluta de 2  % c
+orrespondiente a 2[] 
+ []
+
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.1395 L
+        os distintos valores listados corresponden a las categorÃ­as de </Users
+/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png>] [43] [44] [45
+] [46
 
 ] (./Manual_2017.aux)
 
@@ -735,35 +850,37 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13781 strings out of 478994
- 203077 string characters out of 5858184
- 565610 words of memory out of 5000000
- 30719 multiletter control sequences out of 15000+600000
- 475721 words of font info for 157 fonts, out of 8000000 for 9000
+ 14432 strings out of 478994
+ 213755 string characters out of 5858184
+ 576229 words of memory out of 5000000
+ 31247 multiletter control sequences out of 15000+600000
+ 484325 words of font info for 184 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,88p,609b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,11n,88p,817b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/
-texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist
+texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
+21/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist
 /fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc
 /dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-m
 athit.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17
-.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/lm/lmro10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
-lic/lm/lmsy7.pfb>
-Output written on Manual_2017.pdf (34 pages, 314824 bytes).
+l/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/lm/lmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12
+.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/
+type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/lm/lmro10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy
+10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Manual_2017.pdf (50 pages, 494328 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 102 named destinations out of 1000 (max. 500000)
- 41105 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 45272 words of extra memory for PDF output out of 51595 (max. 10000000)
 

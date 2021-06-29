@@ -90,6 +90,8 @@ items <- tibble(Sección =
 
 items %>%
   kable(booktabs = TRUE,  caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2), width = "3cm") %>%
   kable_classic("striped", full_width = F)%>%
   landscape()
 ```
@@ -216,6 +218,8 @@ ficha <- tibble(Características =
 
 ficha %>%
   kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 2 (2017)") %>%
+  column_spec(c(1), width = "2cm") %>%
+  column_spec(c(2), width = "3cm") %>%
   kable_classic("striped", full_width = F)%>%
   landscape()
 ```

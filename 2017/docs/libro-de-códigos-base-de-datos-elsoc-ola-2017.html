@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)</title>
+  <title>Capítulo 7 LIBRO DE CÓDIGOS BASE DE DATOS ELSOC OLA 2017 | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)" />
+  <meta property="og:title" content="Capítulo 7 LIBRO DE CÓDIGOS BASE DE DATOS ELSOC OLA 2017 | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)" />
+  <meta name="twitter:title" content="Capítulo 7 LIBRO DE CÓDIGOS BASE DE DATOS ELSOC OLA 2017 | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="dudas-y-consultas.html"/>
 
-<link rel="next" href="dis-ins.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -188,28 +188,102 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)</h1>
-<h2 class="subtitle"><em>MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL</em></h2>
-<p class="author" style="margin: 0.5em 0 -0.5em 0;"><em>Roberto González</em></p>
-<p class="author" style="margin: 0.5em 0 -0.5em 0;"><em>Matías Bargsted</em></p>
-<p class="author" style="margin: 0.5em 0 -0.5em 0;"><em>Daniel Miranda</em></p>
-<p class="author" style="margin: 0.5em 0 -0.5em 0;"><em>Benjamín Muñoz</em></p>
-<p class="author" style="margin: 0.5em 0 -0.5em 0;"><em>Alejandro Plaza</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-29</em></p>
+<div id="libro-de-códigos-base-de-datos-elsoc-ola-2017" class="section level1" number="7">
+<h1><span class="header-section-number">Capítulo 7</span> LIBRO DE CÓDIGOS BASE DE DATOS ELSOC OLA 2017</h1>
+<p>Para un uso adecuado de la base de datos de la primera ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.</p>
+<div id="variables-elsoc-ola-2" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Variables ELSOC Ola 2</h2>
+<p>La base de datos de ELSOC Ola 2 (2017) contiene una fila por cada entrevistado (son 2520 casos) y una columna por cada variable. Las variables corresponden a los items incluidos en el cuestionario del estudio. Ahora, es necesario que el usuario comprenda plenamente qué es un ítem.</p>
+<p>La Figura <a href="#fig:item"><strong>??</strong></a> presenta, a modo de ejemplo, la pregunta M31 del cuestionario de ELSOC, dónde se consulta a los entrevistados si posee alguno de los siguientes bienes y servicios. En esta pregunta, se incluyen 4 items distintos, correspondientes a cada uno de los cuatro bienes o servicios. En el ejemplo, el primer ítem corresponde a: ``Conexión a TV cable o satelital". Cada ítem corresponde a una variable incluida en la base de datos. El nombre de las variables de la base de datos se construye combinando:</p>
+<ul>
+<li><p>El código de la variable en el cuestionario, en letras minúsculas (en el ejemplo corresponde a m31).</p></li>
+<li><p>Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guión bajo _ (en el primer caso, sería m31_01) .</p></li>
+</ul>
+<div class="figure">
+<img src="/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png" alt="" />
+<p class="caption">\label{fig:item}: Ejemplo de Pregunta con Múltiples Ítemes en ELSOC</p>
 </div>
-<div id="present" class="section level1" number="1">
-<h1><span class="header-section-number">Capítulo 1</span> Presentación</h1>
-<p>El Estudio Longitudinal Social de Chile (ELSOC) es una encuesta desarrollada para analizar intertemporalmente la evolución del conflicto y cohesión en la sociedad chilena, basándose en modelos conceptuales descritos en la literatura nacional e internacional que abordan dichas materias. De este modo, se orienta a examinar los principales antecedentes, factores moderadores y mediadores, así como las principales consecuencias asociadas al desarrollo de distintas formas de conflicto y cohesión social en Chile. Por lo tanto, su objetivo fundamental es constituirse en un insumo empírico para la comprensión de las creencias, actitudes y percepciones de los chilenos hacia las distintas dimensiones de la convivencia y el conflicto, y como éstas cambian a lo largo del tiempo.</p>
-<p>Esta encuesta fue diseñada por investigadores pertenecientes al Centro de Estudios de Conflicto y Cohesión Social (COES). El Centro está patrocinado por la Universidad de Chile y la Pontificia Universidad Católica de Chile y cuenta como instituciones asociadas a la Universidad Diego Portales y la Universidad Adolfo Ibáñez. Si desea obtener más información sobre el Centro, visite nuestra <a href="http://www.coes.cl/">página web</a>. COES es una iniciativa que desde 2013 cuenta con el financiamiento<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> del Fondo de Financiamiento de Centros de Investigación en Áreas Prioritarias (FONDAP) de la Comisión Nacional de Investigación Científica y Tecnológica (CONICYT), organismo dependiente del Ministerio de Educación de Chile. El levantamiento de datos de ELSOC (segunda ola de medición 2017) estuvo a cargo del Centro MicroDatos (CMD) de la Universidad de Chile.</p>
-<p>El presente documento contiene información relevante para los usuarios de la base de datos de la segunda ola del estudio longitudinal, correspondiente al año 2017. <strong>Este Manual de Usuario enfatiza la dimensión de corte transversal de ELSOC 2017</strong>. Los reportes técnicos relativos a las propiedades longitudinales de ELSOC se encuentran en el Manual de Usuario Longitudinal (ELSOC 2016-2017). De todos modos, algunos aspectos centrales de la evolución inter-olas de ELSOC son descritos. Se recomienda a los usuarios interesados en realizar análisis panel consultar de manera adicional el Manual de Usuario Longitudinal.</p>
-<p>El Manual se estructura en torno a secciones temáticas. La siguiente sección describe brevemente el diseño del instrumento, lo cual es complementado con la ficha técnica del estudio. La tercera sección reseña el diseño muestral general del panel como también los detalles específicos de la segunda ola del estudio. En el siguiente apartado se resumen los principales aspectos del trabajo de campo, enfatizando las particularidades del proceso de reentrevista a los participantes. El quinto apartado corresponde al registro de versiones de la base de datos y detalla el protocolo de uso de éstas. Por último, se incluye un apartado con orientaciones básicas para el análisis y el libro de códigos de las variables incluidas en la base de datos de ELSOC 2017.</p>
+<p>El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso. De manera genérica, las variables incluidas en la base de datos tienen el siguiente formato:</p>
+<div class="base">
+<p><strong>variableenbase</strong> Fraseo completo de la pregunta y/o el ítem. Incluyendo instrucciones específicas a éste.[<em>Etiqueta de variable</em>]</p>
+<pre><code>1 Etiqueta categoría de respuesta 1  Frec. Absoluta de 1  % correspondiente a 1
+
+2  Etiqueta categoría de respuesta 2 Frec. Absoluta de 2  % correspondiente a 2</code></pre>
+</div>
+<p>A continuación, se presenta un ejemplo para clarificar dicha estructura. En este caso, <strong>t2_01</strong> es el nombre de dicho item del cuestionario en la base de datos (como variable). Por medio de estos códigos se pueden identificar los distintos ítemes incluidos. <strong>Se recomienda rastrear las variables en el Libro de Códigos y en la base de datos según dicho nombre.</strong> Junto a este código aparece la etiqueta de variable incluida en la base de datos ELSOC. En este caso es <em>Este es el barrio ideal para mí</em>. Las etiquetas fueron diseñadas por el equipo ELSOC con el objetivo de describir de modo sucinto el fenómeno o dimensión a medir<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>, eliminando tildes y otros símbolos no incluidos en todos los softwares estadísticos (por ejemplo, la ñ).</p>
+<p>Los distintos valores listados corresponden a las categorías de respuesta asociadas al ítem. En la construcción de la base de datos, dichas categorías fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con el enunciado, en la encuesta a su respuesta se le asignará un valor numérico de 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta ‘’Totalmente en desacuerdo’’.</p>
+<div class="base">
+<p><strong>t2_01</strong> <em>Este es el barrio ideal para mi</em>
+A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones? (MOSTRAR TARJETA 2) Este es el barrio ideal para mí.</p>
+<pre><code>        1&amp;Totalmente en desacuerdo       &amp; 118 &amp; 3.95
+        2&amp;En desacuerdo                  &amp; 419 &amp; 14.04
+        3&amp;Ni de acuerdo ni en desacuerdo &amp; 399 &amp; 13.37
+        4&amp;De acuerdo                     &amp; 1621&amp; 54.32
+        5&amp;Totalmente de acuerdo          &amp; 426 &amp; 14.28
+        8&amp; No sabe (no leer)             &amp; 1   &amp; 0.03
+        9&amp; No responde (no leer)         &amp; 0   &amp; 0.00</code></pre>
+</div>
+<p>Por último, es importante también tener en cuenta la información no incluida en este libro de códigos. <em>“A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?”</em> corresponde la fraseo exacto de la pregunta, <em>(MOSTRAR TARJETA 2)</em> aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos de manera completa en el Cuestionario y el Listado de Variables correspondiente.</p>
+<p>Las variables que poseen categorías residuales de no respuesta (No Sabe y No Responde), generalmente se codifican como 8/9 o 88/99, dependiendo de la anchura de la variable. <strong>La base de datos de ELSOC 2017 homologa todos las respuestas No Sabe a -888 y No Responde a -999</strong> y chequea la naturaleza de los valores perdidos restantes (los cuales corresponden en su totalidad a la aplicación de filtros). Las respuestas No Sabe y No Responde no fueron eliminadas ni transformadas en valores perdidos en la base de datos, de modo que los usuarios deben decidir qué hacer con dichos valores de respuesta. La etiqueta de valores de éstos incluye la instrucción de no ser leídos por el encuestador. En el caso de que la pregunta contenga un filtro, los valores no relevantes (filtrados) aparecen en la última línea y no tienen asignado valores ni etiquetas (son valores perdidos por el sistema).</p>
+<p>Las variables de cadena (texto) no presentan códigos, ya que presentan los verbatim literales de las menciones por parte de los encuestados. El único cambio introducido -y fue realizado por motivos de compatibilidad entre softwares- fue la eliminación de símbolos tales como tildes, diéresis y otros caracteres especiales. A continuación se presenta el ejemplo de una de dichas preguntas:</p>
+<div class="base">
+<p><strong>c12_09esp</strong> A continuación le voy a leer una lista de organizaciones voluntarias. Para cada una de ellas, ¿podría decirme si es miembro activo, miembro inactivo, o no es miembro de estas organizaciones? <strong>Otra, especifique:</strong> <em>[Especifique]</em></p>
+<p>Variable de Cadena (caracteres).</p>
+</div>
+<p>En el caso de los ítems dónde se pide una respuesta numérica tampoco existen categorías de respuesta, registrándose el valor indicado por el entrevistado. De todos modos se incluyen etiquetas de valores para los valores perdidos. A continuación, un ejemplo de un ítem de este tipo:</p>
+<div class="base">
+<p><strong>m37_01</strong> ¿Cuántos hijos hombres e hijas mujeres ha tenido usted en su vida? (Anote el número respectivo:) 1) Número de hijos hombres. <em>[Numero de hijos hombres:]</em></p>
+<p>Respuesta Numérica
+88 No sabe
+99 No responde</p>
+</div>
+</div>
+<div id="características-base-de-datos-elsoc-ola-2017" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Características Base de Datos ELSOC Ola 2017</h2>
+<p>La versión actual de la base de datos (1.0) contiene información para los 2520 entrevistados (N definitivo tras supervisión) en relación a los 317 items del cuestionario (cada una corresponde a una variable en la base de datos) y un conjunto adicional de variables:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Identificadoras de Casos:</strong> id de la encuesta, comuna de residencia y región de residencia.
+2.<strong>De Diseño Muestral Complejo:</strong> ponderadores (y factores de expansión), estrato y segmento para incorporar el diseño complejo de la encuesta.</li>
+</ol>
+<p>Dentro de las variables de diseño muestral complejo, el estrato identifica a los seis previamente definidos<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes(4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa las manzanas/bloques, pero los valores son artificiales (generados por MicroDatos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados.</p>
+<div class="base">
+<p><strong>Se recomienda la utilización de los ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderador 02 también ajusta en base a la población estimada según sexo.</strong></p>
+</div>
+<p>Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo esto motivo de una nueva versión de la base de datos. Esto implicará un nuevo lanzamiento de la base de datos y todas las facilidades para que los investigadores hagan un uso óptimo de las variables territoriales.</p>
+<p>Las bases de datos se encuentran disponibles en formatos .dta (compatibles con versiones Stata 13 y 14), .sav (compatibles con SPSS) y .RData (compatibles con R, los objetos contienen como atributos etiquetas de variables y valores). El Equipo de Encuestas COES también cuenta con bases de datos adicionales sobre la encuesta (en formato .dta y/o .xlsx):</p>
+<ol style="list-style-type: decimal">
+<li>Casos supervisados.</li>
+<li>Capacitaciones a encuestadores.</li>
+<li>Códigos de disposición final muestra completa.</li>
+<li>Diseño y selección muestra.</li>
+<li>Tabla Kish.</li>
+<li>Construcción de ponderadores.</li>
+</ol>
+<p>Sin embargo, los archivos anteriormente listados deben ser solicitados al Equipo de Encuestas, justificando el uso que se darán a los datos requeridos. El Equipo de Encuestas COES decidirá la pertinencia de dichas solicitudes y se reserva el derecho para entregar dichos datos.</p>
 
 </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>Proyecto CONICYT/FONDAP/15130009<a href="index.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="9">
+<li id="fn9"><p>Se intenta preservar el ítem original. Los cambios introducidos se hicieron por motivos de espacio.<a href="libro-de-códigos-base-de-datos-elsoc-ola-2017.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Los estratos 4, 5 y 6 tienen sub-estratos Norte y Sur.<a href="libro-de-códigos-base-de-datos-elsoc-ola-2017.html#fnref10" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -217,8 +291,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="dudas-y-consultas.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="dis-ins.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-06-21" />
+<meta name="date" content="2021-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="dis-ins.html"/>
-<link rel="next" href="methods.html"/>
+<link rel="next" href="registro-versiones.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -56,6 +56,70 @@
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -90,15 +154,23 @@
 <li class="chapter" data-level="3.5" data-path="dis-muest.html"><a href="dis-muest.html#etapa_4"><i class="fa fa-check"></i><b>3.5</b> Etapa 4: Selección de viviendas</a></li>
 <li class="chapter" data-level="3.6" data-path="dis-muest.html"><a href="dis-muest.html#etapa_5"><i class="fa fa-check"></i><b>3.6</b> Etapa 5: Selección de personas</a></li>
 <li class="chapter" data-level="3.7" data-path="dis-muest.html"><a href="dis-muest.html#etapa_6"><i class="fa fa-check"></i><b>3.7</b> Etapa 6: Aumento del tamaño muestral</a></li>
+<li class="chapter" data-level="3.8" data-path="dis-muest.html"><a href="dis-muest.html#camb_muest"><i class="fa fa-check"></i><b>3.8</b> Cambios en el Muestreo en Ola 2017</a></li>
+<li class="chapter" data-level="3.9" data-path="dis-muest.html"><a href="dis-muest.html#diseño-de-ponderadores-de-la-muestra"><i class="fa fa-check"></i><b>3.9</b> Diseño de Ponderadores de la Muestra</a></li>
+<li class="chapter" data-level="3.10" data-path="dis-muest.html"><a href="dis-muest.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>3.10</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="3.11" data-path="dis-muest.html"><a href="dis-muest.html#incidencias-de-terreno-y-códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>3.11</b> Incidencias de Terreno y Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="3.12" data-path="dis-muest.html"><a href="dis-muest.html#aspectos-longitudinales-y-tercera-ola-del-estudio"><i class="fa fa-check"></i><b>3.12</b> Aspectos Longitudinales y Tercera Ola del Estudio</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<li class="chapter" data-level="4" data-path="registro-versiones.html"><a href="registro-versiones.html"><i class="fa fa-check"></i><b>4</b> Registro de Versiones Base de Datos</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="4.1" data-path="registro-versiones.html"><a href="registro-versiones.html#casos-falsificados"><i class="fa fa-check"></i><b>4.1</b> Casos Falsificados</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="5" data-path="protocolo-de-uso-de-base-de-datos.html"><a href="protocolo-de-uso-de-base-de-datos.html"><i class="fa fa-check"></i><b>5</b> Protocolo de Uso de Base de Datos</a></li>
+<li class="chapter" data-level="6" data-path="dudas-y-consultas.html"><a href="dudas-y-consultas.html"><i class="fa fa-check"></i><b>6</b> Dudas y Consultas</a></li>
+<li class="chapter" data-level="7" data-path="libro-de-códigos-base-de-datos-elsoc-ola-2017.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-2017.html"><i class="fa fa-check"></i><b>7</b> LIBRO DE CÓDIGOS BASE DE DATOS ELSOC OLA 2017</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="libro-de-códigos-base-de-datos-elsoc-ola-2017.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-2017.html#variables-elsoc-ola-2"><i class="fa fa-check"></i><b>7.1</b> Variables ELSOC Ola 2</a></li>
+<li class="chapter" data-level="7.2" data-path="libro-de-códigos-base-de-datos-elsoc-ola-2017.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-2017.html#características-base-de-datos-elsoc-ola-2017"><i class="fa fa-check"></i><b>7.2</b> Características Base de Datos ELSOC Ola 2017</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -344,15 +416,15 @@ Ciudades Pequeñas
 <p>Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase la Tabla <a href="dis-muest.html#tab:estratos">3.1</a> para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.</p>
 <p>La selección de ciudades dentro de cada uno de estos estratos finales se realizó en forma proporcional al tamaño de la población de cada ciudad. Este método da mayores probabilidades de selección a las grandes ciudades.</p>
 <p>La probabilidad de selección de una ciudad <span class="math inline">\(i\)</span> dentro del estrato <span class="math inline">\(h\)</span> fue:</p>
-<p><span class="math inline">\(\pi_i=\frac{(nc_h)(pop_i)}{\sum_h pop}\)</span></p>
+<p><span class="math display">\[\pi_i=\frac{(nc_h)(pop_i)}{\sum_h pop}\]</span></p>
 <p>donde <span class="math inline">\(nc_h\)</span> es el número de ciudades seleccionadas en el estrato <span class="math inline">\(h\)</span> y <span class="math inline">\(pop_i\)</span> es la población de ciudad <span class="math inline">\(i\)</span>.</p>
 </div>
 <div id="etapa_2" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Etapa 2: Selección de Bloques (Manzanas)</h2>
-<p>Las 40 ciudades seleccionadas contenían 87.839 bloques. En la segunda etapa se seleccionaron bloques en cada ciudad con población proporcional al tamaño, donde el tamaño fue determinado a partir del recuento de unidades de vivienda del pre-censo. La selección fue sistemática: la lista de bloques en las ciudades seleccionadas se ordenó según sub-distrito censal y número de bloque para asegurar que los bloques seleccionados se extendieran por toda la ciudad<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Las 40 ciudades seleccionadas contenían 87.839 bloques. En la segunda etapa se seleccionaron bloques en cada ciudad con población proporcional al tamaño, donde el tamaño fue determinado a partir del recuento de unidades de vivienda del pre-censo. La selección fue sistemática: la lista de bloques en las ciudades seleccionadas se ordenó según sub-distrito censal y número de bloque para asegurar que los bloques seleccionados se extendieran por toda la ciudad<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
 <p>La Tabla <a href="dis-muest.html#tab:ciudades">3.2</a> muestra el número de bloques seleccionados en cada ciudad. La muestra de bloques se asignó de manera desproporcionada para que las áreas fuera de Santiago estuvieran sobre-representadas en relación con su tamaño en la población objetivo. Varios investigadores COES solicitaron esta asignación para asegurar que la muestra fuera diversa con respecto al tamaño de la ciudad.</p>
 <p>La probabilidad de selección de un bloque <span class="math inline">\(j\)</span> en la ciudad <span class="math inline">\(i\)</span>, condicionada a la selección de la ciudad, fue:</p>
-<p><span class="math inline">\(\pi_{j|i}=\frac{(nb_i)(hu_j)}{\sum_i hu}\)</span></p>
+<p><span class="math display">\[\pi_{j|i}=\frac{(nb_i)(hu_j)}{\sum_i hu}\]</span></p>
 <p>donde nbi es el número de bloques seleccionadas en la ciudad <span class="math inline">\(i\)</span> y <span class="math inline">\(hu_j\)</span> es la población de la ciudad <span class="math inline">\(i\)</span>.</p>
 <table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
@@ -576,14 +648,14 @@ Total
 </table>
 <p>Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en la Tabla <a href="dis-muest.html#tab:estratos">3.1</a>.</p>
 <p>La probabilidad de selección de un hogar <span class="math inline">\(k\)</span> en el bloque <span class="math inline">\(j\)</span> en la ciudad <span class="math inline">\(i\)</span> y el estrato <span class="math inline">\(h\)</span> fue:</p>
-<p><span class="math inline">\(\pi_{k|j,i}=\frac{nh_j}{NH_j}\)</span></p>
+<p><span class="math display">\[\pi_{k|j,i}=\frac{nh_j}{NH_j}\]</span></p>
 <p>donde <span class="math inline">\(nh_j\)</span> es el número de viviendas seleccionadas en el bloque <span class="math inline">\(j\)</span>, y <span class="math inline">\(NH_j\)</span> corresponde al número de viviendas alistadas en el bloque <span class="math inline">\(j\)</span>.</p>
 </div>
 <div id="etapa_5" class="section level2" number="3.6">
 <h2><span class="header-section-number">3.6</span> Etapa 5: Selección de personas</h2>
 <p>Los encuestadores visitaron cada hogar seleccionado e intentaron llevar a cabo la entrevista. El primer paso en el proceso de la entrevista fue identificar al entrevistado objetivo. Cuando había más de un adulto en el hogar, uno fue seleccionado usando una muestra aleatoria simple, usando una tabla de Kish.</p>
 <p>La probabilidad de selección de una persona en el hogar <span class="math inline">\(k\)</span> fue:</p>
-<p><span class="math inline">\(\pi_{l|k,j,i}=\frac{1}{NP_j}\)</span></p>
+<p><span class="math display">\[\pi_{l|k,j,i}=\frac{1}{NP_j}\]</span></p>
 <p>donde <span class="math inline">\(NP_j\)</span> es el número de adultos (mayores a 18 años y menores de 75 años) que habitan la vivienda <span class="math inline">\(j\)</span>.</p>
 </div>
 <div id="etapa_6" class="section level2" number="3.7">
@@ -614,6 +686,7 @@ Viviendas agregadas por bloque
 <tbody>
 <tr>
 <td style="text-align:left;width: 2cm; ">
+Coquimbo
 </td>
 <td style="text-align:left;width: 2cm; ">
 Coquimbo
@@ -627,7 +700,6 @@ Coquimbo
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
-Coquimbo
 </td>
 <td style="text-align:left;width: 2cm; ">
 La Serena
@@ -654,6 +726,7 @@ Salamanca
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
+O’Higgins
 </td>
 <td style="text-align:left;width: 2cm; ">
 Doñihue
@@ -667,7 +740,6 @@ Doñihue
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
-O’Higgins
 </td>
 <td style="text-align:left;width: 2cm; ">
 Rancagua
@@ -694,6 +766,7 @@ Santa Cruz
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
+Biobío
 </td>
 <td style="text-align:left;width: 2cm; ">
 Chiguanyante
@@ -720,7 +793,6 @@ Concepción
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
-Biobío
 </td>
 <td style="text-align:left;width: 2cm; ">
 Coronel
@@ -773,6 +845,7 @@ San Pedro de la Paz
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
+Metropolitana
 </td>
 <td style="text-align:left;width: 2cm; ">
 Cerrillos
@@ -799,7 +872,6 @@ Colina
 </tr>
 <tr>
 <td style="text-align:left;width: 2cm; ">
-Metropolitana
 </td>
 <td style="text-align:left;width: 2cm; ">
 Curacaví
@@ -1216,13 +1288,105 @@ Vitacura
 </tr>
 </tbody>
 </table>
+</div>
+<div id="camb_muest" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Cambios en el Muestreo en Ola 2017</h2>
+<p>Producto de las dificultades observadas en el trabajo de campo de ELSOC 2016 descritas en el apartado previo, se realizaron ajustes en el diseño muestral que contempla heterogeneidad regional en la tasa de no respuesta. No fueron necesarios cambios adicionales para el proceso de trabajo de campo de 2017. Las decisiones metodológicas fueron confirmadas y las viviendas agregads y los entrevistados seleccionados durante 2016 como resultado de la etapa 6 fueron reentrevistados del mismo modo que los otros encuestados.</p>
+</div>
+<div id="diseño-de-ponderadores-de-la-muestra" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Diseño de Ponderadores de la Muestra</h2>
+<p><strong>La muestra de ELSOC 2017 no es representativa de la población objetivo</strong> del modo que lo era la muestra de 2016, producto de que su objetivo es recontactar a los entrevistados de 2016 y a la presencia de atrición en la muestra (individuos que no logran ser reentrevistados, dejando la muestra). Considerando que a partir de las entrevistas efectivamente realizadas se desea extrapolar a la población objetivo respectiva, es necesario ponderar adecuadamente a cada encuestado según su representación en la población objetivo. De este modo, lo óptimo sería incorporar la atrición en el diseño de los ponderadores muestrales. Los ponderadores provistos con la base de datos de ELSOC ola 2 no ajustan por dichos factores. Se proveen ponderadores similares a los entregados en la primera versión del estudio, cuya finalidad es ajustar por las diferencias en atributos demográficos de la muestra de ELSOC en relación a la población objetivo. <strong>En una etapa posterior se liberarán nuevos ponderadores, ajustados a las particularidades de un diseño longitudinal.</strong></p>
+<p>A continuación se describe el proceso de elaboración de dichos ponderadores<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> para lograr una correspondencia entre la muestra y la población objetivo. Dicha ponderación corresponde al inverso de su probabilidad de selección o inclusión en la muestra. En este caso la probabilidad de selección del individuo <span class="math inline">\(i\)</span> de la vivienda <span class="math inline">\(j\)</span> que pertenece a la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(P_{ijlk}\)</span> viene dado por:</p>
+<p><span class="math display">\[P_{iklk} = \pi_i|_{jlk}\pi_j|_{lk}\pi_{lk}\]</span></p>
+<p>Dónde:</p>
+<ul>
+<li><span class="math inline">\(\pi_i|_{jkl}\)</span> es la probabilidad de que el individuo <span class="math inline">\(i\)</span> sea seleccionado en lamuestra dado que la vivienda dónde vive y la manzana dónde se localiza fueron seleccionados.</li>
+<li><span class="math inline">\(\pi_j|_{lk}\)</span> es la probabilidad de que la vivienda <span class="math inline">\(j\)</span> sea seleccionada en la muestra dado que la manzana <span class="math inline">\(l\)</span> (que contiene a la vivienda <span class="math inline">\(j\)</span>) fue seleccionada.</li>
+<li><span class="math inline">\(\pi_lk\)</span> es la probabilidad de que lamanzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span> sea seleccionada en la muestra.</li>
+</ul>
+<p>Se define el ponderador de diseño o teórico <span class="math inline">\(w_{ijlk}\)</span> al inverso de la probabilidad de selección:</p>
+<p><span class="math display">\[P_{ijlk}=\frac{1}{w_{ijlk}}\]</span></p>
+<p>El valor de las antes mencionadas probabilidades es:</p>
+<p><span class="math display">\[\pi_{lk} = n_k\frac{M_{kl}}{M_k}\]</span></p>
+<p><span class="math display">\[\pi_{j|lk} = \frac{m_{lk}}{M&#39;_k}\]</span></p>
+<p><span class="math display">\[\pi_{i|jlk} = \frac{1}{N_{jlk}}\]</span></p>
+<p>Dónde se tiene que <span class="math inline">\(n_k\)</span> es el número de manzanas a seleccionar del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(_lk\)</span> es el número de viviendas de la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(M_k\)</span> es el número total de viviendas del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(m_{lk}\)</span> es el número de viviendas a encuestar dentro de la manzana <span class="math inline">\(l\)</span>, <span class="math inline">\(M&#39;_k\)</span> es el número actualizado de viviendas de la manzana <span class="math inline">\(l\)</span> post-empadronamiento, <span class="math inline">\(N_{jlk}\)</span> es el número de personas de la
+población objetivo que vive en la vivienda <span class="math inline">\(j\)</span> de la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>.</p>
+<p>En base a lo anterior se diseñaron ponderadores que ajustan en base a las probabilidades base, con ajuste de no respuesta, con ajuste al número de casos<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> y con ajuste al número de casos y la variable sexo.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
+
+<p>#Implementación de la Encuesta {#implem_encuest}</p>
+<p>COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las dos primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.</p>
+<p>La descripción de la implementación de ELSOC 2016 incluye apartados relativos al empadronamiento e inicio del trabajo de campo. Se recomienda revisar dicho documento con el objetivo de formarse una visión detallada de esta fase del estudio. A continuación se describen aspectos relevantes de la ejecución de ELSOC 2017.</p>
+<p>##Estrategia de Seguimiento</p>
+<p>COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC 2016 con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico). Originalmente CMD sólo contaba con correos electrónicos de un 19,3% de los entrevistados, para luego recopilar mayor información de éstos. Se envió un saludo navideño a los participantes de ELSOC por correo electrónico. Posteriormente, en Marzo de 2017 se envió otro saludo. A su vez, se envió información proveniente del equipo de ELSOC para explicar cuál es la utilidad de ELSOC.</p>
+<p>CMD realizó una ronda de recontacto con los participantes de ELSOC previo al trabajo de campo de 2017. El objetivo de dicho trabajo fue actualizar su información de contacto. Esto se realizó por medio de una encuesta web y por vía telefónica. Para esto se contó con un Call Center encargado de contactar a los participantes. Por otra parte, CMD almacenó, con altos estándares de confidencialidad, la información relativa a la dirección de los entrevistados de ELSOC y otra información pertinente derivada del empadronamiento. Dicha información permite contar contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2017<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>.</p>
+<p>##Pilotaje del Cuestionario Y Capacitación</p>
+<p>Con el cuestionario correspondiente a la segunda ola de ELSOC previamente elaborado, COES y CMD colaboraron en la programación de éste para que fuera aplicada de manera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propusó ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.</p>
+<p>El pilotaje se realizó durante Junio y Julio del 2017, seguido por una ronda de focus group a los encuestadores con el objetivo de obtener recomendaciones relevantes para el levantamiento final de la encuesta. Esto fue utilizado para introducir cambios menores al cuestionario programado en tablets y para definir ajustes al programa de capacitación de los encuestadores.</p>
+<p>El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La capacitación de coordinadores de campo y encuestadores fue ejecutada por CMD con apoyo técnico de COES para aspectos específicos. CMD realizó dicha tarea de manera centralizada, de modo de que los coordinadores fueron capacitados en dependencias de la Facultad de Economía y Negocios (FEN) de la Universidad de Chile en la Región Metropolitana. Sin embargo, los coordinadores que trabajaron previamente en ELSOC 2016 no tenían que asistir obligatoriamente a dicha sesión de capacitación. En cambio, se elaboró como alternativa una capacitación por sistema web en el cual se repasan los aspectos centrales del estudio y se presentan particularidades del nuevo cuestionario.</p>
+<p>Se dispuso de 17 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores en el levantamiento se realizó en cada sede y hubo encuestadores apoderados, quienes posteriormente se encargaron de capacitar a los encuestadores en las regiones en que no hubo sedes (áquellas con menos de 400 encuestas a realizar).</p>
+<p>#Planificación y Ejecución del Campo</p>
+<p>Al igual que en 2016, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Protocolo de Visita:</strong> primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita.</p></li>
+<li><p><strong>Protocolo ante Casos Difíciles:</strong> escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla <strong>estrategias de recuperación</strong>.</p></li>
+<li><p><strong>Protocolo de Aplicación del Cuestionario:</strong> descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.</p></li>
+<li><p><strong>Protocolo de Campo:</strong> respaldo de información, control de avances, registro de contactos.</p></li>
+</ol>
+<p>Los documentos fueron adaptados de modo tal de ajustarse a los requerimientos del seguimiento de una muestra previamente entrevistada. El levantamiento de información fue realizado en un período de aproximadamente 12 semanas -contadas desde la entrega de material a los encuestadores tras la capacitación-, entre los meses de Julio y Octubre de 2017. Para la ejecución del terreno se contó con 120 encuestadores distribuidos en las 17 sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet).</p>
+<p>CMD cuenta con información relevante para garantizar un adecuado recontacto (nombre del entrevistado, información de contacto y aspectos básicos para su identificación) y utiliza dicha información para concertar entrevistas y planificar el campo. Cada encuestador recibió del coordinador de sede o encuestador apoderado los datos sobre las citas concertadas con participantes ELSOC y utiliza un protocolo de entrevista específico para reentrevistas. Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD. Al finalizar la entrevista se entrega un incentivo monetario (tarjeta de regalo de 6.000 pesos), un folleto informativo sobre COES y ELSOC y se amplía la base de datos de información de contacto de participantes ELSOC.</p>
+</div>
+<div id="supervisión-del-trabajo-de-campo" class="section level2" number="3.10">
+<h2><span class="header-section-number">3.10</span> Supervisión del Trabajo de Campo</h2>
+<p>El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando cuatro etapas:</p>
+<ol style="list-style-type: decimal">
+<li><p>Supervisión del 100% de las encuestas recopiladas, realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista.</p></li>
+<li><p>Retroalimentación de encuestadores de manera periódica por parte del jefe de zona como revisión de los datos recolectados por el equipo central de MicroDatos. Esto dio lugar a reportes periódicos de avance del levantamiento de datos.
+- <strong>Verificación del sujeto entrevistado</strong>: CMD revisa sis el instrumento fue aplicado a la persona elegida previamente en ELSOC 2016.
+- <strong>Revisión de subconjunto de preguntas</strong> (Variables clave), incluyendo preguntas de cadena (por ejemplo “Otro. Especifique cuál”) y condiciones del flujo del cuestionario.</p></li>
+<li><p>Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario permite manejar de mejor modo la no respuesta, validar internamente el flujo del cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de aplicación.La validación interna y el chequeo de rango y consistencia de la información minimiza notablemente el error de medición y es una de las ventajas del diseño de ELSOC.</p></li>
+<li><p>Revisión de casos especiales y validación ex post. Finalmente CMD revisó el funcionamiento del flujo de respuestas y descartó 13 casos con información falsificada, llegándose a un total de 2520 casos.</p></li>
+</ol>
+<p>En paralelo a la revisión y/o eliminación de casos, CMD desarrolló un proceso de validación de los valores de entrevistados a distintas preguntas del cuestionario. Posteriormente el equipo de ELSOC analizó los datos provenientes de la base para evaluar su consistencia interna. Los principales aspectos de dicha revisión se encuentran documentados en el Libro de Códigos. Sin embargo, se detectaron algunos casos de entrevistados con información inconsistente/anómala en comparación a la Ola 2016. Producto de lo anterior se incluye una variable <strong>sospechoso</strong> que señala con un 1a los 26 casos con información problemática. El usuario decide si utilizar dichos casos. Los usuarios pueden contactarse con el equipo ELSOC con el fin de acceder a otros documentos relativos a la validación de datos del estudios.</p>
+</div>
+<div id="incidencias-de-terreno-y-códigos-de-disposición-final-de-casos" class="section level2" number="3.11">
+<h2><span class="header-section-number">3.11</span> Incidencias de Terreno y Códigos de Disposición Final de Casos</h2>
+<p>Uno de los principales objetivos del equipo ELSOC es que el campo del estudio no se viera contaminado por el desarrollo de las campañas presidenciales y por otros estudios de opinión levantados por dichos motivos. Por lo tanto, se planificó un período de campo lo suficientemente extenso para minimizar dicho riesgo. De todos modos, el campo superó las nueve semanas planificadas, extendiéndose a doce. Las principales dificultades de recontacto se concentraron en la Región Metropolitana y de Valparaíso. La estructura de pagos a encuestadores sólo fue modificada en la región de Valparaíso, subiendo a 15.000 pesos por encuesta durante la última semana de terreno. En las regiones de Araucanía y Los Ríos se implementó el uso de autos dentro del levantamiento de datos producto de las distancias entre los hogares de los participantes ELSOC y las sedes operativas.</p>
+<p>Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los casos de la muestra completa un código de disposición final. En base a dicha información, la segunda ola de ELSOC tiene las siguientes tasas de resultados:</p>
+<ul>
+<li>Tasa de Respuesta (RR2) de 82,4%.</li>
+<li>Tasa de Rechazo (REF2) de 6,1%.</li>
+<li>Tasa de Cooperación (COOP2) de 93,0%.</li>
+<li>Tasa de Contacto (CON2) de 88,5%.</li>
+</ul>
+<p>Si desea conocer más detalles sobre la determinación de los códigos de disposición final de casos y el cálculo de las tasas de resultados, dirigirse a <a href="http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf">http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf</a></p>
+<p>Dadas las diferencias observadas a nivel de región en ELSOC 2016, se desagregan los resultados previos (Ver Cuadro <a href="#tab:cdf"><strong>??</strong></a>).</p>
+</div>
+<div id="aspectos-longitudinales-y-tercera-ola-del-estudio" class="section level2" number="3.12">
+<h2><span class="header-section-number">3.12</span> Aspectos Longitudinales y Tercera Ola del Estudio</h2>
+<p>Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura <a href="#fig:atricion"><strong>??</strong></a>). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD.</p>
+<div class="figure">
+<img src="/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png" alt="" />
+<p class="caption">\label{fig:atricion}: Diseño Muestral de ELSOC según Ola</p>
+</div>
+<p>El Cuadro <a href="#tab:atricion2"><strong>??</strong></a> describe la recuperación de casos en ELSOC 2017, desagregando en subrgupos claves. Tal como puede observarse, la muestra de 2017 equivale a un 84.49% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Luego, se observan diferencias sustantivas en términos de sexo y región de locación del entrevistado.</p>
+<p>Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.</p>
+<div class="figure">
+<img src="/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png" alt="" />
+<p class="caption">\label{fig:atricion2}: Diseño Muestral de ELSOC según Ola</p>
+</div>
 
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>Los números de bloques y distritos censales fueron entregados porMatías Garretón, investigador de CIT. Los sub-distritos censales son unidades geográficas más pequeñas que la comuna, pero más grandes que los bloques.<a href="dis-muest.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="4">
+<li id="fn4"><p>Los números de bloques y distritos censales fueron entregados porMatías Garretón, investigador de CIT. Los sub-distritos censales son unidades geográficas más pequeñas que la comuna, pero más grandes que los bloques.<a href="dis-muest.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Dichos ponderadores pueden entenderse como “ponderadores de corte transversal,” ya que se ignoran los problemas derivados de su naturaleza longitudinal.<a href="dis-muest.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Corresponde a considerar la población total objetivo entre 18 y 75 años en base a las proyecciones de población
+regional.<a href="dis-muest.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Los cuatro ponderadores diseñados son acumulativos. A modo de ejemplo, el segundo ponderador ajusta en base las probabilidades de selección e incorpora <strong>también</strong> el ajuste por no respuesta.<a href="dis-muest.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Más detalles se encuentran disponibles en el Informe Anual de Servicios para el Levantamiento del Estudio Longitudinal sobre Conflicto y Cohesión Social (COES) elaborado por MicroDatos.<a href="dis-muest.html#fnref8" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -1231,7 +1395,7 @@ Vitacura
         </div>
       </div>
 <a href="dis-ins.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="registro-versiones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

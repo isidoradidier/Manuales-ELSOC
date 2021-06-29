@@ -71,7 +71,7 @@ Si desea conocer más detalles sobre la determinación de los códigos de dispos
 
 Dadas las diferencias observadas a nivel de región en ELSOC 2016, se desagregan los resultados previos (Ver Cuadro \@ref(tab:cdf)).
 
-```{r}
+```{r include=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -183,7 +183,7 @@ Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atr
 
 El Cuadro \@ref(tab:atricion2) describe la recuperación de casos en ELSOC 2017, desagregando en subrgupos claves. Tal como puede observarse, la muestra de 2017 equivale a un 84.49% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Luego, se observan diferencias sustantivas en términos de sexo y región de locación del entrevistado. 
 
-```{r atricion}
+```{r atricion, include=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
