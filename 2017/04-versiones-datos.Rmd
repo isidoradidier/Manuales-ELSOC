@@ -1,0 +1,37 @@
+# Registro de Versiones Base de Datos {#registro-versiones}
+
+Las versiones adjuntadas de la base de datos, como el presente Manual de Usuario fueron elaborados por el Equipo de Encuestas COES. Sin embargo, **no pueden ser consideradas como definitivas**, si no que como un primer producto que se pone a disposición de la Comunidad COES. Se desarrollarán nuevas versiones de la base de datos como del Manual de Usuario, de modo de cumplir con la planificación propuesta. 
+**Ni las bases de datos ni el Manual pueden ser entregados a terceros que no sean parte de COES**. Los datos y documentos deben ser obtenidos desde el sitio oficial del estudio.
+
+En esta sección se resumen las versiones existentes, a la fecha, de la base de datos correspondiente a la primera segunda del estudio longitudinal (Ver Cuadro \@ref(tab:versiones)). A su vez, se reseñan las diferencias entre dichas versiones y los cambios introducidos.
+
+## Casos Falsificados
+
+Durante la realización del trabajo de campo de ELSOC 2018, el equipo de Centro Micro Datos, junto al equipo de Encuestas COES detectó que 47 entrevistas correspondientes a la ola 2016 fueron falsificadas. Producto de lo anterior, dichas respuestas fueron eliminadas de la base de datos en la versión 3.0 del 28 de Diciembre de 2018. El problema representa menos del 1% del tamaño muestral original y, en los análisis realizados por el equipo de Encuestas COES, no se detectaron cambios sustantivos en la distribución de las variables tras su eliminación. 
+
+```{r}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+versiones <- tibble(Versión = c("0.0"),
+                  Fecha = c("27/11/2017"),
+                  "Nombre Archivo" = c("ELSOC Ola 2"),
+                  Características = c("Base original entregada por Centro Micro Datos a COES. Contiene respuestas de 2526 entrevistados (N final) a preguntas del cuestionario.")) %>% 
+  add_row(Versión = c("0.1"),
+                  Fecha = c("12/02/2018"),
+                  "Nombre Archivo" = c("ELSOC Ola 2 Corregido"),
+                  Características = c("Base de datos ajustada a solicitudes de COES, incluyendo chequeos de datos y entrega de bases adicionales")) %>% 
+  add_row(Versión = c("0.2"),
+                  Fecha = c("16/04/2018"),
+                  "Nombre Archivo" = c("ELSOC_W02_v1.00"),
+                  Características = c("Base de datos elaborada por COES uniendo información adicional CMD. Con controles de calidad y ajustes a nombres de variables (homologamiento).")) 
+
+versiones %>%
+  kable(booktabs = TRUE,  caption="\\label{tab:versiones}Versiones de Base de Datos ELSOC Ola 2 (2017)") %>%
+  column_spec(c(1), width = "1cm") %>%
+  column_spec(c(2,3), width = "2cm") %>%
+  column_spec(c(4), width = "4cm") %>%
+  kable_classic("striped", full_width = F)%>%
+  landscape()
+```
+

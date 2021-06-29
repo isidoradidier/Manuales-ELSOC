@@ -1,0 +1,13 @@
+# Protocolo de Uso de Base de Datos
+Desde la liberación de la base de datos de ELSOC COES Ola 2, éstos se encuentran bajo un período de embargo, por lo que el acceso de la comunidad académica general se encuentra restringido. Los datos se irán liberando de manera modular durante el año 2018, en la medida que se realizan las presentaciones de éstos. Concluido lo anterior, se liberará la base de datos completa. Los datos de ELSOC **sólo pueden ser utilizados con fines de docencia y/o investigación**. En caso de que se deseen utilizar para otros fines, es necesario solicitar autorización expresa al Equipo de Encuestas de COES. A su vez, cualquier publicación que incluya para su realización el uso de la base de datos (en cualquiera de sus versiones) de los datos del ELSOC debe citar la fuente de la siguiente forma:
+
+::: {.base}  
+Centro de Estudios de Conflicto y Cohesión Social (2018). Estudio Longitudinal  Social de Chile, Primera Ola (ELSOC_W02_v2.00) . [Archivo de datos]. Santiago, Chile: Centro de Estudios de Conflicto y Cohesión Social (COES).[www.coes.cl](www.coes.cl)
+:::
+
+Por último, en caso de que se desee citar el presente Manual de Usuario 
+
+::: {.base}  
+Centro de Estudios de Conflicto y Cohesión Social (2018). Manual de Usuario de Estudio Longitudinal  Social de Chile, Segunda Ola (2017). Corte Transversal. Versión 2.0. Santiago, Chile: Centro de Estudios de Conflicto y Cohesión Social (COES).
+:::
+
