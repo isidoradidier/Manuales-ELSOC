@@ -29,3 +29,13 @@ libro-de-códigos-base-de-datos-elsoc-2016
 variables-elsoc-ola-1
 dudas-y-consultas
 características-base-de-datos-elsoc-ola-1
+tab:unnamed-chunk-1
+tab:unnamed-chunk-2
+tab:unnamed-chunk-3
+tab:unnamed-chunk-4
+etapa-5-selección-de-personas
+etapa-6-aumento-del-tamaño-muestral
+fig:unnamed-chunk-2
+fig:unnamed-chunk-3
+fig:unnamed-chunk-1
+tab:unnamed-chunk-6

@@ -78,7 +78,46 @@ y el cálculo de las tasas de resultados, dirigirse a [http://www.aapor.org/AAPO
 publications/Standard-Definitions20169theditionfinal.pdf](http://www.aapor.org/AAPOR_Main/media/
 publications/Standard-Definitions20169theditionfinal.pdf).
 
-**AQUÍ VA EL CUADRO 7**
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+disp <- tibble(Codigo_General = c(" ", ""),
+                  "Código Específico" = c("Entrevistado", ""),
+                  " " = c("Completo", "Parcial"),
+                  "Casos" = c("2927","18")) %>% 
+  add_row(Codigo_General = c(" ", "",""),
+                  "Código Específico" = c("No Entrevistado","",""),
+                  " " = c("Rechazo", "No contacto", "Otro"),
+                  "Casos" = c("426", "1229", "43")) %>%
+    add_row(Codigo_General = c("",""),
+                  "Código Específico" = c("",""),
+                  " " = c("",""),
+                  "Casos" = c("79","")) %>% 
+     add_row(Codigo_General = c("",""),
+                  "Código Específico" = c("",""),
+                  " " = c("",""),
+                  "Casos" = c("332","")) %>% 
+    add_row(Codigo_General = c("",""),
+                  "Código Específico" = c("",""),
+                  " " = c("",""),
+                  "Casos" = c("5054","")) 
+
+
+disp%>%
+  kable(booktabs = TRUE,  caption="\\label{tab:estratos}Códigos de Disposición Final de Casos") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2,3), width = "3cm") %>%
+  column_spec(c(4), width = "2cm") %>%
+  row_spec(1:11, background = "white") %>% 
+  pack_rows("Elegible", 1,5) %>%
+  pack_rows("Elegibilidad descononocida", 6,7) %>%
+  pack_rows("No elegible", 8,9) %>%
+  pack_rows("TOTAL", 10,11) %>%
+  kable_classic(full_width = F)
+
+```
+
 
 ## Futuras Olas del Estudio Longitudinal
 
@@ -86,9 +125,14 @@ El CentroMicro Datos ha diseñado una estrategia de seguimiento de los entrevist
 
 Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura 1). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD. En ELSOC 2017 se recuperó un 84.49% de lamuestra de 2016, porcentaje de atrición mejor al esperado.
 
-**AQUÍ VA LA FIGURA 1**
+ 
+```{r echo=FALSE, fig.align='center', fig.height=1, out.height="75%", out.width="75%", fig.cap='Diseño Muestral de ELSOC según Ola.'}
+knitr::include_graphics("imagenes/attrition_01.png")
+```
 
 Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.
 
-**Aquí va la figura 2**
+```{r echo=FALSE, fig.align='center', fig.height=1, out.height="85%", out.width="85%", fig.cap='Diseño Muestral de ELSOC según Ola.'}
+knitr::include_graphics("imagenes/Sample_Design.png")
+```
 
