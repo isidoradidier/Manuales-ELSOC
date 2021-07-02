@@ -82,10 +82,11 @@ temas_conceptos <- tibble(Sección =
 
 
 temas_conceptos %>%
-  kable(booktabs = TRUE,caption="\\label{tab:apaisada}Temas y Conceptos medidos en ELSCO Ola 1") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "8cm") %>%
-  landscape()
+  kable(booktabs = TRUE,  caption="\\label{tab:temas_conceptos}Temas y Conceptos medidos en ELSCO Ola 1") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "14cm") %>%
+  row_spec(0:7, background = "white") %>% 
+  kable_classic(full_width = F)
 ```
 
 
@@ -210,9 +211,10 @@ ficha_técnica <- tibble(Características =
             la información y construcción de factores de expansión).")) 
 
 ficha_técnica %>%
-  kable(booktabs = TRUE,caption="\\label{tab:apaisada}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "6cm") %>%
-  landscape()
+  kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
+  column_spec(c(1), width = "5cm") %>%
+  column_spec(c(2), width = "15cm") %>%
+  row_spec(0:24, background = "white") %>% 
+  kable_classic(full_width = F)
 ```
 
