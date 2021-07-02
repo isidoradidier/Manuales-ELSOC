@@ -1,0 +1,79 @@
+# Libro de Códigos Base de Datos ELSOC Ola 3 {#libro-codigos}
+
+Para un uso adecuado de la base de datos de la tercera ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.
+
+## Variables ELSOC Ola 3
+
+La base de datos de ELSOC Ola 3 (2018) contiene una fila por cada entrevistado (son 3748 casos) y una columna por cada variable. Las variables corresponden a los ítems incluidos en el cuestionario del estudio. Ahora, es necesario que el usuario comprenda plenamente qué es un ítem.
+
+A modo de ejemplo, la pregunta M42 del cuestionario de ELSOC, dónde se consulta a los entrevistados si ellos o algún miembro del hogar tienen algún crédito o deuda de los tipos que se mencionan a continuación. En esta pregunta, se incluyen 4 ítems distintos, correspondientes a cuatro tipos distintos de crédito o deuda. En la base de datos, cada ítem corresponde a una variable incluida en la base de datos. Siguiendo el ejemplo, el primer ítem de deudas corresponde a: “Casas comerciales", de modo que éste quedará codificado como m42_01. Así, el nombre de las variables de la base de datos se construye combinando:
+    - El código de la variable en el cuestionario, en letras minúsculas (en el ejemplo corresponde a m42).
+    - Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guión bajo _ (en el primer caso, sería m42_01).
+
+```{r pantallazo 1}
+
+```
+
+
+El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso. De manera genérica, las variables incluidas en la base de datos tienen el siguiente formato:
+ 
+```{r pantallazo 2}
+
+```
+ 
+A continuación, se presenta un ejemplo para clarificar dicha estructura. En este caso, t2_01 es el nombre de dicho ítem del cuestionario en la base de datos (como variable). Por medio de estos códigos se pueden identificar los distintos ítemes incluidos. Se recomienda rastrear las variables en el Libro de Códigos y en la base de datos según dicho nombre. Junto a este código aparece la etiqueta de variable incluida en la base de datos ELSOC. En este caso es “Grado de acuerdo: Este es el barrio ideal para mí”. Las etiquetas fueron diseñadas por el equipo ELSOC con el objetivo de describir de modo sucinto el fenómeno o dimensión a medir^[Se intenta preservar el ítem original. Los cambios introducidos se hicieron por motivos de espacio.], eliminando tildes y otros símbolos no incluidos en todos los softwares estadísticos (por ejemplo, la ñ).
+
+Los distintos valores listados corresponden a las categorías de respuesta asociadas al ítem.
+
+En la construcción de la base de datos, dichas categorías fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con el enunciado, en la encuesta a su respuesta se le asignará un valor numérico de 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta “Totalmente en desacuerdo”. Ejemplo:
+
+```{r pantallazo 3}
+
+```
+
+ 
+Por último, es importante también tener en cuenta la información no incluida en este libro de códigos. “A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?" corresponde al fraseo exacto de la pregunta, mientras que “(MOSTRAR TARJETA 2)” aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos de manera completa en el Cuestionario y el Listado de Variables correspondiente.
+
+Las variables que poseen categorías residuales de no respuesta (No Sabe y No Responde), generalmente se codifican como 8/9 o 88/99, dependiendo de la anchura de la variable. **La base de datos de ELSOC 2018 homologa todas las respuestas No Sabe a -888 y No Responde a -999** y chequea la naturaleza de los valores perdidos restantes (los cuales corresponden en su totalidad a la aplicación de filtros). Las respuestas No Sabe y No Responde no fueron eliminadas ni transformadas en valores perdidos en la base de datos, de modo que los usuarios deben decidir qué hacer con dichos valores de respuesta. La etiqueta de valores de éstos incluye la instrucción de no ser leídos por el encuestador. En el caso de que la pregunta contenga un filtro, los valores no relevantes (filtrados) aparecen en la última línea y no tienen asignado valores ni etiquetas (son valores perdidos por el sistema).
+
+Las variables de cadena (texto) no presentan códigos, ya que presentan los verbatim literales de las menciones por parte de los encuestados. El único cambio introducido -y fue realizado por motivos de compatibilidad entre softwares- fue la eliminación de símbolos tales como tildes, diéresis y otros caracteres especiales. A continuación, se presenta el ejemplo de una de dichas preguntas:
+
+```{r pantallazo 4}
+
+```
+
+ 
+En el caso de los ítems dónde se pide una respuesta numérica tampoco existen categorías de respuesta, registrándose el valor indicado por el entrevistado. De todos modos, se incluyen etiquetas de valores para los valores perdidos. A continuación, un ejemplo de un ítem de este tipo:
+
+```{r pantallazo 5}
+
+```
+
+
+## Características Base de Datos ELSOC Ola 3
+
+La versión actual de la base de datos (2.0) contiene información para los 3748 entrevistados (N definitivo tras supervisión) en relación a los 384 ítems del cuestionario (cada una corresponde a una variable en la base de datos) y un conjunto adicional de variables:
+
+1. Identificadoras de Casos: id de la encuesta, comuna de residencia y región de residencia.
+
+2. De Diseño Muestral Complejo: ponderadores (y factores de expansión), estrato y segmento para incorporar el diseño complejo de la encuesta.
+
+Dentro de las variables de diseño muestral complejo, el estrato identifica a los seis previamente definidos: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes (4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa las manzanas/bloques, pero los valores son artificiales (generados por Centro Micro Datos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados.
+
+```{r pantallazo 6}
+
+```
+
+Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo esto motivo de una nueva versión de la base de datos. Esto implicará un nuevo lanzamiento de la base de datos y todas las facilidades para que los investigadores hagan un uso óptimo de las variables territoriales.
+
+Las bases de datos se encuentran disponibles en formatos .dta (compatibles con versiones Stata 13 y 14), .sav (compatibles con SPSS) y .RData (compatibles con R, los objetos contienen como atributos etiquetas de variables y valores). El Equipo de Encuestas COES también cuenta con bases de datos adicionales sobre la encuesta (en formato .dta y/o .xlsx):
+1. Casos supervisados.
+2. Capacitaciones a encuestadores.
+3. Duración de entrevistas.
+4. Códigos de disposición final muestra completa.
+5. Diseño y selección muestra.
+6. Tabla Kish.
+7. Construcción de ponderadores.
+
+Sin embargo, los archivos anteriormente listados deben ser solicitados al Equipo de Encuestas, justificando el uso que se darán a los datos requeridos. El Equipo de Encuestas COES decidirá la pertinencia de dichas solicitudes y se reserva el derecho para entregar dichos datos.
+
