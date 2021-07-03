@@ -8,13 +8,11 @@ author:
 - name: Alejandro Plaza
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
+  bookdown::pdf_book:
     toc: yes
-    toc_depth: 3
-  html_document:
-    toc: yes
-    toc_depth: '3'
-    df_print: paged
+    includes:
+      in_header: preamble.tex
+      before_body: portada.tex
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
