@@ -56,9 +56,8 @@ dif_cuest %>%
   kable(booktabs = TRUE,caption="\\label{tab:difcuest}Diferencias Temáticas entre Cuestionarios") %>%
   column_spec(c(1), width = "6cm") %>%
   column_spec(c(2), width = "6cm") %>%
-  row_spec(0:24, background = "white") %>% 
   kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  kable_styling(latex_options = "HOLD_position")
 ```
 ```{r items, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
@@ -96,10 +95,9 @@ items %>%
   kable(booktabs = TRUE, longtab=T, caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
   column_spec(c(1), width = "4cm") %>%
   column_spec(c(2), width = "9cm") %>%
-  row_spec(0:24, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
-
+  row_spec(0:7,background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 
@@ -228,6 +226,6 @@ ficha %>%
   column_spec(c(1), width = "3cm") %>%
   column_spec(c(2), width = "9cm") %>%
   row_spec(0:24, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```

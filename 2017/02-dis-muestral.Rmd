@@ -95,8 +95,8 @@ estratos %>%
   column_spec(c(5,6,7,8), width = "1.5cm") %>%
   row_spec(0:6, background = "white") %>% 
   add_header_above(c(" " = 1, " " = 3, "Sub-estrato Norte" = 2, "Sub-estrato Sur" = 2))%>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase la Tabla \@ref(tab:estratos) para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.
@@ -161,8 +161,8 @@ ciudades %>%
   column_spec(c(2), width = "3cm") %>%
   column_spec(c(3,4), width = "2cm") %>%
   row_spec(0:6, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 En cuatro ciudades, algunos bloques eran tan grandes que fueron selecciones certeras. Es decir, los recuentos de unidades de vivienda eran mayores que el intervalo de selección y se seleccionarían en cualquier muestra, e incluso podrían seleccionarse dos veces. Para evitar selecciones duplicadas, estos bloques se eligieron primero con certeza y luego se seleccionaron bloques adicionales entre los restantes para aquellas ciudades, de modo de alcanzar el tamaño de muestra total deseado para la ciudad (ver Tabla \@ref(tab:ciudades). $\pi_{j|i}$ para estas ciudades es 1.
@@ -207,8 +207,8 @@ bloques %>%
   column_spec(c(2), width = "4cm") %>%
   column_spec(c(3), width = "2cm") %>%
   row_spec(0:6, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position")  
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en la Tabla \@ref(tab:estratos).
@@ -268,8 +268,8 @@ aumento_muestra %>%
   pack_rows("O’Higgins", 4, 6) %>%
   pack_rows("Biobío", 7, 12) %>%
   pack_rows("Metropolitana", 13, 46) %>%
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 
 ```
 

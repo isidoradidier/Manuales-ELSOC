@@ -71,7 +71,7 @@ Si desea conocer más detalles sobre la determinación de los códigos de dispos
 
 Dadas las diferencias observadas a nivel de región en ELSOC 2016, se desagregan los resultados previos (Ver Cuadro \@ref(tab:cdf)).
 
-```{r echo=FALSE}
+```{r cdf, echo=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -171,9 +171,9 @@ cdf %>%
   column_spec(c(1), width = "4cm") %>%
   column_spec(c(2,3), width = "3cm") %>%
   column_spec(c(4,5), width = "2cm") %>%
-  row_spec(1:20, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  row_spec(0:18, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 
@@ -261,9 +261,9 @@ atricion %>%
   column_spec(c(1), width = "4cm") %>%
   column_spec(c(2,3), width = "3cm") %>%
   column_spec(c(4), width = "4cm") %>%
-  row_spec(1:17, background = "white") %>% 
-  kable_classic(full_width = F) %>%
-  kable_styling(latex_options = "hold_position") 
+  row_spec(1:16, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 
 
 ```

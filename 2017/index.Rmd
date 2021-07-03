@@ -15,7 +15,7 @@ output:
       toolbar:
         position: static
   bookdown::pdf_book:
-    extra_dependencies: ["float"]
+    extra_dependencies: ["flafter"]
     toc: yes
     includes:
       in_header: preamble.tex
