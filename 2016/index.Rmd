@@ -1,17 +1,13 @@
 --- 
-title: "ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)"
-author:
-- name: Roberto González
-- name: Matías Bargsted
-- name: Daniel Miranda
-- name: Benjamín Muñoz
-- name: Alejandro Plaza
+title: <center>ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)</center>
+author: <center> Roberto González, Matías Bargsted, Daniel Miranda, Benjamín Muñoz, Alejandro Plaza </center>
 date: "`r Sys.Date()`"
 output:
   bookdown::pdf_book:
     toc: yes
     includes:
       in_header: preamble.tex
+      before_body: portada.tex
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -19,8 +15,10 @@ bibliography:
 - packages.bib
 biblio-style: apalike
 link-citations: yes
-subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
+subtitle:  <center>MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL</center>
 ---
+
+  
 
 # Presentación {#present}
 
