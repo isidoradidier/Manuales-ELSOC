@@ -15,6 +15,13 @@
 \usepackage{multirow}
 \usepackage{caption}
 \usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
 \usepackage{arydshln}
 \usepackage{amsmath}
 \usepackage{adjustbox}
@@ -24,6 +31,10 @@
 \usepackage[flushleft]{threeparttable}
 \usepackage{pbox}
 \usepackage{pdflscape}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 
 %Comandos especiales
 \newcolumntype{C}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

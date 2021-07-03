@@ -9,7 +9,7 @@ En esta sección se resumen las versiones existentes, a la fecha, de la base de 
 
 Durante la realización del trabajo de campo de ELSOC 2018, el equipo de Centro Micro Datos, junto al equipo de Encuestas COES detectó que 47 entrevistas correspondientes a la ola 2016 fueron falsificadas. Producto de lo anterior, dichas respuestas fueron eliminadas de la base de datos en la versión 3.0 del 28 de Diciembre de 2018. El problema representa menos del 1% del tamaño muestral original y, en los análisis realizados por el equipo de Encuestas COES, no se detectaron cambios sustantivos en la distribución de las variables tras su eliminación. 
 
-```{r}
+```{r echo=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -27,11 +27,13 @@ versiones <- tibble(Versión = c("0.0"),
                   Características = c("Base de datos elaborada por COES uniendo información adicional CMD. Con controles de calidad y ajustes a nombres de variables (homologamiento).")) 
 
 versiones %>%
-  kable(booktabs = TRUE,  caption="\\label{tab:versiones}Versiones de Base de Datos ELSOC Ola 2 (2017)") %>%
+  kable(booktabs = TRUE, caption="\\label{tab:versiones}Versiones de Base de Datos ELSOC Ola 2 (2017)") %>%
   column_spec(c(1), width = "1cm") %>%
-  column_spec(c(2,3), width = "2cm") %>%
-  column_spec(c(4), width = "4cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  column_spec(c(2), width = "2cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  column_spec(c(4), width = "6cm") %>%
+  row_spec(0:5, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "hold_position") 
 ```
 
