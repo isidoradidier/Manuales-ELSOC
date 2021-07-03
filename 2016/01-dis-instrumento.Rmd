@@ -83,8 +83,9 @@ temas_conceptos <- tibble(Sección =
 
 temas_conceptos %>%
   kable(booktabs = TRUE,  caption="\\label{tab:temas_conceptos}Temas y Conceptos medidos en ELSCO Ola 1") %>%
-  column_spec(c(1), width = "6cm") %>%
-  column_spec(c(2), width = "14cm") %>%
+  kable_styling(latex_options = "HOLD_position") %>%
+  column_spec(c(1), width = "5cm") %>%
+  column_spec(c(2), width = "10cm") %>%
   row_spec(0:7, background = "white") %>% 
   kable_classic(full_width = F)
 ```
@@ -213,7 +214,7 @@ ficha_técnica <- tibble(Características =
 ficha_técnica %>%
   kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
   column_spec(c(1), width = "5cm") %>%
-  column_spec(c(2), width = "15cm") %>%
+  column_spec(c(2), width = "10cm") %>%
   row_spec(0:24, background = "white") %>% 
   kable_classic(full_width = F)
 ```
