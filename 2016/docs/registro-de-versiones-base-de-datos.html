@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 5 Registro de Versiones Base de Datos | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="description" content="Capítulo 5 Registro de Versiones Base de Datos | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 5 Registro de Versiones Base de Datos | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 5 Registro de Versiones Base de Datos | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
 
 
-<meta name="date" content="2021-07-01" />
+<meta name="date" content="2021-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="implementación-de-la-encuesta.html"/>
 <link rel="next" href="protocolo-de-uso-de-base-de-datos.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -52,8 +52,6 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
@@ -104,14 +102,12 @@
 <ul>
 <li class="chapter" data-level="5.1" data-path="registro-de-versiones-base-de-datos.html"><a href="registro-de-versiones-base-de-datos.html#casos-falsificados"><i class="fa fa-check"></i><b>5.1</b> Casos Falsificados</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="protocolo-de-uso-de-base-de-datos.html"><a href="protocolo-de-uso-de-base-de-datos.html"><i class="fa fa-check"></i><b>6</b> Protocolo de Uso de Base de Datos</a>
+<li class="chapter" data-level="6" data-path="protocolo-de-uso-de-base-de-datos.html"><a href="protocolo-de-uso-de-base-de-datos.html"><i class="fa fa-check"></i><b>6</b> Protocolo de Uso de Base de Datos</a></li>
+<li class="chapter" data-level="7" data-path="dudas-y-consultas.html"><a href="dudas-y-consultas.html"><i class="fa fa-check"></i><b>7</b> Dudas y Consultas</a></li>
+<li class="chapter" data-level="8" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html"><i class="fa fa-check"></i><b>8</b> Libro de Códigos Base de Datos ELSOC 2016</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="protocolo-de-uso-de-base-de-datos.html"><a href="protocolo-de-uso-de-base-de-datos.html#dudas-y-consultas"><i class="fa fa-check"></i><b>6.1</b> Dudas y Consultas</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html"><i class="fa fa-check"></i><b>7</b> Libro de Códigos Base de Datos ELSOC 2016</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>7.1</b> Variables ELSOC Ola 1</a></li>
-<li class="chapter" data-level="7.2" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>7.2</b> Características Base de Datos ELSOC Ola 1</a></li>
+<li class="chapter" data-level="8.1" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>8.1</b> Variables ELSOC Ola 1</a></li>
+<li class="chapter" data-level="8.2" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>8.2</b> Características Base de Datos ELSOC Ola 1</a></li>
 </ul></li>
 </ul>
 
@@ -136,111 +132,6 @@
 <div id="casos-falsificados" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Casos Falsificados</h2>
 <p>Durante la realización del trabajo de campo de ELSOC 2018, el equipo de CentroMicro Datos, junto al equipo de Encuestas COES detectó que 56 entrevistas correspondientes a la ola 2016 fueron falsificadas. Producto de lo anterior, dichas respuestas fueron eliminadas de la base de datos en la versión 3.0 del 28 de Diciembre de 2018. El problema representa menos del 1% del tamaño muestral original y, en los análisis realizados por el equipo de Encuestas COES, no se detectaron cambios sustantivos en la distribución de las variables tras su eliminación.</p>
-<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>
-<span id="tab:unnamed-chunk-1">Tabla 5.1: </span>DVersiones de Base de Datos ELSOC Ola 1 (2016)
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;background-color: white !important;">
-Versión
-</th>
-<th style="text-align:left;background-color: white !important;">
-Fecha
-</th>
-<th style="text-align:left;background-color: white !important;">
-Nombre Archivo
-</th>
-<th style="text-align:left;background-color: white !important;">
-Características
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;width: 2cm; background-color: white !important;">
-0.0
-</td>
-<td style="text-align:left;width: 3cm; background-color: white !important;">
-20/12/2016
-</td>
-<td style="text-align:left;width: 6cm; background-color: white !important;">
-BBDD COES Entrega 1
-</td>
-<td style="text-align:left;width: 8cm; background-color: white !important;">
-Base original entregada por Centro
-Micro Datos a COES. Contiene
-respuestas de 2983 entrevistados (N final)
-a preguntas del cuestionario.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2cm; background-color: white !important;">
-0.5
-</td>
-<td style="text-align:left;width: 3cm; background-color: white !important;">
-12/01/2017
-</td>
-<td style="text-align:left;width: 6cm; background-color: white !important;">
-Base Datos Entrevistado 20170111
-</td>
-<td style="text-align:left;width: 8cm; background-color: white !important;">
-Base de datos ajustada a solicitudes
-de COES: nuevos nombres variables,
-reetiquetamiento, ajuste de valores
-perdidos. Variables de sexo y edad.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2cm; background-color: white !important;">
-1.0
-</td>
-<td style="text-align:left;width: 3cm; background-color: white !important;">
-23/03/2017
-</td>
-<td style="text-align:left;width: 6cm; background-color: white !important;">
-COESW1_Stata14_V3
-</td>
-<td style="text-align:left;width: 8cm; background-color: white !important;">
-Base de datos elaborada por COES
-uniendo información de ponderadores
-provistos por CMD.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2cm; background-color: white !important;">
-2.0
-</td>
-<td style="text-align:left;width: 3cm; background-color: white !important;">
-23/04/2018
-</td>
-<td style="text-align:left;width: 6cm; background-color: white !important;">
-ELSOC_W01_v2.00
-</td>
-<td style="text-align:left;width: 8cm; background-color: white !important;">
-Base de datos elaborada por COES con
-correcciones introducidas durante 2017 y
-homologación con base de ELSOC ola 2.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 2cm; background-color: white !important;">
-3.0
-</td>
-<td style="text-align:left;width: 3cm; background-color: white !important;">
-28/12/2018
-</td>
-<td style="text-align:left;width: 6cm; background-color: white !important;">
-ELSOC_W01_v3.00
-</td>
-<td style="text-align:left;width: 8cm; background-color: white !important;">
-Base de datos elaborada por COES con
-correcciones introducidas tras eliminación
-de 56 entrevistas falsificadas.
-</td>
-</tr>
-</tbody>
-</table>
 
 </div>
 </div>
@@ -301,6 +192,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

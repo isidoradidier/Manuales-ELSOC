@@ -16,6 +16,7 @@ language:
     proof: 'Demostración. '
     remark: 'Nota: '
     solution: 'Solución. '
+    contents: 'Índice '
   ui:
     chapter_name: 'Capítulo '
 delete_merged_file: yes
