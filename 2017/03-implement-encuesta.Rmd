@@ -1,16 +1,16 @@
-#Implementación de la Encuesta {#implem_encuest}
+# Implementación de la Encuesta {#implem_encuest}
 
 COES realizó una licitación pública para la ejecución del ELSOC.  El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las dos primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.
 
 La descripción de la implementación de ELSOC 2016 incluye apartados relativos al empadronamiento e inicio del trabajo de campo. Se recomienda revisar dicho documento con el objetivo de formarse una visión detallada de esta fase del estudio. A continuación se describen aspectos relevantes de la ejecución de ELSOC 2017.
 
-##Estrategia de Seguimiento
+## Estrategia de Seguimiento
 
 COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC 2016 con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico). Originalmente CMD sólo contaba con correos electrónicos  de un 19,3% de los entrevistados, para luego recopilar mayor información de éstos. Se envió un saludo navideño a los participantes de ELSOC por correo electrónico. Posteriormente, en Marzo de 2017 se envió otro saludo. A su vez, se envió información proveniente del equipo de ELSOC para explicar cuál es la utilidad de ELSOC.
 
 CMD realizó una ronda de recontacto con los participantes de ELSOC previo al trabajo de campo de 2017. El objetivo de dicho trabajo fue actualizar su información de contacto. Esto se realizó por medio de una encuesta web y por vía telefónica. Para esto se contó con un Call Center encargado de contactar a los participantes. Por otra parte, CMD almacenó, con altos estándares de confidencialidad, la información relativa a la dirección de los entrevistados de ELSOC y otra información pertinente derivada del empadronamiento. Dicha información permite contar contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2017^[Más detalles se encuentran disponibles en el Informe Anual de Servicios para el Levantamiento del Estudio Longitudinal sobre Conflicto y Cohesión Social (COES) elaborado por MicroDatos.].
 
-##Pilotaje del Cuestionario Y Capacitación
+## Pilotaje del Cuestionario Y Capacitación
 
 Con el cuestionario correspondiente a la segunda ola de ELSOC previamente elaborado, COES y CMD colaboraron en la programación de éste para que fuera aplicada de manera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propusó ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.
 
@@ -20,7 +20,7 @@ El CMD se encargó de la selección y capacitación del personal requerido (coor
 
 Se dispuso de 17 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores en el levantamiento se realizó en cada sede y hubo encuestadores apoderados, quienes posteriormente se encargaron de capacitar a los encuestadores en las regiones en que no hubo sedes (áquellas con menos de 400 encuestas a realizar). 
 
-#Planificación y Ejecución del Campo
+# Planificación y Ejecución del Campo
 
 Al igual que en 2016, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:
 
@@ -71,7 +71,7 @@ Si desea conocer más detalles sobre la determinación de los códigos de dispos
 
 Dadas las diferencias observadas a nivel de región en ELSOC 2016, se desagregan los resultados previos (Ver Cuadro \@ref(tab:cdf)).
 
-```{r include=FALSE}
+```{r cdf, echo=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -168,10 +168,12 @@ cdf <- tibble(Sede= c("Iquique"),
 
 cdf %>%
   kable(booktabs = TRUE,  caption="\\label{tab:cdf}Códigos de Disposición Final de Casos según Zona") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2,3,4,5), width = "1cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2,3), width = "3cm") %>%
+  column_spec(c(4,5), width = "2cm") %>%
+  row_spec(0:18, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 
@@ -179,88 +181,93 @@ cdf %>%
 
 Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura \@ref(fig:atricion)). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD.
 
-![\\label{fig:atricion}: Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png)
+![(#fig:atricion) Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/attrition_01.png){width=70%}
+
 
 El Cuadro \@ref(tab:atricion2) describe la recuperación de casos en ELSOC 2017, desagregando en subrgupos claves. Tal como puede observarse, la muestra de 2017 equivale a un 84.49% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Luego, se observan diferencias sustantivas en términos de sexo y región de locación del entrevistado. 
 
-```{r atricion, include=FALSE}
+```{r atricion, echo=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
 atricion <- tibble(Variable = c("Total"),
                   "Casos 2016" = c("2984"),
-                  "Casos 207" = c("2521"),
+                  "Casos 2017" = c("2521"),
                   Recuperación = c("84.49%")) %>% 
   add_row(Variable = c("Hombre"),
                   "Casos 2016" = c("1191"),
-                  "Casos 207" = c("965"),
+                  "Casos 2017" = c("965"),
                   Recuperación = c("81.02%")) %>% 
   add_row(Variable = c("Mujer"),
                   "Casos 2016" = c("1793"),
-                  "Casos 207" = c("1556"),
+                  "Casos 2017" = c("1556"),
                   Recuperación = c("86.78%")) %>% 
     add_row(Variable = c("Tarapaca"),
                   "Casos 2016" = c("46"),
-                  "Casos 207" = c("46"),
+                  "Casos 2017" = c("46"),
                   Recuperación = c("100.00%")) %>% 
      add_row(Variable = c("Antofagasta"),
                   "Casos 2016" = c("61"),
-                  "Casos 207" = c("55"),
+                  "Casos 2017" = c("55"),
                   Recuperación = c("90.16%")) %>% 
     add_row(Variable = c("Atacama"),
                   "Casos 2016" = c("117"),
-                  "Casos 207" = c("95"),
+                  "Casos 2017" = c("95"),
                   Recuperación = c("81.20%")) %>% 
     add_row(Variable = c("Coquimbo"),
                   "Casos 2016" = c("147"),
-                  "Casos 207" = c("124"),
+                  "Casos 2017" = c("124"),
                   Recuperación = c("84.35%")) %>%
     add_row(Variable = c("Valparaiso"),
                   "Casos 2016" = c("545"),
-                  "Casos 207" = c("428"),
+                  "Casos 2017" = c("428"),
                   Recuperación = c("78.53%")) %>% 
   add_row(Variable = c("R. Metropolitana"),
                   "Casos 2016" = c("915"),
-                  "Casos 207" = c("763"),
+                  "Casos 2017" = c("763"),
                   Recuperación = c("83.39%")) %>% 
   add_row(Variable = c("OHiggins"),
                   "Casos 2016" = c("103"),
-                  "Casos 207" = c("92"),
+                  "Casos 2017" = c("92"),
                   Recuperación = c("89.32%")) %>% 
   add_row(Variable = c("Maule"),
                   "Casos 2016" = c("205"),
-                  "Casos 207" = c("190"),
+                  "Casos 2017" = c("190"),
                   Recuperación = c("92.68%")) %>% 
   add_row(Variable = c("Biobío"),
                   "Casos 2016" = c("486"),
-                  "Casos 207" = c("420"),
+                  "Casos 2017" = c("420"),
                   Recuperación = c("86.42%")) %>% 
   add_row(Variable = c("Araucanía"),
                   "Casos 2016" = c("229"),
-                  "Casos 207" = c("195"),
+                  "Casos 2017" = c("195"),
                   Recuperación = c("85.15%")) %>% 
   add_row(Variable = c("Los Ríos"),
                   "Casos 2016" = c("49"),
-                  "Casos 207" = c("45"),
+                  "Casos 2017" = c("45"),
                   Recuperación = c("91.84%")) %>% 
   add_row(Variable = c("Los Lagos"),
                   "Casos 2016" = c("58"),
-                  "Casos 207" = c("50"),
+                  "Casos 2017" = c("50"),
                   Recuperación = c("86.21%")) %>% 
   add_row(Variable = c("Aysén"),
                   "Casos 2016" = c("23"),
-                  "Casos 207" = c("18"),
+                  "Casos 2017" = c("18"),
                   Recuperación = c("78.26%"))
   
 
 atricion %>%
-  kable(booktabs = TRUE,  caption="\\label{tab:atricion2}Análisis de Atrición según Atributos Claves") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2,3,4), width = "1cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:atricion2}Análisis de Atrición según Atributos Claves") %>%
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2,3), width = "3cm") %>%
+  column_spec(c(4), width = "4cm") %>%
+  row_spec(1:16, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
+
+
 ```
 
 Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.
 
-![\\label{fig:atricion2}: Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png)
+![(#fig:atricion2): Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png){width=70%}

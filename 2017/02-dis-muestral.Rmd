@@ -86,14 +86,17 @@ estratos <- tibble(Estrato = c("Gran Santiago"),
                   "n Sub-estrato Norte" = c("6"),
                   "N Sub-estrato Sur" = c("49"),
                   "n Sub-estrato Sur" = c("13")) 
-     
+
 estratos %>%
   kable(booktabs = TRUE,  caption="\\label{tab:estratos}Población por ciudad y tamaños de muestra, por estrato") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2,3,4), width = "1cm") %>%
-  column_spec(c(5,6,7,8), width = "2cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "2cm") %>%
+  column_spec(c(3,4), width = "1cm") %>%
+  column_spec(c(5,6,7,8), width = "1.5cm") %>%
+  row_spec(0:6, background = "white") %>% 
+  add_header_above(c(" " = 1, " " = 3, "Sub-estrato Norte" = 2, "Sub-estrato Sur" = 2))%>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase la Tabla \@ref(tab:estratos) para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.
@@ -151,12 +154,15 @@ ciudades <- tibble(Estrato = c("Gran Santiago"),
                   "n ciudades" = c("40"),
                   "n bloques por ciudad" = c("1,067")) 
 
+
 ciudades %>%
   kable(booktabs = TRUE,  caption="\\label{tab:ciudades}Distribución de los ciudades y bloques por estrato") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2,3,4), width = "1cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3,4), width = "2cm") %>%
+  row_spec(0:6, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 En cuatro ciudades, algunos bloques eran tan grandes que fueron selecciones certeras. Es decir, los recuentos de unidades de vivienda eran mayores que el intervalo de selección y se seleccionarían en cualquier muestra, e incluso podrían seleccionarse dos veces. Para evitar selecciones duplicadas, estos bloques se eligieron primero con certeza y luego se seleccionaron bloques adicionales entre los restantes para aquellas ciudades, de modo de alcanzar el tamaño de muestra total deseado para la ciudad (ver Tabla \@ref(tab:ciudades). $\pi_{j|i}$ para estas ciudades es 1.
@@ -197,10 +203,12 @@ bloques <- tibble(Estrato = c("Gran Santiago"),
 
 bloques %>%
   kable(booktabs = TRUE,  caption="\\label{tab:bloques}Distribución de los bloques por estrato") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2,3), width = "1cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2), width = "4cm") %>%
+  column_spec(c(3), width = "2cm") %>%
+  row_spec(0:6, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en la Tabla \@ref(tab:estratos).
@@ -250,13 +258,19 @@ aumento_muestra <- tibble(Región = c("Coquimbo", "", ""),
                   "Total viviendas agregadas" = c(9,12,14,8,12,6,6,39,9,24,6,12,9,33,9,6,6,8,32,16,6,6,30,14,7,14,32,12,16,6,9,6,120,9),
                   "Viviendas agregadas por bloque" = c(3,3,2,2,3,2,2,3,3,2,2,2,3,3,3,2,2,2,2,2,3,2,2,2,3,2,2,2,2,2,3,2,3,3))
 
-
 aumento_muestra %>%
-  kable(booktabs = T, longtab=T, caption="\\label{tab:aumento}Número de hogares agregados a la muestra según región y comuna") %>%
-  column_spec(c(1,2), width = "2cm") %>%
-  column_spec(c(3,4), width = "1cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:aumento}Número de hogares agregados a la muestra según región y comuna") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3,4), width = "3cm") %>%
+  row_spec(0:46, background = "white") %>% 
+  pack_rows("Coquimbo", 1, 3) %>%
+  pack_rows("O’Higgins", 4, 6) %>%
+  pack_rows("Biobío", 7, 12) %>%
+  pack_rows("Metropolitana", 13, 46) %>%
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
+
 ```
 
 

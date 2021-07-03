@@ -51,10 +51,13 @@ dif_cuest <- tibble("Temas Agregados" =
               calidad del empleo, caracterización del jefe del hogar, 
               acceso a bienes, endeudamiento")) 
 
+
 dif_cuest %>%
-  kable(booktabs = TRUE, align = "l", caption="\\label{tab:difcuest}Diferencias Temáticas entre Cuestionarios") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  kable(booktabs = TRUE,caption="\\label{tab:difcuest}Diferencias Temáticas entre Cuestionarios") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 ```{r items, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
@@ -89,12 +92,14 @@ items <- tibble(Sección =
             c("Descripción ocupacional, nivel educacional, ingreso individual y del hogar, descripción de la composición del hogar, satisfacción con el ingreso, origen educacional, pertenencia a pueblo indigena y adscripción y practicancia religiosa.")) 
 
 items %>%
-  kable(booktabs = TRUE,  caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "3cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:items}Temas y Conceptos medidos en ELSCO Ola 2") %>%
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2), width = "9cm") %>%
+  row_spec(0:7,background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
+
 
 ## Ficha Técnica
 
@@ -217,9 +222,10 @@ ficha <- tibble(Características =
             la información y construcción de factores de expansión).")) 
 
 ficha %>%
-  kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 2 (2017)") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "3cm") %>%
-  kable_classic("striped", full_width = F)%>%
-  landscape()
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 2 (2017)") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "9cm") %>%
+  row_spec(0:24, background = "white") %>% 
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```

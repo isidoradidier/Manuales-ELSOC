@@ -8,7 +8,14 @@ author:
 - name: Alejandro Plaza
 date: "`r Sys.Date()`"
 output:
+  bookdown::gitbook:
+    lib_dir: assets
+    split_by: section
+    config:
+      toolbar:
+        position: static
   bookdown::pdf_book:
+    extra_dependencies: ["flafter"]
     toc: yes
     includes:
       in_header: preamble.tex
