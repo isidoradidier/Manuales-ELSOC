@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 3 Diseño Muestral del Estudio | Manual_2019.knit</title>
+  <meta name="description" content="<center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center>" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 3 Diseño Muestral del Estudio | Manual_2019.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 3 Diseño Muestral del Estudio | Manual_2019.knit" />
+  
+  
+  
+
+
+
+<meta name="date" content="2021-07-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="dis-ins.html"/>
+<link rel="next" href="implementación-de-la-encuesta.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual de Usuario 2019</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentación</a></li>
+<li class="chapter" data-level="2" data-path="dis-ins.html"><a href="dis-ins.html"><i class="fa fa-check"></i><b>2</b> Diseño del Instrumento</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="dis-ins.html"><a href="dis-ins.html#proc-dis"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
+<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#nueva-preg"><i class="fa fa-check"></i><b>2.2</b> Preguntas nuevas incorporadas a ELSOC en ola 4</a></li>
+<li class="chapter" data-level="2.3" data-path="dis-ins.html"><a href="dis-ins.html#ficha-tecnica"><i class="fa fa-check"></i><b>2.3</b> Ficha Técnica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a></li>
+<li class="chapter" data-level="4" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html"><i class="fa fa-check"></i><b>4</b> Implementación de la Encuesta</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#estrategia-de-seguimiento"><i class="fa fa-check"></i><b>4.1</b> Estrategia de Seguimiento</a></li>
+<li class="chapter" data-level="4.2" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#pilotaje-del-cuestionario-y-capacitación"><i class="fa fa-check"></i><b>4.2</b> Pilotaje del Cuestionario y Capacitación</a></li>
+<li class="chapter" data-level="4.3" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#planificación-y-ejecución-del-campo"><i class="fa fa-check"></i><b>4.3</b> Planificación y Ejecución del Campo</a></li>
+<li class="chapter" data-level="4.4" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>4.4</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="4.5" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#incidencias-de-terreno-y-códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>4.5</b> Incidencias de Terreno y Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="4.6" data-path="implementación-de-la-encuesta.html"><a href="implementación-de-la-encuesta.html#aspectos-longitudinales-y-cuarta-ola-del-estudio"><i class="fa fa-check"></i><b>4.6</b> Aspectos Longitudinales y Cuarta Ola del Estudio</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html"><i class="fa fa-check"></i><b>7</b> Libro de Códigos Base de Datos ELSOC 2016</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>7.1</b> Variables ELSOC Ola 1</a></li>
+<li class="chapter" data-level="7.2" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>7.2</b> Características Base de Datos ELSOC Ola 1</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="diseño-muestral-del-estudio" class="section level1" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> Diseño Muestral del Estudio</h1>
+<p>A continuación, se presenta el desarrollo del cuestionario del ELSOC. El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) aplicado cara a cara a todos los participantes. Dicha aplicación se hace utilizando el sistema CAPI (Encuestas personales asistidas por computadores). El cuestionario fue diseñado para medir una serie de aspectos conceptualmente relevantes que permiten caracterizar los niveles de conflicto y cohesión social en Chile, enfatizando su evolución a lo largo del tiempo. Los principales temas de interés analítico abordados por la encuesta corresponden a los módulos en los cuales se estructura:</p>
+<ol style="list-style-type: decimal">
+<li><em>Ciudadanía y Democracia</em></li>
+<li><em>Redes sociales e Interacciones inter-grupales</em></li>
+<li><em>Legitimidad y desigualdad social</em></li>
+<li><em>Sociabilidad política</em></li>
+<li><em>Conflicto social</em></li>
+<li><em>Dimensión barrial y territorial</em></li>
+<li><em>Género</em></li>
+<li><em>Salud y bienestar</em></li>
+<li><em>Caracterización Sociodemográfica</em></li>
+</ol>
+<p>Los cuestionarios oficiales ELSOC correspondiente a la cuarta ola (y olas anteriores) están disponibles en <a href="https://dataverse.harvard.edu/dataverse/elsoc">dataverse harvard</a></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="dis-ins.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="implementación-de-la-encuesta.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Manual_2019.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
