@@ -4,7 +4,7 @@ new_session: no
 language:
   label:
     fig: 'Figura '
-    tab: 'Tabla '
+    tab: 'Cuadro '
     eq: 'Ecuación '
     thm: 'Teorema '
     lem: 'Lema '
