@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Acceso y Uso de Base de Datos | Manual_2019.knit</title>
+  <meta name="description" content="<center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center>" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Acceso y Uso de Base de Datos | Manual_2019.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Acceso y Uso de Base de Datos | Manual_2019.knit" />
+  
+  
+  
+
+
+
+<meta name="date" content="2021-07-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="implem-encuest.html"/>
+<link rel="next" href="final-words.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual de Usuario 2019</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentación</a></li>
+<li class="chapter" data-level="2" data-path="dis-ins.html"><a href="dis-ins.html"><i class="fa fa-check"></i><b>2</b> Diseño del Instrumento</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="dis-ins.html"><a href="dis-ins.html#proc-dis"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
+<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#nueva-preg"><i class="fa fa-check"></i><b>2.2</b> Preguntas nuevas incorporadas a ELSOC en ola 4</a></li>
+<li class="chapter" data-level="2.3" data-path="dis-ins.html"><a href="dis-ins.html#ficha-tecnica"><i class="fa fa-check"></i><b>2.3</b> Ficha Técnica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#preparación-del-marco-muestral"><i class="fa fa-check"></i><b>3.1</b> Preparación del Marco Muestral</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="implem-encuest.html"><a href="implem-encuest.html"><i class="fa fa-check"></i><b>4</b> Implementación de la Encuesta</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="implem-encuest.html"><a href="implem-encuest.html#estrategia-de-seguimiento"><i class="fa fa-check"></i><b>4.1</b> Estrategia de Seguimiento</a></li>
+<li class="chapter" data-level="4.2" data-path="implem-encuest.html"><a href="implem-encuest.html#pilotaje-del-cuestionario-y-capacitación"><i class="fa fa-check"></i><b>4.2</b> Pilotaje del Cuestionario y Capacitación</a></li>
+<li class="chapter" data-level="4.3" data-path="implem-encuest.html"><a href="implem-encuest.html#planificación-y-ejecución-del-campo"><i class="fa fa-check"></i><b>4.3</b> Planificación y Ejecución del Campo</a></li>
+<li class="chapter" data-level="4.4" data-path="implem-encuest.html"><a href="implem-encuest.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>4.4</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="4.5" data-path="implem-encuest.html"><a href="implem-encuest.html#incidencias-de-terreno-y-códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>4.5</b> Incidencias de Terreno y Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="4.6" data-path="implem-encuest.html"><a href="implem-encuest.html#aspectos-longitudinales-y-cuarta-ola-del-estudio"><i class="fa fa-check"></i><b>4.6</b> Aspectos Longitudinales y Cuarta Ola del Estudio</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="acceso-y-uso-de-base-de-datos.html"><a href="acceso-y-uso-de-base-de-datos.html"><i class="fa fa-check"></i><b>5</b> Acceso y Uso de Base de Datos</a></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html"><i class="fa fa-check"></i><b>7</b> Libro de Códigos Base de Datos ELSOC 2016</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>7.1</b> Variables ELSOC Ola 1</a></li>
+<li class="chapter" data-level="7.2" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>7.2</b> Características Base de Datos ELSOC Ola 1</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="acceso-y-uso-de-base-de-datos" class="section level1" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> Acceso y Uso de Base de Datos</h1>
+<p>Las bases de datos ELSOC de las cuatro olas se encuentran disponibles en el repositorio de COES en <a href="https://dataverse.harvard.edu/dataverse/elsoc" class="uri">https://dataverse.harvard.edu/dataverse/elsoc</a>.</p>
+<p>Cualquier publicación que incluya para su realización el uso de la base de datos ELSOC (en cualquiera de sus versiones) debe citar la fuente de la siguiente forma:</p>
+<p><img src="imagenes/cita1.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p>Por último, en caso de que se desee citar el presente Manual de Usuario:</p>
+<p><img src="imagenes/cita2.png" width="90%" height="100%" style="display: block; margin: auto;" /></p>
+<p>En caso de que detecte problemas con la base de datos, desee plantear solicitudes y/o tenga dudas sobre aspectos no cubiertos por el presente Manual de Usuario, las cuales no puedan ser resueltas por otros medios, puede comunicarse con el Equipo de Encuestas COES al correo electrónico <a href="mailto:encuestacoes@gmail.com" class="email">encuestacoes@gmail.com</a>. El equipo procesará su solicitud y tratará de contestar en el más breve plazo.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="implem-encuest.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Manual_2019.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -28,3 +28,9 @@ planificación-y-ejecución-del-campo
 supervisión-del-trabajo-de-campo
 incidencias-de-terreno-y-códigos-de-disposición-final-de-casos
 aspectos-longitudinales-y-cuarta-ola-del-estudio
+tab:unnamed-chunk-2
+tab:unnamed-chunk-4
+implem_encuest
+acceso-y-uso-de-base-de-datos
+libro-de-códigos-base-de-datos-elsoc-ola-4
+variables-elsoc-ola-4

@@ -1,4 +1,4 @@
-# Implementación de la Encuesta 
+# Implementación de la Encuesta {#implem_encuest}
 
 COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las cuatro primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.
 
@@ -94,10 +94,78 @@ knitr::include_graphics("imagenes/attrition.png")
 El Cuadro 4 describe la recuperación de casos de la muestra seguimiento ELSOC, a partir de distintas comparaciones de ola, desagregando en sub-grupos claves. Se observa que la muestra de 2017 equivale a un 84.5% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Mientras que la muestra seguimiento 2018 corresponde al 76.2% de la muestra original y 90,1% si se compara con los participantes en el año 2017. Finalmente, en la cuarta ola la muestra corresponde al 73,6% de la muestra participante en el año 2016.
 Además, se observan diferencias sustantivas en términos de sexo, zona y tramo etario del entrevistado. Por ejemplo, a medida que aumenta la edad se observa un mayor porcentaje recuperado de la muestra y las mujeres tienen menor atrición que los hombres en cada una de las olas.
 
-```{r}
- add_header_above(c(" ", "Group 1" = 2, "Group 2" = 2, "Group 3" = 2)) %>%
-  add_header_above(c(" ", "Group 4" = 4, "Group 5" = 2)) %>%
-  add_header_above(c(" ", "Group 6" = 6))
+```{r atricion_seg, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+
+atricion_seg <- tibble(Variable = c("Hombre"),
+                  "2016-2017" = c("81.8"),
+                  "2017-2018" = c("88.2"),
+                  "2016-2018" = c("72.1"),
+                  "2016-2019" = c("69.0"))%>% 
+  add_row(Variable = c("Mujer"),
+                  "2016-2017" = c("86.3"),
+                  "2017-2018" = c("91.3"),
+                  "2016-2018" = c("78.8"),
+                  "2016-2019" = c("76.5"))%>% 
+  add_row(Variable = c("Norte"),
+                  "2016-2017" = c("85.8"),
+                  "2017-2018" = c("91.9"),
+                  "2016-2018" = c("78.9"),
+                  "2016-2019" = c("73.6"))%>% 
+  add_row(Variable = c("Centro"),
+                  "2016-2017" = c("84.5"),
+                  "2017-2018" = c("92.7"),
+                  "2016-2018" = c("78.4"),
+                  "2016-2019" = c("74.3"))%>% 
+  add_row(Variable = c("Sur"),
+                  "2016-2017" = c("85.8"),
+                  "2017-2018" = c("90.6"),
+                  "2016-2018" = c("77.7"),
+                  "2016-2019" = c("77.7"))%>% 
+  add_row(Variable = c("Metropolitana"),
+                  "2016-2017" = c("83.4"),
+                  "2017-2018" = c("85.6"),
+                  "2016-2018" = c("71.3"),
+                  "2016-2019" = c("69.7"))%>% 
+  add_row(Variable = c("18-29 años"),
+                  "2016-2017" = c("74.1"),
+                  "2017-2018" = c("71.7"),
+                  "2016-2018" = c("53.2"),
+                  "2016-2019" = c("42.1"))%>% 
+  add_row(Variable = c("30-49 años"),
+                  "2016-2017" = c("81.1"),
+                  "2017-2018" = c("88.2"),
+                  "2016-2018" = c("71.5"),
+                  "2016-2019" = c("69.1"))%>% 
+  add_row(Variable = c("50-64 años"),
+                  "2016-2017" = c("91.3"),
+                  "2017-2018" = c("94.6"),
+                  "2016-2018" = c("86.4"),
+                  "2016-2019" = c("85.7"))%>% 
+  add_row(Variable = c("65 años y más"),
+                  "2016-2017" = c("92.7"),
+                  "2017-2018" = c("103.6"),
+                  "2016-2018" = c("96.0"),
+                  "2016-2019" = c("99.1"))%>% 
+  add_row(Variable = c("Total"),
+                  "2016-2017" = c("84.5"),
+                  "2017-2018" = c("90.1"),
+                  "2016-2018" = c("76.2"),
+                  "2016-2019" = c("73.6"))
+atricion_seg %>%
+    kable(booktabs = TRUE,caption="\\label{tab:atricionseg} Análisis de atrición muestra seguimiento según atributos claves")%>%
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2,3,4,5), width = "3.5cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  row_spec(0:11, background = "white") %>% 
+  pack_rows(" ", 1, 2) %>%
+  pack_rows(" ", 3, 6) %>%
+  pack_rows(" ", 7,10) %>%
+  add_header_above(c(" ", "Porcentaje Recuperado" = 4)) %>%
+  kable_classic(full_width = F)
+
 ```
 
 
@@ -109,6 +177,42 @@ Cabe recordar que el plan de trabajo de COES contemplaba desde el inicio la inco
 knitr::include_graphics("imagenes/design.png")
 ```
 
+
 En el cuadro 5 se describe la recuperación de casos de la muestra refresco incorporada en la ola anterior de ELSOC, desagregado en sub-grupos claves. Se observa que la muestra recuperada el año 2019 equivale al 83,4% de la muestra que participó el año 2018. Respecto a los atributos claves, se observa que al igual que en la muestra seguimiento 2016 a medida que aumenta la edad aumenta el porcentaje que se recupera, así también las mujeres presentan mayor porcentaje de recuperación que los hombres. 
 
+```{r atricion_ref, echo=FALSE, message=FALSE, warning=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
+atricion_ref <- tibble(Variable = c("Hombre"),
+                  "2018-2019" = c(78.9))%>% 
+  add_row(Variable = c("Mujer"),
+                  "2018-2019" = c(86.1))%>% 
+  add_row(Variable = c("Norte"),
+                  "2018-2019" = c(85.6))%>% 
+  add_row(Variable = c("Centro"),
+                  "2018-2019" = c(85.6))%>% 
+  add_row(Variable = c("Sur"),
+                  "2018-2019" = c(81.1))%>% 
+  add_row(Variable = c("Metropolitana"),
+                  "2018-2019" = c(79.5))%>% 
+  add_row(Variable = c("18-29 años"),
+                  "2018-2019" = c(71.6))%>% 
+  add_row(Variable = c("30-49 años"),
+                  "2018-2019" = c(81.7))%>% 
+  add_row(Variable = c("50-64 años"),
+                  "2018-2019" = c(90.4))%>% 
+  add_row(Variable = c("65 años y más"),
+                  "2018-2019" = c(93.4))%>% 
+  add_row(Variable = c("Total"),
+                  "2018-2019" = c(83.2))
+atricion_ref %>%
+  kable(booktabs = TRUE,caption="\\label{tab:hogares}Análisis de atrición muestra refresco según atributos claves") %>%
+  column_spec(c(1), width = "4cm") %>%
+  column_spec(c(2), width = "4cm") %>%
+  row_spec(0:11, background = "white") %>% 
+  pack_rows(" ", 1, 2) %>%
+  pack_rows(" ", 3, 6) %>%
+  pack_rows(" ", 7,10) %>%
+  kable_classic(full_width = F)
+```

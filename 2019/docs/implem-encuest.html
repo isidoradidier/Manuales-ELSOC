@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 Implementación de la Encuesta | Manual_2019.knit</title>
+  <meta name="description" content="<center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center>" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 Implementación de la Encuesta | Manual_2019.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 Implementación de la Encuesta | Manual_2019.knit" />
+  
+  
+  
+
+
+
+<meta name="date" content="2021-07-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="diseño-muestral-del-estudio.html"/>
+<link rel="next" href="applications.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual de Usuario 2019</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentación</a></li>
+<li class="chapter" data-level="2" data-path="dis-ins.html"><a href="dis-ins.html"><i class="fa fa-check"></i><b>2</b> Diseño del Instrumento</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="dis-ins.html"><a href="dis-ins.html#proc-dis"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
+<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#nueva-preg"><i class="fa fa-check"></i><b>2.2</b> Preguntas nuevas incorporadas a ELSOC en ola 4</a></li>
+<li class="chapter" data-level="2.3" data-path="dis-ins.html"><a href="dis-ins.html#ficha-tecnica"><i class="fa fa-check"></i><b>2.3</b> Ficha Técnica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#preparación-del-marco-muestral"><i class="fa fa-check"></i><b>3.1</b> Preparación del Marco Muestral</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="implem-encuest.html"><a href="implem-encuest.html"><i class="fa fa-check"></i><b>4</b> Implementación de la Encuesta</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="implem-encuest.html"><a href="implem-encuest.html#estrategia-de-seguimiento"><i class="fa fa-check"></i><b>4.1</b> Estrategia de Seguimiento</a></li>
+<li class="chapter" data-level="4.2" data-path="implem-encuest.html"><a href="implem-encuest.html#pilotaje-del-cuestionario-y-capacitación"><i class="fa fa-check"></i><b>4.2</b> Pilotaje del Cuestionario y Capacitación</a></li>
+<li class="chapter" data-level="4.3" data-path="implem-encuest.html"><a href="implem-encuest.html#planificación-y-ejecución-del-campo"><i class="fa fa-check"></i><b>4.3</b> Planificación y Ejecución del Campo</a></li>
+<li class="chapter" data-level="4.4" data-path="implem-encuest.html"><a href="implem-encuest.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>4.4</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="4.5" data-path="implem-encuest.html"><a href="implem-encuest.html#incidencias-de-terreno-y-códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>4.5</b> Incidencias de Terreno y Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="4.6" data-path="implem-encuest.html"><a href="implem-encuest.html#aspectos-longitudinales-y-cuarta-ola-del-estudio"><i class="fa fa-check"></i><b>4.6</b> Aspectos Longitudinales y Cuarta Ola del Estudio</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html"><i class="fa fa-check"></i><b>7</b> Libro de Códigos Base de Datos ELSOC 2016</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>7.1</b> Variables ELSOC Ola 1</a></li>
+<li class="chapter" data-level="7.2" data-path="libro-de-códigos-base-de-datos-elsoc-2016.html"><a href="libro-de-códigos-base-de-datos-elsoc-2016.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>7.2</b> Características Base de Datos ELSOC Ola 1</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="implem_encuest" class="section level1" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> Implementación de la Encuesta</h1>
+<p>COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las cuatro primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.</p>
+<p>Este apartado describe la implementación ELSOC 2019, por lo que se recomienda revisar los Manuales de Usuario de olas anteriores si desea formarse una visión más detallada de la fase de empadronamiento e inicio del trabajo de campo del estudio.</p>
+<div id="estrategia-de-seguimiento" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Estrategia de Seguimiento</h2>
+<p>COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico).
+CMD realizó una ronda de re-contacto con los participantes de ELSOC previo al levantamiento de los datos. Esto fue vía telefónica, con el objetivo de verificar y actualizar los datos de contacto de la muestra y notificar a los contactos efectivos sobre la fecha estimada para la realización de la cuarta ola ELSOC. Dicha información permite contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2019.</p>
+</div>
+<div id="pilotaje-del-cuestionario-y-capacitación" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Pilotaje del Cuestionario y Capacitación</h2>
+<p>Con el cuestionario correspondiente a la cuarta ola de ELSOC, previamente elaborado por COES y CMD a cargo de la programación de éste para que fuera aplicada de manera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propuso ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.
+El pilotaje se realizó durante el mes de Septiembre 2019, seguido de una ronda de focus group a los encuestadores con el objetivo de obtener recomendaciones relevantes para el levantamiento final de la encuesta. Esto fue utilizado para introducir cambios menores al cuestionario programado en tablets y para definir ajustes al programa de capacitación de los encuestadores.
+El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La capacitación de coordinadores de campo y encuestadores fue ejecutada por CMD con apoyo técnico de COES para aspectos específicos. CMD realizó dicha tarea de manera centralizada, de modo de que los coordinadores fueron capacitados en dependencias de la Facultad de Economía y Negocios (FEN) de la Universidad de Chile en la Región Metropolitana.
+Se dispuso de 16 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores en el levantamiento se realizó en cada sede.</p>
+</div>
+<div id="planificación-y-ejecución-del-campo" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Planificación y Ejecución del Campo</h2>
+<p>Al igual que para las olas anteriores, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Protocolo de Visita</strong>: primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita.</p></li>
+<li><p><strong>Protocolo ante Casos Difíciles</strong>: escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla estrategias de recuperación.</p></li>
+<li><p><strong>Protocolo de Aplicación del Cuestionario</strong>: descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.</p></li>
+<li><p><strong>Protocolo de Campo</strong>: respaldo de información, control de avances, registro de contactos.</p></li>
+<li><p><strong>Protocolo de Futuros Seguimientos (cuarta ola)</strong>: se solicita información de contacto para poder re-contactar en otra oportunidad al entrevistado seleccionado.</p></li>
+</ol>
+<p>Los documentos fueron adaptados de modo tal de ajustarse a los requerimientos del seguimiento de una muestra previamente entrevistada. El levantamiento de información fue realizado en un período de aproximadamente 13 semanas entre noviembre 2019 y marzo 2020<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Para la ejecución del terreno se contó con 143 encuestadores distribuidos en las 16 sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet). Cabe mencionar que, inicialmente, el terreno estaba programado para comenzar el sábado 19 Octubre 2019, sin embargo, debido al estallido social del día anterior el terreno tuvo que ser suspendido hasta el jueves 21 noviembre.</p>
+<p>CMD cuenta con información relevante para garantizar un adecuado recontacto (nombre del entrevistado, información de contacto y aspectos básicos para su identificación) y utiliza dicha información para concertar entrevistas y planificar el campo. Cada encuestador recibió del coordinador de sede o encuestador apoderado los datos sobre las citas concertadas con participantes ELSOC y utiliza un protocolo de entrevista específico para re-entrevistas. Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD. Al finalizar la entrevista se entrega un incentivo monetario (tarjeta de regalo de 6.000 pesos) y un folleto informativo sobre COES y ELSOC.</p>
+</div>
+<div id="supervisión-del-trabajo-de-campo" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Supervisión del Trabajo de Campo</h2>
+<p>El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando cinco etapas:</p>
+<ol style="list-style-type: decimal">
+<li><p>Supervisión del 100% de las encuestas recopiladas, realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista.</p></li>
+<li><p>Para verificar la veracidad de las encuestas levantadas se supervisaron al menos el 20% de las encuestas realizadas por cada encuestador. Esto consistió en la aplicación de un cuestionario reducido y de menor duración, lo cual fue organizado por un coordinador y ejecutado de manera centralizada mediante la vía telefónica o visitas en terreno, por personal distinto al que realizó el levantamiento de las encuestas. El objetivo principal fue verificar que los datos de la persona reportados en la encuesta coincidan con la persona del hogar que se le aplicó el estudio, además de la consistencia de un subconjunto de preguntas claves del cuestionario.</p></li>
+<li><p>Sobre la base de la revisión de las encuestas realizadas y los resultados de los controles telefónicos, el coordinador de zona retroalimentó a su equipo (al menos una vez por semana) con observaciones y sugerencias respecto al trabajo de campo, orientadas a ayudar a mejorar su desempeño. Los encuestadores también brindaron observaciones y retroalimentación a sus coordinadores a partir de su experiencia en terreno.</p></li>
+<li><p>Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario permite manejar de mejor modo la no respuesta, validar internamente el flujo del cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de aplicación. La validación interna y el chequeo de rango y consistencia de la información minimiza notablemente el error de medición y es una de las ventajas del diseño de ELSOC.</p></li>
+<li><p>Revisión de casos especiales y validación ex post. Finalmente, CMD revisó el funcionamiento del flujo de respuestas y detectó tres situaciones irregulares:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>En la comuna de Parral, Región del Maule, durante la supervisión el entrevistado indicó que no había sido encuestado y que se había cambiado de domicilio, situación que le advirtió a la encuestadora cuando lo llamó para agendar la entrevista. Se conversó con la encuestadora y confesó ser el único caso falsificado de los 23 restantes que se supervisaron y no se encontró otra situación anómala. La encuestadora fue marginada del proyecto y desvinculada del Centro de Microdatos.</p></li>
+<li><p>En la comuna de Puerto Montt, Región de Los Lagos, se le aplicó la encuesta a otro integrante del hogar y no la persona seleccionada. La encuestadora llevaba 32 encuestas aplicadas, las cuales se revisaron en su totalidad y no se encontraron otras irregularidades. Esta encuestadora fue marginada del proyecto y desvinculada del Centro de Microdatos.</p></li>
+<li><p>En la Región de Aysén, se detectó que gran parte de la muestra refresco había sido seleccionada desprolijamente en el año 2018, aplicando las encuestas en manzanas distintas a las seleccionadas. Frente a esto, se decidió enviar a un grupo de encuestadores desde Santiago para revisar la totalidad de la muestra y se rehiciera el trabajo aplicando la encuesta a quienes originalmente había que hacerlo. En este proceso se realizaron 10 encuestas nuevas.</p></li>
+</ol></li>
+</ol>
+</div>
+<div id="incidencias-de-terreno-y-códigos-de-disposición-final-de-casos" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Incidencias de Terreno y Códigos de Disposición Final de Casos</h2>
+<p>El trabajo de terreno se desarrolló en un período de 13 semanas, a partir del 21 noviembre 2019. La primera incidencia que tiene relación directa con el terreno fue el surgimiento del estallido social el 18 de Octubre 2019, lo cual implicó retrasar el periodo de aplicación de la encuesta que originalmente partía el 19 de Octubre. Sin embargo, una vez ya en terreno no se presentaron mayores dificultades pese a que era un contexto nacional complejo.</p>
+<p>Las incidencias durante el terreno fueron menores, siendo la única modificación mayor la agregación de ciertos códigos de disposición final en el registro de visitas, con el fin de obtener un mayor grado de información cuando el informante no es ubicable o no puede atender (código 2250). Los nuevos códigos son:</p>
+<ul>
+<li><p>2251: Informante se cambia a domicilio conocido</p></li>
+<li><p>2252: Informante se cambia a domicilio desconocido</p></li>
+<li><p>2253: Informante se fue fuera del país permanentemente</p></li>
+</ul>
+<p>Gracias a estos nuevos códigos, se pudo detectar que en la muestra seguimiento 118 personas se cambiaron a domicilio desconocido, mientras que 4 informantes se cambiaron a domicilio conocido y 3 se fueron del país permanentemente. En la muestra refresco, 48 personas se cambiaron a domicilio desconocido, 6 personas se cambiaron a domicilio conocido y 1 se fue del país permanentemente.</p>
+<p>Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los casos de la muestra completa un código de disposición final. En base a dicha información, la cuarta ola de ELSOC tiene las siguientes tasas de resultados:</p>
+<ul>
+<li><p>Tasa de Respuesta (RR2): 80% muestra seguimiento y 83% muestra refresco.</p></li>
+<li><p>Tasa de Rechazo (REF2): 5% muestra seguimiento y 3% muestra refresco.</p></li>
+<li><p>Tasa de Contacto (CON2): 86% muestra seguimiento y 87% muestra refresco.</p></li>
+<li><p>Tasa de Cooperación (COOP2): 93% muestra seguimiento y 95% muestra refresco.</p></li>
+</ul>
+<p>Si desea conocer más detalles sobre la determinación de los códigos de disposición final de casos y el cálculo de las tasas de resultados, dirigirse a <a href="http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf">Standard-Definitions-2016</a></p>
+</div>
+<div id="aspectos-longitudinales-y-cuarta-ola-del-estudio" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Aspectos Longitudinales y Cuarta Ola del Estudio</h2>
+<p>Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura 1). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD.</p>
+<center>
+<strong>Figura 1</strong>: Diseño Muestral de ELSOC según Ola.
+</center>
+<p><img src="imagenes/attrition.png" width="60%" height="60%" style="display: block; margin: auto;" /></p>
+<p>El Cuadro 4 describe la recuperación de casos de la muestra seguimiento ELSOC, a partir de distintas comparaciones de ola, desagregando en sub-grupos claves. Se observa que la muestra de 2017 equivale a un 84.5% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Mientras que la muestra seguimiento 2018 corresponde al 76.2% de la muestra original y 90,1% si se compara con los participantes en el año 2017. Finalmente, en la cuarta ola la muestra corresponde al 73,6% de la muestra participante en el año 2016.
+Además, se observan diferencias sustantivas en términos de sexo, zona y tramo etario del entrevistado. Por ejemplo, a medida que aumenta la edad se observa un mayor porcentaje recuperado de la muestra y las mujeres tienen menor atrición que los hombres en cada una de las olas.</p>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:atricion_seg) Análisis de atrición muestra seguimiento según atributos claves
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Porcentaje Recuperado
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;background-color: white !important;">
+Variable
+</th>
+<th style="text-align:left;background-color: white !important;">
+2016-2017
+</th>
+<th style="text-align:left;background-color: white !important;">
+2017-2018
+</th>
+<th style="text-align:left;background-color: white !important;">
+2016-2018
+</th>
+<th style="text-align:left;background-color: white !important;">
+2016-2019
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Hombre
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+81.8
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+88.2
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+72.1
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+69.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Mujer
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+86.3
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+91.3
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+78.8
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+76.5
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Norte
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+85.8
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+91.9
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+78.9
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+73.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Centro
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+84.5
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+92.7
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+78.4
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+74.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Sur
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+85.8
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+90.6
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+77.7
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+77.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Metropolitana
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+83.4
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+85.6
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+71.3
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+69.7
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+18-29 años
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+74.1
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+71.7
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+53.2
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+42.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+30-49 años
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+81.1
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+88.2
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+71.5
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+69.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+50-64 años
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+91.3
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+94.6
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+86.4
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+85.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+65 años y más
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+92.7
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+103.6
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+96.0
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+99.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;">
+Total
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+84.5
+</td>
+<td style="text-align:left;width: 3.5cm; width: 3cm; background-color: white !important;">
+90.1
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+76.2
+</td>
+<td style="text-align:left;width: 3.5cm; background-color: white !important;">
+73.6
+</td>
+</tr>
+</tbody>
+</table>
+<p>Cabe recordar que el plan de trabajo de COES contemplaba desde el inicio la incorporación de una muestra refresco de 1400 casos, debido a la atrición propia de los estudios longitudinales (ver figura 2). El objetivo de la muestra de refresco es corregir la sub-cobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición.</p>
+<center>
+<strong>Figura 2</strong>: Diseño Muestral de ELSOC según Ola.
+</center>
+<p><img src="imagenes/design.png" width="60%" height="60%" style="display: block; margin: auto;" /></p>
+<p>En el cuadro 5 se describe la recuperación de casos de la muestra refresco incorporada en la ola anterior de ELSOC, desagregado en sub-grupos claves. Se observa que la muestra recuperada el año 2019 equivale al 83,4% de la muestra que participó el año 2018. Respecto a los atributos claves, se observa que al igual que en la muestra seguimiento 2016 a medida que aumenta la edad aumenta el porcentaje que se recupera, así también las mujeres presentan mayor porcentaje de recuperación que los hombres.</p>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:atricion_ref)Análisis de atrición muestra refresco según atributos claves
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: white !important;">
+Variable
+</th>
+<th style="text-align:right;background-color: white !important;">
+2018-2019
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="2">
+<td colspan="2" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Hombre
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+78.9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Mujer
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+86.1
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="2" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Norte
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+85.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Centro
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+85.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Sur
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+81.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+Metropolitana
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+79.5
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="2" style="border-bottom: 1px solid;">
+<strong> </strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+18-29 años
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+71.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+30-49 años
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+81.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+50-64 años
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+90.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+65 años y más
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+93.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 4cm; background-color: white !important;">
+Total
+</td>
+<td style="text-align:right;width: 4cm; background-color: white !important;">
+83.2
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Debido al desgaste propio de la muestra y el equipo en terreno en un contexto de estallido social se decidió hacer una pausa en el levantamiento de datos durante las últimas tres semanas de febrero 2020.<a href="implem-encuest.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="diseño-muestral-del-estudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="applications.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Manual_2019.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

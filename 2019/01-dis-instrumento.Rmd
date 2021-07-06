@@ -87,71 +87,71 @@ no_incluidas %>%
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
-temas_conceptos <- tibble(Región = c(" "),
+temas_conceptos <- tibble(Muestra = c(" "),
                   Sección = c("Territorio"),
                   "Escalas y temas" = c("Confianza en vecinos, cohesión barrial, sociabilidad
                                         barrial, transformación barrial, movilidad residencial, 
                                         satisfacción residencial, conflicto barrial, seguridad 
                                         barrial, problemas barriales, conflicto territorial 
                                         18-O"))%>% 
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Redes y Actitudes"),
                   "Escalas y temas" = c("Relaciones entre chilenos y migrantes, redes
                                         cercanas"))%>% 
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Ciudadanía y democracia"),
                   "Escalas y temas" = c("Actitud hacia democracia, confianza interpersonal,
                                         confianza instituciones, participación ciudadana,
                                         autoeficacia política, interés político, identificación
                                         política, temas constitucionales, percepción de
                                         corrupción, anomia"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Sociabilidad Política"),
                   "Escalas y temas" = c("Comportamiento prosocial, dominancia social,
                                         autoritarismo, justicia distributiva y meritocracia,
                                         desigualdad percibida, movimientos sociales, identidad
                                         nacional, rabia y miedo en temas de sociabilidad
                                         política"))%>% 
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Género"),
                   "Escalas y temas" = c("Sexismo benévolo, sexismo hostil, derechos de género,
                                         identidad de género, expectativas y normas de género,
                                         roles de género"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Desigualdad y legitimidad"),
                   "Escalas y temas" = c("Estatus subjetivo, justicia y bienestar, percepción y
                                         justificación de desigualdad salarial, surgir en la
                                         vida, elite, mal trato, tolerancia, deprivación
                                         relativa"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Conflicto Social"),
                   "Escalas y temas" = c("Fuerza conflicto, justificación violencia,
                                         punitividad, nada que perder, polarización
                                         afectiva"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Salud y Bienestar"),
                   "Escalas y temas" = c("Satisfacción vital, estado de salud, 
                                         estado de ánimo, conducta saludable"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Sociodemográficas"),
                   "Escalas y temas" = c("Sexo, edad, nivel educacional, clase y estatus,
                                         ingresos, religión, justicia distributiva y
                                         meritocracia, ingreso familiar, caracterización
                                         individual, transporte, etnia, cantidad miembros 
                                         del hogar"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Ciudadanía y democracia"),
                   "Escalas y temas" = c("Temas de discusión pública"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c(" "),
                   "Escalas y temas" = c(" "))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Sociabilidad política"),
                   "Escalas y temas" = c("Percepción trato justo"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Desigualdad y legitimidad"),
                   "Escalas y temas" = c("Conflicto de clase"))%>%
-  add_row(Región = c(" "),
+  add_row(Muestra = c(" "),
                   Sección = c("Sociodemográficas"),
                   "Escalas y temas" = c("Bienes, edad a la que tuvo el primer hijo,
                                         establecimiento educación media"))
@@ -198,7 +198,8 @@ En este apartado se presenta la Ficha Técnica que sintetiza las principales car
 *	Tasa de cooperación muestra seguimiento: 93%
 *	Tasa cooperación muestra refresco: 95%
 *	Tasa rechazo en muestra seguimiento: 5%
-*	Tasa rechazo en muestra refresco: 3%*	Tasa de contacto muestra seguimiento: 86%
+*	Tasa rechazo en muestra refresco: 3%
+*	Tasa de contacto muestra seguimiento: 86%
 *	Tasa de contacto muestra refresco: 87%
 *	Tamaño muestral: 3.417 individuos. En base de datos definitiva 2.153 individuos de muestra de seguimiento y 1.264 individuos de muestra refresco.
 *	Organismo Responsable: Centro de Estudios del Conflicto y Cohesión Social (COES).

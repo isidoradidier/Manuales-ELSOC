@@ -1,0 +1,13 @@
+# Libro de Códigos Base de Datos ELSOC Ola 4
+
+Para un uso adecuado de la base de datos de la cuarta ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.
+
+## Variables ELSOC Ola 4
+
+La base de datos de ELSOC Ola 4 (2019) contiene una fila por cada entrevistado (son 3417 casos) y una columna por cada variable. Las variables corresponden a los ítems incluidos en el cuestionario del estudio. Ahora, es necesario que el usuario comprenda plenamente qué es un ítem.
+
+A modo de ejemplo, la pregunta t02 del cuestionario de ELSOC, dónde se consulta a los entrevistados el grado de acuerdo con una serie de afirmaciones respecto a cohesión barrial. En esta pregunta, se incluyen 4 ítems distintos, correspondientes a cuatro aspectos distintos que miden cohesión barrial. En la base de datos, cada ítem corresponde a una variable incluida en la base de datos. Siguiendo el ejemplo, el primer ítem de cohesión barrial dice: “Este es el barrio ideal para mí", de modo que éste quedará codificado como t02_01. Así, el nombre de las variables de la base de datos se construye combinando:
+
+*	El código de la variable en el cuestionario, en letras minúsculas (en el ejemplo corresponde a t02).
+*	Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guion bajo _ (en el primer caso, sería t02_01).
+
