@@ -98,6 +98,7 @@ ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
 <li class="chapter" data-level="6" data-path="libro-de-códigos-base-de-datos-elsoc-ola-4.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-4.html"><i class="fa fa-check"></i><b>6</b> Libro de Códigos Base de Datos ELSOC Ola 4</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="libro-de-códigos-base-de-datos-elsoc-ola-4.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-4.html#variables-elsoc-ola-4"><i class="fa fa-check"></i><b>6.1</b> Variables ELSOC Ola 4</a></li>
+<li class="chapter" data-level="6.2" data-path="libro-de-códigos-base-de-datos-elsoc-ola-4.html"><a href="libro-de-códigos-base-de-datos-elsoc-ola-4.html#características-base-de-datos-elsoc-ola-4"><i class="fa fa-check"></i><b>6.2</b> Características Base de Datos ELSOC Ola 4</a></li>
 </ul></li>
 </ul>
 
@@ -129,8 +130,57 @@ ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2019)
 <li>El código de la variable en el cuestionario, en letras minúsculas (en el ejemplo corresponde a t02).</li>
 <li>Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guion bajo _ (en el primer caso, sería t02_01).</li>
 </ul>
+<p><img src="imagenes/t02.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p>El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso, incluyendo el nombre de la variable, etiqueta de la variable en la base de datos ELSOC<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, categorías de respuesta de cada variable con sus valores asociados, frecuencia y porcentaje de encuestados que contestaron cada una de las categorías de respuesta.</p>
+<p>En la construcción de la base de datos, las categorías de respuesta (atributos) fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con “este es el barrio ideal para mí”, su respuesta quedará codificada con el valor numérico 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta “Totalmente en desacuerdo”. Ejemplo:</p>
+<p><img src="imagenes/t02_01.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p>Por último, es importante también tener en cuenta la información no incluida en este libro de códigos respecto al fraseo de la pregunta en el cuestionario. Por ejemplo, “A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?” corresponde al fraseo exacto de la pregunta, mientras que “(MOSTRAR TARJETA 1)” aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos de manera completa en el Cuestionario y el Listado de Variables correspondiente.</p>
+<p>La base de datos de ELSOC 2019 homologa todas las respuestas No Sabe a -888 y No Responde a -999 y chequea la naturaleza de los valores perdidos restantes (los cuales corresponden en su totalidad a la aplicación de filtros). Las respuestas No Sabe y No Responde no fueron eliminadas ni transformadas en valores perdidos en la base de datos, de modo que los usuarios deben decidir qué hacer con dichos valores de respuesta. La etiqueta de valores de éstos incluye la instrucción de no ser leídos por el encuestador. En el caso de que la pregunta contenga un filtro, los valores no relevantes (filtrados) aparecen en la última línea y no tienen asignado valores ni etiquetas (son valores perdidos por el sistema).</p>
+<p>Las variables de cadena (texto) no presentan códigos, ya que presentan los verbatim literales de las menciones por parte de los encuestados (visibles en la base de datos, no en libro de códigos pues no tienen códigos). El único cambio introducido -y fue realizado por motivos de compatibilidad entre softwares- fue la eliminación de símbolos tales como tildes, diéresis y otros caracteres especiales. A continuación, se presenta el ejemplo de una de dichas preguntas:</p>
+<p><img src="imagenes/c12_09_otro.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p>En el caso de los ítems dónde se pide una respuesta numérica tampoco existen categorías de respuesta, registrándose el valor indicado por el entrevistado (visible en base de datos, no en libro de códigos porque no tienen códigos). De todos modos, se incluyen etiquetas de valores para los valores perdidos. A continuación, un ejemplo de un ítem de este tipo:</p>
+<p><img src="imagenes/M37_01.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p>Que en el libro de códigos se visualiza así:</p>
+<p><img src="imagenes/m37_01_.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="características-base-de-datos-elsoc-ola-4" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Características Base de Datos ELSOC Ola 4</h2>
+<p>La versión actual de la base de datos (2.0) contiene información para los 3748 entrevistados (N definitivo tras supervisión) en relación a los 384 ítems del cuestionario (cada una corresponde a una variable en la base de datos) y un conjunto adicional de variables: <strong>Actualizar párrafo cuando Edgardo envíe la base 2019 definitiva</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Identificadoras de Casos: id de la encuesta, comuna de residencia y región de residencia.</p></li>
+<li><p>De Diseño Muestral Complejo: ponderadores (y factores de expansión), estrato y segmento para incorporar el diseño complejo de la encuesta.</p></li>
+</ol>
+<p>Dentro de las variables de diseño muestral complejo, el estrato identifica a los seis previamente definidos: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes (4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa las manzanas/bloques, pero los valores son artificiales (generados por Centro Micro Datos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados. <strong>Chequear que lo que dice del ponderador 02 en el recuadro de abajo sea verídico</strong></p>
+<center>
+<strong>Se recomienda la utilización de los ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderador 02 también ajusta en base a la población estimada según sexo.</strong>
+</center>
+<p><br></p>
+<p>Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo esto motivo de una nueva versión de la base de datos. Esto implicará un nuevo lanzamiento de la base de datos y todas las facilidades para que los investigadores hagan un uso óptimo de las variables territoriales.</p>
+<p>Las bases de datos se encuentran disponibles en formatos .dta (compatibles con versiones Stata 13 y 14), .sav (compatibles con SPSS) y .RData (compatibles con R, los objetos contienen como atributos etiquetas de variables y valores). El Equipo de Encuestas COES también cuenta con bases de datos adicionales sobre la encuesta (en formato .dta y/o .xlsx):</p>
+<ol style="list-style-type: decimal">
+<li>Casos supervisados.</li>
+<li>Capacitaciones a encuestadores.</li>
+<li>Duración de entrevistas.</li>
+<li>Códigos de disposición final muestra completa.</li>
+<li>Diseño y selección muestra.</li>
+<li>Tabla Kish.</li>
+<li>Construcción de ponderadores.</li>
+</ol>
+<p>Sin embargo, los archivos anteriormente listados deben ser solicitados al Equipo de Encuestas, justificando el uso que se darán a los datos requeridos. El Equipo de Encuestas COES decidirá la pertinencia de dichas solicitudes y se reserva el derecho para entregar dichos datos.</p>
 
 </div>
+</div>
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Las etiquetas de las variables fueron diseñadas por el equipo ELSOC de modo sucinto para describir el fenómeno o dimensión a medir, eliminando tildes y símbolos no incluidos en todos los softwares estadísticos (por ejemplo, la letra ñ)<a href="libro-de-códigos-base-de-datos-elsoc-ola-4.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 

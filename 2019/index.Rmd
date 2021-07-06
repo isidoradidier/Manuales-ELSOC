@@ -21,7 +21,7 @@ subtitle:  <center>MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL</center>
 # Presentación {#present}
 
 ```{r echo=FALSE, fig.align='center', fig.height=1, out.height="60%", out.width="60%"}
-knitr::include_graphics("imagenes/coes_blanco_esp.jpg")
+#knitr::include_graphics("imagenes/coes_blanco_esp.jpg")
 ```
 
 
