@@ -45,11 +45,13 @@ versiones <- tibble(Versión = c("0.0"),
                                         de 56 entrevistas falsificadas."))
 
 versiones %>%
-  kable(booktabs = TRUE,  
+  kable(booktabs = TRUE,longtab=T,  
         caption="\\label{tab:bloques}DVersiones de Base de Datos ELSOC Ola 1 (2016)") %>%
-  column_spec(c(1), width = "2cm") %>%
-  column_spec(c(2), width = "3cm") %>%
-  column_spec(c(3), width = "6cm") %>%
+  
+  kable_styling(latex_options = "HOLD_position") %>%
+  column_spec(c(1), width = "1cm") %>%
+  column_spec(c(2), width = "1,5cm") %>%
+  column_spec(c(3), width = "4cm") %>%
   column_spec(c(4), width = "8cm") %>%
   row_spec(0:5, background = "white") %>% 
   kable_classic(full_width = F)

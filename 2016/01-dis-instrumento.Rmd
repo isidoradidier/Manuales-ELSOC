@@ -1,6 +1,6 @@
-# Diseño del instrumento {#dis_ins}
+# Diseño del instrumento {#disins}
 
-A continuación se presenta el desarrollo del cuestionario del ELSOC. El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) aplicado cara a cara a todos los participantes. Dicha aplicación se hace utilizando el sistema CAPI (Encuestas personales asistidas por computadores). El cuestionario fue diseñado paramedir una serie de aspectos conceptualmente relevantes para caracterizar el conflicto y cohesión social en Chile, enfatizando su evolución a lo largo del tiempo. Los principales temas de interés analítico abordados por la encuesta corresponden a losmódulos en los cuales se estructura:
+A continuación se presenta el desarrollo del cuestionario del ELSOC. El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) aplicado cara a cara a todos los participantes. Dicha aplicación se hace utilizando el sistema CAPI (Encuestas personales asistidas por computadores). El cuestionario fue diseñado paramedir una serie de aspectos conceptualmente relevantes para caracterizar el conflicto y cohesión social en Chile, enfatizando su evolución a lo largo del tiempo. Los principales temas de interés analítico abordados por la encuesta corresponden a los módulos en los cuales se estructura:
 
 1. **Ciudadanía y Democracia.**
 2. **Redes sociales e Interacciones inter-grupales.**
@@ -24,15 +24,14 @@ Con el objetivo de satisfacer los criterios y estándares de calidad para cuesti
 
 4. La última etapa de ajuste del cuestionario se centró en identificar los aspectos conceptualmente más relevantes para COES y ponderar los requerimientos metodológicos para su evaluación empírica. De este modo, se clasificaron los items según el número de mediciones requeridas, distinguiendo entre items permanentes (que serán medidos en todas las olas, ya que constituyen el núcleo analítico del estudio) e intercalados (que serán medidos una única vez o una ola por medio).
 
-La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplicará cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados3. Luego, en el Cuadro 1 se resumen los conceptos que se incluyeron en cada sección del cuestionario de la primera ola del estudio longitudinal COES. Paramás detalles sobre el Cuestionario se debe revisar la sección de  \@ref(label) Libro de Códigos y el  \@ref(label) Listado de Variables de ELSOC.
+La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplicará cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados^{Algunos itemes aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen
+en años pares o impares).]. Luego, en el Cuadro \@ref(tab:temas) se resumen los conceptos que se incluyeron en cada sección del cuestionario de la primera ola del estudio longitudinal COES. Para más detalles sobre el Cuestionario se debe revisar la sección \@ref(libro) y el Listado de Variables de ELSOC.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r temas, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
-#HAY QUE CAMBIAR EL NOMBRE DE LA TABLA
-
-temas_conceptos <- tibble(Sección = 
+temas_seccion <- tibble(Sección = 
                             c("Territorio"),
                           Temas = 
                             c("Cohesión barrial, elección de hogar/barrio, estigmatización residencial,   
@@ -81,8 +80,8 @@ temas_conceptos <- tibble(Sección =
             de la vivienda y adscripción y practicancia religiosa.")) 
 
 
-temas_conceptos %>%
-  kable(booktabs = TRUE,  caption="\\label{tab:temas_conceptos}Temas y Conceptos medidos en ELSCO Ola 1") %>%
+temas_seccion %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:temas}Temas y Conceptos medidos en ELSCO Ola 1") %>%
   kable_styling(latex_options = "HOLD_position") %>%
   column_spec(c(1), width = "5cm") %>%
   column_spec(c(2), width = "10cm") %>%
@@ -93,9 +92,10 @@ temas_conceptos %>%
 
 ## Ficha Técnica
 
-En este apartado se presenta la Ficha Técnica (Ver Cuadro 2), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
+En este apartado se presenta la Ficha Técnica (Ver Cuadro \@ref(tab:ficha)), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+```{r ficha, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
 
@@ -212,7 +212,7 @@ ficha_técnica <- tibble(Características =
             la información y construcción de factores de expansión).")) 
 
 ficha_técnica %>%
-  kable(booktabs = TRUE,caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:ficha}Ficha Técnica ELSOC COES, Ola 1 (2016)") %>%
   column_spec(c(1), width = "5cm") %>%
   column_spec(c(2), width = "10cm") %>%
   row_spec(0:24, background = "white") %>% 

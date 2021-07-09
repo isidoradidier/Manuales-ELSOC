@@ -1,5 +1,5 @@
 
-# Libro de Códigos Base de Datos ELSOC 2016
+# Libro de Códigos Base de Datos ELSOC 2016 {#libro}
 
 Para un uso adecuado de la base de datos de la primera ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.
 
@@ -30,7 +30,7 @@ A continuación, se presenta un ejemplo para clarificar dicha estructura. En est
 
 Los distintos valores listados corresponden a las categorías de respuesta asociadas al ítem. En la construcción de la base de datos, dichas categorías fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con el enunciado, en la encuesta a su respuesta se le asignará un valor numérico de 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta ”Totalmente en desacuerdo”.
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%"}
+```{r echo=FALSE, fig.align='center', fig.height=1, out.height="80%", out.width="80%"}
 knitr::include_graphics("imagenes/t2_01.png")
 ```
 
@@ -315,7 +315,7 @@ caract_hogar <- tibble(ID_Encuesta = c("1101132"),
 
 
 caract_hogar%>%
-  kable(booktabs = TRUE,  caption="\\label{tab:estratos}Discrepancias en Caracterización del Hogar, Primera Ola ELSOC") %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:estratos}Discrepancias en Caracterización del Hogar, Primera Ola ELSOC") %>%
   column_spec(c(1), width = "5cm") %>%
   column_spec(c(2,3), width = "3cm") %>%
   column_spec(c(4), width = "2cm") %>%

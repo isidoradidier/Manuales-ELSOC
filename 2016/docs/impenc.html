@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 Implementación de la Encuesta | Manual_2016.knit</title>
+  <meta name="description" content="<center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)
+</center>" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 Implementación de la Encuesta | Manual_2016.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 Implementación de la Encuesta | Manual_2016.knit" />
+  
+  
+  
+
+
+
+<meta name="date" content="2021-07-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="diseño-muestral-del-estudio.html"/>
+<link rel="next" href="registro-de-versiones-base-de-datos.html"/>
+<script src="assets/header-attrs-2.9/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="assets/kePrint-0.0.1/kePrint.js"></script>
+<link href="assets/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual de Usuario 2016</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentación</a></li>
+<li class="chapter" data-level="2" data-path="disins.html"><a href="disins.html"><i class="fa fa-check"></i><b>2</b> Diseño del instrumento</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="disins.html"><a href="disins.html#proceso-de-diseño"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
+<li class="chapter" data-level="2.2" data-path="disins.html"><a href="disins.html#ficha-técnica"><i class="fa fa-check"></i><b>2.2</b> Ficha Técnica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#preparación-del-marco-muestral"><i class="fa fa-check"></i><b>3.1</b> Preparación del Marco Muestral</a></li>
+<li class="chapter" data-level="3.2" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-1-selección-de-ciudades"><i class="fa fa-check"></i><b>3.2</b> Etapa 1: Selección de Ciudades</a></li>
+<li class="chapter" data-level="3.3" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-2-selección-de-bloques-manzanas"><i class="fa fa-check"></i><b>3.3</b> Etapa 2: Selección de Bloques (Manzanas)</a></li>
+<li class="chapter" data-level="3.4" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-3-selección-de-sub---bloques"><i class="fa fa-check"></i><b>3.4</b> Etapa 3: Selección de sub - bloques</a></li>
+<li class="chapter" data-level="3.5" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-4-selección-de-viviendas"><i class="fa fa-check"></i><b>3.5</b> Etapa 4: Selección de viviendas</a></li>
+<li class="chapter" data-level="3.6" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-5-selección-de-personas"><i class="fa fa-check"></i><b>3.6</b> Etapa 5: Selección de personas</a></li>
+<li class="chapter" data-level="3.7" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#etapa-6-aumento-del-tamaño-muestral"><i class="fa fa-check"></i><b>3.7</b> Etapa 6: Aumento del tamaño muestral</a></li>
+<li class="chapter" data-level="3.8" data-path="diseño-muestral-del-estudio.html"><a href="diseño-muestral-del-estudio.html#diseño-de-ponderadores-de-la-muestra"><i class="fa fa-check"></i><b>3.8</b> Diseño de Ponderadores de la Muestra</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="impenc.html"><a href="impenc.html"><i class="fa fa-check"></i><b>4</b> Implementación de la Encuesta</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="impenc.html"><a href="impenc.html#empad"><i class="fa fa-check"></i><b>4.1</b> Empadronamiento</a></li>
+<li class="chapter" data-level="4.2" data-path="impenc.html"><a href="impenc.html#pilotaje-del-cuestionario"><i class="fa fa-check"></i><b>4.2</b> Pilotaje del Cuestionario</a></li>
+<li class="chapter" data-level="4.3" data-path="impenc.html"><a href="impenc.html#planificación-y-ejecución-del-campo"><i class="fa fa-check"></i><b>4.3</b> Planificación y Ejecución del Campo</a></li>
+<li class="chapter" data-level="4.4" data-path="impenc.html"><a href="impenc.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>4.4</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="4.5" data-path="impenc.html"><a href="impenc.html#códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>4.5</b> Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="4.6" data-path="impenc.html"><a href="impenc.html#futuras-olas-del-estudio-longitudinal"><i class="fa fa-check"></i><b>4.6</b> Futuras Olas del Estudio Longitudinal</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="registro-de-versiones-base-de-datos.html"><a href="registro-de-versiones-base-de-datos.html"><i class="fa fa-check"></i><b>5</b> Registro de Versiones Base de Datos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="registro-de-versiones-base-de-datos.html"><a href="registro-de-versiones-base-de-datos.html#casos-falsificados"><i class="fa fa-check"></i><b>5.1</b> Casos Falsificados</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="protocolo-de-uso-de-base-de-datos.html"><a href="protocolo-de-uso-de-base-de-datos.html"><i class="fa fa-check"></i><b>6</b> Protocolo de Uso de Base de Datos</a></li>
+<li class="chapter" data-level="7" data-path="dudas-y-consultas.html"><a href="dudas-y-consultas.html"><i class="fa fa-check"></i><b>7</b> Dudas y Consultas</a></li>
+<li class="chapter" data-level="8" data-path="libro.html"><a href="libro.html"><i class="fa fa-check"></i><b>8</b> Libro de Códigos Base de Datos ELSOC 2016</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="libro.html"><a href="libro.html#variables-elsoc-ola-1"><i class="fa fa-check"></i><b>8.1</b> Variables ELSOC Ola 1</a></li>
+<li class="chapter" data-level="8.2" data-path="libro.html"><a href="libro.html#características-base-de-datos-elsoc-ola-1"><i class="fa fa-check"></i><b>8.2</b> Características Base de Datos ELSOC Ola 1</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><center>
+ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2016)
+</center></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="impenc" class="section level1" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> Implementación de la Encuesta</h1>
+<p>COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargará del desarrollo de la encuesta, incluyendo el trabajo de campo durante las primeras tres olas. El acuerdo conMicro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.</p>
+<p>El diseño muestral fue desarrollado por la consultora internacional Stephanie Eckman y el Centro de Inteligencia Territorial (CIT) en base a los criterios definidos por COES. De todos modos, el Centro MicroDatos apoyó en el diseño muestral y planteó observaciones relevantes para la implementación del estudio. A su vez, fueron los encargados de elaborar la propuesta de aumento muestral durante el levantamiento.</p>
+<div id="empad" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Empadronamiento</h2>
+<p>El levantamiento de datos por parte del CMD se inicia con el desarrollo de un empadronamiento que tiene como objetivo identificar y listar todas las viviendas elegibles (USM) en las manzanas elegidas. Dentro de este proceso de empadronamiento,MicroDatos detectó que en un número de importante de manzanas existían más de 100 viviendas, motivo por el cual se desarrolló un procedimiento de visita para enumerar las viviendas y definir submanzanas. Las manzanas con menos de 100 viviendas fueron empadronadas directamente, mientras las otras fueron visitadas para su enumeración y verificación de que éstas se componen de viviendas particulares. Posteriormente se subdividen en grupos de viviendas en un rango de 40 a 50 según las características de la manzana.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>El objetivo del empadronamiento es contar con un listado actualizado de direcciones junto con información cartográfica relevante e indicaciones de referencia útiles para el trabajo del encuestador. El empadronamiento fue desarrollado de manera presencial. Los encargados contaron con pautas para el empadronamiento de viviendas.</p>
+<p>Posteriormente se selecciona una vivienda<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> al azar por manzana y las cuatro restantes utilizando el procedimiento de salto sistemático.</p>
+<p>El procedimiento anterior da lugar al desarrollo de croquis que permiten identificar visualmente las viviendas seleccionadas junto a indicaciones -en caso de ser necesarias- para señalizar su ubicación. Lo anterior se ve complementado con una codificación de los inmuebles incluidos en el recorrido, de modo de distinguir las viviendas particulares ocupadas de otros tipos de construcciones y de facilitar la planificación del trabajo de campo. La etapa final de este procedimiento es la georreferenciación de lamuestra seleccionada para contar con la ubicación geográfica asociada a cada levantamiento.</p>
+</div>
+<div id="pilotaje-del-cuestionario" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Pilotaje del Cuestionario</h2>
+<p>En paralelo al proceso de empadronamiento se desarrolló la preparación definitiva del cuestionario de ELSOC. COES y CMD colaboraron en la revisión final del cuestionario, lo cual tuvo como productos la diagramación en papel del cuestionario y su posterior programación para que fuera aplicada en tablets (el cuestionario fue aplicado de manera presencial utilizando el sistema CAPI). Posteriormente se realizó una versión piloto del estudio con el fin de testear el instrumento como evaluar el funcionamiento operativo del levantamiento de datos.</p>
+<p>El piloto se realizó con una lista de 130 direcciones, distintas a las cuales se les aplicó el cuestionario final. Dicho pre-testeo fue ejecutado exclusivamente en la regiónMetropolitana, durante 15 días corridos. Posteriormente se desarrolló un focus group con encuestadores orientado a obtener recomendaciones relevantes para el levantamiento final de la encuesta.</p>
+<p>Los resultados de dichos estudios permitieron estimar de mejor modo los tiempos requeridos para el desarrollo de la entrevista por parte del encuestador, afinar el fraseo del cuestionario y dimensionar de mejor modo los esfuerzos requeridos para el levantamiento de datos. En caso de que desee obtener más información sobre el piloto, puede solicitar dicha información a
+<a href="mailto:encuestacoes@gmail.com" class="email">encuestacoes@gmail.com</a>.</p>
+</div>
+<div id="planificación-y-ejecución-del-campo" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Planificación y Ejecución del Campo</h2>
+<p>El CMD elaboró un Manual del Encuestador para la implementación del Estudio Panel y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Protocolo de Visita</strong>: primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita.</p></li>
+<li><p><strong>Protocolo ante Casos Difíciles</strong>: escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla estrategias de recuperación.</p></li>
+<li><p><strong>Protocolo de Aplicación del Cuestionario</strong>: descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.</p></li>
+<li><p><strong>Protocolo de Campo</strong>: respaldo de información, control de avances, registro de contactos.</p></li>
+</ol>
+<p>El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La implementación del entrenamiento se hizo por áreas geográficas, de modo de garantizar la calidad del levantamiento de datos. Se dispuso de 4 sedes de trabajo (2 en la Región Metropolitana, una en Valparaíso y otra en Biobío) administradas por coordinadores de zona. La capacitación de los encuestadores en el levantamiento se realizó en cada sede y hubo encuestadores apoderados, quienes posteriormente se encargaron de capacitar a los encuestadores en las regiones en que no hubo sedes (áquellas con menos de 400 encuestas a realizar).</p>
+<p>El levantamiento de información fue realizado en un período de aproximadamente 20 semanas -contadas desde la entrega de material a los encuestadores tras la capacitación-, durante los meses de Agosto, Septiembre, Octubre, Noviembre y Diciembre de 2016. Para la ejecución del terreno se contó con 132 encuestadores distribuidos en las sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet).</p>
+<p>El encuestador utiliza el protocolo de entrevista para conformar un listado de las personas que son residentes habituales de la vivienda y cumplen con los criterios de edad del estudio. En base a dicho listado, se selecciona aleatoriamente a una persona en cada vivienda que cumpla los requisitos de elegibilidad utilizando el Método de Kish. Claro está, las encuestas se realizaron cara a cara en las viviendas de los entrevistados seleccionados. Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD.</p>
+<p>De todos modos, ocurrieron imprevistos en el terreno. Principalmente se tuvo que extender la duración planificada del trabajo de campo (de orginalmente 8 a 12 semanas a finalmente un horizonte de entre 19 y 20 semanas). Lo anterior se debe a que producto de dificultades de acceso de la muestra y dispersión no se lograron los avances semanales planificados. Buena parte de los problemas asociados se concentraron en la Región Metropolitana. Para abordar los problemas de implementación fue necesario diseñar un aumento de lamuestra entre COES y CMD.</p>
+<p>Por otra parte hubo problemas para la convocatoria y permanencia de los encuestadores en el proyecto. Lo anterior hizo necesario ajustar los pagos propuestos a los encuestadores.</p>
+</div>
+<div id="supervisión-del-trabajo-de-campo" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Supervisión del Trabajo de Campo</h2>
+<p>El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando tres etapas:</p>
+<ol style="list-style-type: decimal">
+<li><p>Supervisión del 100% de las encuestas recopiladas, realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista.</p></li>
+<li><p>Retroalimentación de encuestadores de manera periódica por parte del jefe de zona como revisión de los datos recolectados por el equipo central deMicroDatos. Esto dio lugar a reportes periódicos de avance del levantamiento de datos.</p></li>
+<li><p>Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario
+permite manejar de mejor modo la no respuesta, validar internamente el flujo del
+cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de
+aplicación.</p></li>
+<li><p>Revisión de casos especiales y validación ex post. Finalmente CMD revisó el funcionamiento del flujo de respuestas y descartó casos por no cumplir con elmínimo de 300 respuestas a items o por tiempos de aplicación demasiado cortos (inferiores a 30 minutos).</p></li>
+</ol>
+<p>En paralelo a la revisión y/o eliminación de casos, CMD desarrolló un proceso de validación de los valores de entrevistados a distintas preguntas abiertas del cuestionario. Lo anterior involucró la imputación de valores o la asignación de valores perdidos. Más detalles de dicho procedimiento se encuentran en el “Reporte de Validación de datos ex post,” el cual puede ser solicitado al Equipo Encuesta COES.</p>
+</div>
+<div id="códigos-de-disposición-final-de-casos" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Códigos de Disposición Final de Casos</h2>
+<p>Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los 5156 casos de la muestra completa un código de disposición final (Ver Cuadro <a href="impenc.html#tab:disp">4.1</a>).</p>
+<p>En base a dicha información, la primera ola del Panel COES tiene las siguientes tasas de resultados:</p>
+<ul>
+<li>Tasa de Respuesta (RR2) de 62.4%.</li>
+<li>Tasa de Rechazo (REF2) de 8.9%.</li>
+<li>Tasa de Cooperación (COOP2) de 86.0%.
+*¨Tasa de Contacto (CON2) de 72.6%.</li>
+</ul>
+<p>Si desea conocer más detalles sobre la determinación de los códigos de disposición final de casos
+y el cálculo de las tasas de resultados, dirigirse a <a href="http://www.aapor.org/AAPOR_Main/media/%20publications/Standard-Definitions20169theditionfinal.pdf">http://www.aapor.org/AAPOR_Main/media/
+publications/Standard-Definitions20169theditionfinal.pdf</a>.</p>
+<table class="table lightable-classic" style="margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:disp">Cuadro 4.1: </span>Códigos de Disposición Final de Casos
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Codigo_General
+</th>
+<th style="text-align:left;">
+Código Específico
+</th>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Casos
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="5">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>Elegible</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+Entrevistado
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+Completo
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+2927
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+Parcial
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+No Entrevistado
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+Rechazo
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+426
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+No contacto
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+1229
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+Otro
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+43
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>Elegibilidad descononocida</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+79
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>No elegible</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+332
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>TOTAL</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+5054
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 3cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 2cm; background-color: white !important;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="futuras-olas-del-estudio-longitudinal" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Futuras Olas del Estudio Longitudinal</h2>
+<p>El Centro Micro Datos ha diseñado una estrategia de seguimiento de los entrevistados con el fin de fidelizarlos y minimizar la atrición. En paralelo, ha desarrollado un plan de trabajo con el objetivo de ajustar el diseño muestral del estudio y mantener los estándares de calidad en la ejecución de la encuesta. El trabajo de campo de la segunda ola de ELSOC fue desarrollado entre Julio y Octubre de 2017. Los resultados de la segunda ola de ELSOC están disponibles, pero se encuentran bajo embargo. Acorde a la política de liberación de datos de ELSOC, éstos se liberarán de manera parcelada. Si desea obtener información adicional sobre esto, puede escribir a <a href="mailto:encuestacoes@gmail.com" class="email">encuestacoes@gmail.com</a>.</p>
+<p>Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura 1). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD. En ELSOC 2017 se recuperó un 84.49% de lamuestra de 2016, porcentaje de atrición mejor al esperado.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="imagenes/attrition_01.png" alt="Diseño Muestral de ELSOC según Ola." width="75%" height="75%" />
+<p class="caption">
+Figura 4.1: Diseño Muestral de ELSOC según Ola.
+</p>
+</div>
+<p>Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="imagenes/Sample_Design.png" alt="Diseño Muestral de ELSOC según Ola." width="85%" height="85%" />
+<p class="caption">
+Figura 4.2: Diseño Muestral de ELSOC según Ola.
+</p>
+</div>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Más detalles se encuentran disponibles en el Informe Anual de Servicios para el Levantamiento del Estudio Longitudinal sobre Conflicto y Cohesión Social (COES) elaborado por MicroDatos.<a href="impenc.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Se define operacionalmente vivienda como un espacio físico que en su interior habita una familia o grupo de personas que vive bajo el mismo techo. Existen protocolos sobre la definición de vivienda relativos a la identificación de éstas y casos específicos (viviendas pareadas, viviendas ampliadas, viviendas con más de una entrada, etc.). No se incluyen espacios físicos dónde no viven grupos familiares como locales comerciales, oficinas, iglesias, centros comunitarios, etc.<a href="impenc.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="diseño-muestral-del-estudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="registro-de-versiones-base-de-datos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Manual_2016.pdf"],
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
