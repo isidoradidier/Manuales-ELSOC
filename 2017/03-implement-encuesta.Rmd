@@ -270,4 +270,4 @@ atricion %>%
 
 Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.
 
-![(#fig:atricion2): Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png){width=70%}
+![(#fig:atricion2) Diseño Muestral de ELSOC según Ola](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Sample_Design.png){width=70%}

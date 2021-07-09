@@ -12,7 +12,7 @@ La Figura  \@ref(fig:item) presenta, a modo de ejemplo, la pregunta M31 del cues
 
 - Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guión bajo _ (en el primer caso, sería m31_01) .
 
-![(#fig:item): Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png)
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](/Users/Elisa/Documents/GitHub/Manuales-ELSOC/Imagenes/Figura_item.png)
 
 
 El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso. De manera genérica, las variables incluidas en la base de datos tienen el siguiente formato:
