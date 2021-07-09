@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  8 JUL 2021 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  9 JUL 2021 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,10 +1027,10 @@ LaTeX Warning: Label `tab:viviendas' multiply defined.
 LaTeX Warning: Label `tab:disp' multiply defined.
 
 
-LaTeX Warning: Label `tab:bloques' multiply defined.
+LaTeX Warning: Label `tab:versiones' multiply defined.
 
 
-LaTeX Warning: Label `tab:estratos' multiply defined.
+LaTeX Warning: Label `tab:caracthogar' multiply defined.
 
 )
 \openout1 = `Manual_2016.aux'.
@@ -1285,13 +1285,13 @@ Underfull \hbox (badness 3386) in paragraph at lines 710--713
  []
 
 [20]
-<imagenes/attrition_01.png, id=335, 511.9125pt x 423.5825pt>
+<imagenes/attrition_01.png, id=334, 511.9125pt x 423.5825pt>
 File: imagenes/attrition_01.png Graphic file (type png)
 <use imagenes/attrition_01.png>
 Package pdftex.def Info: imagenes/attrition_01.png  used on input line 754.
 (pdftex.def)             Requested size: 352.31392pt x 291.52249pt.
 [21 <./imagenes/attrition_01.png>]
-<imagenes/Sample_Design.png, id=344, 581.17125pt x 313.17pt>
+<imagenes/Sample_Design.png, id=343, 581.17125pt x 313.17pt>
 File: imagenes/Sample_Design.png Graphic file (type png)
 <use imagenes/Sample_Design.png>
 Package pdftex.def Info: imagenes/Sample_Design.png  used on input line 765.
@@ -1340,7 +1340,7 @@ Cap\'{\i }tulo 7.
 
 ]
 Cap\'{\i }tulo 8.
-<imagenes/Figura_item.png, id=377, 383.18156pt x 259.7203pt>
+<imagenes/Figura_item.png, id=378, 383.18156pt x 259.7203pt>
 File: imagenes/Figura_item.png Graphic file (type png)
 <use imagenes/Figura_item.png>
 Package pdftex.def Info: imagenes/Figura_item.png  used on input line 847.
@@ -1351,31 +1351,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [27
 
 ]
-<imagenes/inst_var.png, id=383, 455.45157pt x 108.405pt>
+<imagenes/inst_var.png, id=384, 455.45157pt x 108.405pt>
 File: imagenes/inst_var.png Graphic file (type png)
 <use imagenes/inst_var.png>
-Package pdftex.def Info: imagenes/inst_var.png  used on input line 856.
+Package pdftex.def Info: imagenes/inst_var.png  used on input line 858.
 (pdftex.def)             Requested size: 422.78722pt x 100.63033pt.
 [28 <./imagenes/Figura_item.png> <./imagenes/inst_var.png>]
-<imagenes/t2_01.png, id=394, 450.9347pt x 191.21437pt>
+<imagenes/t2_01.png, id=396, 450.9347pt x 191.21437pt>
 File: imagenes/t2_01.png Graphic file (type png)
 <use imagenes/t2_01.png>
-Package pdftex.def Info: imagenes/t2_01.png  used on input line 862.
+Package pdftex.def Info: imagenes/t2_01.png  used on input line 871.
 (pdftex.def)             Requested size: 375.82385pt x 159.36436pt.
-<imagenes/c12_09.png, id=396, 398.99063pt x 95.6072pt>
+[29 <./imagenes/t2_01.png>]
+<imagenes/c12_09.png, id=405, 398.99063pt x 95.6072pt>
 File: imagenes/c12_09.png Graphic file (type png)
 <use imagenes/c12_09.png>
-Package pdftex.def Info: imagenes/c12_09.png  used on input line 870.
+Package pdftex.def Info: imagenes/c12_09.png  used on input line 886.
 (pdftex.def)             Requested size: 422.79411pt x 101.31104pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[29 <./imagenes/t2_01.png>]
-<imagenes/m37_01.png, id=404, 420.06938pt x 132.495pt>
+<imagenes/m37_01.png, id=406, 420.06938pt x 132.495pt>
 File: imagenes/m37_01.png Graphic file (type png)
 <use imagenes/m37_01.png>
-Package pdftex.def Info: imagenes/m37_01.png  used on input line 874.
+Package pdftex.def Info: imagenes/m37_01.png  used on input line 897.
 (pdftex.def)             Requested size: 422.77966pt x 133.34984pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--905
+|[]\T1/futs/b/n/14.4 Características Base de Datos EL-SOC Ola 1|
+ []
+
 [30 <./imagenes/c12_09.png> <./imagenes/m37_01.png>] [31] [32] 
 AED: lastpage setting LastPage
 [33] (./Manual_2016.aux
@@ -1392,10 +1394,10 @@ Package rerunfilecheck Info: File `Manual_2016.out' has not changed.
 (rerunfilecheck)             Checksum: D5496655D417DDA4C5E4588C32DEB417;5620.
  ) 
 Here is how much of TeX's memory you used:
- 18205 strings out of 480477
- 279635 string characters out of 5897329
- 777057 words of memory out of 5000000
- 35330 multiletter control sequences out of 15000+600000
+ 18210 strings out of 480477
+ 279170 string characters out of 5897329
+ 773057 words of memory out of 5000000
+ 35334 multiletter control sequences out of 15000+600000
  506931 words of font info for 123 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,12n,77p,1200b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1441,10 +1443,10 @@ ers/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 putb8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/ado
 be/utopia/putr8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb>
-Output written on Manual_2016.pdf (33 pages, 735888 bytes).
+Output written on Manual_2016.pdf (33 pages, 736614 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 443 compressed objects within 5 object streams
- 149 named destinations out of 1000 (max. 500000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

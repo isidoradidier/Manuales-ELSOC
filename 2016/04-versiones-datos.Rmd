@@ -1,13 +1,13 @@
-# Registro de Versiones Base de Datos
+# Registro de Versiones Base de Datos {#registrosver}
 
-Las versiones adjuntadas de la base de datos, como el presenteManual de Usuario fueron elaborados por el Equipo de Encuestas COES. Sin embargo, **no pueden ser consideradas como definitivas**, ya que como equipo estamos constantemente revisando la calidad de éstos. En caso que como usuario detecté problemas con la base de datos, comuníquese con encuestacoes@gmail.com. A su vez, los miembros del listado de emails de ELSOC recibirán, en caso de que sean necesarios, los cambios introducidos en el estudio. **Ni las bases de datos ni el Manual pueden ser entregados a terceros que no sean parte de COES**. Los datos y documentos deben ser obtenidos desde el sitio oficial del estudio. En esta sección se resumen las versiones existentes, a la fecha, de la base de datos correspondiente a la primera ola del estudio longitudinal (Ver Cuadro 8). A su vez, se reseñan las diferencias entre dichas versiones y los cambios introducidos.
+Las versiones adjuntadas de la base de datos, como el presenteManual de Usuario fueron elaborados por el Equipo de Encuestas COES. Sin embargo, **no pueden ser consideradas como definitivas**, ya que como equipo estamos constantemente revisando la calidad de éstos. En caso que como usuario detecté problemas con la base de datos, comuníquese con encuestacoes@gmail.com. A su vez, los miembros del listado de emails de ELSOC recibirán, en caso de que sean necesarios, los cambios introducidos en el estudio. **Ni las bases de datos ni el Manual pueden ser entregados a terceros que no sean parte de COES**. Los datos y documentos deben ser obtenidos desde el sitio oficial del estudio. En esta sección se resumen las versiones existentes, a la fecha, de la base de datos correspondiente a la primera ola del estudio longitudinal (Ver Cuadro \@ref(tab:versiones)). A su vez, se reseñan las diferencias entre dichas versiones y los cambios introducidos.
 
 
-## Casos Falsificados
+## Casos Falsificados {#casosfal}
 
-Durante la realización del trabajo de campo de ELSOC 2018, el equipo de CentroMicro Datos, junto al equipo de Encuestas COES detectó que 56 entrevistas correspondientes a la ola 2016 fueron falsificadas. Producto de lo anterior, dichas respuestas fueron eliminadas de la base de datos en la versión 3.0 del 28 de Diciembre de 2018. El problema representa menos del 1% del tamaño muestral original y, en los análisis realizados por el equipo de Encuestas COES, no se detectaron cambios sustantivos en la distribución de las variables tras su eliminación.
+Durante la realización del trabajo de campo de ELSOC 2018, el equipo de Centro Micro Datos, junto al equipo de Encuestas COES detectó que 56 entrevistas correspondientes a la ola 2016 fueron falsificadas. Producto de lo anterior, dichas respuestas fueron eliminadas de la base de datos en la versión 3.0 del 28 de Diciembre de 2018. El problema representa menos del 1% del tamaño muestral original y, en los análisis realizados por el equipo de Encuestas COES, no se detectaron cambios sustantivos en la distribución de las variables tras su eliminación.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r versiones, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -46,7 +46,7 @@ versiones <- tibble(Versión = c("0.0"),
 
 versiones %>%
   kable(booktabs = TRUE,longtab=T,  
-        caption="\\label{tab:bloques}DVersiones de Base de Datos ELSOC Ola 1 (2016)") %>%
+        caption="\\label{tab:versiones}Versiones de Base de Datos ELSOC Ola 1 (2016)") %>%
   
   kable_styling(latex_options = "HOLD_position") %>%
   column_spec(c(1), width = "1cm") %>%

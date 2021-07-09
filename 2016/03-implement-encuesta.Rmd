@@ -14,7 +14,7 @@ Posteriormente se selecciona una vivienda ^[Se define operacionalmente vivienda 
 
 El procedimiento anterior da lugar al desarrollo de croquis que permiten identificar visualmente las viviendas seleccionadas junto a indicaciones -en caso de ser necesarias- para señalizar su ubicación. Lo anterior se ve complementado con una codificación de los inmuebles incluidos en el recorrido, de modo de distinguir las viviendas particulares ocupadas de otros tipos de construcciones y de facilitar la planificación del trabajo de campo. La etapa final de este procedimiento es la georreferenciación de lamuestra seleccionada para contar con la ubicación geográfica asociada a cada levantamiento.
 
-## Pilotaje del Cuestionario
+## Pilotaje del Cuestionario {#pilotaje}
 
 En paralelo al proceso de empadronamiento se desarrolló la preparación definitiva del cuestionario de ELSOC. COES y CMD colaboraron en la revisión final del cuestionario, lo cual tuvo como productos la diagramación en papel del cuestionario y su posterior programación para que fuera aplicada en tablets (el cuestionario fue aplicado de manera presencial utilizando el sistema CAPI). Posteriormente se realizó una versión piloto del estudio con el fin de testear el instrumento como evaluar el funcionamiento operativo del levantamiento de datos.
 
@@ -23,7 +23,7 @@ El piloto se realizó con una lista de 130 direcciones, distintas a las cuales s
 Los resultados de dichos estudios permitieron estimar de mejor modo los tiempos requeridos para el desarrollo de la entrevista por parte del encuestador, afinar el fraseo del cuestionario y dimensionar de mejor modo los esfuerzos requeridos para el levantamiento de datos. En caso de que desee obtener más información sobre el piloto, puede solicitar dicha información a
 encuestacoes@gmail.com.
 
-## Planificación y Ejecución del Campo
+## Planificación y Ejecución del Campo {#plan}
 
 El CMD elaboró un Manual del Encuestador para la implementación del Estudio Panel y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye:
 
@@ -45,7 +45,7 @@ De todos modos, ocurrieron imprevistos en el terreno. Principalmente se tuvo que
 
 Por otra parte hubo problemas para la convocatoria y permanencia de los encuestadores en el proyecto. Lo anterior hizo necesario ajustar los pagos propuestos a los encuestadores.
 
-## Supervisión del Trabajo de Campo
+## Supervisión del Trabajo de Campo {#supervision}
 
 El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando tres etapas:
 
@@ -62,7 +62,7 @@ aplicación.
 
 En paralelo a la revisión y/o eliminación de casos, CMD desarrolló un proceso de validación de los valores de entrevistados a distintas preguntas abiertas del cuestionario. Lo anterior involucró la imputación de valores o la asignación de valores perdidos. Más detalles de dicho procedimiento se encuentran en el “Reporte de Validación de datos ex post”, el cual puede ser solicitado al Equipo Encuesta COES.
 
-## Códigos de Disposición Final de Casos
+## Códigos de Disposición Final de Casos {#codigos}
 
 Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los 5156 casos de la muestra completa un código de disposición final (Ver Cuadro \@ref(tab:disp)).
 
@@ -121,20 +121,20 @@ disp%>%
 ```
 
 
-## Futuras Olas del Estudio Longitudinal
+## Futuras Olas del Estudio Longitudinal {#futuras}
 
 El Centro Micro Datos ha diseñado una estrategia de seguimiento de los entrevistados con el fin de fidelizarlos y minimizar la atrición. En paralelo, ha desarrollado un plan de trabajo con el objetivo de ajustar el diseño muestral del estudio y mantener los estándares de calidad en la ejecución de la encuesta. El trabajo de campo de la segunda ola de ELSOC fue desarrollado entre Julio y Octubre de 2017. Los resultados de la segunda ola de ELSOC están disponibles, pero se encuentran bajo embargo. Acorde a la política de liberación de datos de ELSOC, éstos se liberarán de manera parcelada. Si desea obtener información adicional sobre esto, puede escribir a encuestacoes@gmail.com.
 
-Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura 1). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD. En ELSOC 2017 se recuperó un 84.49% de lamuestra de 2016, porcentaje de atrición mejor al esperado.
+Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura \@ref(fig:atri)). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD. En ELSOC 2017 se recuperó un 84.49% de lamuestra de 2016, porcentaje de atrición mejor al esperado.
 
  
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="75%", out.width="75%", fig.cap='Diseño Muestral de ELSOC según Ola.'}
+```{r atri, echo=FALSE, fig.align='center', fig.height=1, out.height="75%", out.width="75%", fig.cap='a. Diseño Muestral de ELSOC según Ola.'}
 knitr::include_graphics("imagenes/attrition_01.png")
 ```
 
 Según el plan de trabajo contemplado por COES, durante el 2018 se levantará la tercera ola de ELSOC. En esta tercera ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos. El objetivo de la muestra de refresco es corregir la subcobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Los resultados de la tercera ola estáran disponibles durante el primer semestre del 2019.
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="85%", out.width="85%", fig.cap='Diseño Muestral de ELSOC según Ola.'}
+```{r design, echo=FALSE, fig.align='center', fig.height=1, out.height="85%", out.width="85%", fig.cap='b. Diseño Muestral de ELSOC según Ola.'}
 knitr::include_graphics("imagenes/Sample_Design.png")
 ```
 

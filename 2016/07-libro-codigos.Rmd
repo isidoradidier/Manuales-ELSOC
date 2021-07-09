@@ -3,7 +3,7 @@
 
 Para un uso adecuado de la base de datos de la primera ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.
 
-## Variables ELSOC Ola 1
+## Variables ELSOC Ola 1 {#variablesola}
 
 La base de datos de ELSOC Ola 1 (2016) contiene una fila por cada entrevistado (son 2983 casos) y una columna por cada variable. Las variables corresponden a los ítemes incluidos en el cuestionario del estudio. Ahora, es necesario que el usuario comprenda plenamente qué es un ítem.
 
@@ -14,13 +14,13 @@ a m31).
 * Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario
 (01, 02, 03 y 04), separado por un guión bajo _ (en el primer caso, sería m31_01).
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="75%", out.width="75%", fig.cap='Ejemplo de Pregunta con Múltiples Ítemes en Panel COES.'}
+```{r item, echo=FALSE, fig.align='center', fig.height=1, out.height="75%", out.width="75%", fig.cap='Ejemplo de Pregunta con Múltiples Ítemes en Panel COES.'}
 knitr::include_graphics("imagenes/Figura_item.png")
 ```
 
 El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso. De manera genérica, las variables incluidas en la base de datos tienen el siguiente formato:
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%"}
+```{r instvar, echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%",  fig.cap='Ejemplo Variable de la Base de Datos'}
 knitr::include_graphics("imagenes/inst_var.png")
 ```
 
@@ -30,10 +30,9 @@ A continuación, se presenta un ejemplo para clarificar dicha estructura. En est
 
 Los distintos valores listados corresponden a las categorías de respuesta asociadas al ítem. En la construcción de la base de datos, dichas categorías fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con el enunciado, en la encuesta a su respuesta se le asignará un valor numérico de 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta ”Totalmente en desacuerdo”.
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="80%", out.width="80%"}
+```{r t201, echo=FALSE, fig.align='center', fig.height=1, out.height="80%", out.width="80%", fig.cap='Ejemplo Variable t2_01'}
 knitr::include_graphics("imagenes/t2_01.png")
 ```
-
 
 Por último, es importante también tener en cuenta la información no incluida en este libro de códigos. *“A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?"* corresponde la fraseo exacto de la pregunta, (MOSTRAR TARJETA 2) aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos demanera completa en el Cuestionario y el Listado de Variables correspondiente.
 
@@ -41,19 +40,18 @@ Las variables que poseen categorías residuales de no respuesta (No Sabe y No Re
 
 Las variables de cadena (texto) no presentan códigos, ya que presentan los verbatim literales de lasmenciones por parte de los encuestados ^[Los ítemes m03, m04, m22 y m23 son de respuesta abierta, y el CMD elaboró nuevas variables (cod_m03, cod_m04,cod_m22 y cod_m23), las cuales corresponden a recodificaciones de éstas siguiendo el protocolo de Clasificación Internacional de Ocupaciones Uniforme CIOU 88.]. El único cambio introducido -y fue realizado por motivos de compatibilidad entre softwares- fue la eliminación de símbolos tales como tildes, diéresis y otros caracteres especiales. A continuación se presenta el ejemplo de una de dichas preguntas:
 
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%"}
+```{r c1209, echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%", fig.cap='Ejemplo Variable c12_09'}
 knitr::include_graphics("imagenes/c12_09.png")
 ```
 
 En el caso de los ítems dónde se pide una respuesta numérica tampoco existen categorías de respuesta, registrándose el valor indicado por el entrevistado. De todos modos se incluyen etiquetas de valores para los valores perdidos. A continuación, un ejemplo de un ítem de este tipo:
 
 
-
-```{r echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%"}
+```{r m3701, echo=FALSE, fig.align='center', fig.height=1, out.height="90%", out.width="90%", fig.cap='Ejemplo Variable m37_01'}
 knitr::include_graphics("imagenes/m37_01.png")
 ```
 
-## Características Base de Datos ELSOC Ola 1
+## Características Base de Datos ELSOC Ola 1 {#caracterbase}
 
 La versión actual de la base de datos (2.0) contiene información para los 2983 entrevistados (N definitivo tras supervisión) en relación a los 336 items del cuestionario (cada una corresponde a una variable en la base de datos) y un conjunto adicional de variables:
 
@@ -67,9 +65,8 @@ La versión actual de la base de datos (2.0) contiene información para los 2983
 
 Dentro de las variables de diseñomuestral complejo, el estrato identifica a los seis previamente definidos ^[Los estratos 4, 5 y 6 tienen sub-estratos Norte y Sur.]: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes(4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa lasmanzanas/ bloques, pero los valores son artificiales (generados por MicroDatos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados.
 
-
-<style type="text/css">.tg-sort-header::-moz-selection{background:0 0}.tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}.tg-sort-header:after{content:'';float:right;margin-top:7px;border-width:0 5px 5px;border-style:solid;border-color:#404040 transparent;visibility:hidden}.tg-sort-header:hover:after{visibility:visible}.tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:.4}.tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}</style><table id="tg-b9xPu" style="border-collapse:collapse;border-spacing:0;margin:0px auto" class="tg"><tbody><tr><td style="border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal"><span style="font-weight:bold">De manera genérica se recomienda la utilización de los ponderadores 01 y 02 correspondientes a ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderador 02 también ajusta en base a la población estimada según sexo. Sin embargo, la versión 3.0 no contiene los ponderadores muestrales definitivos acordes a la eliminación de las entrevistas falsificadas. Se recomienda discreción a los investigadores</span></td></tr></tbody></table><script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n?n.length:0}function t(n,t,e,o=0){for(e=r(n);o<e;++o)t(n[o],o)}function e(n){return n.split("").reverse().join("")}function o(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function u(n,r,e=[]){return t(n,function(n){r(n)&&e.push(n)}),e}var a=parseFloat;function i(n,r){return function(t){var e="";return t.replace(n,function(n,t,o){return e=t.replace(r,"")+"."+(o||"").substring(1)}),a(e)}}var s=i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),c=i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);function f(n){var t=a(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function d(n){var e=[],o=n;return t([f,s,c],function(u){var a=[],i=[];t(n,function(n,r){r=u(n),a.push(r),r||i.push(n)}),r(i)<r(o)&&(o=i,e=a)}),r(u(o,function(n){return n==o[0]}))==r(o)?e:[]}function v(n){if("TABLE"==n.nodeName){for(var a=function(r){var e,o,u=[],a=[];return function n(r,e){e(r),t(r.childNodes,function(r){n(r,e)})}(n,function(n){"TR"==(o=n.nodeName)?(e=[],u.push(e),a.push(n)):"TD"!=o&&"TH"!=o||e.push(n)}),[u,a]}(),i=a[0],s=a[1],c=r(i),f=c>1&&r(i[0])<r(i[1])?1:0,v=f+1,p=i[f],h=r(p),l=[],g=[],N=[],m=v;m<c;++m){for(var T=0;T<h;++T){r(g)<h&&g.push([]);var C=i[m][T],L=C.textContent||C.innerText||"";g[T].push(L.trim())}N.push(m-v)}t(p,function(n,t){l[t]=0;var a=n.classList;a.add("tg-sort-header"),n.addEventListener("click",function(){var n=l[t];!function(){for(var n=0;n<h;++n){var r=p[n].classList;r.remove("tg-sort-asc"),r.remove("tg-sort-desc"),l[n]=0}}(),(n=1==n?-1:+!n)&&a.add(n>0?"tg-sort-asc":"tg-sort-desc"),l[t]=n;var i,f=g[t],m=function(r,t){return n*f[r].localeCompare(f[t])||n*(r-t)},T=function(n){var t=d(n);if(!r(t)){var u=o(n),a=o(n.map(e));t=d(n.map(function(n){return n.substring(u,r(n)-a)}))}return t}(f);(r(T)||r(T=r(u(i=f.map(Date.parse),isNaN))?[]:i))&&(m=function(r,t){var e=T[r],o=T[t],u=isNaN(e),a=isNaN(o);return u&&a?0:u?-n:a?n:e>o?n:e<o?-n:n*(r-t)});var C,L=N.slice();L.sort(m);for(var E=v;E<c;++E)(C=s[E].parentNode).removeChild(s[E]);for(E=v;E<c;++E)C.appendChild(s[v+L[E-v]])})})}}n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{v(t[e])}catch(n){}})}(document)</script>
-
+<center> **De manera genérica se recomienda la utilización de los ponderadores 01 y 02 correspondientes a ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderador 02 también ajusta en base a la población estimada según sexo. Sin embargo, la versión 3.0 no contiene los ponderadores muestrales definitivos acordes a la eliminación de las entrevistas falsificadas. Se recomienda discreción a los investigadores** </center>
+<br>
 
 Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo estomotivo de una nueva versión de la base de datos.
 
@@ -85,9 +82,9 @@ Las bases de datos se encuentran disponibles en formatos .dta (compatibles con v
 
 Sin embargo, los archivos anteriormente listados deben ser solicitados al Equipo de Encuestas, justificando el uso que se darán a los datos requeridos. El Equipo de Encuestas COES decidirá la pertinencia de dichas solicitudes y se reserva el derecho para entregar dichos datos.
 
-Las variables sexo y edad del entrevistado, caracterización de todos los miembros del hogar (sexo y edad) y número de integrantes del hogar no formaron parte del cuestionario del estudio. Dicha información presente en la base de datos fue obtenidas de la Tabla Kish de registro de miembros del hogar para la selección aleatoria del entrevistado. Debe tenerse en consideración que en 55 encuestas **no hay correspondencia entre la variable de tamaño del hogar (nhogar) y el conteo de miembros descritos**. No fue posible determinar el origen de los problemas de registro, por lo que se deja en manos de los investigadores el modo en que aborden dicha discrepancia. En el Cuadro 9 se detallan los 55 casos problemáticos, indicando el tamaño del hogar correspondiente a la variable nhogar y el resultante de contar las variables descriptoras de miembros del hogar (conteo miembros). La columna final detalla la diferencia resultante: para 48 casos hay una diferencia de 1, tres con una diferencia de 2, dos con 3 casos y dos con 4 casos.
+Las variables sexo y edad del entrevistado, caracterización de todos los miembros del hogar (sexo y edad) y número de integrantes del hogar no formaron parte del cuestionario del estudio. Dicha información presente en la base de datos fue obtenidas de la Tabla Kish de registro de miembros del hogar para la selección aleatoria del entrevistado. Debe tenerse en consideración que en 55 encuestas **no hay correspondencia entre la variable de tamaño del hogar (nhogar) y el conteo de miembros descritos**. No fue posible determinar el origen de los problemas de registro, por lo que se deja en manos de los investigadores el modo en que aborden dicha discrepancia. En el Cuadro \@ref(tab:caracthogar) se detallan los 55 casos problemáticos, indicando el tamaño del hogar correspondiente a la variable nhogar y el resultante de contar las variables descriptoras de miembros del hogar (conteo miembros). La columna final detalla la diferencia resultante: para 48 casos hay una diferencia de 1, tres con una diferencia de 2, dos con 3 casos y dos con 4 casos.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r caracthogar, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -315,7 +312,7 @@ caract_hogar <- tibble(ID_Encuesta = c("1101132"),
 
 
 caract_hogar%>%
-  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:estratos}Discrepancias en Caracterización del Hogar, Primera Ola ELSOC") %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:caracthogar}Discrepancias en Caracterización del Hogar, Primera Ola ELSOC") %>%
   column_spec(c(1), width = "5cm") %>%
   column_spec(c(2,3), width = "3cm") %>%
   column_spec(c(4), width = "2cm") %>%
