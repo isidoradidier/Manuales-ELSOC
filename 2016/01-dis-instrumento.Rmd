@@ -27,7 +27,7 @@ Con el objetivo de satisfacer los criterios y estándares de calidad para cuesti
 La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplicará cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los items intercalados^{Algunos itemes aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen
 en años pares o impares).]. Luego, en el Cuadro \@ref(tab:temas) se resumen los conceptos que se incluyeron en cada sección del cuestionario de la primera ola del estudio longitudinal COES. Para más detalles sobre el Cuestionario se debe revisar la sección \@ref(libro) y el Listado de Variables de ELSOC.
 
-```{r temas, echo=FALSE, message=FALSE, warning=FALSE}
+```{r , echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
@@ -95,7 +95,7 @@ temas_seccion %>%
 En este apartado se presenta la Ficha Técnica (Ver Cuadro \@ref(tab:ficha)), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
 
 
-```{r ficha, echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
 

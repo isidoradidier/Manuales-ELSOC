@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  9 JUL 2021 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  9 JUL 2021 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,18 +922,50 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+(c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpage
+s.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+
+(c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.
+sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen276
+\ESO@tempdimb=\dimen277
+)
+\AM@pagewidth=\dimen278
+\AM@pageheight=\dimen279
+\AM@fboxrule=\dimen280
+
+(c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdfte
+x.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count323
+\AM@pagebox=\box70
+\AM@global@opts=\toks37
+\AM@pagecnt=\count324
+\AM@toc@title=\toks38
+\c@AM@survey=\count325
+\AM@templatesizebox=\box71
+)
+(c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/chngcntr/chngcnt
+r.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlese
 c.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box70
+\ttl@box=\box72
 \beforetitleunit=\skip83
 \aftertitleunit=\skip84
-\ttl@plus=\dimen276
-\ttl@minus=\dimen277
-\ttl@toksa=\toks37
-\titlewidth=\dimen278
-\titlewidthlast=\dimen279
-\titlewidthfirst=\dimen280
+\ttl@plus=\dimen281
+\ttl@minus=\dimen282
+\ttl@toksa=\toks39
+\titlewidth=\dimen283
+\titlewidthlast=\dimen284
+\titlewidthfirst=\dimen285
 )
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/flafter.sty
 Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
@@ -943,31 +975,31 @@ Already applied: [0000/00/00] float order in 2-column on input line 151.
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortb
 l.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks38
+\everycr=\toks40
 \minrowclearance=\skip85
 ) (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
-\c@taburow=\count323
-\tabu@nbcols=\count324
-\tabu@cnt=\count325
-\tabu@Xcol=\count326
-\tabu@alloc=\count327
-\tabu@nested=\count328
-\tabu@target=\dimen281
-\tabu@spreadtarget=\dimen282
-\tabu@naturalX=\dimen283
-\tabucolX=\dimen284
-\tabu@Xsum=\dimen285
-\extrarowdepth=\dimen286
-\abovetabulinesep=\dimen287
-\belowtabulinesep=\dimen288
-\tabustrutrule=\dimen289
-\tabu@thebody=\toks39
-\tabu@footnotes=\toks40
-\tabu@box=\box71
-\tabu@arstrutbox=\box72
-\tabu@hleads=\box73
-\tabu@vleads=\box74
+\c@taburow=\count326
+\tabu@nbcols=\count327
+\tabu@cnt=\count328
+\tabu@Xcol=\count329
+\tabu@alloc=\count330
+\tabu@nested=\count331
+\tabu@target=\dimen286
+\tabu@spreadtarget=\dimen287
+\tabu@naturalX=\dimen288
+\tabucolX=\dimen289
+\tabu@Xsum=\dimen290
+\extrarowdepth=\dimen291
+\abovetabulinesep=\dimen292
+\belowtabulinesep=\dimen293
+\tabustrutrule=\dimen294
+\tabu@thebody=\toks41
+\tabu@footnotes=\toks42
+\tabu@box=\box73
+\tabu@arstrutbox=\box74
+\tabu@hleads=\box75
+\tabu@vleads=\box76
 \tabu@cellskip=\skip86
 )
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/
@@ -985,101 +1017,74 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \TPTL@width=\skip87
 ) (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.st
 y
-\UL@box=\box75
-\UL@hyphenbox=\box76
+\UL@box=\box77
+\UL@hyphenbox=\box78
 \UL@skip=\skip88
-\UL@hook=\toks41
-\UL@height=\dimen290
-\UL@pe=\count329
-\UL@pixel=\dimen291
-\ULC@box=\box77
+\UL@hook=\toks43
+\UL@height=\dimen295
+\UL@pe=\count332
+\UL@pixel=\dimen296
+\ULC@box=\box79
 Package: ulem 2019/11/18
-\ULdepth=\dimen292
+\ULdepth=\dimen297
 )
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecel
 l.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen293
-\c@nlinenum=\count330
-\TeXr@lab=\toks42
+\rotheadsize=\dimen298
+\c@nlinenum=\count333
+\TeXr@lab=\toks44
 ) (./Manual_2016.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
-
-LaTeX Warning: Label `tab:temas' multiply defined.
-
-
-LaTeX Warning: Label `tab:ficha' multiply defined.
-
-
-LaTeX Warning: Label `tab:estratos' multiply defined.
-
-
-LaTeX Warning: Label `tab:bloques' multiply defined.
-
-
-LaTeX Warning: Label `tab:hhs' multiply defined.
-
-
-LaTeX Warning: Label `tab:viviendas' multiply defined.
-
-
-LaTeX Warning: Label `tab:disp' multiply defined.
-
-
-LaTeX Warning: Label `tab:versiones' multiply defined.
-
-
-LaTeX Warning: Label `tab:caracthogar' multiply defined.
-
 )
 \openout1 = `Manual_2016.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 169.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-168.
+169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmlfutm.
 fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 169.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-168.
+169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmsfutm.
 fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 169.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-168.
+169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmxfutm.
 fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    ... okay on input line 169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/eps
 topdf-base.sty
@@ -1092,7 +1097,7 @@ opdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 168.
+Package hyperref Info: Link coloring OFF on input line 169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref
 .sty
@@ -1106,11 +1111,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 /gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count331
+\c@section@level=\count334
 )
-LaTeX Info: Redefining \ref on input line 168.
-LaTeX Info: Redefining \pageref on input line 168.
-LaTeX Info: Redefining \nameref on input line 168.
+LaTeX Info: Redefining \ref on input line 169.
+LaTeX Info: Redefining \pageref on input line 169.
+LaTeX Info: Redefining \nameref on input line 169.
 (./Manual_2016.out) (./Manual_2016.out)
 \@outlinefile=\write3
 \openout3 = `Manual_2016.out'.
@@ -1151,17 +1156,17 @@ LaTeX Info: Redefining \nameref on input line 168.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 168.
+(lastpage)             ! on input line 169.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 168.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 168.
-\c@maskedRefs=\count332
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 169.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 169.
+\c@maskedRefs=\count335
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/apacite/spanish.
 apc
@@ -1214,193 +1219,209 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write4
 \openout4 = `Manual_2016.toc'.
 
+(./Manual_2016.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write5
+\openout5 = `Manual_2016.lot'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [2
+
+] (./Manual_2016.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write6
+\openout6 = `Manual_2016.lof'.
+
+[3
+
+
+] (./Manual_2016.toc)
+\tf@toc=\write7
+\openout7 = `Manual_2016.toc'.
+
+[4
 
 ]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 206.
+(Font)              scaled to size 7.35999pt on input line 221.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 206.
+(Font)              scaled to size 6.25598pt on input line 221.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 206.
+(Font)              scaled to size 7.35999pt on input line 221.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 206.
-[3
+(Font)              scaled to size 6.25598pt on input line 221.
+[5
 
 ]
 Cap\'{\i }tulo 2.
-[4
+[6
 
-] [5] [6] [7] [8]
+] [7] [8] [9] [10]
 Cap\'{\i }tulo 3.
 
 Underfull \vbox (badness 4156) has occurred while \output is active []
 
-[9
+[11
 
 ]
-Overfull \hbox (1.16508pt too wide) in paragraph at lines 394--409
+Overfull \hbox (1.16508pt too wide) in paragraph at lines 409--424
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[10] [11]
+[12] [13]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-440.
+455.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/ts1futs.
 fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
-
-LaTeX Warning: Reference `bloques' on page 12 undefined on input line 454.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12] [13]
+[14] [15]
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family futs in TS1 encoding.
-(textcomp)             Default family used instead on input line 514.
-[14] [15] [16]
+(textcomp)             Default family used instead on input line 529.
+[16] [17] [18]
 Cap\'{\i }tulo 4.
-[17
+[19
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-41.
+56.
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [18] [19]
+) [20] [21]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family futs in TS1 encoding.
-(textcomp)             Default family used instead on input line 707.
+(textcomp)             Default family used instead on input line 722.
 
-Underfull \hbox (badness 3386) in paragraph at lines 710--713
+Underfull \hbox (badness 3386) in paragraph at lines 725--728
 \T1/futs/m/n/10 de las tasas de re-sul-ta-dos, di-ri-girse a []http://www.aapor
 .org/AAPOR_Main/media/ publications/Standard-
  []
 
-[20]
-<imagenes/attrition_01.png, id=334, 511.9125pt x 423.5825pt>
+[22]
+<imagenes/attrition_01.png, id=350, 511.9125pt x 423.5825pt>
 File: imagenes/attrition_01.png Graphic file (type png)
 <use imagenes/attrition_01.png>
-Package pdftex.def Info: imagenes/attrition_01.png  used on input line 754.
+Package pdftex.def Info: imagenes/attrition_01.png  used on input line 769.
 (pdftex.def)             Requested size: 352.31392pt x 291.52249pt.
-[21 <./imagenes/attrition_01.png>]
-<imagenes/Sample_Design.png, id=343, 581.17125pt x 313.17pt>
+[23 <./imagenes/attrition_01.png>]
+<imagenes/Sample_Design.png, id=357, 581.17125pt x 313.17pt>
 File: imagenes/Sample_Design.png Graphic file (type png)
 <use imagenes/Sample_Design.png>
-Package pdftex.def Info: imagenes/Sample_Design.png  used on input line 765.
+Package pdftex.def Info: imagenes/Sample_Design.png  used on input line 780.
 (pdftex.def)             Requested size: 399.29707pt x 215.16525pt.
-[22 <./imagenes/Sample_Design.png>]
+[24 <./imagenes/Sample_Design.png>]
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (2.73721pt too wide) in paragraph at lines 785--785
+Overfull \hbox (2.73721pt too wide) in paragraph at lines 800--800
 []|\T1/futs/m/n/10 Versión|  
  []
 
 
-Overfull \hbox (4.82079pt too wide) in paragraph at lines 787--787
+Overfull \hbox (4.82079pt too wide) in paragraph at lines 802--802
 []|\T1/futs/m/n/10 20/12/2016|  
  []
 
 
-Overfull \hbox (4.82079pt too wide) in paragraph at lines 791--791
+Overfull \hbox (4.82079pt too wide) in paragraph at lines 806--806
 []|\T1/futs/m/n/10 12/01/2017|  
  []
 
 
-Overfull \hbox (4.82079pt too wide) in paragraph at lines 795--795
+Overfull \hbox (4.82079pt too wide) in paragraph at lines 810--810
 []|\T1/futs/m/n/10 23/03/2017|  
  []
 
 
-Overfull \hbox (4.82079pt too wide) in paragraph at lines 798--798
+Overfull \hbox (4.82079pt too wide) in paragraph at lines 813--813
 []|\T1/futs/m/n/10 23/04/2018|  
  []
 
 
-Overfull \hbox (4.82079pt too wide) in paragraph at lines 801--801
+Overfull \hbox (4.82079pt too wide) in paragraph at lines 816--816
 []|\T1/futs/m/n/10 28/12/2018|  
  []
 
-[23
-
-] [24]
-Cap\'{\i }tulo 6.
 [25
+
+] [26]
+Cap\'{\i }tulo 6.
+[27
 
 ]
 Cap\'{\i }tulo 7.
-[26
+[28
 
 ]
 Cap\'{\i }tulo 8.
-<imagenes/Figura_item.png, id=378, 383.18156pt x 259.7203pt>
+<imagenes/Figura_item.png, id=388, 383.18156pt x 259.7203pt>
 File: imagenes/Figura_item.png Graphic file (type png)
 <use imagenes/Figura_item.png>
-Package pdftex.def Info: imagenes/Figura_item.png  used on input line 847.
+Package pdftex.def Info: imagenes/Figura_item.png  used on input line 862.
 (pdftex.def)             Requested size: 352.33836pt x 238.81479pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[27
+[29
 
 ]
-<imagenes/inst_var.png, id=384, 455.45157pt x 108.405pt>
+<imagenes/inst_var.png, id=395, 455.45157pt x 108.405pt>
 File: imagenes/inst_var.png Graphic file (type png)
 <use imagenes/inst_var.png>
-Package pdftex.def Info: imagenes/inst_var.png  used on input line 858.
+Package pdftex.def Info: imagenes/inst_var.png  used on input line 873.
 (pdftex.def)             Requested size: 422.78722pt x 100.63033pt.
-[28 <./imagenes/Figura_item.png> <./imagenes/inst_var.png>]
-<imagenes/t2_01.png, id=396, 450.9347pt x 191.21437pt>
+[30 <./imagenes/Figura_item.png> <./imagenes/inst_var.png>]
+<imagenes/t2_01.png, id=403, 450.9347pt x 191.21437pt>
 File: imagenes/t2_01.png Graphic file (type png)
 <use imagenes/t2_01.png>
-Package pdftex.def Info: imagenes/t2_01.png  used on input line 871.
+Package pdftex.def Info: imagenes/t2_01.png  used on input line 886.
 (pdftex.def)             Requested size: 375.82385pt x 159.36436pt.
-[29 <./imagenes/t2_01.png>]
-<imagenes/c12_09.png, id=405, 398.99063pt x 95.6072pt>
+[31 <./imagenes/t2_01.png>]
+<imagenes/c12_09.png, id=412, 398.99063pt x 95.6072pt>
 File: imagenes/c12_09.png Graphic file (type png)
 <use imagenes/c12_09.png>
-Package pdftex.def Info: imagenes/c12_09.png  used on input line 886.
+Package pdftex.def Info: imagenes/c12_09.png  used on input line 901.
 (pdftex.def)             Requested size: 422.79411pt x 101.31104pt.
-<imagenes/m37_01.png, id=406, 420.06938pt x 132.495pt>
+<imagenes/m37_01.png, id=413, 420.06938pt x 132.495pt>
 File: imagenes/m37_01.png Graphic file (type png)
 <use imagenes/m37_01.png>
-Package pdftex.def Info: imagenes/m37_01.png  used on input line 897.
+Package pdftex.def Info: imagenes/m37_01.png  used on input line 912.
 (pdftex.def)             Requested size: 422.77966pt x 133.34984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 920--920
 |[]\T1/futs/b/n/14.4 Características Base de Datos EL-SOC Ola 1|
  []
 
-[30 <./imagenes/c12_09.png> <./imagenes/m37_01.png>] [31] [32] 
+[32 <./imagenes/c12_09.png> <./imagenes/m37_01.png>] [33] [34] 
 AED: lastpage setting LastPage
-[33] (./Manual_2016.aux
+[35] (./Manual_2016.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Manual_2016.out' has not changed.
 (rerunfilecheck)             Checksum: D5496655D417DDA4C5E4588C32DEB417;5620.
  ) 
 Here is how much of TeX's memory you used:
- 18210 strings out of 480477
- 279170 string characters out of 5897329
- 773057 words of memory out of 5000000
- 35334 multiletter control sequences out of 15000+600000
+ 18878 strings out of 480477
+ 290482 string characters out of 5897329
+ 779143 words of memory out of 5000000
+ 35973 multiletter control sequences out of 15000+600000
  506931 words of font info for 123 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,12n,77p,1200b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,12n,77p,1200b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1443,10 +1464,10 @@ ers/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 putb8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/ado
 be/utopia/putr8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb>
-Output written on Manual_2016.pdf (33 pages, 736614 bytes).
+Output written on Manual_2016.pdf (35 pages, 737151 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 150 named destinations out of 1000 (max. 500000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 155 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

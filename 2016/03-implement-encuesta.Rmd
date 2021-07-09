@@ -79,7 +79,7 @@ publications/Standard-Definitions20169theditionfinal.pdf](http://www.aapor.org/A
 publications/Standard-Definitions20169theditionfinal.pdf).
 
 
-```{r disp, echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
