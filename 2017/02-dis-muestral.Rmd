@@ -32,7 +32,7 @@ De esta forma, el marco muestral final contiene 120.857 bloques. La muestra de C
 
 ## Etapa 1: Selección de Ciudades {#etapa_1}
 
-El universo de bloques (los 120.857 bloques mencionados) fue agregado al nivel de la ciudad, resultando en 122 ciudades. Las tres ciudades más grandes (Gran Santiago, Viña del Mar - Valparaiso y Concepción - Talcahuano) fueron seleccionadas con certeza. Las ciudades restantes son estratificadas por la población. La Tabla \@ref(tab:estratos) muestra las definiciones de los estratos y los tamaños de población (N) y muestra (n) en cada uno.
+El universo de bloques (los 120.857 bloques mencionados) fue agregado al nivel de la ciudad, resultando en 122 ciudades. Las tres ciudades más grandes (Gran Santiago, Viña del Mar - Valparaiso y Concepción - Talcahuano) fueron seleccionadas con certeza. Las ciudades restantes son estratificadas por la población. El Cuadro \@ref(tab:estratos) muestra las definiciones de los estratos y los tamaños de población (N) y muestra (n) en cada uno.
 
 ```{r estratos, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
@@ -99,7 +99,7 @@ estratos %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
-Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase la Tabla \@ref(tab:estratos) para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.
+Los estratos 4, 5 y 6 fueron estratificados geográficamente por Norte / Sur para asegurar que la muestra contuviera ciudades del norte y sur de Chile. Esto redunda en un total de nueve estratos. La muestra se asignó entre las dos áreas en proporción al tamaño de su población en el universo. Véase el Cuadro \@ref(tab:estratos) para ver el detalle acerca de los tamaños de población y muestra en cada uno de los estratos norte y sur.
 
 La selección de ciudades dentro de cada uno de estos estratos finales se realizó en forma proporcional al tamaño de la población de cada ciudad. Este método da mayores probabilidades de selección a las grandes ciudades.
 
@@ -113,7 +113,7 @@ donde $nc_h$ es el número de ciudades seleccionadas en el estrato $h$ y $pop_i$
 
 Las 40 ciudades seleccionadas contenían 87.839 bloques. En la segunda etapa se seleccionaron bloques en cada ciudad con población proporcional al tamaño, donde el tamaño fue determinado a partir del recuento de unidades de vivienda del pre-censo. La selección fue sistemática: la lista de bloques en las ciudades seleccionadas se ordenó según sub-distrito censal y número de bloque para asegurar que los bloques seleccionados se extendieran por toda la ciudad^[Los números de bloques y distritos censales fueron entregados porMatías Garretón, investigador de CIT. Los sub-distritos censales son unidades geográficas más pequeñas que la comuna, pero más grandes que los bloques.].
 
-La Tabla \@ref(tab:ciudades) muestra el número de bloques seleccionados en cada ciudad. La muestra de bloques se asignó de manera desproporcionada para que las áreas fuera de Santiago estuvieran sobre-representadas en relación con su tamaño en la población objetivo. Varios investigadores COES solicitaron esta asignación para asegurar que la muestra fuera diversa con respecto al tamaño de la ciudad.
+El Cuadro \@ref(tab:ciudades) muestra el número de bloques seleccionados en cada ciudad. La muestra de bloques se asignó de manera desproporcionada para que las áreas fuera de Santiago estuvieran sobre-representadas en relación con su tamaño en la población objetivo. Varios investigadores COES solicitaron esta asignación para asegurar que la muestra fuera diversa con respecto al tamaño de la ciudad.
 
 La probabilidad de selección de un bloque $j$ en la ciudad $i$, condicionada a la selección de la ciudad, fue:
 
@@ -165,7 +165,7 @@ ciudades %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
-En cuatro ciudades, algunos bloques eran tan grandes que fueron selecciones certeras. Es decir, los recuentos de unidades de vivienda eran mayores que el intervalo de selección y se seleccionarían en cualquier muestra, e incluso podrían seleccionarse dos veces. Para evitar selecciones duplicadas, estos bloques se eligieron primero con certeza y luego se seleccionaron bloques adicionales entre los restantes para aquellas ciudades, de modo de alcanzar el tamaño de muestra total deseado para la ciudad (ver Tabla \@ref(tab:ciudades). $\pi_{j|i}$ para estas ciudades es 1.
+En cuatro ciudades, algunos bloques eran tan grandes que fueron selecciones certeras. Es decir, los recuentos de unidades de vivienda eran mayores que el intervalo de selección y se seleccionarían en cualquier muestra, e incluso podrían seleccionarse dos veces. Para evitar selecciones duplicadas, estos bloques se eligieron primero con certeza y luego se seleccionaron bloques adicionales entre los restantes para aquellas ciudades, de modo de alcanzar el tamaño de muestra total deseado para la ciudad (ver Cuadro \@ref(tab:ciudades). $\pi_{j|i}$ para estas ciudades es 1.
 
 Los 1.067 bloques seleccionados en las 40 ciudades elegidas fueron enpadronados en terreno, con la finalidad de realizar la selección de los hogares con la información más actualizada posible. El CIT proporcionó mapas de cada bloque seleccionado. El personal de campo de CMD visitó cada bloque y creó una lista de todas las unidades de vivienda. Los listados fueron revisados cuidadosamente para detectar cualquier error o duplicado.
 
@@ -173,7 +173,7 @@ Los 1.067 bloques seleccionados en las 40 ciudades elegidas fueron enpadronados 
 Durante el proceso de empadronamiento, el Centro de Microdatos encontró que algunos bloques tenían más de 100 viviendas, lo que dificulta excesivamente el proceso de empadronamiento. Consecuentemente, se dividieron estos  bloques en sub-bloques de tamaño aproximadamente igual (40 a 50 viviendas) y seleccionaron uno para ser empadronado. Debido a que los sub-bloques fueron creados para ser casi igual tamaño, estos fueron seleccionados en base a igual probabilidad. En total, 301 bloques fueron submuestreados. Los bloques restantes no se vieron afectados por esta etapa.
 
 ## Etapa 4: Selección de viviendas {#etapa_4}
-El número de viviendas seleccionadas en cada bloque varió según el estrato, como se muestra en la Tabla \@ref(tab:bloques). Este diseño resultó en 4.001 unidades de vivienda, con lo cual se pretendieron obtener aproximadamente 3.000 entrevistas completas, bajo el supuesto de una tasa de respuesta del 75% para todos los estratos.
+El número de viviendas seleccionadas en cada bloque varió según el estrato, como se muestra en el Cuadro \@ref(tab:bloques). Este diseño resultó en 4.001 unidades de vivienda, con lo cual se pretendieron obtener aproximadamente 3.000 entrevistas completas, bajo el supuesto de una tasa de respuesta del 75% para todos los estratos.
 
 ```{r bloques, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
@@ -211,7 +211,7 @@ bloques %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 
-Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en la Tabla \@ref(tab:estratos).
+Se realizó una muestra aleatoria simple de viviendas en cada bloque. La combinación de la población proporcional al tamaño de muestreo en las dos primeras etapas y el muestreo aleatorio simple en la tercera y cuarta etapas dio lugar a una muestra de viviendas con aproximadamente igual probabilidad dentro de cada uno de los nueve estratos mostrados en el Cuadro \@ref(tab:estratos).
 
 La probabilidad de selección de un hogar $k$ en el bloque $j$ en la ciudad $i$ y el estrato $h$ fue:
 
@@ -235,25 +235,25 @@ Durante el trabajo de campo se observó que el supuesto de una tasa de respuesta
 
 Este aumento en el número de hogares por bloque tiene un efecto limitado sobre la probabilidad de selección de cada vivienda. Sólo afecta a la probabilidad calculada en la Etapa 4, ya que el número de hogares disponibles es menor, pero no hay cambios en las probabilidades calculadas en la Etapa 1 y la Etapa 2. Esto ocurre porque los bloques seleccionados (en la Etapa 2) fueron usados, y no se introdujeron nuevos bloques.
 
-Durante este proceso un total de 1.082 nuevos hogares, ubicados dentro de los bloques seleccionados, se añadieron a la muestra del estudio. La asignación de estos nuevos hogares no fue uniforme en todos los bloques del país. En cambio, se concentraron en cuatro regiones (Coquimbo, O´Higgins, Región Metropolitana, y Biobío) donde los encuestadores tenían muchos problemas para contactar a los encuestados. La tabla \@ref(tab:aumento) detalla las comunas en que se aumentó el número de hogares, junto con el número total de hogares incorporados y por bloque. 
+Durante este proceso un total de 1.082 nuevos hogares, ubicados dentro de los bloques seleccionados, se añadieron a la muestra del estudio. La asignación de estos nuevos hogares no fue uniforme en todos los bloques del país. En cambio, se concentraron en cuatro regiones (Coquimbo, O´Higgins, Región Metropolitana, y Biobío) donde los encuestadores tenían muchos problemas para contactar a los encuestados. El Cuadro \@ref(tab:aumento) detalla las comunas en que se aumentó el número de hogares, junto con el número total de hogares incorporados y por bloque. 
 
 ```{r aumento, echo=FALSE, message=FALSE, warning=FALSE}
 library(pacman)
 pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 
-aumento_muestra <- tibble(Región = c("Coquimbo", "", ""),
+aumento_muestra <- tibble(Región = c("", "", ""),
                   Comuna = c("Coquimbo", "La Serena", "Salamanca"),
                   "Total viviendas agregadas" = c(24,28,22),
                   "Viviendas agregadas por bloque" = c(2,2,2))%>% 
-  add_row(Región = c("O'Higgins", "", ""),
+  add_row(Región = c("", "", ""),
                   Comuna = c("Doñihue", "Rancagua", "Santa Cruz"),
                   "Total viviendas agregadas" = c(10,42,11),
                   "Viviendas agregadas por bloque" = c(1,2,1))%>% 
-  add_row(Región = c("Biobío","", "", "", "", ""),
+  add_row(Región = c("","", "", "", "", ""),
                   Comuna = c("Chiguanyante", "Concepción", "Coronel", "Penco", "Quillón", "San Pedro de la Paz"),
                   "Total viviendas agregadas" = c(24,75,11,4,6,28),
                   "Viviendas agregadas por bloque" = c(3,3,1,1,1,2))%>%
-  add_row(Región = c("Metropolitana","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""),
+  add_row(Región = c("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""),
                   Comuna = c("Cerrillos", "Colina", "Curacaví", "El Bosque", "Estación Central", "Huechuraba", "Independencia", "Isla de Maipo ", "La Cisterna", "La Florida", "La Granja", "La Pintana", "La Reina", "Las Condes", "Lo Barnechea", "Lo Espejo", "Lo Prado",  "Macul", "Maipú", "Ñuñoa", "Padre Hurtado", "Pedro Aguirre Cerda" , "Peñaflor" ,"Peñalolén", "Providencia", "Pudahuel", "Puente Alto","Quilicura", "San Bernardo", "San Joaquín", "San Miguel", "San Ramón", "Santiago", "Vitacura"),
                   "Total viviendas agregadas" = c(9,12,14,8,12,6,6,39,9,24,6,12,9,33,9,6,6,8,32,16,6,6,30,14,7,14,32,12,16,6,9,6,120,9),
                   "Viviendas agregadas por bloque" = c(3,3,2,2,3,2,2,3,3,2,2,2,3,3,3,2,2,2,2,2,3,2,2,2,3,2,2,2,2,2,3,2,3,3))

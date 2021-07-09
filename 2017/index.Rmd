@@ -16,12 +16,14 @@ output:
         position: static
   bookdown::pdf_book:
     extra_dependencies: ["flafter"]
-    toc: yes
+    toc: no
     includes:
       in_header: preamble.tex
       before_body: portada.tex
+      after_body: codigos.tex
 site: bookdown::bookdown_site
 documentclass: book
+classoption: openany
 bibliography:
 - book.bib
 - packages.bib

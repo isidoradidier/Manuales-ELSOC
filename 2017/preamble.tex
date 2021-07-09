@@ -31,6 +31,11 @@
 \usepackage[flushleft]{threeparttable}
 \usepackage{pbox}
 \usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\AtBeginDocument{\let\maketitle\relax}
 \usepackage{titlesec}
 \titleformat{\chapter}
   {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
@@ -56,13 +61,10 @@
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
-\setcounter{tocdepth}{5}
-\setcounter{secnumdepth}{5}
-
-
+\pagenumbering{gobble}
+\pagenumbering{arabic}
 %%%%%PARA ENCABEZADOS Y PIES DEL TEXTO
 \pagestyle{fancy}
 \fancyhf{}
 \setlength\headheight{15pt}
 \fancyhead[R]{Centro de Estudios de Conflicto y Cohesión Social}
-\fancyfoot[R]{Página \thepage\ de \pageref{LastPage}}
