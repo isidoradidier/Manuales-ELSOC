@@ -1,7 +1,3 @@
-tab:unnamed-chunk-1
-tab:unnamed-chunk-2
-tab:unnamed-chunk-3
-tab:unnamed-chunk-4
 present
 dis_ins
 proceso-de-diseño

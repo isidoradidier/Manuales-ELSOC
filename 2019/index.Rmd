@@ -8,13 +8,22 @@ author:
   - name: Alejandro Plaza
 date: "`r Sys.Date()`"
 output:
+  output:
   bookdown::pdf_book:
+    extra_dependencies: ["flafter"] 
     toc: yes
+    lof: yes
     includes:
       in_header: preamble.tex
       before_body: portada.tex
 site: bookdown::bookdown_site
 documentclass: book
+classoption: openany
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
 subtitle:  <center>MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL</center>
 ---
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  3 JUL 2021 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.3)  8 JUL 2021 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,7 +924,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlese
 c.sty
-Package: titlesec 2019/10/16 v2.13 Sectioning titles
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box70
 \beforetitleunit=\skip83
 \aftertitleunit=\skip84
@@ -934,6 +934,11 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen278
 \titlewidthlast=\dimen279
 \titlewidthfirst=\dimen280
+)
+(c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/flafter.sty
+Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
+Applying: [2015/01/01] float order in 2-column on input line 49.
+Already applied: [0000/00/00] float order in 2-column on input line 151.
 )
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortb
 l.sty
@@ -1015,51 +1020,51 @@ LaTeX Warning: Label `tab:estratos' multiply defined.
 )
 \openout1 = `Manual_2016.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 167.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-166.
+167.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmlfutm.
 fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 167.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-166.
+167.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmsfutm.
 fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 167.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-166.
+167.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmxfutm.
 fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    ... okay on input line 167.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/eps
 topdf-base.sty
@@ -1072,7 +1077,7 @@ opdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 166.
+Package hyperref Info: Link coloring OFF on input line 167.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref
 .sty
@@ -1088,9 +1093,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 167.
+LaTeX Info: Redefining \pageref on input line 167.
+LaTeX Info: Redefining \nameref on input line 167.
 (./Manual_2016.out) (./Manual_2016.out)
 \@outlinefile=\write3
 \openout3 = `Manual_2016.out'.
@@ -1131,16 +1136,16 @@ LaTeX Info: Redefining \nameref on input line 166.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 166.
+(lastpage)             ! on input line 167.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 166.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 166.
+LaTeX Info: Redefining \. on input line 167.
+LaTeX Info: Redefining \% on input line 167.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 167.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 167.
 \c@maskedRefs=\count332
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/apacite/spanish.
@@ -1150,36 +1155,36 @@ LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 )
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 168.
+ 169.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/fmlfutmi
 .fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 168.
+(Font)              scaled to size 11.03998pt on input line 169.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 168.
+(Font)              scaled to size 8.27998pt on input line 169.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 168.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 168
+(Font)              scaled to size 6.43999pt on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169
 .
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 168
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169
 .
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 168.
+(Font)              scaled to size 11.03998pt on input line 169.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 168.
+(Font)              scaled to size 8.27998pt on input line 169.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 168.
+(Font)              scaled to size 6.43999pt on input line 169.
 [1
 
 
@@ -1190,22 +1195,14 @@ tex.map}] [2
 <coes_blanco_esp.jpg, id=124, 779.3115pt x 384.4764pt>
 File: coes_blanco_esp.jpg Graphic file (type jpg)
 <use coes_blanco_esp.jpg>
-Package pdftex.def Info: coes_blanco_esp.jpg  used on input line 173.
+Package pdftex.def Info: coes_blanco_esp.jpg  used on input line 174.
 (pdftex.def)             Requested size: 455.2592pt x 224.60391pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.193 \end{titlepage}
-                      [1 <./coes_blanco_esp.jpg>]pdfTeX warning (ext4): destina
-tion with the same identifier (name{page.2}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.197 \tableofcontents
-                       [2
-
-] (./Manual_2016.toc
+l.194 \end{titlepage}
+                      [1 <./coes_blanco_esp.jpg>] (./Manual_2016.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1224,171 +1221,175 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write4
 \openout4 = `Manual_2016.toc'.
 
-[3] [4
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.201 \chapter{PresentaciÃ³n}\label{present}}
+                                              [2
 
 ]
 Cap\'{\i }tulo 1.
-<imagenes/coes_blanco_esp.jpg, id=172, 779.3115pt x 384.4764pt>
-File: imagenes/coes_blanco_esp.jpg Graphic file (type jpg)
-<use imagenes/coes_blanco_esp.jpg>
-Package pdftex.def Info: imagenes/coes_blanco_esp.jpg  used on input line 202.
-(pdftex.def)             Requested size: 281.85997pt x 139.05672pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 206.
+(Font)              scaled to size 7.35999pt on input line 205.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 206.
+(Font)              scaled to size 6.25598pt on input line 205.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 206.
+(Font)              scaled to size 7.35999pt on input line 205.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 206.
-[5 <./imagenes/coes_blanco_esp.jpg>] [6]
+(Font)              scaled to size 6.25598pt on input line 205.
+[3
+
+]
 Cap\'{\i }tulo 2.
-[7
+[4
 
 ]
 
-LaTeX Warning: Reference `label' on page 8 undefined on input line 253.
+LaTeX Warning: Reference `label' on page 5 undefined on input line 252.
 
 
-LaTeX Warning: Reference `label' on page 8 undefined on input line 253.
+LaTeX Warning: Reference `label' on page 5 undefined on input line 252.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8]
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9]
+[6]
 
-LaTeX Warning: Float too large for page by 33.0739pt on input line 354.
+LaTeX Warning: Float too large for page by 33.0739pt on input line 353.
 
-[10] [11] [12
-
-]
+[7] [8]
 Cap\'{\i }tulo 3.
 
 Underfull \vbox (badness 4156) has occurred while \output is active []
 
-[13]
-Overfull \hbox (15.60722pt too wide) in paragraph at lines 405--405
+[9
+
+]
+Overfull \hbox (15.60722pt too wide) in paragraph at lines 404--404
 []|\T1/futs/m/n/10 Definición 
  []
 
 
-Overfull \hbox (53.03624pt too wide) in paragraph at lines 401--416
+Overfull \hbox (53.03624pt too wide) in paragraph at lines 400--415
  [][] 
  []
 
-[14]
+[10]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-447.
+446.
 
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fourier/ts1futs.
 fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [15] [16] [17]
+) [11] [12] [13]
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family futs in TS1 encoding.
-(textcomp)             Default family used instead on input line 521.
+(textcomp)             Default family used instead on input line 520.
 
-LaTeX Warning: Float too large for page by 68.83542pt on input line 587.
+LaTeX Warning: Float too large for page by 68.83542pt on input line 586.
 
-[18] [19] [20]
+[14] [15] [16]
 Cap\'{\i }tulo 4.
-[21
+[17
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-52.
+51.
 (c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [22] [23]
+) [18] [19]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family futs in TS1 encoding.
-(textcomp)             Default family used instead on input line 718.
+(textcomp)             Default family used instead on input line 717.
 
-Underfull \hbox (badness 3386) in paragraph at lines 721--724
+Underfull \hbox (badness 3386) in paragraph at lines 720--723
 \T1/futs/m/n/10 de las tasas de re-sul-ta-dos, di-ri-girse a []http://www.aapor
 .org/AAPOR_Main/media/ publications/Standard-
  []
 
-
-Underfull \vbox (badness 3746) has occurred while \output is active []
-
-[24]
-<imagenes/attrition_01.png, id=352, 511.9125pt x 423.5825pt>
+<imagenes/attrition_01.png, id=321, 511.9125pt x 423.5825pt>
 File: imagenes/attrition_01.png Graphic file (type png)
 <use imagenes/attrition_01.png>
-Package pdftex.def Info: imagenes/attrition_01.png  used on input line 765.
+Package pdftex.def Info: imagenes/attrition_01.png  used on input line 764.
 (pdftex.def)             Requested size: 352.31392pt x 291.52249pt.
-[25 <./imagenes/attrition_01.png>]
-<imagenes/Sample_Design.png, id=361, 581.17125pt x 313.17pt>
+
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21 <./imagenes/attrition_01.png>]
+<imagenes/Sample_Design.png, id=339, 581.17125pt x 313.17pt>
 File: imagenes/Sample_Design.png Graphic file (type png)
 <use imagenes/Sample_Design.png>
-Package pdftex.def Info: imagenes/Sample_Design.png  used on input line 776.
+Package pdftex.def Info: imagenes/Sample_Design.png  used on input line 775.
 (pdftex.def)             Requested size: 399.29707pt x 215.16525pt.
-[26 <./imagenes/Sample_Design.png>]
+[22 <./imagenes/Sample_Design.png>]
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (118.8473pt too wide) in paragraph at lines 797--820
+Overfull \hbox (118.8473pt too wide) in paragraph at lines 796--819
  [][] 
  []
 
-[27
+[23
 
-] [28]
+] [24]
 Cap\'{\i }tulo 6.
-[29
-
-] [30
+[25
 
 ]
 Cap\'{\i }tulo 7.
-[31] [32
+[26
 
 ]
 Cap\'{\i }tulo 8.
-<imagenes/Figura_item.png, id=406, 383.18156pt x 259.7203pt>
+<imagenes/Figura_item.png, id=373, 383.18156pt x 259.7203pt>
 File: imagenes/Figura_item.png Graphic file (type png)
 <use imagenes/Figura_item.png>
-Package pdftex.def Info: imagenes/Figura_item.png  used on input line 862.
+Package pdftex.def Info: imagenes/Figura_item.png  used on input line 861.
 (pdftex.def)             Requested size: 352.33836pt x 238.81479pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[33]
-<imagenes/inst_var.png, id=412, 501.37312pt x 121.95563pt>
+[27
+
+]
+<imagenes/inst_var.png, id=379, 501.37312pt x 121.95563pt>
 File: imagenes/inst_var.png Graphic file (type png)
 <use imagenes/inst_var.png>
-Package pdftex.def Info: imagenes/inst_var.png  used on input line 871.
+Package pdftex.def Info: imagenes/inst_var.png  used on input line 870.
 (pdftex.def)             Requested size: 422.79536pt x 102.8421pt.
-[34 <./imagenes/Figura_item.png> <./imagenes/inst_var.png>]
-<imagenes/t2_01.png, id=422, 450.9347pt x 191.21437pt>
+[28 <./imagenes/Figura_item.png> <./imagenes/inst_var.png>]
+<imagenes/t2_01.png, id=389, 450.9347pt x 191.21437pt>
 File: imagenes/t2_01.png Graphic file (type png)
 <use imagenes/t2_01.png>
-Package pdftex.def Info: imagenes/t2_01.png  used on input line 877.
+Package pdftex.def Info: imagenes/t2_01.png  used on input line 876.
 (pdftex.def)             Requested size: 422.7984pt x 179.28345pt.
-<imagenes/c12_09.png, id=424, 398.99063pt x 95.6072pt>
+<imagenes/c12_09.png, id=391, 398.99063pt x 95.6072pt>
 File: imagenes/c12_09.png Graphic file (type png)
 <use imagenes/c12_09.png>
-Package pdftex.def Info: imagenes/c12_09.png  used on input line 885.
+Package pdftex.def Info: imagenes/c12_09.png  used on input line 884.
 (pdftex.def)             Requested size: 422.79411pt x 101.31104pt.
 
 Underfull \vbox (badness 3138) has occurred while \output is active []
 
-[35 <./imagenes/t2_01.png>]
-<imagenes/m37_01.png, id=433, 420.06938pt x 132.495pt>
+[29 <./imagenes/t2_01.png>]
+<imagenes/m37_01.png, id=401, 420.06938pt x 132.495pt>
 File: imagenes/m37_01.png Graphic file (type png)
 <use imagenes/m37_01.png>
-Package pdftex.def Info: imagenes/m37_01.png  used on input line 889.
+Package pdftex.def Info: imagenes/m37_01.png  used on input line 888.
 (pdftex.def)             Requested size: 422.77966pt x 133.34984pt.
-[36 <./imagenes/c12_09.png> <./imagenes/m37_01.png>]
+[30 <./imagenes/c12_09.png> <./imagenes/m37_01.png>]
 
-LaTeX Warning: Float too large for page by 171.0739pt on input line 1014.
+LaTeX Warning: Float too large for page by 171.0739pt on input line 1013.
 
 
 AED: lastpage setting LastPage
-[37] [38] (./Manual_2016.aux
+[31] [32] (./Manual_2016.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
@@ -1402,13 +1403,13 @@ Package rerunfilecheck Info: File `Manual_2016.out' has not changed.
 (rerunfilecheck)             Checksum: D5496655D417DDA4C5E4588C32DEB417;5620.
  ) 
 Here is how much of TeX's memory you used:
- 18226 strings out of 480477
- 280227 string characters out of 5897329
- 755932 words of memory out of 5000000
- 35349 multiletter control sequences out of 15000+600000
+ 18227 strings out of 480477
+ 280225 string characters out of 5897329
+ 756057 words of memory out of 5000000
+ 35351 multiletter control sequences out of 15000+600000
  521761 words of font info for 147 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,12n,77p,1200b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,12n,77p,1200b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1451,10 +1452,10 @@ ers/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 putb8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/ado
 be/utopia/putr8a.pfb><c:/Users/isidora/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb>
-Output written on Manual_2016.pdf (40 pages, 1086957 bytes).
+Output written on Manual_2016.pdf (34 pages, 734714 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 154 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 434 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
