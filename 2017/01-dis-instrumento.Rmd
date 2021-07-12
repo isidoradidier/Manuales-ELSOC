@@ -33,8 +33,13 @@ Para examinar de manera pormenorizada las diferencias entre los instrumentos apl
 Un tema relacionado es la duración promedio de la entrevista. Durante 2016 la duración promedio por encuestado fue de 55 minutos. CMD solicitó al equipo ELSOC tratar dicho lapso temporal a 45 minutos promedio, motivo por el cual se recomendaba acortar la extensión del estudio. El Equipo ELSOC, en conjunto con investigadores COES definió distintos ajustes que permitieron reducir la extensión del cuestionario. Mientras el cuestionario de la ola 2016 contenía 336 items, en el año 2017 el instrumento contemplaba 317 items.
 
 ```{r difcuest, echo=FALSE, message=FALSE, warning=FALSE}
-library(pacman)
-pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+#install.packages('tidyverse','knitr','kableExtra','dplyr','tinytex')
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tinytex)
+
 
 dif_cuest <- tibble("Temas Agregados" =
                             c("Redes Cercanas, Amistad, Elección Residencial, 
@@ -60,8 +65,12 @@ dif_cuest %>%
   kable_styling(latex_options = "HOLD_position")
 ```
 ```{r items, echo=FALSE, message=FALSE, warning=FALSE}
-library(pacman)
-pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+#install.packages('tidyverse','knitr','kableExtra','dplyr','tinytex')
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tinytex)
 
 items <- tibble(Sección = 
                             c("Territorio"),
@@ -106,8 +115,12 @@ items %>%
 En este apartado se presenta la Ficha Técnica (Ver Cuadro \@ref(tab:ficha), dónde se sintetizan las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la primera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su primera ola, como de la ejecución y trabajo de campo.
 
 ```{r ficha, echo=FALSE, message=FALSE, warning=FALSE}
-library(pacman)
-pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
+#install.packages('tidyverse','knitr','kableExtra','dplyr','tinytex')
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tinytex)
 
 ficha <- tibble(Características = 
                             c("Objetivo"),
