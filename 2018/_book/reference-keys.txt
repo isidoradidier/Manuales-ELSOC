@@ -24,3 +24,6 @@ acceso-datos
 libro-codigos
 variables-elsoc-ola-3
 características-base-de-datos-elsoc-ola-3
+dif-cuest
+tab:unnamed-chunk-1
+diseño-de-ponderadores-de-la-muestra-1
