@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-02" />
+<meta name="date" content="2021-07-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="dis-muestral.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -52,8 +52,74 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -76,7 +142,7 @@
 <li class="chapter" data-level="2" data-path="dis-ins.html"><a href="dis-ins.html"><i class="fa fa-check"></i><b>2</b> Diseño del instrumento</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="dis-ins.html"><a href="dis-ins.html#proceso-de-diseño"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
-<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#diferencias-entre-cuestionarios-de-ola-1-y-2"><i class="fa fa-check"></i><b>2.2</b> Diferencias entre Cuestionarios de Ola 1 y 2</a></li>
+<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#dif-cuest"><i class="fa fa-check"></i><b>2.2</b> Diferencias entre Cuestionarios de Ola 2 y 3</a></li>
 <li class="chapter" data-level="2.3" data-path="dis-ins.html"><a href="dis-ins.html#ficha-técnica"><i class="fa fa-check"></i><b>2.3</b> Ficha Técnica</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dis-muestral.html"><a href="dis-muestral.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a>
@@ -151,10 +217,10 @@
 </ol>
 <p>La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplica cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los ítems intercalados<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Luego, en el Cuadro 2 se resumen los conceptos que se incluyeron en las distintas secciones del cuestionario de ELSOC 2017. Para más detalles sobre el Cuestionario se debe revisar el último apartado de este manual: Libro de Códigos.</p>
 </div>
-<div id="diferencias-entre-cuestionarios-de-ola-1-y-2" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Diferencias entre Cuestionarios de Ola 1 y 2</h2>
+<div id="dif-cuest" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Diferencias entre Cuestionarios de Ola 2 y 3</h2>
 <p>Para examinar de manera pormenorizada las diferencias entre los instrumentos aplicados en 2017 y 2018 se sugiere a los interesados revisar tanto los cuestionarios como los libros de códigos asociados a cada estudio. De todos modos, el Cuadro 1 señala las diferencias entre ambos cuestionarios, distinguiendo por aquellos temas que fueron agregados a la muestra de seguimiento y/o la muestra refresco. Cabe mencionar que se considera como tema agregado aquellos que nunca antes se habían preguntado en ELSOC, distinguiéndose de los ítems intercalados que fueron preguntados en la ola 1 y en esta ola 3 han regresado. Para mayor detalle de esto, se recomienda revisar el Listado de Variables incluido como una guía útil para contrastar los cuestionarios (disponible en _____).</p>
-<table>
+<table class=" lightable-classic table" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <caption>
 (#tab:Cuadro 1)Diferencias temáticas entre cuestionario ola 2 (2017) y ola 3 (2018)
 </caption>
@@ -173,14 +239,245 @@ Temas no incluidos 2018 respecto al 2017
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">
-Temas de discusión pública (c37), percepción de corrupción (c38) y voto retrospectivo 2017 (c39), metas y planes de vida (s30), redes de apoyo al encontrar trabajo (m55 y m56)
+<td style="text-align:left;width: 6cm; ">
+Temas de discusión pública (c37), percepción de corrupción (c38) y voto retrospectivo 2017
+(c39), metas y planes de vida (s30), redes de apoyo al encontrar trabajo (m55 y m56)
+</td>
+<td style="text-align:left;width: 6cm; ">
+Percepción de corrupción (c38) y voto retrospectivo 2017 (c39)
 </td>
 <td style="text-align:left;">
-percepción de corrupción (c38) y voto retrospectivo 2017 (c39)
+Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26,
+c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del
+colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable
+(s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12),
+consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del
+hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)
 </td>
-<td style="text-align:left;">
-Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26, c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable (s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12), consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="dis-ins.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pacman)</span>
+<span id="cb1-2"><a href="dis-ins.html#cb1-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse,knitr,kableExtra,dplyr,tinytex)</span></code></pre></div>
+<pre><code>## Installing package into &#39;C:/Users/Cristobal/Documents/R/win-library/4.0&#39;
+## (as &#39;lib&#39; is unspecified)</code></pre>
+<pre><code>## also installing the dependency &#39;xfun&#39;</code></pre>
+<pre><code>## Warning: unable to access index for repository http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.0:
+##   no fue posible abrir la URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.0/PACKAGES&#39;</code></pre>
+<pre><code>## package &#39;xfun&#39; successfully unpacked and MD5 sums checked</code></pre>
+<pre><code>## Warning: cannot remove prior installation of package &#39;xfun&#39;</code></pre>
+<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problema al copiar C:
+## \Users\Cristobal\Documents\R\win-library\4.0\00LOCK\xfun\libs\x64\xfun.dll a C:
+## \Users\Cristobal\Documents\R\win-library\4.0\xfun\libs\x64\xfun.dll: Permission
+## denied</code></pre>
+<pre><code>## Warning: restored &#39;xfun&#39;</code></pre>
+<pre><code>## package &#39;tinytex&#39; successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+##  C:\Users\Cristobal\AppData\Local\Temp\RtmpUF9o0P\downloaded_packages</code></pre>
+<pre><code>## 
+## tinytex installed</code></pre>
+<pre><code>## Warning: package &#39;tinytex&#39; was built under R version 4.0.5</code></pre>
+<pre><code>## Warning in pacman::p_load(tidyverse, knitr, kableExtra, dplyr, tinytex): Failed to install/load:
+## tinytex</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="dis-ins.html#cb13-1" aria-hidden="true" tabindex="-1"></a>temas <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Muestra =</span> <span class="fu">c</span>(<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>),</span>
+<span id="cb13-2"><a href="dis-ins.html#cb13-2" aria-hidden="true" tabindex="-1"></a>                  Sección <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Territorio&quot;</span>,<span class="st">&quot;Redes y Actitudes&quot;</span>,<span class="st">&quot;Ciudadanía&quot;</span>,<span class="st">&quot;Desigualdad y Legitimidad&quot;</span>,</span>
+<span id="cb13-3"><a href="dis-ins.html#cb13-3" aria-hidden="true" tabindex="-1"></a>                              <span class="st">&quot;Conflicto Social&quot;</span>,<span class="st">&quot;Salud y Bienestar&quot;</span>,<span class="st">&quot;Sociodemográficas&quot;</span>),</span>
+<span id="cb13-4"><a href="dis-ins.html#cb13-4" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;Escalas y Temas&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Confianza en vecinos, cohesión barrial, sociabilidad barrial, transformación barrial, </span></span>
+<span id="cb13-5"><a href="dis-ins.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  movilidad residencial, satisfacción residencial, conflicto barrial, seguridad barrial, </span></span>
+<span id="cb13-6"><a href="dis-ins.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  problemas barriales&quot;</span>,</span>
+<span id="cb13-7"><a href="dis-ins.html#cb13-7" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Redes lejanas, relaciones entre chilenos y migrantes&quot;</span>,</span>
+<span id="cb13-8"><a href="dis-ins.html#cb13-8" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Actitud hacia democracia, confianza interpersonal, confianza instituciones, confianza grupos,</span></span>
+<span id="cb13-9"><a href="dis-ins.html#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  comportamiento prosocial, intención de participación, autoeficacia política, participación ciudadana,</span></span>
+<span id="cb13-10"><a href="dis-ins.html#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  interés político, identificación política, dominancia social, autoritarismo, justicia distributiva y</span></span>
+<span id="cb13-11"><a href="dis-ins.html#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  meritocracia, desigualdad percibida, dominancia social, roles de género, movimientos sociales, percepción</span></span>
+<span id="cb13-12"><a href="dis-ins.html#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  trato justo, percepción de corrupción, voto retrospectivo 2017&quot;</span>,</span>
+<span id="cb13-13"><a href="dis-ins.html#cb13-13" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Estatus subjetivo, justicia y bienestar, percepción de desigualdad, justicia de desigualdad, </span></span>
+<span id="cb13-14"><a href="dis-ins.html#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  surgir en la vida, tributación&quot;</span>,</span>
+<span id="cb13-15"><a href="dis-ins.html#cb13-15" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Fuerza conflicto, aversión conflicto, agresividad física, justificación violencia, punitividad&quot;</span>,</span>
+<span id="cb13-16"><a href="dis-ins.html#cb13-16" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Satisfacción vital, estado de salud, conducta saludable, estado de ánimo, sintomatología depresiva,</span></span>
+<span id="cb13-17"><a href="dis-ins.html#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  estresores, tratamiento depresión&quot;</span>,</span>
+<span id="cb13-18"><a href="dis-ins.html#cb13-18" aria-hidden="true" tabindex="-1"></a>                                                  <span class="st">&quot;Sexo, edad, nivel educacional, clase y estatus, calidad del trabajo, ingresos, religión, justicia</span></span>
+<span id="cb13-19"><a href="dis-ins.html#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  distributiva y meritocracia, previsión social, características del sostenedor del hogar, ingreso familiar,</span></span>
+<span id="cb13-20"><a href="dis-ins.html#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="st">                                                  caracterización del hogar, transporte, deudas, nacionalidad, etnia&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-21"><a href="dis-ins.html#cb13-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_row</span>(<span class="at">Muestra =</span> <span class="fu">c</span>(<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>),</span>
+<span id="cb13-22"><a href="dis-ins.html#cb13-22" aria-hidden="true" tabindex="-1"></a>                  Sección <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Ciudadanía&quot;</span>,<span class="st">&quot;Salud y bienestar&quot;</span>,<span class="st">&quot;Sociodemográficas&quot;</span>),</span>
+<span id="cb13-23"><a href="dis-ins.html#cb13-23" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;Escalas y Temas&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Grado de acuerdo con cambiar la constitución, Temas de discusión pública&quot;</span>,<span class="st">&quot;Metas y planes de vida&quot;</span>,</span>
+<span id="cb13-24"><a href="dis-ins.html#cb13-24" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">&quot;Redes de apoyo al encontrar trabajo&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-25"><a href="dis-ins.html#cb13-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_row</span>(<span class="at">Muestra =</span> <span class="fu">c</span>(<span class="st">&quot;&quot;</span>),</span>
+<span id="cb13-26"><a href="dis-ins.html#cb13-26" aria-hidden="true" tabindex="-1"></a>                  Sección <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Desigualdad y Legitimidad&quot;</span>,<span class="st">&quot;&quot;</span>),</span>
+<span id="cb13-27"><a href="dis-ins.html#cb13-27" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;Escalas y Temas&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Conflicto de clase&quot;</span>,<span class="st">&quot;&quot;</span>))</span>
+<span id="cb13-28"><a href="dis-ins.html#cb13-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="dis-ins.html#cb13-29" aria-hidden="true" tabindex="-1"></a>temas <span class="sc">%&gt;%</span></span>
+<span id="cb13-30"><a href="dis-ins.html#cb13-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">longtab=</span>T, <span class="at">caption=</span><span class="st">&quot;</span><span class="sc">\\</span><span class="st">label{tab:aumento}Temas y conceptos medidos en ELSOC Ola 3 (2018)&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-31"><a href="dis-ins.html#cb13-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">1</span>), <span class="at">width =</span> <span class="st">&quot;6cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-32"><a href="dis-ins.html#cb13-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">2</span>), <span class="at">width =</span> <span class="st">&quot;6cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-33"><a href="dis-ins.html#cb13-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">3</span>), <span class="at">width =</span> <span class="st">&quot;6cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-34"><a href="dis-ins.html#cb13-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">12</span>, <span class="at">background =</span> <span class="st">&quot;white&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-35"><a href="dis-ins.html#cb13-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Muestra de seguimiento y muestra refresco&quot;</span>,<span class="dv">1</span>,<span class="dv">7</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-36"><a href="dis-ins.html#cb13-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Sólo muestra de seguimiento&quot;</span>,<span class="dv">8</span>,<span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-37"><a href="dis-ins.html#cb13-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Sólo muestra de refresco&quot;</span>,<span class="dv">11</span>,<span class="dv">12</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-38"><a href="dis-ins.html#cb13-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F)  <span class="sc">%&gt;%</span></span>
+<span id="cb13-39"><a href="dis-ins.html#cb13-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">latex_options =</span> <span class="st">&quot;HOLD_position&quot;</span>)</span></code></pre></div>
+<table class=" lightable-classic table" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption>
+(#tab:Cuadro 2)Temas y conceptos medidos en ELSOC Ola 3 (2018)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: white !important;">
+Muestra
+</th>
+<th style="text-align:left;background-color: white !important;">
+Sección
+</th>
+<th style="text-align:left;background-color: white !important;">
+Escalas y Temas
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="7">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Muestra de seguimiento y muestra refresco</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Territorio
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Confianza en vecinos, cohesión barrial, sociabilidad barrial, transformación barrial,
+movilidad residencial, satisfacción residencial, conflicto barrial, seguridad barrial,
+problemas barriales
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Redes y Actitudes
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Redes lejanas, relaciones entre chilenos y migrantes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Ciudadanía
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Actitud hacia democracia, confianza interpersonal, confianza instituciones, confianza grupos,
+comportamiento prosocial, intención de participación, autoeficacia política, participación ciudadana,
+interés político, identificación política, dominancia social, autoritarismo, justicia distributiva y
+meritocracia, desigualdad percibida, dominancia social, roles de género, movimientos sociales, percepción
+trato justo, percepción de corrupción, voto retrospectivo 2017
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Desigualdad y Legitimidad
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Estatus subjetivo, justicia y bienestar, percepción de desigualdad, justicia de desigualdad,
+surgir en la vida, tributación
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Conflicto Social
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Fuerza conflicto, aversión conflicto, agresividad física, justificación violencia, punitividad
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Salud y Bienestar
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Satisfacción vital, estado de salud, conducta saludable, estado de ánimo, sintomatología depresiva,
+estresores, tratamiento depresión
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Sociodemográficas
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Sexo, edad, nivel educacional, clase y estatus, calidad del trabajo, ingresos, religión, justicia
+distributiva y meritocracia, previsión social, características del sostenedor del hogar, ingreso familiar,
+caracterización del hogar, transporte, deudas, nacionalidad, etnia
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Sólo muestra de seguimiento</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Ciudadanía
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Grado de acuerdo con cambiar la constitución, Temas de discusión pública
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Salud y bienestar
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Metas y planes de vida
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Sociodemográficas
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Redes de apoyo al encontrar trabajo
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Sólo muestra de refresco</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Desigualdad y Legitimidad
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+Conflicto de clase
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6cm; background-color: white !important;padding-left: 2em;" indentlevel="1">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
+</td>
+<td style="text-align:left;width: 6cm; background-color: white !important;">
 </td>
 </tr>
 </tbody>

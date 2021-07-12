@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Diseño Muestral del Estudio | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Diseño Muestral del Estudio | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Diseño Muestral del Estudio | ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+
+
+<meta name="date" content="2021-07-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="dis-ins.html"/>
+<link rel="next" href="implement-encuesta.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentación</a></li>
+<li class="chapter" data-level="2" data-path="dis-ins.html"><a href="dis-ins.html"><i class="fa fa-check"></i><b>2</b> Diseño del instrumento</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="dis-ins.html"><a href="dis-ins.html#proceso-de-diseño"><i class="fa fa-check"></i><b>2.1</b> Proceso de Diseño</a></li>
+<li class="chapter" data-level="2.2" data-path="dis-ins.html"><a href="dis-ins.html#dif-cuest"><i class="fa fa-check"></i><b>2.2</b> Diferencias entre Cuestionarios de Ola 2 y 3</a></li>
+<li class="chapter" data-level="2.3" data-path="dis-ins.html"><a href="dis-ins.html#ficha-técnica"><i class="fa fa-check"></i><b>2.3</b> Ficha Técnica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dis-muestral.html"><a href="dis-muestral.html"><i class="fa fa-check"></i><b>3</b> Diseño Muestral del Estudio</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="dis-muestral.html"><a href="dis-muestral.html#preparación-del-marco-muestral"><i class="fa fa-check"></i><b>3.1</b> Preparación del Marco Muestral</a></li>
+<li class="chapter" data-level="3.2" data-path="dis-muestral.html"><a href="dis-muestral.html#etapa-1-selección-de-comunas-muestra-refresco"><i class="fa fa-check"></i><b>3.2</b> Etapa 1: Selección de comunas muestra refresco</a></li>
+<li class="chapter" data-level="3.3" data-path="dis-muestral.html"><a href="dis-muestral.html#etapa-2-selección-de-bloques-muestra-refresco"><i class="fa fa-check"></i><b>3.3</b> Etapa 2: Selección de bloques muestra refresco</a></li>
+<li class="chapter" data-level="3.4" data-path="dis-muestral.html"><a href="dis-muestral.html#etapa-3-selección-de-viviendas-para-muestra-refresco"><i class="fa fa-check"></i><b>3.4</b> Etapa 3: Selección de viviendas para muestra refresco</a></li>
+<li class="chapter" data-level="3.5" data-path="dis-muestral.html"><a href="dis-muestral.html#etapa-4-selección-de-personas-para-muestra-de-refresco"><i class="fa fa-check"></i><b>3.5</b> Etapa 4: Selección de personas para muestra de refresco</a></li>
+<li class="chapter" data-level="3.6" data-path="dis-muestral.html"><a href="dis-muestral.html#etapa-x-aumento-del-tamaño-muestral"><i class="fa fa-check"></i><b>3.6</b> Etapa X: Aumento del tamaño muestral</a></li>
+<li class="chapter" data-level="3.7" data-path="dis-muestral.html"><a href="dis-muestral.html#cambios-en-el-muestreo-en-ola-2017"><i class="fa fa-check"></i><b>3.7</b> Cambios en el Muestreo en Ola 2017</a></li>
+<li class="chapter" data-level="3.8" data-path="dis-muestral.html"><a href="dis-muestral.html#diseño-de-ponderadores-de-la-muestra"><i class="fa fa-check"></i><b>3.8</b> Diseño de Ponderadores de la Muestra</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="implement-encuesta.html"><a href="implement-encuesta.html"><i class="fa fa-check"></i><b>4</b> Implementación de la Encuesta</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="implement-encuesta.html"><a href="implement-encuesta.html#estrategia-de-seguimiento"><i class="fa fa-check"></i><b>4.1</b> Estrategia de Seguimiento</a></li>
+<li class="chapter" data-level="4.2" data-path="implement-encuesta.html"><a href="implement-encuesta.html#pilotaje-del-cuestionario-y-capacitación"><i class="fa fa-check"></i><b>4.2</b> Pilotaje del Cuestionario Y Capacitación</a></li>
+<li class="chapter" data-level="4.3" data-path="implement-encuesta.html"><a href="implement-encuesta.html#planificación-y-ejecución-del-campo"><i class="fa fa-check"></i><b>4.3</b> Planificación y Ejecución del Campo</a></li>
+<li class="chapter" data-level="4.4" data-path="implement-encuesta.html"><a href="implement-encuesta.html#supervisión-del-trabajo-de-campo"><i class="fa fa-check"></i><b>4.4</b> Supervisión del Trabajo de Campo</a></li>
+<li class="chapter" data-level="4.5" data-path="implement-encuesta.html"><a href="implement-encuesta.html#incidencias-de-terreno-y-códigos-de-disposición-final-de-casos"><i class="fa fa-check"></i><b>4.5</b> Incidencias de Terreno y Códigos de Disposición Final de Casos</a></li>
+<li class="chapter" data-level="4.6" data-path="implement-encuesta.html"><a href="implement-encuesta.html#aspectos-longitudinales-y-cuarta-ola-del-estudio"><i class="fa fa-check"></i><b>4.6</b> Aspectos Longitudinales y Cuarta Ola del Estudio</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="acceso-datos.html"><a href="acceso-datos.html"><i class="fa fa-check"></i><b>5</b> Acceso y Uso de Base de Datos</a></li>
+<li class="chapter" data-level="6" data-path="libro-codigos.html"><a href="libro-codigos.html"><i class="fa fa-check"></i><b>6</b> Libro de Códigos Base de Datos ELSOC Ola 3</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="libro-codigos.html"><a href="libro-codigos.html#variables-elsoc-ola-3"><i class="fa fa-check"></i><b>6.1</b> Variables ELSOC Ola 3</a></li>
+<li class="chapter" data-level="6.2" data-path="libro-codigos.html"><a href="libro-codigos.html#características-base-de-datos-elsoc-ola-3"><i class="fa fa-check"></i><b>6.2</b> Características Base de Datos ELSOC Ola 3</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dis-muestral" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Diseño Muestral del Estudio</h1>
+<p>En el siguiente apartado se presenta la descripción del diseño muestral de ELSOC, correspondiente a la primera ola del estudio. Durante la tercera ola del estudio (2018) el objetivo fundamental es volver a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos (que en la práctica aumentó a 1520 casos). El objetivo de la muestra de refresco es corregir la sub-cobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Esta nueva muestra se elige a partir del mismo marco muestral de la ola inicial utilizando el empadronamiento del año 2016, por lo que no hay mayores cambios en la estrategia muestral.</p>
+<p>El diseño de ELSOC tuvo como objetivo conciliar los múltiples intereses de investigación de los investigadores asociados al Centro. Entre las consideraciones más relevantes destacaron las siguientes:</p>
+<ol style="list-style-type: decimal">
+<li><p>Un diseño muestral que permitiera combinar las variables medidas en el cuestionario con las variables espaciales, registradas a nivel de manzana y comuna, contenidas en las bases de datos desarrolladas por el Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez. Dado que los datos del CIT no están disponibles para todas las manzanas del país, particularmente aquellas ubicadas en localidades rurales, se decidió incorporar en la muestra únicamente zonas urbanas. Esta consideración también coincidió con las preferencias de muchos investigadores del Centro, quiénes manifestaron estar principalmente interesados en una muestra de carácter urbano.</p></li>
+<li><p>Algunos investigadores solicitaron un diseño que permitiera estimar modelos multi-nivel (o jerárquicos) agrupados por ciudad y comuna, y por tanto, se estableció que la muestra contuviera un número suficiente de ciudades y comunas, así como un número suficiente de casos dentro de cada cuidad y comuna, que permitiera tal análisis (Snijders &amp; Bosker, Capítulo 10).</p></li>
+<li><p>Otros investigadores estaban interesados en comparar a los habitantes de las tres ciudades más grandes del país, lo que se tradujo en un diseño no proporcional que incrementara el número de encuestados en las zonas del Gran Valparaíso (ciudades de Viña del Mar y Valparaíso) y Gran Concepción (Concepción, Talcahuano y otras).</p></li>
+<li><p>Finalmente, algunos investigadores solicitaron un diseño que permitiera comparar a los encuestados que vivieran en ciudades grandes y pequeñas, lo que favoreció incrementar el tamaño de la muestra de hogares en ciudades pequeñas (Kish, 1965, Sección 3.5), particularmente aquellas con entre 30 mil y 100 mil habitantes.</p></li>
+</ol>
+<p>Los investigadores de COES trabajaron con la encargada del diseño muestral, Stephanie Eckman, para desarrollar un diseño que pudiera, razonablemente, cumplir con estas necesidades e intereses sustantivos. El diseño muestral final de la ola 1 de ELSOC COES proporciona una cobertura adecuada de las ciudades más grandes del país (Gran Santiago, Gran Valparaíso y Gran Concepción), así como ciudades más pequeñas, y también asegura la representación de personas en el norte y sur del país. En términos globales, el diseño muestral alcanza una representatividad aproximada del 77% de la población total del país, y del 93% de la población urbana. Las siguientes subsecciones detallan los distintos pasos del diseño de la muestra.</p>
+<div id="preparación-del-marco-muestral" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preparación del Marco Muestral</h2>
+<p>El proceso de muestreo se realizó en base a los datos del pre-censo del año 2011, los cuales fueron formateados por el CIT. Aunque los recuentos de población del censo de 2012 no son precisos, el trabajo del pre-censo recolectando información sobre los hogares en todas las manzanas (bloques) es de calidad. El conjunto de datos contenía un total de 155,757 bloques, pero se eliminaron cuatro tipos diferentes antes de que comenzara con la selección.</p>
+<ol style="list-style-type: decimal">
+<li><p>Siguiendo los intereses analíticos de los investigadores del Centro, sólo se utilizaron bloques urbanos. Para determinar qué bloques eran urbanos, se empleó la codificación del tipo de localidad (urbana o rural) contenida en la base de datos del pre-censo de 2011. Consecuentemente, 22.188 (14,2%) bloques fueron excluidos en este paso.</p></li>
+<li><p>Nuevamente, en función de los intereses analíticos de los investigadores del Centro, sólo los bloques que habían sido previamente geo-referenciados por el CIT se conservaron para el muestreo. Esto implica que un total de 1.971 (1,5% de los bloques urbanos) que no estaban geo-referenciados fueron removidos en este paso.</p></li>
+<li><p>Sólo los bloques que contenían cinco o más hogares (de acuerdo con el pre-censo de 2011) fueron retenidos. 503 bloques (menos del 1% de los bloques restantes tras los pasos 1 y 2) no alcanzaron este umbral y fueron eliminados.</p></li>
+<li><p>Sólo los bloques en las ciudades con más de 10.000 personas eran elegibles para la selección. 10.238 bloques (7.8% de los bloques restantes) fueron excluidos del marco muestral.</p></li>
+</ol>
+<p>De esta forma, el marco muestral final contiene 120.857 bloques. La muestra de COES representará solamente estos bloques y no aquellos que fueron excluidos. Las estimaciones derivadas de los datos de la muestra se aplicarán únicamente a esta población objetivo y no deben aplicarse a toda la población chilena. El proceso de selección de entrevistados se desarrolló en cinco etapas, aunque durante el trabajo de campo se añadió una sexta etapa.</p>
+<p>Para mayor detalle del proceso de selección de la muestra inicial (o muestra de seguimiento) en cada etapa revisar el Manual de Usuario ELSOC 2017 (segunda ola). Cabe destacar que aquellas personas que completaron su encuesta en la primera ola, pero no respondieron en la segunda ola (excluyendo casos fallecidos, cambio de domicilio desconocido o cambio de domicilio fuera del país), en esta tercera oportunidad se hizo el esfuerzo por contactarlos y recuperar la participación de estas personas en el panel.</p>
+<p>A continuación, se detallará el proceso de selección de la muestra refresco. En la primera ola de ELSOC (año 2016), CMD realizó un empadronamiento presencial de alrededor de 40.000 viviendas en 1.056 bloques (manzanas), a partir del cual se generará la nueva muestra de viviendas para la selección de individuos de la muestra refresco. Este proceso de empadronamiento tiene sólo dos años de antigüedad, por lo que genera mínimos problemas de no cobertura en los bloques empadronados.</p>
+</div>
+<div id="etapa-1-selección-de-comunas-muestra-refresco" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Etapa 1: Selección de comunas muestra refresco</h2>
+<p>La muestra inicial del estudio año 2016 consideró 94 comunas para una muestra objetivo de 3.000 casos. En este caso, la muestra refresco objetivo es 1.400 casos por lo que se reducirá el número de comunas consideradas a 75. Los principales motivos de exclusión de comunas son: (i) algunas comunas eran muy pequeñas en términos poblacionales, siendo ya una fracción muy acotada para la muestra 1 (por ejemplo: Concón, Olivar, Maule, Penco, San Rosendo, Padre las Casas), por lo que si para el levantamiento inicial con una muestra objetivo de 3.000 casos se realizaron como máximo 15 entrevistas, para la muestra objetivo de 1.400 casos sería un número muy pequeño a considerar, lo que aumentaría mucho el costo de realización, convirtiéndolo en una maniobra poco eficiente. Por su parte, (ii) frente a una muestra objetivo de 1.400, se necesita un número menor de casos por estrato que en la muestra inicial, pero se sigue demandando casos repartidos por segmentos (manzanas), por lo que una buena alternativa es la reducción de número de comunas. En este sentido, CMD consideró estos criterios en la evaluación de qué comuna excluir para la muestra refresco, sumado al costo de aplicarla y la tasa de respuesta obtenido anteriormente, asegurando preservar los aspectos centrales del diseño. A continuación, el cuadro 3 contrasta la cantidad de comunas consideradas por estrato en la muestra seguimiento (m1) y muestra refresco (m2):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="dis-muestral.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pacman)</span>
+<span id="cb1-2"><a href="dis-muestral.html#cb1-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse,knitr,kableExtra,dplyr,tinytex)</span></code></pre></div>
+<pre><code>## Installing package into &#39;C:/Users/Cristobal/Documents/R/win-library/4.0&#39;
+## (as &#39;lib&#39; is unspecified)</code></pre>
+<pre><code>## also installing the dependency &#39;xfun&#39;</code></pre>
+<pre><code>## Warning: unable to access index for repository http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.0:
+##   no fue posible abrir la URL &#39;http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/4.0/PACKAGES&#39;</code></pre>
+<pre><code>## package &#39;xfun&#39; successfully unpacked and MD5 sums checked</code></pre>
+<pre><code>## Warning: cannot remove prior installation of package &#39;xfun&#39;</code></pre>
+<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problema al copiar C:
+## \Users\Cristobal\Documents\R\win-library\4.0\00LOCK\xfun\libs\x64\xfun.dll a C:
+## \Users\Cristobal\Documents\R\win-library\4.0\xfun\libs\x64\xfun.dll: Permission
+## denied</code></pre>
+<pre><code>## Warning: restored &#39;xfun&#39;</code></pre>
+<pre><code>## package &#39;tinytex&#39; successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+##  C:\Users\Cristobal\AppData\Local\Temp\Rtmp0E2B0f\downloaded_packages</code></pre>
+<pre><code>## 
+## tinytex installed</code></pre>
+<pre><code>## Warning: package &#39;tinytex&#39; was built under R version 4.0.5</code></pre>
+<pre><code>## Warning in pacman::p_load(tidyverse, knitr, kableExtra, dplyr, tinytex): Failed to install/load:
+## tinytex</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="dis-muestral.html#cb13-1" aria-hidden="true" tabindex="-1"></a>selec_comunas <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="st">&quot;Estrato&quot;</span> <span class="ot">=</span></span>
+<span id="cb13-2"><a href="dis-muestral.html#cb13-2" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">c</span>(<span class="st">&quot;Gran Santiago&quot;</span>,<span class="st">&quot;Gran Valparaiso&quot;</span>,<span class="st">&quot;Gran Concepción&quot;</span>,<span class="st">&quot;Ciudades Grandes&quot;</span>,</span>
+<span id="cb13-3"><a href="dis-muestral.html#cb13-3" aria-hidden="true" tabindex="-1"></a>                              <span class="st">&quot;Ciudades Medianas&quot;</span>,<span class="st">&quot;Ciudades Pequeñas&quot;</span>),</span>
+<span id="cb13-4"><a href="dis-muestral.html#cb13-4" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;Definión N habitantes&quot;</span> <span class="ot">=</span> </span>
+<span id="cb13-5"><a href="dis-muestral.html#cb13-5" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">c</span>(<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="st">&quot;&gt; 100 mil&quot;</span>,<span class="st">&quot;&gt; 30 mil&quot;</span>,<span class="st">&quot;&gt; 10 mil&quot;</span>),</span>
+<span id="cb13-6"><a href="dis-muestral.html#cb13-6" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;n comunas m1&quot;</span> <span class="ot">=</span> </span>
+<span id="cb13-7"><a href="dis-muestral.html#cb13-7" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">c</span>(<span class="st">&quot;34&quot;</span>,<span class="st">&quot;5&quot;</span>,<span class="st">&quot;10&quot;</span>,<span class="st">&quot;16&quot;</span>,<span class="st">&quot;9&quot;</span>,<span class="st">&quot;20&quot;</span>),</span>
+<span id="cb13-8"><a href="dis-muestral.html#cb13-8" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;n comunas m2&quot;</span> <span class="ot">=</span> </span>
+<span id="cb13-9"><a href="dis-muestral.html#cb13-9" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">c</span>(<span class="st">&quot;34&quot;</span>,<span class="st">&quot;3&quot;</span>,<span class="st">&quot;8&quot;</span>,<span class="st">&quot;13&quot;</span>,<span class="st">&quot;6&quot;</span>,<span class="st">&quot;11&quot;</span>),</span>
+<span id="cb13-10"><a href="dis-muestral.html#cb13-10" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;Comunas no consideradas en m2&quot;</span> <span class="ot">=</span> </span>
+<span id="cb13-11"><a href="dis-muestral.html#cb13-11" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">c</span>(<span class="st">&quot;-&quot;</span>,<span class="st">&quot;Concón, Villa Alemana&quot;</span>,<span class="st">&quot;Coronel, Penco&quot;</span>, <span class="st">&quot;Padre de Las Casas, Maule, Olivar&quot;</span>,</span>
+<span id="cb13-12"><a href="dis-muestral.html#cb13-12" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&quot;Ovalle, Parral, Colina&quot;</span>,<span class="st">&quot;Carahue, Lautaro, Laja, Mulchén, San Rosendo, Salamanca, </span></span>
+<span id="cb13-13"><a href="dis-muestral.html#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="st">                        Curacaví, Isla de Maipo, Santa Cruz&quot;</span>)) </span>
+<span id="cb13-14"><a href="dis-muestral.html#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="dis-muestral.html#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="dis-muestral.html#cb13-16" aria-hidden="true" tabindex="-1"></a>selec_comunas <span class="sc">%&gt;%</span></span>
+<span id="cb13-17"><a href="dis-muestral.html#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">booktabs =</span> <span class="cn">TRUE</span>,<span class="at">caption=</span><span class="st">&quot;</span><span class="sc">\\</span><span class="st">label{tab:difcuest}Distribución de comunas por estrato para muestra seguimiento (m1) y muestra refresco (m2)&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-18"><a href="dis-muestral.html#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">1</span>), <span class="at">width =</span> <span class="st">&quot;3cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-19"><a href="dis-muestral.html#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">2</span>), <span class="at">width =</span> <span class="st">&quot;3cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-20"><a href="dis-muestral.html#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">3</span>), <span class="at">width =</span> <span class="st">&quot;3cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-21"><a href="dis-muestral.html#cb13-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">4</span>), <span class="at">width =</span> <span class="st">&quot;3cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-22"><a href="dis-muestral.html#cb13-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">c</span>(<span class="dv">5</span>), <span class="at">width =</span> <span class="st">&quot;3cm&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-23"><a href="dis-muestral.html#cb13-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F) <span class="sc">%&gt;%</span></span>
+<span id="cb13-24"><a href="dis-muestral.html#cb13-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">latex_options =</span> <span class="st">&quot;HOLD_position&quot;</span>)</span></code></pre></div>
+<table class=" lightable-classic table" style='font-family: "Arial Narrow", "Source Sans Pro", sans-serif; width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;'>
+<caption>
+(#tab:Cuadro 3)Distribución de comunas por estrato para muestra seguimiento (m1) y muestra refresco (m2)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Estrato
+</th>
+<th style="text-align:left;">
+Definión N habitantes
+</th>
+<th style="text-align:left;">
+n comunas m1
+</th>
+<th style="text-align:left;">
+n comunas m2
+</th>
+<th style="text-align:left;">
+Comunas no consideradas en m2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Gran Santiago
+</td>
+<td style="text-align:left;width: 3cm; ">
+</td>
+<td style="text-align:left;width: 3cm; ">
+34
+</td>
+<td style="text-align:left;width: 3cm; ">
+34
+</td>
+<td style="text-align:left;width: 3cm; ">
+<ul>
+<li></td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Gran Valparaiso
+</td>
+<td style="text-align:left;width: 3cm; ">
+</td>
+<td style="text-align:left;width: 3cm; ">
+5
+</td>
+<td style="text-align:left;width: 3cm; ">
+3
+</td>
+<td style="text-align:left;width: 3cm; ">
+Concón, Villa Alemana
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Gran Concepción
+</td>
+<td style="text-align:left;width: 3cm; ">
+</td>
+<td style="text-align:left;width: 3cm; ">
+10
+</td>
+<td style="text-align:left;width: 3cm; ">
+8
+</td>
+<td style="text-align:left;width: 3cm; ">
+Coronel, Penco
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Ciudades Grandes
+</td>
+<td style="text-align:left;width: 3cm; ">
+&gt; 100 mil
+</td>
+<td style="text-align:left;width: 3cm; ">
+16
+</td>
+<td style="text-align:left;width: 3cm; ">
+13
+</td>
+<td style="text-align:left;width: 3cm; ">
+Padre de Las Casas, Maule, Olivar
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Ciudades Medianas
+</td>
+<td style="text-align:left;width: 3cm; ">
+&gt; 30 mil
+</td>
+<td style="text-align:left;width: 3cm; ">
+9
+</td>
+<td style="text-align:left;width: 3cm; ">
+6
+</td>
+<td style="text-align:left;width: 3cm; ">
+Ovalle, Parral, Colina
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 3cm; ">
+Ciudades Pequeñas
+</td>
+<td style="text-align:left;width: 3cm; ">
+&gt; 10 mil
+</td>
+<td style="text-align:left;width: 3cm; ">
+20
+</td>
+<td style="text-align:left;width: 3cm; ">
+11
+</td>
+<td style="text-align:left;width: 3cm; ">
+Carahue, Lautaro, Laja, Mulchén, San Rosendo, Salamanca,
+Curacaví, Isla de Maipo, Santa Cruz
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+<div id="etapa-2-selección-de-bloques-muestra-refresco" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Etapa 2: Selección de bloques muestra refresco</h2>
+<p>La distribución regional propuesta para el levantamiento de la muestra refresco se observa en el cuadro 4, donde la columna 2 indica el número de bloques (manzanas) a seleccionar por región calculados a partir de la muestra refresco objetivo presentada en la última columna.</p>
+<p>Como se observa en el cuadro 4 se requieren de 402 bloques (manzanas) para seleccionar la muestra refresco de 1.400 casos. Dado que el marco muestral se ha utilizado tanto para la selección de la muestra de 2016 como para el pretest de 2018, el siguiente cuadro muestra la distribución de bloques disponibles para la selección de los casos. Se concluye que en todas las regiones se cuenta con un número suficiente de bloques seleccionables, por lo que no se requiere empadronar nuevos bloques. Cabe mencionar que la selección de los bloques es aleatoria.</p>
+</div>
+<div id="etapa-3-selección-de-viviendas-para-muestra-refresco" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Etapa 3: Selección de viviendas para muestra refresco</h2>
+<p>Como se mencionó, hay 1.056 bloques (manzanas) empadronados desde los cuales se seleccionarán 8 viviendas en cada bloque en comunas de ciudades grandes (estrato 1) y 5 viviendas en cada bloque en comunas de ciudades medianas y pequeñas (estrato 2 y 3), de manera que se concreten 5 encuestas completas por bloque en estrato 1, y se concreten 3 encuestas completas por bloque para el caso de los estratos 2 y 3. Este rango entre el número de selección de viviendas y el número de encuestas que se espera concretar se realizó teniendo en cuenta la tasa de respuesta obtenida en la primera ola del estudio. De esta manera, se lograrían las 1.400 encuestas necesarias para la muestra refresco.</p>
+<p>Cabe mencionar que quedan excluidos de la selección aquellos bloques con menos de 20 viviendas empadronadas. Por su parte, los bloques no residenciales se reemplazarán por otro. Así, en aquellos bloques seleccionados se utilizará el marco muestral año 2016 y se seleccionará el número de viviendas dependiendo del tamaño del estrato. En el caso que el bloque tenga más de 50 viviendas se utilizarán los sub-bloques creados en el empadronamiento.</p>
+<p>La selección de la vivienda será por sistema aleatorio simple y por ello hay probabilidad de que se seleccione la misma vivienda que para la aplicación de la ola 1. Por esto, se debe verificar que la muestra seleccionada no coincida con la muestra del panel definida en el año 2016. En caso de coincidir, se generará un reemplazo por el mismo método de selección aleatoria.</p>
+<p><em>La probabilidad de selección de un hogar <span class="math inline">\(k\)</span> en el bloque <span class="math inline">\(j\)</span> en la ciudad <span class="math inline">\(i\)</span> y el estrato <span class="math inline">\(h\)</span> fue</em>:</p>
+<p><span class="math display">\[\pi_{k|j,i}=\frac{nh_j}{NH_j}\]</span></p>
+<p><em>donde <span class="math inline">\(nh_j\)</span> es el número de viviendas seleccionadas en el bloque <span class="math inline">\(j\)</span>, y <span class="math inline">\(NH_j\)</span> corresponde al número de viviendas alistadas en el bloque <span class="math inline">\(j\)</span> excluyendo las seleccionadas en ola 1</em>.</p>
+<p>Esta estrategia permitiría tener una muestra de las mismas características de la muestra 1, lo que permite un trabajo de campo más atractivo (más viviendas que visitar en una misma manzana, aumenta la productividad por día) y el efecto diseño no aumentaría drásticamente, por lo que se sigue generando una varianza parecida en el conglomerado y entre conglomerados.</p>
+</div>
+<div id="etapa-4-selección-de-personas-para-muestra-de-refresco" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Etapa 4: Selección de personas para muestra de refresco</h2>
+<p>Una vez seleccionada la vivienda, se procede a la selección de la persona que será parte de ELSOC dentro de cada hogar seleccionado. Esta elección será aleatoriamente entre las personas del hogar que tengan entre 18 y 75 años, por medio de la programación pertinente en la aplicación de la encuesta en Tablet, evitando la manipulación de los encuestadores en la selección del entrevistado. En el caso de inconvenientes con el uso del Tablet, se seleccionará al entrevistado mediante el uso de Tabla de Kish (método equivalente).</p>
+<p><em>La probabilidad de selección de una persona en el hogar <span class="math inline">\(k\)</span> fue</em>:</p>
+<p><span class="math display">\[\pi_{l|k,j,i}=\frac{1}{NP_j}\]</span></p>
+<p>donde <span class="math inline">\(NP_j\)</span> es el número de adultos (mayores a 18 años y menores de 75 años) que habitan la vivienda <span class="math inline">\(j\)</span>.</p>
+<div id="section" class="section level44" number="3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1">
+<p class="heading" number="3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"><span class="header-section-number">3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1</span> </p>
+</div>
+<div id="de-aquí-en-adelante-está-pendiente" class="section level4" number="3.5.0.1">
+<h4><span class="header-section-number">3.5.0.1</span> DE aquí en adelante está pendiente</h4>
+<div id="section-1" class="section level44" number="3.5.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1">
+<p class="heading" number="3.5.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1"><span class="header-section-number">3.5.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1</span> </p>
+</div>
+</div>
+</div>
+<div id="etapa-x-aumento-del-tamaño-muestral" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Etapa X: Aumento del tamaño muestral</h2>
+<p>Durante el trabajo de campo se observó que el supuesto de una tasa de respuesta del 75% para todos los estratos era incorrecta. En primer lugar, hubo variabilidad significativa por región, y en segundo lugar, la tasa de respuesta fue inferior al 75%. Debido a esta información, se decidió aumentar el número de hogares por bloque para lograr efectivamente las 3.000 entrevistas.</p>
+<p>Este aumento en el número de hogares por bloque tiene un efecto limitado sobre la probabilidad de selección de cada vivienda. Sólo afecta a la probabilidad calculada en la Etapa 4, ya que el número de hogares disponibles es menor, pero no hay cambios en las probabilidades calculadas en la Etapa 1 y la Etapa 2. Esto ocurre porque los bloques seleccionados (en la Etapa 2) fueron usados, y no se introdujeron nuevos bloques.</p>
+<p>Durante este proceso un total de 1.082 nuevos hogares, ubicados dentro de los bloques seleccionados, se añadieron a la muestra del estudio. La asignación de estos nuevos hogares no fue uniforme en todos los bloques del país. En cambio, se concentraron en cuatro regiones (Coquimbo, O´Higgins, RegiónMetropolitana, y Biobío) donde los encuestadores tenían muchos problemas para contactar a los encuestados. La tabla 7 detalla las comunas en que se aumentó el número de hogares, junto con el número total de hogares incorporados y por bloque.</p>
+<table>
+<caption>
+<span id="tab:unnamed-chunk-1">Table 3.1: </span>Cuadro 7: Número de hogares agregados a la muestra según región
+y comuna
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Región
+</th>
+<th style="text-align:center;">
+Comuna
+</th>
+<th style="text-align:center;">
+Total viviendas agregadas
+</th>
+<th style="text-align:center;">
+Viviendas
+agregadas por bloque
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Coquimbo
+</td>
+<td style="text-align:center;">
+Coquimbo
+</td>
+<td style="text-align:center;">
+24
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coquimbo
+</td>
+<td style="text-align:center;">
+La Serena
+</td>
+<td style="text-align:center;">
+28
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coquimbo
+</td>
+<td style="text-align:center;">
+Salamanca
+</td>
+<td style="text-align:center;">
+22
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+O’Higgins
+</td>
+<td style="text-align:center;">
+Doñihue
+</td>
+<td style="text-align:center;">
+10
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+O’Higgins
+</td>
+<td style="text-align:center;">
+Rancagua
+</td>
+<td style="text-align:center;">
+42
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+O’Higgins
+</td>
+<td style="text-align:center;">
+Santa Cruz
+</td>
+<td style="text-align:center;">
+11
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+Chiguayante
+</td>
+<td style="text-align:center;">
+24
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+Concepción
+</td>
+<td style="text-align:center;">
+75
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+Coronel
+</td>
+<td style="text-align:center;">
+11
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+Penco
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+Quillón
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Biobio
+</td>
+<td style="text-align:center;">
+San Pedro de la Paz
+</td>
+<td style="text-align:center;">
+28
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Cerrillos
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Colina
+</td>
+<td style="text-align:center;">
+12
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Curacaví
+</td>
+<td style="text-align:center;">
+14
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+El Bosque
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Estación Central
+</td>
+<td style="text-align:center;">
+12
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Huechuraba
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Independencia
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Isla de Maipo
+</td>
+<td style="text-align:center;">
+39
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+La Cisterna
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+La Florida
+</td>
+<td style="text-align:center;">
+24
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+La Granja
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+La Pintana
+</td>
+<td style="text-align:center;">
+12
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+La Reina
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Las Condes
+</td>
+<td style="text-align:center;">
+33
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Lo Barnechea
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Lo Espejo
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Lo Prado
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Macul
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Maipú
+</td>
+<td style="text-align:center;">
+32
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Ñuñoa
+</td>
+<td style="text-align:center;">
+16
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Padre Hurtado
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Pedro Aguirre Cerda
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Peñaflor
+</td>
+<td style="text-align:center;">
+30
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Peñalolén
+</td>
+<td style="text-align:center;">
+14
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Providencia
+</td>
+<td style="text-align:center;">
+7
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Pudahuel
+</td>
+<td style="text-align:center;">
+14
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Puente Alto
+</td>
+<td style="text-align:center;">
+32
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Quilicura
+</td>
+<td style="text-align:center;">
+12
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+San Bernardo
+</td>
+<td style="text-align:center;">
+16
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+San Joaquín
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+San Miguel
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+San Ramón
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Santiago
+</td>
+<td style="text-align:center;">
+120
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Metropolitana
+</td>
+<td style="text-align:center;">
+Vitacura
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cambios-en-el-muestreo-en-ola-2017" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Cambios en el Muestreo en Ola 2017</h2>
+<p>Producto de las dificultades observadas en el trabajo de campo de ELSOC 2016 descritas en el apartado previo, se realizaron ajustes en el diseño muestral que contempla heterogeneidad regional en la tasa de no respuesta. No fueron necesarios cambios adicionales para el proceso de trabajo de campo de 2017. Las decisiones metodológicas fueron confirmadas y las viviendas agregads y los entrevistados seleccionados durante 2016 como resultado de la etapa 6 fueron reentrevistados del mismo modo que los otros encuestados.</p>
+</div>
+<div id="diseño-de-ponderadores-de-la-muestra" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Diseño de Ponderadores de la Muestra</h2>
+<p>La muestra de ELSOC 2017 no es representativa de la población objetivo del modo que lo era la muestra de 2016, producto de que su objetivo es recontactar a los entrevistados de 2016 y a la presencia de atrición en la muestra (individuos que no logran ser reentrevistados, dejando la muestra). Considerando que a partir de las entrevistas efectivamente realizadas se desea extrapolar a la población objetivo respectiva, es necesario ponderar adecuadamente a cada encuestado según su representación en la población objetivo. De este modo, lo óptimo sería incorporar la atrición en el diseño de los ponderadores muestrales. Los ponderadores provistos con la base de datos de ELSOC ola 2 no ajustan por dichos factores. Se proveen ponderadores similares a los entregados en la primera versión del estudio, cuya finalidad es ajustar por las diferencias en atributos demográficos de la muestra de ELSOC en relación a la población objetivo. En una etapa posterior se liberarán nuevos ponderadores, ajustados a las particularidades de un diseño longitudinal.</p>
+<p>A continuación se describe el proceso de elaboración de dichos ponderadores<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> para lograr una correspondencia entre la muestra y la población objetivo. Dicha ponderación se basa en el inverso de la probabilidad de selección o inclusión en la muestra de cada entrevistado. En este caso la probabilidad de selección del individuo <span class="math inline">\(i\)</span> de la vivienda <span class="math inline">\(j\)</span> que pertenece a la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(P_ijlk\)</span> viene dado por:</p>
+<p><span class="math display">\[P_{iklk} = \pi_{i|jlk}\pi_{j|lk}\pi_{lk}\]</span></p>
+<p>Dónde:</p>
+<ul>
+<li><span class="math inline">\(\pi_{i|jlk}\)</span> es la probabilidad de que el individuo <span class="math inline">\(i\)</span> sea seleccionado en la muestra dado que la vivienda dónde vive y la manzana dónde se localiza fueron seleccionados.</li>
+<li><span class="math inline">\(\pi_{j|lk}\)</span> es la probabilidad de que la vivienda <span class="math inline">\(j\)</span> sea seleccionada en la muestra dado que la manzana <span class="math inline">\(l\)</span> (que contiene a la vivienda <span class="math inline">\(j\)</span>) fue seleccionada.</li>
+<li><span class="math inline">\(\pi_lk\)</span> es la probabilidad de que la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span> sea seleccionada en la muestra.</li>
+</ul>
+<p>Se define el ponderador de diseño o teórico <span class="math inline">\(w_{ijlk}\)</span> al inverso de la probabilidad de selección:</p>
+<p><span class="math display">\[P_{ijlk}=\frac{1}{w_{ijlk}}\]</span></p>
+<p>El valor de las antes mencionadas probabilidades es:</p>
+<p><span class="math display">\[\pi_{lk} = n_k\frac{M_{kl}}{M_k}\]</span></p>
+<p><span class="math display">\[\pi_{j|lk} = \frac{m_{lk}}{M&#39;_k}\]</span></p>
+<p><span class="math display">\[\pi_{i|jlk} = \frac{1}{N_{jlk}}\]</span></p>
+<p>Dónde se tiene que <span class="math inline">\(n_k\)</span> es el número de manzanas a seleccionar del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(_lk\)</span> es el número de viviendas de la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(M_k\)</span> es el número total de viviendas del estrato <span class="math inline">\(k\)</span>, <span class="math inline">\(m_{lk}\)</span> es el número de viviendas a encuestar dentro de la manzana <span class="math inline">\(l\)</span>, <span class="math inline">\(M&#39;_k\)</span> es el número actualizado de viviendas de la manzana <span class="math inline">\(l\)</span> post-empadronamiento, <span class="math inline">\(N_{jlk}\)</span> es el número de personas de la población objetivo que vive en la vivienda <span class="math inline">\(j\)</span> de la manzana <span class="math inline">\(l\)</span> del estrato <span class="math inline">\(k\)</span>.</p>
+<p>En base a lo anterior se diseñaron ponderadores que ajustan en base a las probabilidades base, con ajuste de no respuesta, con ajuste al número de casos<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> y con ajuste al número de casos y la variable sexo.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p>Dichos ponderadores pueden entenderse como “‘ponderadores de corte transversal,” ya que se ignoran los problemas derivados de su naturaleza longitudinal.<a href="dis-muestral.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Corresponde a considerar la población total objetivo entre 18 y 75 años en base a las proyecciones de población regional.<a href="dis-muestral.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Los cuatro ponderadores diseñados son acumulativos. A modo de ejemplo, el segundo ponderador ajusta en base las probabilidades de selección e incorpora <strong>también</strong> el ajuste por no respuesta.<a href="dis-muestral.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="dis-ins.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="implement-encuesta.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["2018.pdf", "2018.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

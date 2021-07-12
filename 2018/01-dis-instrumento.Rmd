@@ -32,45 +32,79 @@ Con el objetivo de satisfacer los criterios y estándares de calidad para cuesti
 La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplica cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los ítems intercalados^[Algunos ítems aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen en años pares o impares).]. Luego, en el Cuadro 2 se resumen los conceptos que se incluyeron en las distintas secciones del cuestionario de ELSOC 2017. Para más detalles sobre el Cuestionario se debe revisar el último apartado de este manual: Libro de Códigos.
 
 
-## Diferencias entre Cuestionarios de Ola 1 y 2
+## Diferencias entre Cuestionarios de Ola 2 y 3 {#dif-cuest}
 
 Para examinar de manera pormenorizada las diferencias entre los instrumentos aplicados en 2017 y 2018 se sugiere a los interesados revisar tanto los cuestionarios como los libros de códigos asociados a cada estudio. De todos modos, el Cuadro 1 señala las diferencias entre ambos cuestionarios, distinguiendo por aquellos temas que fueron agregados a la muestra de seguimiento y/o la muestra refresco. Cabe mencionar que se considera como tema agregado aquellos que nunca antes se habían preguntado en ELSOC, distinguiéndose de los ítems intercalados que fueron preguntados en la ola 1 y en esta ola 3 han regresado. Para mayor detalle de esto, se recomienda revisar el Listado de Variables incluido como una guía útil para contrastar los cuestionarios (disponible  en _____).
 
-```{r Cuadro 1, echo=FALSE}
+```{r Librerías 1, include=FALSE}
 library(pacman)
-pacman::p_load(tidyverse,knitr,kableExtra,dplyr)
-
-temas2018s_c1 <- c("Temas de discusión pública (c37), percepción de corrupción (c38) y voto retrospectivo 2017 (c39), metas y planes de vida (s30), redes de apoyo al encontrar trabajo (m55 y m56)")
-
-temas2018r_c1 <- c("percepción de corrupción (c38) y voto retrospectivo 2017 (c39)")
-
-temas2018no_c1 <- c("Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26, c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable (s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12), consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)")
-
-dif_temas_c1 <- data.frame(temas2018s_c1,temas2018r_c1,temas2018no_c1)
-
-knitr::kable(dif_temas_c1,
-  format = "html",
-  booktabs = TRUE,
-  col.names = c("Temas agregados muestra seguimiento 2018","Temas agregados muestra refresco 2018","Temas no incluidos 2018 respecto al 2017"),
-  align = c("lll"),
-  caption = "Diferencias temáticas entre cuestionario ola 2 (2017) y ola 3 (2018)")
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
 ```
 
-```{r Cuadro 2, eval=FALSE, include=FALSE}
-temas2018s_c1 <- c("Muestra de seguimiento y muestra refresco")
+```{r Cuadro 1, echo=FALSE}
+dif_cuest <- tibble("Temas agregados muestra seguimiento 2018" =
+                            c("Temas de discusión pública (c37), percepción de corrupción (c38) y voto retrospectivo 2017
+                              (c39), metas y planes de vida (s30), redes de apoyo al encontrar trabajo (m55 y m56)"),
+                    "Temas agregados muestra refresco 2018" = 
+                            c("Percepción de corrupción (c38) y voto retrospectivo 2017 (c39)"),
+                    "Temas no incluidos 2018 respecto al 2017" = 
+                            c("Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26,
+                              c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del
+                              colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable
+                              (s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12),
+                              consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del
+                              hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)")) 
 
-temas2018r_c1 <- c("percepción de corrupción (c38) y voto retrospectivo 2017 (c39)")
 
-temas2018no_c1 <- c("Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26, c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable (s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12), consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)")
+dif_cuest %>%
+  kable(booktabs = TRUE,caption="\\label{tab:difcuest}Diferencias temáticas entre cuestionario ola 2 (2017) y ola 3 (2018)") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
 
-dif_temas_c1 <- data.frame(temas2018s_c1,temas2018r_c1,temas2018no_c1)
 
-knitr::kable(dif_temas_c1,
-  format = "html",
-  booktabs = TRUE,
-  col.names = c("Temas agregados muestra seguimiento 2018","Temas agregados muestra refresco 2018","Temas no incluidos 2018 respecto al 2017"),
-  align = c("lll"),
-  caption = "Diferencias temáticas entre cuestionario ola 2 (2017) y ola 3 (2018)")
+```{r Cuadro 2, echo=FALSE}
+temas <- tibble(Muestra = c("","","","","","",""),
+                  Sección = c("Territorio","Redes y Actitudes","Ciudadanía","Desigualdad y Legitimidad",
+                              "Conflicto Social","Salud y Bienestar","Sociodemográficas"),
+                  "Escalas y Temas" = c("Confianza en vecinos, cohesión barrial, sociabilidad barrial, transformación barrial, 
+                                                  movilidad residencial, satisfacción residencial, conflicto barrial, seguridad barrial, 
+                                                  problemas barriales",
+                                                  "Redes lejanas, relaciones entre chilenos y migrantes",
+                                                  "Actitud hacia democracia, confianza interpersonal, confianza instituciones, confianza grupos,
+                                                  comportamiento prosocial, intención de participación, autoeficacia política, participación ciudadana,
+                                                  interés político, identificación política, dominancia social, autoritarismo, justicia distributiva y
+                                                  meritocracia, desigualdad percibida, dominancia social, roles de género, movimientos sociales, percepción
+                                                  trato justo, percepción de corrupción, voto retrospectivo 2017",
+                                                  "Estatus subjetivo, justicia y bienestar, percepción de desigualdad, justicia de desigualdad, 
+                                                  surgir en la vida, tributación",
+                                                  "Fuerza conflicto, aversión conflicto, agresividad física, justificación violencia, punitividad",
+                                                  "Satisfacción vital, estado de salud, conducta saludable, estado de ánimo, sintomatología depresiva,
+                                                  estresores, tratamiento depresión",
+                                                  "Sexo, edad, nivel educacional, clase y estatus, calidad del trabajo, ingresos, religión, justicia
+                                                  distributiva y meritocracia, previsión social, características del sostenedor del hogar, ingreso familiar,
+                                                  caracterización del hogar, transporte, deudas, nacionalidad, etnia")) %>% 
+  add_row(Muestra = c("","",""),
+                  Sección = c("Ciudadanía","Salud y bienestar","Sociodemográficas"),
+                  "Escalas y Temas" = c("Grado de acuerdo con cambiar la constitución, Temas de discusión pública","Metas y planes de vida",
+                                        "Redes de apoyo al encontrar trabajo")) %>% 
+  add_row(Muestra = c(""),
+                  Sección = c("Desigualdad y Legitimidad",""),
+                  "Escalas y Temas" = c("Conflicto de clase",""))
+
+temas %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:temas}Temas y conceptos medidos en ELSOC Ola 3 (2018)") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  column_spec(c(3), width = "6cm") %>%
+  row_spec(0:12, background = "white") %>% 
+  pack_rows("Muestra de seguimiento y muestra refresco",1,7) %>%
+  pack_rows("Sólo muestra de seguimiento",8,10) %>%
+  pack_rows("Sólo muestra de refresco",11,12) %>%
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 

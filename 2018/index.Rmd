@@ -1,20 +1,39 @@
 --- 
 title: "ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)"
-subtitle: 'MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL'
-author: 
-- name: "Roberto González"
-- name: "Matías Bargsted"
-- name: "Daniel Miranda"
-- name: "Benjamín Muñoz"
-- name: "Alejandro Plaza"
+subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
+author:
+- name: Roberto González
+- name: Matías Bargsted
+- name: Daniel Miranda
+- name: Benjamín Muñoz
+- name: Alejandro Plaza
 date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook:
+    lib_dir: assets
+    split_by: section
+    config:
+      toolbar:
+        position: static
+  bookdown::pdf_book:
+    extra_dependencies: ["flafter"]
+    toc: no
+    includes:
+      in_header: preamble.tex
+      before_body: portada.tex
+      after_body: codigos.tex
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+classoption: openany
+bibliography:
+- book.bib
+- packages.bib
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: This is a minimal example of using the bookdown package to write a book.
+  The output format for this example is bookdown::gitbook.
 ---
+
 # Presentación {#presentacion}
 
 El Estudio Longitudinal Social de Chile (ELSOC) es una encuesta desarrollada para analizar intertemporalmente la evolución del conflicto y cohesión en la sociedad chilena, basándose en modelos conceptuales descritos en la literatura nacional e internacional que abordan dichas materias.
