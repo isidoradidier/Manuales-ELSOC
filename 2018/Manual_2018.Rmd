@@ -1,0 +1,591 @@
+--- 
+title: "ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2018)"
+subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
+author:
+- name: Roberto González
+- name: Matías Bargsted
+- name: Daniel Miranda
+- name: Benjamín Muñoz
+- name: Alejandro Plaza
+date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook:
+    lib_dir: assets
+    split_by: section
+    config:
+      toolbar:
+        position: static
+  bookdown::pdf_book:
+    extra_dependencies: ["flafter"]
+    toc: no
+    includes:
+      in_header: preamble.tex
+      before_body: portada.tex
+      after_body: codigos.tex
+site: bookdown::bookdown_site
+documentclass: book
+classoption: openany
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
+description: This is a minimal example of using the bookdown package to write a book.
+  The output format for this example is bookdown::gitbook.
+---
+
+# Presentación {#presentacion}
+
+El Estudio Longitudinal Social de Chile (ELSOC) es una encuesta desarrollada para analizar intertemporalmente la evolución del conflicto y cohesión en la sociedad chilena, basándose en modelos conceptuales descritos en la literatura nacional e internacional que abordan dichas materias.
+De este modo, se orienta a examinar los principales antecedentes, factores moderadores y mediadores, así como las principales consecuencias asociadas al desarrollo de distintas formas de conflicto y cohesión social en Chile. Por lo tanto, su objetivo fundamental es constituirse en un insumo empírico para la comprensión de las creencias, actitudes y percepciones de los chilenos hacia las distintas dimensiones de la convivencia y el conflicto, y como éstas cambian a lo largo del tiempo.
+
+Esta encuesta se aplica desde el año 2016 y fue diseñada por investigadores pertenecientes al Centro de Estudios de Conflicto y Cohesión Social (COES). El Centro está patrocinado por la Universidad de Chile y la Pontificia Universidad Católica de Chile y cuenta como instituciones asociadas a la Universidad Diego Portales y la Universidad Adolfo Ibáñez. Si desea obtener más información sobre el Centro, visite http://www.coes.cl/. COES es una iniciativa que desde 2013 cuenta con el financiamiento^[Proyecto CONICYT/FONDAP/15130009.] del Fondo de Financiamiento de Centros de Investigación en Áreas Prioritarias (FONDAP) de la Comisión Nacional de Investigación Científica y Tecnológica (CONICYT), organismo dependiente del Ministerio de Educación de Chile. El levantamiento de datos de las tres primeras olas de ELSOC ha estado a cargo del Centro Micro Datos (CMD) de la Universidad de Chile.
+
+El presente documento contiene información relevante para los usuarios de la base de datos de la tercera ola del estudio longitudinal, correspondiente al año 2018. Este Manual de Usuario enfatiza la dimensión de corte transversal de ELSOC 2018. Los reportes técnicos relativos a las propiedades longitudinales de ELSOC se encuentran en el Manual de Usuario Longitudinal (ELSOC 2016-2017). De todos modos, algunos aspectos centrales de la evolución inter-olas de ELSOC son descritos. Se recomienda a los usuarios interesados en realizar análisis panel consultar de manera adicional el Manual de Usuario Longitudinal disponible en  ____.
+
+Este manual se estructura en torno a secciones temáticas. La siguiente sección describe brevemente el diseño del instrumento, lo cual es complementado con la ficha técnica del estudio. La tercera sección reseña el diseño muestral específico de la muestra refresco ingresada en la tercera ola del estudio. En el cuarto apartado se resumen los principales aspectos del trabajo de campo, enfatizando las particularidades del proceso de re-entrevista a los participantes de la muestra seguimiento y primer contacto de participantes de muestra refresco. El quinto apartado corresponde al acceso y uso de la base de datos. Por último, se incluye un apartado con orientaciones básicas para el análisis y el libro de códigos de las variables incluidas en la base de datos de ELSOC 2018.
+
+<!--chapter:end:index.Rmd-->
+
+# Diseño del instrumento {#dis_ins}
+
+A continuación, se presenta el desarrollo del cuestionario del ELSOC. El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) aplicado cara a cara a todos los participantes. Dicha aplicación se hace utilizando el sistema CAPI (Encuestas personales asistidas por computadores). El cuestionario fue diseñado para medir una serie de aspectos conceptualmente relevantes que permiten caracterizar los niveles de conflicto y cohesión social en Chile, enfatizando su evolución a lo largo del tiempo. Los principales temas de interés analítico abordados por la encuesta corresponden a los módulos en los cuales se estructura:
+
+1. *Ciudadanía y Democracia.*
+2. *Redes sociales e Interacciones inter-grupales.*
+3. *Legitimidad y desigualdad social.*
+4. *Conflicto social.*
+5. *Dimensión barrial y territorial.*
+6. *Salud y bienestar.*
+7. *Caracterización Socio demográfica.*
+
+Los cuestionarios oficiales ELSOC correspondiente a la tercera ola (y olas anteriores) están disponibles en https://dataverse.harvard.edu/dataverse/elsoc 
+
+## Proceso de Diseño
+
+El proceso de diseño del cuestionario de ELSOC se desarrolló durante el año 2015 y abarcó las tres primeras olas. Por lo tanto, el proceso de trabajo aquí descrito coincide con el presentado en el Manual de Usuario de ELSOC 2016. Las diferencias menores entre el cuestionario de la segunda y tercera ola son descritas en el siguiente apartado.
+
+La mayoría de las preguntas, escalas y/o ítems incluidos en los módulos de ELSOC 2018 provienen de otros estudios de opinión pública, investigaciones -en psicología, sociología, economía, ciencia política- realizadas por académicos nacionales e internacionales y encuestas sociales conducidas en Chile y otros países. En forma complementaria, algunas escalas fueron desarrolladas por los miembros del equipo COES y/o han sido adaptadas de estudios anteriores de éstos. De manera genérica, el cuestionario fue diseñado aprovechando las principales recomendaciones técnicas y el estado del arte en las distintas áreas de estudio incluidas.
+
+Con el objetivo de satisfacer los criterios y estándares de calidad para cuestionarios y compatibilizar la multiplicidad de agendas de investigación desarrolladas por COES, se optó por elaborar un procedimiento de trabajo para la construcción de éste. Este proceso se desarrolló durante el año 2015 en distintas fases:
+
+
+1. Se solicitó a los investigadores vinculados a COES proponer proyectos de investigación que contemplen un planteamiento teórico e hipótesis que fundamenten las escalas propuestas para ser incluidas en el cuestionario. Las propuestas podían ser presentadas de manera individual o colectiva y no existían restricciones en el número de ítems a proponer. Sólo se exigía una fundamentación teórica explícita que involucre hipótesis longitudinales y una operacionalización de los constructos a medir en los distintos ítems propuestos.
+
+2. El procedimiento anterior implicó la recepción y organización de un elevado número de agendas de investigación, los que se materializan en más 750 ítems (preguntas únicas o parte de una escala). El equipo ELSOC sistematizó las propuestas recibidas, clasificando los ítems en áreas temáticas. A la vez, se diseñaron mecanismos para reducir el número de ítems y coordinaron reuniones entre los investigadores COES para decidir sobre éstos. Los criterios de selección fueron principalmente teóricos, priorizando las preguntas fundamentales para el análisis longitudinal de los proyectos de investigación como su concordancia con la agenda sustantiva de COES^[También se incluyeron criterios prácticos, relativos a la eliminación de ítems idénticos o muy semejantes; evidencia previa sobre la calidad de los ítems (encuestas anteriores, especialmente la encuesta de corte transversal desarrollada por COES el año 2014) y el diseño general del estudio (diseño muestral, unidad de análisis, tipo de informante, etc.).]. 
+
+3. Luego de una selección de las escalas más relevantes para cada tema propuesto, se realizó un estudio piloto del cuestionario desarrollado. Esto implicó pilotear 430 ítems, donde el CentroMicroDatos de la Universidad de Chile se encargó de su ejecución. En base a los resultados de dicho piloto, el equipo panel realizó ajustes a algunos ítems y elaboró una propuesta de reducción de ítems que fue evaluada con los investigadores del Centro. 
+
+4. La última etapa de ajuste del cuestionario se centró en identificar los aspectos conceptualmente más relevantes para COES y ponderar los requerimientos metodológicos para su evaluación empírica. De este modo, se clasificaron los ítems según el número de mediciones requeridas, distinguiendo entre ítems permanentes (que serán medidos en todas las olas, ya que constituyen el núcleo analítico del estudio) e intercalados (que serán medidos una única vez o una ola por medio).
+
+La versión final del instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) que se aplica cara a cara a todos los participantes con una periodicidad anual. Sin embargo, debe tenerse presente que existen diferencias entre los cuestionarios de las distintas olas producto de la inclusión de los ítems intercalados^[Algunos ítems aparecen una única vez (características invariantes en el tiempo) y otros son rotados (aparecen en años pares o impares).]. Luego, en el Cuadro 2 se resumen los conceptos que se incluyeron en las distintas secciones del cuestionario de ELSOC 2017. Para más detalles sobre el Cuestionario se debe revisar el último apartado de este manual: Libro de Códigos.
+
+
+## Diferencias entre Cuestionarios de Ola 2 y 3 {#dif-cuest}
+
+Para examinar de manera pormenorizada las diferencias entre los instrumentos aplicados en 2017 y 2018 se sugiere a los interesados revisar tanto los cuestionarios como los libros de códigos asociados a cada estudio. De todos modos, el Cuadro 1 señala las diferencias entre ambos cuestionarios, distinguiendo por aquellos temas que fueron agregados a la muestra de seguimiento y/o la muestra refresco. Cabe mencionar que se considera como tema agregado aquellos que nunca antes se habían preguntado en ELSOC, distinguiéndose de los ítems intercalados que fueron preguntados en la ola 1 y en esta ola 3 han regresado. Para mayor detalle de esto, se recomienda revisar el Listado de Variables incluido como una guía útil para contrastar los cuestionarios (disponible  en _____).
+
+```{r Librerías 1, include=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+```
+
+```{r Cuadro 1, echo=FALSE}
+dif_cuest <- tibble("Temas agregados muestra seguimiento 2018" =
+                            c("Temas de discusión pública (c37), percepción de corrupción (c38) y voto retrospectivo 2017
+                              (c39), metas y planes de vida (s30), redes de apoyo al encontrar trabajo (m55 y m56)"),
+                    "Temas agregados muestra refresco 2018" = 
+                            c("Percepción de corrupción (c38) y voto retrospectivo 2017 (c39)"),
+                    "Temas no incluidos 2018 respecto al 2017" = 
+                            c("Elección residencial (t12 y t13), redes cercanas (r1_nredes), temas constitucionales (c26,
+                              c27, c29 y c30), conflicto de clase (excluido solo de muestra seguimiento), amigos del
+                              colegio(d7, d8, d9), preferencias ideológicas (igualdad-libertad) (d10), conducta saludable
+                              (s5), sistema de salud (s6, s7, s8, s11), estado de salud (s9, s10), personalidad (s12),
+                              consumo cultural (s13, s14, s15, s16, s17, s18, s19), migración(m15), caracterización del
+                              hogar (m48, m49, m50, m51, m52, m46), detalles de nivel educacional (m50, m51)")) 
+
+
+dif_cuest %>%
+  kable(booktabs = TRUE,caption="\\label{tab:difcuest}Diferencias temáticas entre cuestionario ola 2 (2017) y ola 3 (2018)") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+
+```{r Cuadro 2, echo=FALSE}
+temas <- tibble(Muestra = c("","","","","","",""),
+                  Sección = c("Territorio","Redes y Actitudes","Ciudadanía","Desigualdad y Legitimidad",
+                              "Conflicto Social","Salud y Bienestar","Sociodemográficas"),
+                  "Escalas y Temas" = c("Confianza en vecinos, cohesión barrial, sociabilidad barrial, transformación barrial, 
+                                                  movilidad residencial, satisfacción residencial, conflicto barrial, seguridad barrial, 
+                                                  problemas barriales",
+                                                  "Redes lejanas, relaciones entre chilenos y migrantes",
+                                                  "Actitud hacia democracia, confianza interpersonal, confianza instituciones, confianza grupos,
+                                                  comportamiento prosocial, intención de participación, autoeficacia política, participación ciudadana,
+                                                  interés político, identificación política, dominancia social, autoritarismo, justicia distributiva y
+                                                  meritocracia, desigualdad percibida, dominancia social, roles de género, movimientos sociales, percepción
+                                                  trato justo, percepción de corrupción, voto retrospectivo 2017",
+                                                  "Estatus subjetivo, justicia y bienestar, percepción de desigualdad, justicia de desigualdad, 
+                                                  surgir en la vida, tributación",
+                                                  "Fuerza conflicto, aversión conflicto, agresividad física, justificación violencia, punitividad",
+                                                  "Satisfacción vital, estado de salud, conducta saludable, estado de ánimo, sintomatología depresiva,
+                                                  estresores, tratamiento depresión",
+                                                  "Sexo, edad, nivel educacional, clase y estatus, calidad del trabajo, ingresos, religión, justicia
+                                                  distributiva y meritocracia, previsión social, características del sostenedor del hogar, ingreso familiar,
+                                                  caracterización del hogar, transporte, deudas, nacionalidad, etnia")) %>% 
+  add_row(Muestra = c("","",""),
+                  Sección = c("Ciudadanía","Salud y bienestar","Sociodemográficas"),
+                  "Escalas y Temas" = c("Grado de acuerdo con cambiar la constitución, Temas de discusión pública","Metas y planes de vida",
+                                        "Redes de apoyo al encontrar trabajo")) %>% 
+  add_row(Muestra = c(""),
+                  Sección = c("Desigualdad y Legitimidad",""),
+                  "Escalas y Temas" = c("Conflicto de clase",""))
+
+temas %>%
+  kable(booktabs = TRUE, longtab=T, caption="\\label{tab:temas}Temas y conceptos medidos en ELSOC Ola 3 (2018)") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  column_spec(c(3), width = "6cm") %>%
+  row_spec(0:12, background = "white") %>% 
+  pack_rows("Muestra de seguimiento y muestra refresco",1,7) %>%
+  pack_rows("Sólo muestra de seguimiento",8,10) %>%
+  pack_rows("Sólo muestra de refresco",11,12) %>%
+  kable_classic(full_width = F)  %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+
+## Ficha Técnica
+
+En este apartado se presenta la Ficha Técnica (Ver Cuadro 3), dónde se sintetizan las principales características del *Estudio Longitudinal Social de Chile* (ELSOC COES) y de la implementación de la segunda ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su segunda ola, como de la ejecución y trabajo de campo.
+
+En este apartado se presenta la Ficha Técnica que sintetiza las principales características del Estudio Longitudinal Social de Chile (ELSOC COES) y de la implementación de la tercera ola de esta encuesta. Los siguientes apartados entregan mayores detalles sobre el diseño muestral del panel y en específico de su tercera ola, como de la ejecución y trabajo de campo.
+
+* Objetivo: Analizar longitudinalmente la evolución del conflicto y cohesión en la sociedad chilena
+* Diseño: Estudio cuantitativo por medio de un cuestionario estructurado
+* Instrumento: Cuestionario compuesto por preguntas cerradas de carácter simple y múltiple junto a algunas preguntas abiertas. Combina preguntas permanentes (todas las olas) e intercaladas.
+* Cobertura temática: Contiene siete módulos temáticos: Territorio, Redes y actitudes sociales, Ciudadanía y democracia, Desigualdad y legitimidad, Conflicto social, Salud y bienestar y Caracterización sociodemográfica.
+* Unidad de Análisis: Individuos
+* Población objetivo: Hombres y mujeres de 18 a 75 años, residentes habituales de viviendas
+* particulares ocupadas, localizadas en 40 ciudades (92 comunas) del país.
+* Marco muestral: Marco de muestreo de manzanas del pre-censo 2011, trabajo elaborado por el Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez.
+* Diseño Muestral: Probabilístico, estratificado, por conglomerados y multietápico.
+* Unidades de Muestreo inicial: Primero se eligen ciudades (UPM), luego manzanas (USM), y sub-bloques y viviendas (UTM). La unidad final de selección es la persona.
+* Unidades de Muestreo refresco: Primero se eligieron comunas, luego manzanas (USM), después viviendas (UTM) y finalmente la persona.
+* Periodo de aplicación: Septiembre a Noviembre 2018 (10 semanas corridas)
+* Periodicidad: anual. Muestra refresco al 3er año.
+* Modo de Aplicación: Encuesta presencial en vivienda del entrevistado. Entrevista personal aplicada por un encuestador por medio de una tablet (Sistema CAPI: Computer Assisted Personal Interview.)
+* Informante: Hombre o mujer residente en la vivienda, con edad entre 18 y 75 años
+* Aspectos Éticos: entrevista voluntaria. Se solicitan datos de contacto de entrevistados, pero no son accesibles (confidenciales). Información georreferenciada también se reserva de manera confidencial. Base de acceso público.
+* Duración promedio muestra seg: 50,7 minutos
+* Duración promedio muestra refresco: 55,6 minutos
+* Control de calidad: Supervisión interna de 15,6% de la muestra lograda
+* Representatividad: Aproximadamente el 77% de la población total del país y 93% de la población urbana con la muestra de Ola 2016 .
+* Tasa de respuesta muestra seguimiento : 80,3%
+* Tasa de respuesta muestra refresco: 57,6%
+* Tasa de cooperación muestra seguimiento: 91,1%
+* Tasa cooperación muestra refresco: 85,1%
+* Tasa rechazo en muestra refresco: 8,3%
+* Tasa rechazo en muestra seguimiento: 5,5%
+* Tasa de contacto muestra seg: 88,1%
+* Tasa de contacto muestra refresco: 67,7%
+* Tamaño muestral: 3.749 individuos. En base de datos definitiva 2.229 individuos de muestra de seguimiento y 1.520 individuos de muestra refresco.
+* Organismo Responsable: Centro de Estudios del Conflicto y Cohesión Social (COES).
+* Organismo Ejecutor: Consultora Stephanie Eckman y Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez (diseño muestral). Centro Micro Datos (CMD) de la Universidad de Chile (levantamiento, procesamiento de la información y construcción de factores de expansión).
+
+<!--chapter:end:01-dis-instrumento.Rmd-->
+
+# Diseño Muestral del Estudio {#dis_muestral}
+
+En el siguiente apartado se presenta la descripción del diseño muestral de ELSOC, correspondiente a la primera ola del estudio. Durante la tercera ola del estudio (2018) el objetivo fundamental es volver a entrevistar a las personas encuestadas en la primera ola (2016), donde además se integrará una muestra de refresco de 1400 casos (que en la práctica aumentó a 1520 casos). El objetivo de la muestra de refresco es corregir la sub-cobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. Esta nueva muestra se elige a partir del mismo marco muestral de la ola inicial utilizando el empadronamiento del año 2016, por lo que no hay mayores cambios en la estrategia muestral.
+
+El diseño de ELSOC tuvo como objetivo conciliar los múltiples intereses de investigación de los investigadores asociados al Centro. Entre las consideraciones más relevantes destacaron las siguientes:
+
+1. Un diseño muestral que permitiera combinar las variables medidas en el cuestionario con las variables espaciales, registradas a nivel de manzana y comuna, contenidas en las bases de datos desarrolladas por el Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez. Dado que los datos del CIT no están disponibles para todas las manzanas del país, particularmente aquellas ubicadas en localidades rurales, se decidió incorporar en la muestra únicamente zonas urbanas. Esta consideración también coincidió con las preferencias de muchos investigadores del Centro, quiénes manifestaron estar principalmente interesados en una muestra de carácter urbano.
+
+2. Algunos investigadores solicitaron un diseño que permitiera estimar modelos multi-nivel (o jerárquicos) agrupados por ciudad y comuna, y por tanto, se estableció que la muestra contuviera un número suficiente de ciudades y comunas, así como un número suficiente de casos dentro de cada cuidad y comuna, que permitiera tal análisis (Snijders & Bosker, Capítulo 10).
+
+3. Otros investigadores estaban interesados en comparar a los habitantes de las tres ciudades más grandes del país, lo que se tradujo en un diseño no proporcional que incrementara el número de encuestados en las zonas del Gran Valparaíso (ciudades de Viña del Mar y Valparaíso) y Gran Concepción (Concepción, Talcahuano y otras).
+
+4. Finalmente, algunos investigadores solicitaron un diseño que permitiera comparar a los encuestados que vivieran en ciudades grandes y pequeñas, lo que favoreció incrementar el tamaño de la muestra de hogares en ciudades pequeñas (Kish, 1965, Sección 3.5), particularmente aquellas con entre 30 mil y 100 mil habitantes.
+
+Los investigadores de COES trabajaron con la encargada del diseño muestral, Stephanie Eckman, para desarrollar un diseño que pudiera, razonablemente, cumplir con estas necesidades e intereses sustantivos. El diseño muestral final de la ola 1 de ELSOC COES proporciona una cobertura adecuada de las ciudades más grandes del país (Gran Santiago, Gran Valparaíso y Gran Concepción), así como ciudades más pequeñas, y también asegura la representación de personas en el norte y sur del país. En términos globales, el diseño muestral alcanza una representatividad aproximada del 77% de la población total del país, y del 93% de la población urbana. Las siguientes subsecciones detallan los distintos pasos del diseño de la muestra.
+
+
+## Preparación del Marco Muestral
+
+El proceso de muestreo se realizó en base a los datos del pre-censo del año 2011, los cuales fueron formateados por el CIT. Aunque los recuentos de población del censo de 2012 no son precisos, el trabajo del pre-censo recolectando información sobre los hogares en todas las manzanas (bloques) es de calidad. El conjunto de datos contenía un total de 155,757 bloques, pero se eliminaron cuatro tipos diferentes antes de que comenzara con la selección.
+
+1. Siguiendo los intereses analíticos de los investigadores del Centro, sólo se utilizaron bloques urbanos. Para determinar qué bloques eran urbanos, se empleó la codificación del tipo de localidad (urbana o rural) contenida en la base de datos del pre-censo de 2011. Consecuentemente, 22.188 (14,2%) bloques fueron excluidos en este paso.
+
+2. Nuevamente, en función de los intereses analíticos de los investigadores del Centro, sólo los bloques que habían sido previamente geo-referenciados por el CIT se conservaron para el muestreo. Esto implica que un total de 1.971 (1,5% de los bloques urbanos) que no estaban geo-referenciados fueron removidos en este paso.
+
+3. Sólo los bloques que contenían cinco o más hogares (de acuerdo con el pre-censo de 2011) fueron retenidos. 503 bloques (menos del 1% de los bloques restantes tras los pasos 1 y 2) no alcanzaron este umbral y fueron eliminados.
+
+4. Sólo los bloques en las ciudades con más de 10.000 personas eran elegibles para la selección. 10.238 bloques (7.8% de los bloques restantes) fueron excluidos del marco muestral. 
+
+De esta forma, el marco muestral final contiene 120.857 bloques. La muestra de COES representará solamente estos bloques y no aquellos que fueron excluidos. Las estimaciones derivadas de los datos de la muestra se aplicarán únicamente a esta población objetivo y no deben aplicarse a toda la población chilena. El proceso de selección de entrevistados se desarrolló en cinco etapas, aunque durante el trabajo de campo se añadió una sexta etapa. 
+
+Para mayor detalle del proceso de selección de la muestra inicial (o muestra de seguimiento) en cada etapa revisar el Manual de Usuario ELSOC 2017 (segunda ola). Cabe destacar que aquellas personas que completaron su encuesta en la primera ola, pero no respondieron en la segunda ola (excluyendo casos fallecidos, cambio de domicilio desconocido o cambio de domicilio fuera del país), en esta tercera oportunidad se hizo el esfuerzo por contactarlos y recuperar la participación de estas personas en el panel.
+
+A continuación, se detallará el proceso de selección de la muestra refresco. En la primera ola de ELSOC (año 2016), CMD realizó un empadronamiento presencial de alrededor de 40.000 viviendas en 1.056 bloques (manzanas), a partir del cual se generará la nueva muestra de viviendas para la selección de individuos de la muestra refresco. Este proceso de empadronamiento tiene sólo dos años de antigüedad, por lo que genera mínimos problemas de no cobertura en los bloques empadronados. 
+
+
+## Etapa 1: Selección de comunas muestra refresco
+
+La muestra inicial del estudio año 2016 consideró 94 comunas para una muestra objetivo de 3.000 casos. En este caso, la muestra refresco objetivo es 1.400 casos por lo que se reducirá el número de comunas consideradas a 75. Los principales motivos de exclusión de comunas son: (i) algunas comunas eran muy pequeñas en términos poblacionales, siendo ya una fracción muy acotada para la muestra 1 (por ejemplo: Concón, Olivar, Maule, Penco, San Rosendo, Padre las Casas), por lo que si para el levantamiento inicial con una muestra objetivo de 3.000 casos se realizaron como máximo 15 entrevistas, para la muestra objetivo de 1.400 casos sería un número muy pequeño a considerar, lo que aumentaría mucho el costo de realización, convirtiéndolo en una maniobra poco eficiente. Por su parte, (ii) frente a una muestra objetivo de 1.400, se necesita un número menor de casos por estrato que en la muestra inicial, pero se sigue demandando casos repartidos por segmentos (manzanas), por lo que una buena alternativa es la reducción de número de comunas. En este sentido, CMD consideró estos criterios en la evaluación de qué comuna excluir para la muestra refresco, sumado al costo de aplicarla y la tasa de respuesta obtenido anteriormente, asegurando preservar los aspectos centrales del diseño. A continuación, el cuadro 3 contrasta la cantidad de comunas consideradas por estrato en la muestra seguimiento (m1) y muestra refresco (m2):
+
+```{r Librerías 2, include=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+```
+
+```{r Cuadro 3, echo=FALSE}
+selec_comunas <- tibble("Estrato" =
+                            c("Gran Santiago","Gran Valparaiso","Gran Concepción","Ciudades Grandes",
+                              "Ciudades Medianas","Ciudades Pequeñas"),
+                    "Definión N habitantes" = 
+                            c("","","","> 100 mil","> 30 mil","> 10 mil"),
+                    "n comunas m1" = 
+                            c("34","5","10","16","9","20"),
+                    "n comunas m2" = 
+                      c("34","3","8","13","6","11"),
+                    "Comunas no consideradas en m2" = 
+                      c("-","Concón, Villa Alemana","Coronel, Penco", "Padre de Las Casas, Maule, Olivar",
+                        "Ovalle, Parral, Colina","Carahue, Lautaro, Laja, Mulchén, San Rosendo, Salamanca, 
+                        Curacaví, Isla de Maipo, Santa Cruz")) 
+
+
+selec_comunas %>%
+  kable(booktabs = TRUE,caption="\\label{tab:selec_comunas}Distribución de comunas por estrato para muestra seguimiento (m1) y muestra refresco (m2)") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  column_spec(c(4), width = "3cm") %>%
+  column_spec(c(5), width = "3cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+## Etapa 2: Selección de bloques muestra refresco
+
+La distribución regional propuesta para el levantamiento de la muestra refresco se observa en el cuadro 4, donde la columna 2 indica el número de bloques (manzanas) a seleccionar por región calculados a partir de la muestra refresco objetivo presentada en la última columna.
+
+```{r Cuadro 4, echo=FALSE}
+selec_bloques <- tibble("Región" =
+                            c("Tarapacá","Antofagasta","Atacama","Coquimbo","Valparaíso","Lib. Gral. B.O'Higgins",
+                            "Maule","Biobío","Araucanía","Los Lagos","Aysén","Metropolitana","Los Ríos","Total"),
+                    "Bloques a seleccionar" = 
+                            c("8","9","18","23","70","16","32","64","38","10","5","100","9","402"),
+                    "Muestra refresco objetivo" = 
+                            c("24","28","56","68","248","48","96","228","112","32","16","416","28","1400")) 
+
+
+selec_bloques %>%
+  kable(booktabs = TRUE,caption="\\label{tab:selec_bloques}Distribución regional de los bloques y muestra refresco objetivo por región") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+Como se observa en el cuadro 4 se requieren de 402 bloques (manzanas) para seleccionar la muestra refresco de 1.400 casos. Dado que el marco muestral se ha utilizado tanto para la selección de la muestra de 2016 como para el pretest de 2018, el siguiente cuadro muestra la distribución de bloques disponibles para la selección de los casos. Se concluye que en todas las regiones se cuenta con un número suficiente de bloques seleccionables, por lo que no se requiere empadronar nuevos bloques. Cabe mencionar que la selección de los bloques es aleatoria.
+
+```{r Cuadro 5, echo=FALSE}
+distr_bloques <- tibble("Región" =
+                            c("región 1","región 2","región 3","región 4","región 5","región 6","región 7",
+                              "región 8","región 9","región 10","región 11","región 13","región 14","Total"),
+                    "Bloques" = 
+                            c("23","24","51","73","159","47","92","143","94","25","11","283","22","1047"),
+                    "Bloques no considerados (menos de 20 viviendas)" = 
+                            c("3","3","18","22","28","7","24","34","24","3","1","32","6","205"),
+                    "Prestest 2018" = 
+                            c("","","","","","","","","","","","20","","20"),
+                    "Bloques disponibles" =
+                            c ("20","21","33","51","131","40","68","109","70","22","10","231","16","822"),
+                    "Bloques seleccionados" =
+                            c("8","9","18","23","70","16","32","64","38","10","5","100","9","402")) 
+
+
+distr_bloques %>%
+  kable(booktabs = TRUE,caption="\\label{tab:distr_bloques}Distribución de los bloques por región") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  column_spec(c(4), width = "3cm") %>%
+  column_spec(c(5), width = "3cm") %>%
+  column_spec(c(6), width = "3cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+ 
+## Etapa 3: Selección de viviendas para muestra refresco
+
+Como se mencionó, hay 1.056 bloques (manzanas) empadronados desde los cuales se seleccionarán 8 viviendas en cada bloque en comunas de ciudades grandes (estrato 1) y 5 viviendas en cada bloque en comunas de ciudades medianas y pequeñas (estrato 2 y 3), de manera que se concreten 5 encuestas completas por bloque en estrato 1, y se concreten 3 encuestas completas por bloque para el caso de los estratos 2 y 3. Este rango entre el número de selección de viviendas y el número de encuestas que se espera concretar se realizó teniendo en cuenta la tasa de respuesta obtenida en la primera ola del estudio. De esta manera, se lograrían las 1.400 encuestas necesarias para la muestra refresco.
+
+```{r Cuadro 6, echo=FALSE}
+distr_bloques2 <- tibble("Estrato" =
+                            c("Gran Santiago","Gran Valparaiso","Gran Concepción","Ciudades Grandes",
+                              "Ciudades Medianas","Ciudades Pequeñas","TOTAL"),
+                    "Definión (N habitantes)" = 
+                            c("","","","> 100 mil","> 30 mil","> 10 mil",""),
+                    "N HHs" = 
+                            c("8","8","8","8","5","5","XXXX")) 
+
+
+distr_bloques2 %>%
+  kable(booktabs = TRUE,caption="\\label{tab:distr_bloques2}Distribución de bloques por estrato") %>%
+  column_spec(c(1), width = "6cm") %>%
+  column_spec(c(2), width = "6cm") %>%
+  column_spec(c(3), width = "6cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+Cabe mencionar que quedan excluidos de la selección aquellos bloques con menos de 20 viviendas empadronadas. Por su parte, los bloques no residenciales se reemplazarán por otro. Así, en aquellos bloques seleccionados se utilizará el marco muestral año 2016 y se seleccionará el número de viviendas dependiendo del tamaño del estrato. En el caso que el bloque tenga más de 50 viviendas se utilizarán los sub-bloques creados en el empadronamiento. 
+
+La selección de la vivienda será por sistema aleatorio simple y por ello hay probabilidad de que se seleccione la misma vivienda que para la aplicación de la ola 1. Por esto, se debe verificar que la muestra seleccionada no coincida con la muestra del panel definida en el año 2016. En caso de coincidir, se generará un reemplazo por el mismo método de selección aleatoria.
+
+*La probabilidad de selección de un hogar $k$ en el bloque $j$ en la ciudad $i$ y el estrato $h$ fue*:
+ 
+$$\pi_{k|j,i}=\frac{nh_j}{NH_j}$$
+
+*donde $nh_j$ es el número de viviendas seleccionadas en el bloque $j$, y $NH_j$ corresponde al número de viviendas alistadas en el bloque $j$ excluyendo las seleccionadas en ola 1*.
+
+Esta estrategia permitiría tener una muestra de las mismas características de la muestra 1, lo que permite un trabajo de campo más atractivo (más viviendas que visitar en una misma manzana, aumenta la productividad por día) y el efecto diseño no aumentaría drásticamente, por lo que se sigue generando una varianza parecida en el conglomerado y entre conglomerados.
+
+## Etapa 4: Selección de personas para muestra de refresco
+
+Una vez seleccionada la vivienda, se procede a la selección de la persona que será parte de ELSOC dentro de cada hogar seleccionado. Esta elección será aleatoriamente entre las personas del hogar que tengan entre 18 y 75 años, por medio de la programación pertinente en la aplicación de la encuesta en Tablet, evitando la manipulación de los encuestadores en la selección del entrevistado. En el caso de inconvenientes con el uso del Tablet, se seleccionará al entrevistado mediante el uso de Tabla de Kish (método equivalente). 
+
+*La probabilidad de selección de una persona en el hogar $k$ fue*:
+
+$$\pi_{l|k,j,i}=\frac{1}{NP_j}$$
+
+donde $NP_j$ es el número de adultos (mayores a 18 años y menores de 75 años) que habitan la vivienda $j$.
+
+
+## Diseño de Ponderadores de la Muestra
+
+<!--chapter:end:02-dis-muestral.Rmd-->
+
+# Implementación de la Encuesta {#implement_encuesta}
+
+COES realizó una licitación pública para la ejecución del ELSOC. El Centro Micro Datos (CMD) de la Facultad de Economía y Negocios de la Universidad de Chile se adjudicó dicho concurso y se encargó del desarrollo de la encuesta, incluyendo el trabajo de campo durante las cuatro primeras olas. El acuerdo con Micro Datos contempla los más altos estándares de calidad y asegura un adecuado resguardo de los datos personales de contacto de los participantes del estudio panel.
+
+Este apartado describe la implementación ELSOC 2018, por lo que se recomienda revisar los Manuales de Usuario de olas anteriores si desea formarse una visión más detallada de la fase de empadronamiento e inicio del trabajo de campo del estudio.
+
+
+## Estrategia de Seguimiento
+
+COES y Centro MicroDatos definieron una estrategia de fidelización y seguimiento de los encuestados de ELSOC 2016 y 2017 con el objetivo de minimizar la potencial atrición en el estudio. El insumo básico de este procedimiento fue el almacenamiento de información de contacto de los encuestados (además de su nombre de pila, contar con teléfono de contacto y dirección de correo electrónico). 
+
+CMD realizó una ronda de re-contacto con los participantes de ELSOC en los meses de Junio y Julio 2018, con el supuesto de que la cercanía con el levantamiento definitivo en el mes de Agosto permitiría que sea alta la probabilidad de contactarlos. Esto se realizó vía telefónica y vía correo electrónico, con el objetivo de verificar y actualizar los datos de contacto de la muestra y notificar a los contactos efectivos sobre la fecha estimada para la realización de la tercera ola ELSOC. Dicha información permite contar con un listado de direcciones de residencia de los encuestados ELSOC y la información cartográfica pertinente para facilitar el trabajo de campo del encuestador. Estos insumos fueron cruciales para la planificación del trabajo de campo de 2018.
+
+
+## Pilotaje del Cuestionario Y Capacitación
+
+Con el cuestionario correspondiente a la tercera ola de ELSOC, previamente elaborado por COES y CMD a cargo de la programación de éste para que fuera aplicada de manera presencial en tablets (sistema CAPI). En una primera fase, el equipo ELSOC chequeó el flujo del cuestionario programado en tablets y propuso ajustes menores. Luego, se coordinó una versión piloto del estudio con el fin de testear el instrumento y evaluar el funcionamiento operativo del instrumento.
+
+El pilotaje se realizó durante el mes de Julio del 2018, seguido de una ronda de focus group a los encuestadores con el objetivo de obtener recomendaciones relevantes para el levantamiento final de la encuesta. Esto fue utilizado para introducir cambios menores al cuestionario programado en tablets y para definir ajustes al programa de capacitación de los encuestadores.
+
+El CMD se encargó de la selección y capacitación del personal requerido (coordinadores y encuestadores). La capacitación de coordinadores de campo y encuestadores fue ejecutada por CMD con apoyo técnico de COES para aspectos específicos. CMD realizó dicha tarea de manera centralizada, de modo de que los coordinadores fueron capacitados en dependencias de la Facultad de Economía y Negocios (FEN) de la Universidad de Chile en la Región Metropolitana.
+
+Se dispuso de 18 sedes de trabajo administradas por coordinadores de zona. Las sedes permiten recibir a los encuestadores y almacenar los insumos del estudio, contando con conexión a internet para facilitar la carga de las encuestas recolectadas. La capacitación de los encuestadores se realizó 100% presencial, para lo cual se realizó una capacitación central con gran parte de los coordinadores, quienes posteriormente capacitaron a los encuestadores. En otros casos, se desplegó capacitadores para que realizaran esta actividad en algunas zonas.
+
+
+## Planificación y Ejecución del Campo
+
+Al igual que para las olas anteriores, CMD elaboró un Manual del Encuestador para la implementación de ELSOC y en conjunto con COES preparó documentos orientadores y protocolos para la aplicación del cuestionario. Esto incluye: 
+
+1. **Protocolo de Visita:** primer contacto con la vivienda, primer contacto con el hogar y concertación de entrevistas en casos en que no se puede realizar entrevista al momento de visita.
+2. **Protocolo ante Casos Difíciles:** escenario de negaciones, escenario de más de 4 intentos presenciales sin contacto, barreras de acceso a la vivienda, no contacto con la vivienda. También contempla estrategias de recuperación.
+3. **Protocolo de Aplicación del Cuestionario:** descripción del estudio, consentimiento informado, aplicación de preguntas, manejo de interrupciones, entrega de gift cards.
+4. **Protocolo de Campo:** respaldo de información, control de avances, registro de contactos. 
+5. **Protocolo de Futuros Seguimientos (tercera ola):** se solicita información de contacto para poder re-contactar en otra oportunidad al entrevistado seleccionado.
+
+Los documentos fueron adaptados de modo tal de ajustarse a los requerimientos del seguimiento de una muestra previamente entrevistada y de una muestra nueva (refresco). El levantamiento de información fue realizado en un período de aproximadamente 10 semanas -contadas desde la entrega de material a los encuestadores tras la capacitación-, entre septiembre y noviembre 2018. Para la ejecución del terreno se contó con 189 encuestadores distribuidos en las 18 sedes de trabajo antes referidas. Todos fueron debidamente capacitados, para posteriormente ser citados para retirar el material de trabajo (hojas de ruta, citas concertadas, croquis de ubicación y tablet).
+
+CMD cuenta con información relevante para garantizar un adecuado recontacto (nombre del entrevistado, información de contacto y aspectos básicos para su identificación) y utiliza dicha información para concertar entrevistas y planificar el campo. Cada encuestador recibió del coordinador de sede o encuestador apoderado los datos sobre las citas concertadas con participantes ELSOC y utiliza un protocolo de entrevista específico para re-entrevistas. Las respuestas de los entrevistados fueron almacenadas en tablets provistas por CMD. La información recolectada era subida por los encuestadores a una plataforma web utilizando la tablet de CMD. Al finalizar la entrevista se entrega un incentivo monetario (tarjeta de regalo de 6.000 pesos), un folleto informativo sobre COES y ELSOC y se amplía la base de datos de información de contacto de participantes ELSOC. 
+
+## Supervisión del Trabajo de Campo
+
+El Centro MicroDatos desarrolló un proceso de supervisión del trabajo en terreno involucrando cinco etapas:
+
+1. Supervisión del 100% de las encuestas recopiladas, realizado de manera simultánea por el Coordinador de Grupo. Para esto se utilizó una aplicación web diseñada para estos fines. Esto implicó la verificación del sujeto entrevistado, revisión de variables claves, revisión del resultado de visita y revisión de duración de entrevista.
+
+2. Para verificar la veracidad de las encuestas levantadas fue seleccionada una muestra de control, cuyo levantamiento fue organizado por un coordinador y ejecutado de manera centralizada mediante la vía telefónica o visitas en terreno, por personal distinto al que realizó el levantamiento de las encuestas. El objetivo principal fue verificar que los datos de la persona reportados en la encuesta coincidan con la persona del hogar que se le aplicó el estudio, además de la consistencia de un subconjunto de preguntas claves del cuestionario.
+
+3. Sobre la base de la revisión de las encuestas realizadas y los resultados de los controles telefónicos, el coordinador de zona retroalimentó a su equipo (al menos una vez por semana) con observaciones y sugerencias respecto al trabajo de campo, orientadas a ayudar a mejorar su desempeño. Los encuestadores también brindaron observaciones y retroalimentación a sus coordinadores a partir de su experiencia en terreno.
+
+4. Supervisión de encuestas por uso de CAPI. El software desarrollado para el cuestionario permite manejar de mejor modo la no respuesta, validar internamente el flujo del cuestionario (evitar problemas con filtros) y recolectar información sobre el tiempo de aplicación. La validación interna y el chequeo de rango y consistencia de la información minimiza notablemente el error de medición y es una de las ventajas del diseño de ELSOC.
+
+5. Revisión de casos especiales y validación ex post. Finalmente, CMD revisó el funcionamiento del flujo de respuestas y descartó 13 casos con información falsificada, llegándose a un total de 2520 casos.
+
+## Incidencias de Terreno y Códigos de Disposición Final de Casos
+
+El trabajo de terreno se desarrolló en un período de 10 semanas aun cuando en esta tercera ola ingresaron cerca de 1.500 nuevos entrevistados.
+
+La primera incidencia fue que el 6,9% de los individuos de la muestra seguimiento 2016-2017 se había cambiado de domicilio, cifra mayor al año anterior. Sin embargo, dado que se contaba con información de contacto no repercutió mayormente en la continuidad de su participación en el estudio.
+
+La segunda incidencia, y de mayor envergadura, refiere a la detección de casos falsificados en las versiones 2016-2017 en las regiones de Tarapacá y Valparaíso.
+    - Región de Tarapacá: se encontraron 11 encuestas falsificadas para la versión 2016 y 2017. Este número de falsificaciones es relevante considerando que el tamaño de la muestra esperada en esa región, era de 46 casos, lo cual equivale a un 24% de pérdida de muestra de seguimiento.
+    - Región de Valparaíso: se encontraron 50 casos falsificados en la ola 1 y 36 en la ola 2, lo cual representa un 9% para la versión 2016 y un 8% para la versión 2017.
+    
+Frente a esto, se decidió aumentar el porcentaje de encuestas a controlar de 10% a 15% para el año 2018 y se propone una rotación de los encuestadores respecto a los entrevistados para olas futuras.
+
+Siguiendo los estándares de la Asociación Americana de Investigación en Opinión Pública (AAPOR por su sigla en inglés), se asoció a cada uno de los casos de la muestra completa un código de disposición final. En base a dicha información, la tercera ola de ELSOC tiene las siguientes tasas de resultados:
+
+* Tasa de Respuesta (RR2): 80,3% muestra seguimiento y 57,6%^[Esta tasa está calculada sobre los 2.640 casos que se enviaron a terreno.]  muestra refresco.
+* Tasa de Rechazo (REF2): 5,5% muestra seguimiento y 8,3% muestra refresco.
+*¨Tasa de Contacto (CON2): 88,1% muestra seguimiento y 67,7% muestra refresco.
+*¨Tasa de Cooperación (COOP2): 91,1% muestra seguimiento y 85,1% muestra refresco.
+
+Si desea conocer más detalles sobre la determinación de los códigos de disposición final de casos y el cálculo de las tasas de resultados, dirigirse a http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf .
+
+## Aspectos Longitudinales y Cuarta Ola del Estudio
+
+Un aspecto esencial de la planificación de ELSOC desde sus orígenes fue la atrición presupuestada. Desde la etapa de diseño se contemplaron distintos escenarios potenciales de atrición y se definió el diseño muestral acorde a las conclusiones de dicho examen (Ver Figura 1). A su vez, los escenarios de atrición fueron parte de los objetivos que guiaron el diseño de la licitación del estudio y el trabajo con CMD.
+
+
+![(#fig:atricion) Diseño Muestral de ELSOC según Ola](../Imagenes/attrition_01.png){width=70%}
+
+ 
+El Cuadro 7 describe la recuperación de casos de la muestra seguimiento ELSOC, tanto del año 2017 respecto a 2016, 2018 respecto a 2017 y 2018 respecto a 2016, desagregando en sub-grupos claves. Se observa que la muestra de 2017 equivale a un 84.5% de la original, resultado mejor a las estimaciones de un 20% de atrición en la primera ola. Mientras que la muestra seguimiento 2018 corresponde al 76.2% de la muestra original y 90,1% si se compara con los participantes en el año 2017.
+
+Además, se observan diferencias sustantivas en términos de sexo, zona y tramo etario del entrevistado.
+
+```{r Librerías 3, include=FALSE}
+library(pacman)
+pacman::p_load(tidyverse,knitr,kableExtra,dplyr,tinytex)
+```
+
+```{r Cuadro 7, echo=FALSE}
+atricion_atributo <- tibble("Variable" =
+                            c("Hombre","Mujer","Norte","Centro","Sur","Metropolitana","18-29 años","30-49 años",
+                              "50-64 años","65 años y más","Total"),
+                    "2016-2017" = 
+                            c("81.8","86.3","85.8","84.5","85.8","83.4","74.1","81.1","91.3","92.7","84.5"),
+                    "2017-2018" = 
+                            c("88.2","91.3","91.9","92.7","90.6","85.6","71.7","88.2","94.6","103.6","90.1"),
+                    "2016-2018" = 
+                            c("72.1","78.8","78.9","78.4","77.7","71.3","53.2","71.5","86.4","96.0","76.2")) 
+
+
+atricion_atributo %>%
+  kable(booktabs = TRUE,caption="\\label{tab:atricion_atributo}Análisis de Atrición muestra seguimiento según atributos claves") %>%
+  column_spec(c(1), width = "3cm") %>%
+  column_spec(c(2), width = "3cm") %>%
+  column_spec(c(3), width = "3cm") %>%
+  column_spec(c(4), width = "3cm") %>%
+  kable_classic(full_width = F) %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+Cabe recordar que el plan de trabajo de COES contemplaba desde el inicio la incorporación de una muestra refresco de 1400 casos, debido a la atrición propia de los estudios longitudinales (ver figura 2). El objetivo de la muestra de refresco es corregir la sub-cobertura de ciertos grupos poblacionales y ajustar por la pérdida de casos dado la atrición. 
+
+El año 2019 se levantará la cuarta ola de ELSOC. En esta cuarta ola se volverá a entrevistar a las personas encuestadas en la primera ola (2016) y a las personas incorporadas en la tercera ola (2018). Los resultados de la cuarta ola estarán disponibles durante el primer semestre del año 2020.
+
+![(#fig:atricion2) Diseño Muestral de ELSOC según Ola](../Imagenes/Sample_Design.png){width=70%}
+
+<!--chapter:end:03-implement-encuesta.Rmd-->
+
+# Acceso y Uso de Base de Datos {#acceso_datos}
+
+Las bases de datos ELSOC de las tres primeras olas se encuentran disponibles en el repositorio de COES en https://dataverse.harvard.edu/dataverse/elsoc.
+
+Cualquier publicación que incluya para su realización el uso de la base de datos ELSOC (en cualquiera de sus versiones) debe citar la fuente de la siguiente forma:
+
+\noindent \fbox{
+	\parbox{\textwidth}{
+		Centro de Estudios de Conflicto y Cohesión Social (2021). Estudio Longitudinal  Social de Chile, Tercera Ola (ELSOC\_W03) . [Archivo de datos]. Santiago, Chile: Centro de Estudios de Conflicto y Cohesión Social (COES). \url{www.coes.cl}}
+}\\
+
+Por último, en caso de que se desee citar el presente Manual de Usuario 
+
+\noindent \fbox{
+	\parbox{\textwidth}{
+		Centro de Estudios de Conflicto y Cohesión Social (2021). Manual de Usuario de Estudio Longitudinal  Social de Chile, Tercera Ola (2018). Corte Transversal. Santiago, Chile: Centro de Estudios de Conflicto y Cohesión Social (COES).}
+}\\
+
+
+
+<!--chapter:end:04-acceso-datos.Rmd-->
+
+# Libro de Códigos Base de Datos ELSOC Ola 3 {#libro_codigos}
+
+Para un uso adecuado de la base de datos de la tercera ola de ELSOC COES se recomienda a los investigadores trabajar con el libro de códigos, el cual se presenta a continuación. Este apartado detalla el fraseo de cada uno de los ítemes incluidos, las distintas categorías de respuestas asociadas a éste, y el nombre de las variables como las etiquetas incorporadas en la base de datos. Ahora se incorporan recomendaciones generales para el uso de la base de datos y los libros de códigos.
+
+## Variables ELSOC Ola 3
+
+La base de datos de ELSOC Ola 3 (2018) contiene una fila por cada entrevistado (son 3748 casos) y una columna por cada variable. Las variables corresponden a los ítems incluidos en el cuestionario del estudio. Ahora, es necesario que el usuario comprenda plenamente qué es un ítem.
+
+A modo de ejemplo, la pregunta M42 del cuestionario de ELSOC, dónde se consulta a los entrevistados si ellos o algún miembro del hogar tienen algún crédito o deuda de los tipos que se mencionan a continuación. En esta pregunta, se incluyen 4 ítems distintos, correspondientes a cuatro tipos distintos de crédito o deuda. En la base de datos, cada ítem corresponde a una variable incluida en la base de datos. Siguiendo el ejemplo, el primer ítem de deudas corresponde a: “Casas comerciales", de modo que éste quedará codificado como m42_01. Así, el nombre de las variables de la base de datos se construye combinando:
+    - El código de la variable en el cuestionario, en letras minúsculas (en el ejemplo corresponde a m42).
+    - Valores numéricos correlativos al orden de los ítems, tal como aparecen en el cuestionario (01, 02, 03 y 04), separado por un guión bajo _ (en el primer caso, sería m42_01).
+    
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](../Imagenes/Figura_item_2018a.png)
+
+
+El libro de códigos fue diseñado de modo de que sintetice toda la información relevante sobre las variables de la base de datos en un formato común para facilitar su uso. De manera genérica, las variables incluidas en la base de datos tienen el siguiente formato:
+ 
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](../Imagenes/Figura_item_2018b.png)
+
+ 
+A continuación, se presenta un ejemplo para clarificar dicha estructura. En este caso, t2_01 es el nombre de dicho ítem del cuestionario en la base de datos (como variable). Por medio de estos códigos se pueden identificar los distintos ítemes incluidos. Se recomienda rastrear las variables en el Libro de Códigos y en la base de datos según dicho nombre. Junto a este código aparece la etiqueta de variable incluida en la base de datos ELSOC. En este caso es “Grado de acuerdo: Este es el barrio ideal para mí”. Las etiquetas fueron diseñadas por el equipo ELSOC con el objetivo de describir de modo sucinto el fenómeno o dimensión a medir^[Se intenta preservar el ítem original. Los cambios introducidos se hicieron por motivos de espacio.], eliminando tildes y otros símbolos no incluidos en todos los softwares estadísticos (por ejemplo, la ñ).
+
+Los distintos valores listados corresponden a las categorías de respuesta asociadas al ítem.
+
+En la construcción de la base de datos, dichas categorías fueron ingresadas como valores numéricos y se incluyeron etiquetas de valores. En el ejemplo anterior, si una persona se manifiesta totalmente en desacuerdo con el enunciado, en la encuesta a su respuesta se le asignará un valor numérico de 1, por lo que se podrán realizar operaciones aritméticas con esta respuesta. De todos modos, se incluye una etiqueta para indicar que el valor 1 corresponde con la respuesta “Totalmente en desacuerdo”. Ejemplo:
+
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](../Imagenes/Figura_item_2018c.png)
+ 
+Por último, es importante también tener en cuenta la información no incluida en este libro de códigos. “A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?" corresponde al fraseo exacto de la pregunta, mientras que “(MOSTRAR TARJETA 2)” aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos de manera completa en el Cuestionario y el Listado de Variables correspondiente.
+
+Las variables que poseen categorías residuales de no respuesta (No Sabe y No Responde), generalmente se codifican como 8/9 o 88/99, dependiendo de la anchura de la variable. **La base de datos de ELSOC 2018 homologa todas las respuestas No Sabe a -888 y No Responde a -999** y chequea la naturaleza de los valores perdidos restantes (los cuales corresponden en su totalidad a la aplicación de filtros). Las respuestas No Sabe y No Responde no fueron eliminadas ni transformadas en valores perdidos en la base de datos, de modo que los usuarios deben decidir qué hacer con dichos valores de respuesta. La etiqueta de valores de éstos incluye la instrucción de no ser leídos por el encuestador. En el caso de que la pregunta contenga un filtro, los valores no relevantes (filtrados) aparecen en la última línea y no tienen asignado valores ni etiquetas (son valores perdidos por el sistema).
+
+Las variables de cadena (texto) no presentan códigos, ya que presentan los verbatim literales de las menciones por parte de los encuestados. El único cambio introducido -y fue realizado por motivos de compatibilidad entre softwares- fue la eliminación de símbolos tales como tildes, diéresis y otros caracteres especiales. A continuación, se presenta el ejemplo de una de dichas preguntas:
+
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](../Imagenes/Figura_item_2018d.png)
+
+ 
+En el caso de los ítems dónde se pide una respuesta numérica tampoco existen categorías de respuesta, registrándose el valor indicado por el entrevistado. De todos modos, se incluyen etiquetas de valores para los valores perdidos. A continuación, un ejemplo de un ítem de este tipo:
+
+![(#fig:item) Ejemplo de Pregunta con Múltiples Ítemes en ELSOC](../Imagenes/Figura_item_2018e.png)
+
+
+## Características Base de Datos ELSOC Ola 3
+
+La versión actual de la base de datos (2.0) contiene información para los 3748 entrevistados (N definitivo tras supervisión) en relación a los 384 ítems del cuestionario (cada una corresponde a una variable en la base de datos) y un conjunto adicional de variables:
+
+1. Identificadoras de Casos: id de la encuesta, comuna de residencia y región de residencia.
+
+2. De Diseño Muestral Complejo: ponderadores (y factores de expansión), estrato y segmento para incorporar el diseño complejo de la encuesta.
+
+Dentro de las variables de diseño muestral complejo, el estrato identifica a los seis previamente definidos: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes (4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa las manzanas/bloques, pero los valores son artificiales (generados por Centro Micro Datos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados.
+
+\noindent \fbox{
+	\parbox{\textwidth}{
+		Se recomienda la utilización de los ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderadore 02 también ajusta en base a la población estimada según sexo}
+}\\
+
+Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo esto motivo de una nueva versión de la base de datos. Esto implicará un nuevo lanzamiento de la base de datos y todas las facilidades para que los investigadores hagan un uso óptimo de las variables territoriales.
+
+Las bases de datos se encuentran disponibles en formatos .dta (compatibles con versiones Stata 13 y 14), .sav (compatibles con SPSS) y .RData (compatibles con R, los objetos contienen como atributos etiquetas de variables y valores). El Equipo de Encuestas COES también cuenta con bases de datos adicionales sobre la encuesta (en formato .dta y/o .xlsx):
+
+1. Casos supervisados.
+2. Capacitaciones a encuestadores.
+3. Duración de entrevistas.
+4. Códigos de disposición final muestra completa.
+5. Diseño y selección muestra.
+6. Tabla Kish.
+7. Construcción de ponderadores.
+
+Sin embargo, los archivos anteriormente listados deben ser solicitados al Equipo de Encuestas, justificando el uso que se darán a los datos requeridos. El Equipo de Encuestas COES decidirá la pertinencia de dichas solicitudes y se reserva el derecho para entregar dichos datos.
+
+
+<!--chapter:end:05-libro-codigos.Rmd-->
+
