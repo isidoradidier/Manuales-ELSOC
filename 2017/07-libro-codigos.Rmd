@@ -30,8 +30,6 @@ Los distintos valores listados corresponden a las categorías de respuesta asoci
 knitr::include_graphics("/Users/Elisa/Documents/GitHub/Manuales-ELSOC/2016/imagenes/t2_01.png")
 ```
 
-
-
 Por último, es importante también tener en cuenta la información no incluida en este libro de códigos. *"A continuación voy a leer algunas afirmaciones acerca de su barrio. ¿Qué tan de acuerdo o en desacuerdo está usted con las siguientes afirmaciones?"* corresponde la fraseo exacto de la pregunta, *(MOSTRAR TARJETA 2)* aparece entre paréntesis y corresponde a una instrucción para el encuestador. Estos elementos son incluidos de manera completa en el Cuestionario y el Listado de Variables correspondiente.
 
 Las variables que poseen categorías residuales de no respuesta (No Sabe y No Responde), generalmente se codifican como 8/9 o 88/99, dependiendo de la anchura de la variable. **La base de datos de ELSOC 2017 homologa todos las respuestas No Sabe a -888 y No Responde a -999** y chequea la naturaleza de los valores perdidos restantes (los cuales corresponden en su totalidad a la aplicación de filtros). Las respuestas No Sabe y No Responde no fueron eliminadas ni transformadas en valores perdidos en la base de datos,  de modo que los usuarios deben decidir qué hacer con dichos valores de respuesta. La etiqueta de valores de éstos incluye la instrucción de no ser leídos por el encuestador. En el caso de que la pregunta contenga un filtro, los valores no relevantes (filtrados) aparecen en la última línea y no tienen asignado valores ni etiquetas (son valores perdidos por el sistema).
@@ -59,12 +57,9 @@ La versión actual de la base de datos (1.0) contiene información  para los 252
 
 Dentro de las variables de diseño muestral complejo, el estrato identifica a los seis previamente definidos^[Los estratos 4, 5 y 6 tienen sub-estratos Norte y Sur.]: Gran Santiago (1), Gran Valparaíso (2), Gran Concepción (3), Ciudades Grandes(4), Ciudades Medianas (5) y Ciudades Pequeñas (6). La variable segmento1 representa las manzanas/bloques, pero los valores son artificiales (generados por MicroDatos y no corresponden a los valores reales) de modo de garantizar la privacidad de los entrevistados.
 
-```
-Se recomienda la utilización de los ponderadores muestrales que ajustan 
-en base a la probabilidad de selección, no respuesta y población objetivo 
-estimada a nivel regional. El ponderador 02 también ajusta en base a la 
-población estimada según sexo.
-```
+<center>
+**Se recomienda la utilización de los ponderadores muestrales que ajustan en base a la probabilidad de selección, no respuesta y población objetivo estimada a nivel regional. El ponderador 02 también ajusta en base a la población estimada según sexo.**
+</center>
 
 Aún no se encuentran disponibles en la base de datos las variables georreferenciadas que proveerá el Centro de Inteligencia Territorial (CIT), siendo esto motivo de una nueva versión de la base de datos. Esto implicará un nuevo lanzamiento de la base de datos y todas las facilidades para que los investigadores hagan un uso óptimo de las variables territoriales.
 
