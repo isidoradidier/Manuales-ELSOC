@@ -1,5 +1,5 @@
 --- 
-title: "ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)"
+title:  <center>ESTUDIO LONGITUDINAL SOCIAL DE CHILE (ELSOC 2017)</center>
 author:
 - name: Roberto González
 - name: Matías Bargsted
@@ -10,7 +10,6 @@ date: "`r Sys.Date()`"
 output:
   bookdown::gitbook:
     lib_dir: assets
-    split_by: section
     config:
       toolbar:
         position: static
@@ -35,6 +34,11 @@ subtitle: MANUAL DE USUARIO DE BASE DE DATOS CORTE TRANSVERSAL
 ---
 
 # Presentación {#present}
+
+```{js, echo = FALSE}
+title=document.getElementById('header');
+title.innerHTML = '<img src="imagenes/ELSOC.png" alt="ELSOC">' + title.innerHTML
+```
 
 El Estudio Longitudinal  Social de Chile (ELSOC) es una encuesta desarrollada para analizar intertemporalmente la evolución del conflicto y cohesión en la sociedad chilena, basándose en modelos conceptuales descritos en la literatura nacional e internacional que abordan dichas materias. De este modo, se orienta a examinar los principales antecedentes, factores moderadores y mediadores, así como las principales consecuencias asociadas al desarrollo de distintas formas de conflicto y cohesión social en Chile. Por lo tanto, su objetivo fundamental es constituirse en un insumo empírico para la comprensión de las creencias, actitudes y percepciones de los chilenos hacia las distintas dimensiones de la convivencia y el conflicto, y como éstas cambian a lo largo del tiempo.
 
